@@ -1,0 +1,28 @@
+.container {
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap-reverse;
+  }
+  .item {
+    background-color: yellowgreen;
+    margin: 20px;
+    padding: 30px;
+  }
+  .item1 {
+    order: 3;
+    flex-grow: 2;
+  }
+  .item2 {
+    order: 1;
+    flex-grow: 1;
+  }
+  .item3 {
+    order: 2;
+    flex-grow: 4;
+  }
+  .item4 {
+    order: 0;
+    flex-grow: 2;
+  }
