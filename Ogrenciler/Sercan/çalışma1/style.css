@@ -1,16 +1,18 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
-.navbar{ 
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: lightcoral;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: lightcoral;
 }
-.navbar img{
-    width: 20%;
+.navbar img {
+  width: 20%;
+}
+#nav-cont {
+  display: flex;
 }
