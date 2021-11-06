@@ -1,0 +1,49 @@
+.container {
+  background-color: red;
+  /*height: 100vh;* tüm pencerenin boyutuna göre odak alıyor*/
+  /*height: %100;* parent boyutuna göre odak alıyor*/
+  height: 600px;
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;/*EGER SIZE SIGMAZSA ALT TARAFA GECMESINI SAGLAR.*/
+  justify-content:end;/*X EKSENI DEGISIKLIKLERI*/
+  align-items:flex-end;/*Y EKLENI DEGISIKLIKLERI*/
+}
+.item {
+  background-color: yellowgreen;
+  margin: 20px;
+  padding: 30px;
+}
+.item1 {
+  order: 3;
+ /* flex-grow: 2; FLEX GROW EKRANI VERILEN DEGERLERIN TOPLAMINA GORE ORANLAR.*/
+ /*align-self: baseline; SADECE O ITEMIN KONUMUNU DEGISTIRIR.*/
+}
+.item2 {
+  order: 1;
+ /*font-size: 2em; em bir üst elemanın size'ıdır*/
+ /*font-size: 2rem; rem html'de verilen değerin size'ıdır*/
+}
+.item3 {
+  order: 2;
+}
+.item4 {
+  order: 0;
+}
+/*@media(max-width: 1080px)
+{
+  .container
+  {
+    background-color: blueviolet;
+  }
+}
+1080px altına inince container background color properties'ini ezme işlemi yapabiliriz. Arka planda bir script gibi çalışıyor.*/
+
+@media(max-width: 768px)
+{
+  .container
+  {
+    background-color:cornsilk
+  }
+}
