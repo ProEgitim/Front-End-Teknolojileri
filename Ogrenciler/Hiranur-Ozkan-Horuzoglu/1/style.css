@@ -159,6 +159,7 @@ a {
 /* Yazı tipleri değişecek - Ödev */
 .imageMakale {
   margin: 50px;
+  text-align: center;
 }
 .headerMakale {
   text-align: center;
@@ -168,4 +169,24 @@ a {
 }
 .textMakale {
   padding: 20px;
+  justify-content: right;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  align-items: flex-start;
+
+}
+
+@media (max-width :768px) {
+  .text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  
 }
