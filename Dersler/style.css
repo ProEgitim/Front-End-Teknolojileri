@@ -1,28 +1,44 @@
 .container {
   background-color: red;
+  height: 300px;
   padding: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .item {
   background-color: yellowgreen;
   margin: 20px;
   padding: 30px;
+  font-size: 20px;
+  width: 10%;
 }
 .item1 {
   order: 3;
-  flex-grow: 2;
 }
 .item2 {
   order: 1;
-  flex-grow: 1;
 }
 .item3 {
   order: 2;
-  flex-grow: 4;
 }
 .item4 {
   order: 0;
-  flex-grow: 2;
+}
+p {
+  font-size: 0.5em;
+}
+/* Tablet */
+@media (max-width: 1080px) {
+  .container {
+    background-color: blueviolet;
+  }
+}
+/* Mobil */
+@media (max-width: 768px) {
+  .container {
+    background-color: coral;
+  }
 }
