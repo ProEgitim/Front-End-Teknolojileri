@@ -1,0 +1,18 @@
+.photo{
+ max-width: 20pt;
+ }
+ .menu div{
+     margin: 40px;
+ }
+
+.menu-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.menu-list{
+    margin: 20px;
+}
+
