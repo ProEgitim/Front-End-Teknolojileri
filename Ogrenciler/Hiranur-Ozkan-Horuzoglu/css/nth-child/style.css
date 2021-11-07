@@ -1,0 +1,62 @@
+.sayfa {
+  width: 960px;
+  margin: auto;
+}
+.kutu {
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: #3498db;
+  float: left;
+  border: 5px solid #34495e;
+  margin: 5px;
+  text-align: center;
+  font-size: 300%;
+  color: #fff;
+}
+/*ilk elemana özellik ver*/
+/* .kutu:nth-child(1){
+
+  background: #e67e22;
+} */
+/*------------------------*/
+/*son elemana özellik ver*/
+/*.kutu:nth-last-child(3){
+  background: #e67e22;
+} */
+/*------------------------*/
+/* 2n-1 de odd da ikiside tek sayılar anlamına gelir.
+.kutu:nth-child(2n-1){
+  background: #e67e22;
+} 
+ /* .kutu:nth-child(odd){
+  background: #e67e22;
+  }
+ */
+ /*------------------------*/
+/* çift sayılar için "even" ve ya sayının yanına"n" işareti koyulur
+.kutu:nth-child(2n){
+  background: #e67e22;
+} */
+/*
+.kutu:nth-child(even){
+  background: #e67e22;
+} */
+/*------------------------*/
+/* u ise altının katı
+.kutu:nth-child(6n){
+  background: #e67e22;
+} */
+
+/*------------------------*/
+/* ilk sutunu kapsar
+.kutu:nth-child(6n + 1){
+  background: #e67e22;
+} */
+
+/*------------------------*/
+/* capraz sıra şeklinde yapıldı 
+.kutu:nth-child(7n + 1){
+  background: #e67e22;
+}*/

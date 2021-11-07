@@ -188,5 +188,20 @@ a {
     justify-content: center;
     align-items:center;
   }
-  
 }
+
+/* Mobile*/
+
+@media (max-width:768px){
+  .article{
+    flex-direction: column;
+  }
+  #training .items{
+    flex-direction: column!important;
+  }
+  #training .items .item{
+    width: 100%;
+  }
+}
+
+/* Mobile End*/
