@@ -1,3 +1,42 @@
+/* navbar */
+.navbar-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0C1833;
+    color: floralwhite;  
+}
+nav{
+    height: 50px;
+}
+
+.navbar-cont input{
+    width: 550px;
+    height: 20px;
+}
+
+.navbar-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 23%;
+    
+}
+
+.search{
+   box-sizing: border-box;
+}
+
+.navbar-elements li{
+    margin: 20px;
+    
+}
+
+
+
+
+/* navbar end */
+
 /* left side-menu */
 .photo{
  max-width: 20pt;
