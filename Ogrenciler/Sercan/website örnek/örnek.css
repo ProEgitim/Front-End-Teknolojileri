@@ -33,3 +33,15 @@ nav{
 header{
     background-color: gray;
 }
+/* articles */
+
+.articles img{
+    width: 300px;
+}
+.articles{
+    display: flex;
+    flex-direction: row; 
+    width: 960px;
+    justify-content: flex-end;
+    
+}
