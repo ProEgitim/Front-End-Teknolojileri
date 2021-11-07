@@ -1,0 +1,37 @@
+body{
+    height: 100vh; /*ekran yüksekliği vh*/
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+/*hocaya sormayı unutmA(grid-gap..)*/
+div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(204, 242, 243);
+}
+.area{
+    display: grid; 
+    gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+}
+/*gölgelendirme*/
+div:nth-child(1){
+    box-shadow:0 3px 10px rgb(0 0 0 / 0.5); 
+}
+div:nth-child(2){
+    box-shadow: 10px 10px black;
+}
+div:nth-child(3){
+    box-shadow: 0 0 5px 5px red;
+}
+div:nth-child(4){
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+div:nth-child(5){
+    border-radius: 50%; /*kenarlık yuvarladık*/
+    box-shadow: 0 0 10px blueviolet;
+}
+div:nth-child(6){
+    box-shadow: 0 -10px 5px -5px rgb(219, 75, 123), 0 10px 5px -5px  rgb(202, 14, 130) ;
+}

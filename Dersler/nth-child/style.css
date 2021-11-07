@@ -15,3 +15,37 @@
   font-size: 300%;
   color: #fff;
 }
+/* .kutu:nth-child(1) {
+  background: #e67e22;
+} */
+/* .kutu:nth-last-child(3) {
+  background: #e67e22;
+} */
+/* Tek Sayılar */
+/* .kutu:nth-child(2n-1) {
+  background: #e67e22;
+} */
+/* .kutu:nth-child(odd) {
+  background: #e67e22;
+} */
+/* Tek Sayılar - Bitiş */
+/* Çift Sayılar */
+/* .kutu:nth-child(2n) {
+  background: #e67e22;
+} */
+/* .kutu:nth-child(even) {
+  background: #e67e22;
+} */
+/* Çift Sayılar - Bitiş */
+/* .kutu:nth-child(6n) {
+  background: #e67e22;
+} */
+/* .kutu:nth-child(6n + 1) {
+  background: #e67e22;
+} */
+/* .kutu:nth-child(7n + 1) {
+  background: #e67e22;
+} */
+/* .kutu:nth-child(6n + 2) {
+  background: #e67e22;
+} */
