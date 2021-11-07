@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.navbar{
+    width: 960px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.nav-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+.nav-link{
+    width: 100px;
+
+}
+.fhoto1{
+
+    width: 960px;
+    margin: auto;
+
+    
+}
+header{
+    background-color: gray;
+}
+/* articles */
+
+.articles img{
+    width: 300px;
+}
+.articles{
+    display: flex;
+    flex-direction: row; 
+    width: 960px;
+    justify-content: flex-end;
+    
+}
