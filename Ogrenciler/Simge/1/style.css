@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#nav-link{
+  
+  color: #fff;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4d3cd ;
+  color: #E6D088;
+
+}
+.navbar-title{
+  color: #726b7e;
+}
+
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  }
+
+#navbar ul li {
+   margin: 10px;
+
+}   
+#navbar ul li a:hover {
+  color: #fff
+
+/* Home */
+
+} 
+#home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home img{
+  max-width:100%;
+  height :auto;
+  
+}
+#home .name {
+  text-align:center ;
+ 
+}
+#home .name h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #695d7e;
+}
+
+#home .name h3{
+font-style: italic;
+color: #695d7e;
+
+
+}
+#home .egitim-buton{
+  margin-top: 40px;
+  background-color: #E6DFC5;
+  color: #695d7e;
+  padding: 10px 30px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+
+}
+#home .egitim-buton :hover{
+  background-color:#dfa3ee ;
+}
+
+
+/* Eğitimler */
+
+#training {
+  background-color: #BAB5A0;
+  color: #fff;
+  padding: 30px;
+  margin-top: 50px;
+  
+}
+
+#training .items{
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+
+}
+#training h2{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #4a405e;
+
+}
+#training .items .item{
+  width: 27%;
+  padding: 20px;
+}
+#training .items .item:hover{
+  opacity: 0.6;
+}
+
+
+#training .items .item h3{
+  margin: 20px;
+}
+/* Articles */
+#articles h2 {
+   text-align: center;
+   margin: 30px;
+   font-size: 25px;
+   color: #4a405e;
+}
+.article-container{
+   max-width:800px ;
+   margin-left: auto;
+   margin-right: auto;
+}
+.article{
+   display: flex;
+   margin: 30px;
+   
+}
+.item h3 {
+  text-align: center;
+  margin: 30px;
+  font-size: 25px;
+  color: #4a405e;
+}
+.item p{
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  color: #4a405e;
+
+}
+
+
+.article img {
+   width: 90%;
+
+}
+.article-container a:hover{
+   opacity: 0.6;
+}
+
+.article-info .article-title{
+   margin-bottom: 10px;
+   font-weight: bold;
+   color: #4a405e;
+   font-size: 22px;
+   
+   
+}
+
+.article-info .article-desc{
+   color: #4a405e;
+   font-size: 20px;
+   
+}
+/* footer */
+#contact {
+   background-color: #BAB5A0;
+   padding: 30px;
+   width: 500px;
+   height: 500px;
+   margin-left: 650px;
+   
+}
+#contact h2{
+   text-align: center;
+   margin: 30px;
+   color: #4a405e;
+   padding-top: 30px;
+}
+#contact-form{
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+.form-group label{
+   display: block;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   color: #4a405e;
+}
+
+.form-group input,
+.form-group textarea {
+   width: 100%;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #BAB5A0;
+  margin-top: 30px;
+  
+  
+}
+.social-icon{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* YAZI TİPLERİ DEĞİŞECEK */
+
+/*mobil*/
+
+
+@media (max-width:768px) {
+  .article{
+    flex-direction: column;
+  }
+  #training .items{
+    flex-direction: column !important;
+
+  }
+  #training .items .item{
+    width: 100%;
+}
+}

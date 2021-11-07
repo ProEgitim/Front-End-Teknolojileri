@@ -1,0 +1,17 @@
+.sayfa {
+  width: 960px;
+  margin: auto;
+}
+.kutu {
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: #3498db;
+  float: left;
+  border: 5px solid #34495e;
+  margin: 5px;
+  text-align: center;
+  font-size: 300%;
+  color: #fff;
+}
