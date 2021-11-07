@@ -42,3 +42,12 @@ p {
     background-color: coral;
   }
 }
+
+.item5 {
+  order: 2;
+  flex-grow: 4;
+}
+.item6 {
+  order: 0;
+  flex-grow: 2;
+}

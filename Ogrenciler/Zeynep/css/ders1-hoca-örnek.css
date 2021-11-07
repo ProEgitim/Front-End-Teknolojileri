@@ -1,0 +1,56 @@
+.container {
+  background-color: red;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.item {
+  background-color: yellowgreen;
+  margin: 20px;
+  padding: 30px;
+  font-size: 20px;
+
+}
+.item1 {
+  order: 3;
+}
+.item2 {
+  order: 2;
+  align-self: flex-start;
+}
+.item3 {
+  order: 1;
+}
+.item4 {
+  order: 0;
+}
+
+.item5 {
+  order: 2;
+  align-self: flex-start;
+
+}
+.item6 {
+  order: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+/*tablet*/
+@media (max-width: 1080px) {
+  .container {
+    background-color: purple;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      background-color: coral;
+    }
+
