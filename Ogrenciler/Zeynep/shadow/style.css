@@ -1,17 +1,19 @@
-body{
+body {
     height: 100vh;
-    margin: 0px;
+    margin: 0;
     display: grid;
     place-items: center;
 }
-div{
+
+div {
     width: 100px;
     height: 100px;
-    background-color: rgb(229, 227, 190);
+    background-color: beige;
 }
 
-.area{
+.area {
     display: grid;
+
     gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -23,17 +25,18 @@ div:nth-child(1) {
 div:nth-child(2) {
     box-shadow: 10px 10px black;
 }
-
 div:nth-child(3) {
-    box-shadow: 0 0 5px 5px rgb(211, 151, 151);
+    box-shadow: 0 0 5px 5px red;
 }
-
 div:nth-child(4) {
     box-shadow: 0 8px 8px -4px black;
-}
-
+  }
 
 div:nth-child(5) {
-    border-radius: 50%;
-    box-shadow: 0 8px 8px -4px black;
+    box-shadow: 0 0 10px black;
+border-radius: 50%;
+}
+
+div:nth-child(6) {
+    box-shadow: 0 -10px 5px -5px black, 0 10px 5px -5px ;
 }
