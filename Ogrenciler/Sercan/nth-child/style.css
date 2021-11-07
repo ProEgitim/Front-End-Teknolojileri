@@ -15,3 +15,35 @@
   font-size: 300%;
   color: #fff;
 }
+/* 
+.kutu:nth-last-child(3){
+  background-color: chocolate;
+} */
+
+/* .kutu:nth-child(1){
+  background-color: crimson;
+} */
+
+/* tek sayılar */
+/* .kutu:nth-child(odd){
+  background-color: crimson;
+} */
+
+/* çift sayılar */
+/* .kutu:nth-child(odd){
+  background-color:cyan;
+
+.kutu:nth-child(2n){
+  background-color: red;
+} */
+
+/* .kutu:nth-child(6n){
+  background-color: sienna;
+} */
+
+.kutu:nth-child(6n+1){
+  background-color: tomato;
+}
+
+
+
