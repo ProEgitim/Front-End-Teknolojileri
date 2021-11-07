@@ -1,0 +1,8 @@
+.text
+{
+    width: 300px;
+    height: 300px;
+    padding: 2px;
+    border: 1px solid brown;
+    overflow:auto;/*belirlenen aralıkların dışına çıkan bir yapı olursa scroll bar'a ekler*/
+}
