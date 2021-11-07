@@ -208,3 +208,16 @@ a
 {
     width: 50px;
 }
+@media(max-width: 768px)
+{
+
+  .article
+  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+  }
+}
+

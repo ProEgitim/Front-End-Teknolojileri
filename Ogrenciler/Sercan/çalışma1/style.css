@@ -15,4 +15,12 @@
 }
 #nav-cont {
   display: flex;
+  justify-content: stretch;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.nav-link {
+  list-style: none;
+  width: 50px;
 }
