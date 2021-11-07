@@ -45,9 +45,20 @@
   padding: 20px;
   width: 90%;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between;
   flex-direction: row;
   
+=======
+  justify-content: stretch;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.nav-link {
+  list-style: none;
+  width: 50px;
+>>>>>>> 5f881abe69aa94eb1650ceff98409c07c6c3cf6d
 }
 
 .new-vid1{

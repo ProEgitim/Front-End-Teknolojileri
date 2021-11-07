@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav id="navbar">
+        <h1 class="navbar-title">Varol Maksutoğlu</h1>
+        <ul>
+          <!-- linkler verilecek, tıklanınca ilgili bölüme sayfa kayacak - Ödev -->
+          <li><a class="nav-link" href="#home">Ana Sayfa</a></li>
+          <li><a class="nav-link" href="#training">Eğitimler</a></li>
+          <li><a class="nav-link" href="#articles">Makaleler</a></li>
+          <li><a class="nav-link" href="#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <img src="img/varol.jpg" alt="Varol Maksutoğlu Fotoğrafı" />
+      <div class="name">
+        <h2>Varol Maksutoğlu</h2>
+        <h3>Front End Developer</h3>
+      </div>
+      <a class="egitim-buton" href="#">Eğitimlere Git</a>
+    </section>
+    <section id="training">
+      <h2>Eğitimler</h2>
+      <div class="items">
+        <article class="item">
+          <h3>Html/Css Eğitimi</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+            consequatur.
+          </p>
+        </article>
+        <article class="item">
+          <h3>Javascript Eğitimi</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+            consequatur.
+          </p>
+        </article>
+        <article class="item">
+          <h3>VueJS Eğitimi</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+            consequatur.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="articles">
+      <h2>Makaleler</h2>
+      <!-- Makalelere tıklanınca makalenin sayfası açılacak bu ödevdir -->
+      <div class="article-container">
+        <a href="/Ogrenciler/Hiranur-Ozkan-Horuzoglu/1/makale1.html">
+          <article class="article">
+            <div>
+              <img src="img/index.jpg" alt="Makale" />
+            </div>
+            <div class="article-info">
+              <div class="article-title">Makale 1</div>
+              <div class="article-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati placeat asperiores voluptatum, doloremque itaque fugit
+                officia cum? Blanditiis, repudiandae totam.
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="article">
+            <div>
+              <img src="img/index.jpg" alt="Makale" />
+            </div>
+            <div class="article-info">
+              <div class="article-title">Makale 2</div>
+              <div class="article-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati placeat asperiores voluptatum, doloremque itaque fugit
+                officia cum? Blanditiis, repudiandae totam.
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="article">
+            <div>
+              <img src="img/index.jpg" alt="Makale" />
+            </div>
+            <div class="article-info">
+              <div class="article-title">Makale 3</div>
+              <div class="article-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati placeat asperiores voluptatum, doloremque itaque fugit
+                officia cum? Blanditiis, repudiandae totam.
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="#">
+          <article class="article">
+            <div>
+              <img src="img/index.jpg" alt="Makale" />
+            </div>
+            <div class="article-info">
+              <div class="article-title">Makale 4</div>
+              <div class="article-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati placeat asperiores voluptatum, doloremque itaque fugit
+                officia cum? Blanditiis, repudiandae totam.
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+    <footer id="contact">
+      <h2>Bana Ulaşın</h2>
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="name">İsim</label>
+            <input type="text" name="name" id="name" placeholder="İsim" />
+          </div>
+          <div class="form-group">
+            <label for="mail">E-Posta</label>
+            <input type="email" name="mail" id="mail" placeholder="E-Posta" />
+          </div>
+          <div class="form-group">
+            <label for="text-area">Mesaj</label>
+            <textarea
+              name="text-area"
+              id="text-area"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="social">
+        <a class="social-icon" href="https://facebook.com/waroi" target="_blank"
+          ><img src="img/facebook.png" alt="Facebook"
+        /></a>
+        <a
+          class="social-icon"
+          href="https://instagram.com/waroi"
+          target="_blank"
+          ><img src="img/instagram.png" alt="Instagram"
+        /></a>
+        <a class="social-icon" href="https://twitter.com/waroi" target="_blank"
+          ><img src="img/social-media.png" alt="Twitter"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

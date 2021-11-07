@@ -157,15 +157,18 @@ a {
 }
 /* Footer-End */
 /* Yazı tipleri değişecek - Ödev */
-.imageMakale {
-  margin: 50px;
+
+/* Mobile */
+@media (max-width: 768px) {
+  .article {
+    flex-direction: column;
+  }
+  #training .items {
+    flex-direction: column !important;
+  }
+  #training .items .item {
+    width: 100%;
+  }
 }
-.headerMakale {
-  text-align: center;
-}
-.containerTextMakale {
-  max-width: 800px;
-}
-.textMakale {
-  padding: 20px;
-}
+
+/* Mobile-End */
