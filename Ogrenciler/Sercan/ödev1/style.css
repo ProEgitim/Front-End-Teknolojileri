@@ -1,0 +1,105 @@
+/* navbar */
+.navbar-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0C1833;
+    color: floralwhite;  
+}
+nav{
+    height: 50px;
+}
+
+.navbar-cont input{
+    width: 550px;
+    height: 20px;
+}
+
+.navbar-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 23%;
+    
+}
+
+.search{
+   box-sizing: border-box;
+}
+
+.navbar-elements li{
+    margin: 20px;
+    
+}
+
+
+
+
+/* navbar end */
+
+/* left side-menu */
+.photo{
+ max-width: 20pt;
+ }
+
+
+.menu-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+ 
+}
+
+.menu h4{
+    margin-top: 100px;
+    margin-left: 40px;   
+}
+
+
+
+.menu-list{
+    margin: 20px;
+}
+.menu-elements .menu-list:hover{
+color: floralwhite;
+
+}
+/* left side-menu end */
+/*left side- your favourite */
+.fav-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;  
+}
+.fav-list{
+    margin: 20px;
+}
+#fav-head{
+margin-top: 100px;
+margin-left: 40px;   
+}   
+
+.fav-elements .fav-list:hover{
+    color: floralwhite;
+ }
+
+.twt img{
+    width: 15pt;
+
+}
+
+.left-side{
+    overflow: auto;
+    width: 280px;
+    height: 700px;
+    background-color: #0C1833;
+    color: grey;
+}
+
+
+.twt button{
+    width: 300px;
+}
+/*left side- your favourite end */
