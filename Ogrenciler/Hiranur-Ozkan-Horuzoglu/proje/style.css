@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #151728;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+#leftcol {
+  width: 20%;
+  color: #5b5f6e;
+}
+
+#leftcol h3 {
+  font-size: 16px;
+  padding: 20px;
+}
+#leftcol h3 i {
+  padding-right: 15px;
+}
+.side-wrapper {
+  margin-left: 25px;
+}
+.logo {
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+}
+#leftcol .side-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.side-menu ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.side-menu ul li:hover {
+  color: #fff;
+}
+.side-menu ul li i {
+  padding-right: 15px;
+}
+/*-------------*/
+#menu {
+  background-color: coral;
+  width: 60%;
+  background-image: url(../proje/solid-color-.jpeg);
+}
+
+#menu .search-bar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #151728;
+}
+.search-bar input {
+  height: 30px;
+  padding-left: 30px;
+  background-color: transparent;
+}
+#menu .right-side-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+}
+.profile {
+  position: relative;
+  height: 40vh;
+  min-height: 250px;
+  max-height: 350px;
+  z-index: 1;
+}
+.profile .profile-name {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 200px;
+}
+.profile img {
+  position: relative;
+  height: 40vh;
+  min-height: 250px;
+  max-height: 350px;
+  z-index: 1;
+  width: -webkit-fill-available;
+  object-fit: cover;
+  padding: 15px;
+}
+#menu .my-photo img {
+  position: absolute;
+  z-index: 1;
+  top: 180px;
+  left: 315px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #151728;
+}
+
+.profile-menu ul {
+  display: flex;
+  margin: 15px;
+  list-style-type: none;
+  left: 500px;
+  width: auto;
+  height: auto;
+  background-color: #151728;
+  padding-left: 200px;
+}
+.profile-menu ul li {
+  display: flex;
+  padding: 20px 16px;
+  color: #5b5f6e;
+}
+.profile-menu .profile-menu-link-active {
+  color: #fff;
+  border-bottom: 3px solid #1488fa;
+  background-color: #5b5f6e;
+}
+.profile-menu .profile-menu-link:hover {
+  color: #fff;
+  border-bottom: 3px solid #1488fa;
+  background-color: #5b5f6e;
+}
+
+/*-----------------*/
+#rightcol {
+  width: 20%;
+  background-color: rgb(155, 63, 63);
+}

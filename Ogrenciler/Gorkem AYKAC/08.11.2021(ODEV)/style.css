@@ -1,0 +1,159 @@
+a 
+{
+     text-decoration: none;
+}
+a:hover
+{
+    color: cyan;
+}
+
+header div
+{
+    border-radius: 20px;
+    background-color: wheat;
+    height: 200px;
+}
+
+header div nav
+{
+    height: 200px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+header div nav img
+{
+    height: 200px;
+    width: 1200px;
+
+}
+header div nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+header div nav ul li
+{
+    font-size: 20px;
+    margin: 15px;
+}
+/*HEADER*/
+section
+{
+    height: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+#section-first
+{
+
+    margin-top: 30px;
+    width: 960px;
+    height: 360px;
+
+}
+#section-first img
+{
+
+    border: cadetblue;
+    border-radius: 19px;
+    width: 960px;
+    height: 360px;
+
+}
+#section-second
+{
+
+    
+    width: 960px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:baseline;
+    
+}
+#section-second div
+{
+    height: 360px;
+    width: 290px;  
+}
+#section-second img
+{
+    height: 180px;
+    width: 290px;
+}
+#section-third
+{
+    width: 960px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    
+}
+#section-third div
+{
+    width: 460px;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:baseline;
+    align-items: center;
+    
+}
+#section-third div p
+{
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:baseline;
+    overflow: auto;
+}
+#section-third img
+{
+    width: 450px;
+    height: 360px;
+    
+    
+}
+/*SECTION*/
+footer
+{
+    height: 200px;
+    background-color: wheat;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+footer div
+{
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+footer div div
+{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+    
+

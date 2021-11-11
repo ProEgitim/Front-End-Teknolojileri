@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Navbar*/
+
+.navbar {
+    background-color: black;
+
+}
+
+
+
+
+#navbar {
+    margin: 0; !important;
+    color: white;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+!important;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-family: Poppins fantasy;
+}
+
+#navbar .navbar-title {
+    padding: 30px;
+
+    }
+
+#navbar .navbar-title a {
+    text-decoration: none;
+    color: white;
+    margin-left:50 px;
+}
+
+#navbar .navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.navbar li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+
+}
+
+/*Navbar-End*/
+
+
+/*Home*/
+
+/*#pictures {*/
+/*    max-width: 960px;*/
+/*    align-content: center;*/
+/*    }*/
+
+#pictures .first_picture {
+margin-top: 20px;
+}
+
+
+#pictures .items {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.items div img {
+    width: 100%;
+
+}
+
+.item {
+    width: 30%;
+
+}
+
+
+
+
+#pictures .last_picture {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+
+#pictures .title_content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/*Home-End*/
+
+
+/*Footer*/
+
+.footer {
+
+    background-color: #201f26;
+
+}
+
+
+
+
+#footer {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+line-height: 40px;
+    justify-content: space-between;
+
+}
+
+
+#footer .link-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .title {
+    padding: 10px;
+}
+
+#footer ul {
+
+}
+
+/*Footer-End*/

@@ -1,0 +1,205 @@
+/* navbar */
+body{
+    display: flex;
+    flex-direction: row;
+}
+    
+
+
+
+
+
+
+
+
+h2{
+height: 20px;
+}
+
+
+
+
+/* navbar end */
+
+/* left side-menu */
+.photo{
+ max-width: 20pt;
+ }
+
+
+.menu-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+ 
+}
+
+.menu h4{
+    margin-top: 100px;
+    margin-left: 40px;   
+}
+
+
+
+.menu-list{
+    margin: 20px;
+}
+.menu-elements .menu-list:hover{
+color: floralwhite;
+
+}
+/* left side-menu end */
+/*left side- your favourite */
+.fav-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;  
+}
+.fav-list{
+    margin: 20px;
+}
+#fav-head{
+margin-top: 100px;
+margin-left: 40px;   
+}   
+
+.fav-elements .fav-list:hover{
+    color: floralwhite;
+ }
+
+.twt img{
+    width: 15pt;
+
+}
+
+.left-side{
+    overflow: auto;
+    width: 280px;
+    height: 700px;
+    background-color: #0355D0;
+    color: #000;
+    
+}
+
+
+.twt button{
+    width: 300px;
+}
+/*left side- your favourite end */
+
+/* home */
+.main-cont{
+    width: 760px;
+    
+}
+input{
+    width: 760px;
+    background-color:#0355D0 ;
+    
+    
+}
+
+::placeholder{
+    color: black;
+}
+
+
+
+.main-photo{
+width: 760px;
+height: 360px;
+z-index: -1;
+
+
+
+
+}
+
+.profile{
+    bottom: 150px;
+    width: 150px;
+    position: absolute;
+    top: 200px;
+    border-radius: 50%;
+}
+label{
+    top: 300px;
+    position: absolute;
+    left: 450px;
+    border: 2px solid;
+    color: blue;
+    background-color: burlywood;
+}
+
+.main-menu{
+    
+    position: absolute;
+    top: 373px;
+    background-color: darkblue;
+    width: 760px;
+    height: 45px;
+    font-size: 15pt;
+    
+       
+}
+.main-menu a{
+    color: thistle;
+    margin: 8px;
+    text-decoration: none;
+    
+    
+}
+.main-menu a:nth-child(1){
+    background-color: black;
+    
+    
+}
+
+
+.main-menu a:hover:not(.active){
+    
+    margin: 10px;
+    background-color: black;
+    text-decoration: underline;
+    
+    
+    
+    
+    
+}
+
+
+/* home end */
+
+/* time line */
+.intro-box{
+    width: 300px;
+    height: 280px;
+    background-color: #0355D0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.intro-box img{
+    width: 15pt;
+    margin: 10px;
+}
+
+.intro-header{
+    display: flex;
+    flex-direction: row;
+   
+}
+.intro-header img{
+    margin-left: 130px;
+}
+
+.intro-item{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}

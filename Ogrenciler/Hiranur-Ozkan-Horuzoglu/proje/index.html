@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HİRANUR PROJE</title>
+    <script
+      src="https://kit.fontawesome.com/9c23f69017.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="leftcol">
+        <div class="logo">ULTRANET</div>
+        <div class="side-wrapper">
+          <div class="side-title">MENU</div>
+          <div class="side-menu">
+            <ul>
+              <li><i class="fas fa-home"></i>Home</li>
+              <li><i class="fas fa-book-open"></i>Latest News</li>
+              <li><i class="fas fa-map-marker-alt"></i>Explore</li>
+              <li><i class="fas fa-file-alt"></i>Files</li>
+              <li><i class="fas fa-file-image"></i>Galery</li>
+              <li><i class="fas fa-calendar-check"></i>Calender</li>
+            </ul>
+          </div>
+          <div class="side-title">YOUR FAVOURITE</div>
+          <div class="side-menu">
+            <ul>
+              <li><i class="fas fa-tree"></i>Foresto</li>
+              <li><i class="fab fa-earlybirds"></i>Birds</li>
+              <li><i class="fab fa-canadian-maple-leaf"></i>Nature</li>
+              <li><i class="fas fa-paw"></i>Animals</li>
+              <li><i class="fas fa-motorcycle"></i>Motobike</li>
+              <li><i class="fas fa-child"></i>Dance</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <h3><i class="fab fa-twitter"></i>Follow Me On Twitter</h3>
+      </div>
+
+      <div id="menu">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button class="right-side-button" @click="rightSide = !rightSide">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="profile">
+          <img src="../proje/soft.jpeg" alt="naturel" />
+          <div class="profile-name">HİRANUR ÖZKAN HORUZOĞLU</div>
+        </div>
+        <div class="my-photo">
+          <img src="../proje/hiranur.jpeg" alt="hiranur-image" />
+        </div>
+
+        <div class="profile-menu">
+          <ul>
+            <li class="profile-menu-link-active"><a>Timeline</a></li>
+            <li class="profile-menu-link"><a>About</a></li>
+            <li class="profile-menu-link"><a>Friends</a></li>
+            <li class="profile-menu-link"><a>Photos</a></li>
+            <li class="profile-menu-link"><a>More</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="rightcol">CHAT</div>
+    </div>
+  </body>
+</html>
