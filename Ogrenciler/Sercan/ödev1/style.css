@@ -1,14 +1,32 @@
 /* navbar */
+
+    
+
+
+
+
+
 .navbar-cont{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #0C1833;
-    color: floralwhite;  
+    color: floralwhite; 
+    align-items: baseline; 
 }
-nav{
-    height: 50px;
+
+.nav-title{
+height: 20px;
+
 }
+.navbar-cont .nav-search{
+  
+  height: 20pt;
+}
+
+
+
+
 
 .navbar-cont input{
     width: 550px;
@@ -18,14 +36,17 @@ nav{
 .navbar-elements{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 23%;
+    align-items: stretch;
+    width: 33%;
+    height: 15pt;
     
 }
 
-.search{
-   box-sizing: border-box;
+.navbar-cont img{
+    width: 25px;
 }
+
+
 
 .navbar-elements li{
     margin: 20px;
@@ -103,3 +124,13 @@ margin-left: 40px;
     width: 300px;
 }
 /*left side- your favourite end */
+
+/* home */
+.item{
+    width: 33%;
+}
+
+
+
+
+/* home end */
