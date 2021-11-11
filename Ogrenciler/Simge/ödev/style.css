@@ -216,3 +216,20 @@ a:hover {
 
    }
 
+   .page-container h3{
+     text-align:left;
+     color: #9c9cab;
+   
+ }
+
+ .page-container a{
+  color: #9c9cab;
+  text-decoration: none;
+  }
+  
+  a:hover {
+  color: #fff;
+  }
+  
+
+
