@@ -1,94 +1,77 @@
-
-
-
 #nav-link {
-    color: #fff;
-   
+  color: #fff;
 }
 
 a {
-    text-decoration: none;
-    
-  }
+  text-decoration: none;
+}
 
-  #navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d4d3cd ;
-    color: #E6D088;
-  
-  }
-  .navbar-title{
-    color: #726b7e;
-    margin-left: 500px;
-  }
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4d3cd;
+  color: #e6d088;
+}
+.navbar-title {
+  color: #726b7e;
+  margin-left: 500px;
+}
 
-  #navbar ul {
-    list-style-type: none;
-    display: flex;
-    margin-right: 500px;
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 500px;
+}
 
-    }
+#navbar ul li {
+  margin: 10px;
+}
 
-    #navbar ul li {
-        margin: 10px;
-     
-     }  
+.intro {
+  height: 760px;
+}
 
-     .intro{
-        height: 760px;
-       
-    }
+#intro {
+  display: flex;
+  flex-direction: column;
+}
 
-     #intro {
-        display: flex;
-        flex-direction: column;
-     }
+#intro img {
+  height: 400px;
+  width: 1700px;
+  padding: 70px;
+}
 
-     #intro img{
-         height: 400px;
-         width: 1700px;
-         padding: 70px;
-     } 
+#picture1 {
+  display: flex;
+  flex-direction: column;
+}
 
-     #picture1 {
-        display: flex;
-        flex-direction: column;
-     }
+#picture1 img {
+  height: 500px;
+  width: 500px;
+  padding: 70px;
+}
 
-     #picture1 img{
-        height: 500px;
-        width: 500px;
-       padding: 70px;
-    } 
+#picture2 {
+  display: flex;
+  flex-direction: column;
+}
 
+#picture2 img {
+  height: 500px;
+  width: 500px;
+  padding: 70px;
+}
 
-    #picture2 {
-        display: flex;
-        flex-direction: column;
-     }
+#picture3 {
+  display: flex;
+  flex-direction: column;
+}
 
-     #picture2 img{
-        height: 500px;
-        width: 500px;
-       padding: 70px;
-    }
-
-    #picture3 {
-        display: flex;
-        flex-direction: column;
-     }
-
-     #picture3 img{
-        height: 500px;
-        width: 500px;
-       padding: 70px;
-    }
-
-   
-
-        
-      
-        
-   
+#picture3 img {
+  height: 500px;
+  width: 500px;
+  padding: 70px;
+}
