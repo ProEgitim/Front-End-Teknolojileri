@@ -92,8 +92,12 @@ margin-left: 40px;
 /* home */
 .main-cont{
     width: 760px;
-    
+   overflow: auto;
+   margin-right: 10px;
+   display: flex;
+   flex-direction: column;
 }
+
 input{
     width: 760px;
     background-color:#0355D0 ;
@@ -174,11 +178,30 @@ label{
 /* home end */
 
 /* time line */
+.timeline-container{
+    width: 760px;
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-left{
+    width: 310px;
+    margin-left:5px;
+    margin-right: 15px;
+}
+
+.timeline-right{
+    width: auto;
+    margin-top: 40px;
+    
+}
+
 .intro-box{
-    width: 300px;
-    height: 280px;
+    width: 310px;
+    height: 300px;
     background-color: #0355D0;
     margin-top: 40px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -187,6 +210,10 @@ label{
 .intro-box img{
     width: 15pt;
     margin: 10px;
+}
+
+.intro-header img{
+    width: 30px;
 }
 
 .intro-header{
@@ -202,4 +229,259 @@ label{
     display: flex;
     flex-direction: row;
     margin: 10px;
+}
+
+.date-box{
+    padding: 5px;
+    background-color: #0355D0;
+    width: 300px;
+    height: 300px;
+}
+
+.date-box img{
+    width: 300px;
+    height: 280px;
+    margin-top: 15px;  
+    margin-bottom: 15px;
+    z-index: -1;
+}
+.date-box .header{
+ position: absolute;
+ top: 1003px;
+ background-color: #0355D0;
+}
+
+.date-box .date{
+    position: absolute;
+    top: 1020px;
+    background-color: #0355D0;
+   }
+   .date-box .dec{
+       border: 1px solid #000;
+       color: #000;
+       position: absolute;
+       top: 825px;
+       left: 350px;
+       border-width: 5px;
+   }
+  
+   .date-box .day{
+    border: 1px solid #000;
+    border-width: 5px;
+    color: #000;
+    top: 800px;
+    position: absolute;
+    left: 350px;
+}
+
+.ypage-box{
+    width: 310px;
+    height: 330px;
+    background-color: #0355D0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ypage-box img{
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 55%;
+}
+
+.ypage-header img{
+    width: 30px;
+    height: 30px;
+}
+
+.ypage-header{
+    display: flex;
+    flex-direction: row;
+   
+}
+.ypage-header img{
+    margin-left: 130px;
+}
+
+.ypage-item{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+/* timeline-right */
+
+.share-box{
+width: 430px;
+height: 200px;
+background-color: #0355D0;
+
+
+}
+
+.share-menu a{
+    margin: 20px;
+    
+
+}
+.share-menu a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 18pt;
+    color: gray;
+   
+}
+
+.share-menu a:hover{
+   background-color: darkblue ;
+   border-radius: 30%;
+
+   
+}
+.share-menu a:nth-child(1){
+    background-color: darkblue;
+}
+
+.share-profile{
+display: flex;
+flex-direction: row;
+
+}
+.share-profile img{
+width: 70px;
+border-radius: 50%;
+}
+.share-profile input{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    top: 480px;
+    left: 700px;
+}
+.share-profile ::placeholder{
+   color: hotpink;
+}
+
+
+.share-footer{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.share-footer div{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+.share-footer img{
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+}
+
+.share-footer button{
+    width: 90px;
+    height: 50px;
+    border-radius: 30%;
+    background-color: aqua;
+    
+}
+.album-box{
+    background-color: #0355D0;
+    margin-top: 15px;
+}
+.album-head{
+    display: flex;
+    flex-direction: row;
+}
+
+.album-profile img{
+    width: 70px;
+    border-radius: 50px;
+    margin: 0 20px 0 20px ;
+}
+
+.album-dot{
+    width: 15pt;
+    margin-left: 30px;
+}
+
+.album-photo{
+    display: flex;
+    flex-direction: row;
+}
+
+.album-photo2 img{
+    width: 130px;
+    height: 130px;
+    margin: 1px;
+    border-radius: 10%;
+}
+
+.album-photo1 img{
+    width: 150px;
+    height: 200px;
+    margin: 2px;
+    border-radius: 10%;
+}
+
+/*  Right Side */
+
+.right-side{
+    width: 300px;
+    height: 700px;
+    overflow: auto;
+    background-color: #0355D0;
+}
+
+.right-nav{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.right-nav img{
+    width: 20pt;
+    margin: 15px;
+}
+
+.right-nav select{
+ border-style: hidden;
+}
+
+
+
+.right-stories img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.stories-pht{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .right-contacts img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.contact-pht .dott img{
+    width: 15pt;
+    height: 15pt;
+}
+
+.contact-pht{
+    display: flex;
+    flex-direction: row;
 }
