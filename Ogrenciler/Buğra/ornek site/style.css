@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+}
+.header {
+  background-color: orange;
+
+}
 .nav-link {
     color: #fff;
   }
@@ -8,14 +15,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: orange;
     color: black;
-    padding: 30px;
+    padding: 10px;
+    width: 960px;
+    margin: 0 auto;
+
   }
   .navbar-title {
       color: cornflowerblue;
       text-decoration-style: solid;
       width: 20px;
+  }
+  .navbar-title img {
+      width: 200px;
   }
   .navbar-web {
       display: flex;
@@ -30,13 +42,75 @@
   #navbar ul li a:hover {
     color: #88888a;
   }
-  .picture {
-      height: 360px;
-      width: 960px;
+  #home {
+   width: 960px;
+   margin: 0 auto;
+   background-color: whitesmoke;
+  }
+  .picture-two {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+ 
+  }
+
+  .picture-two .haber {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+
+    margin: 10px;  /* and that, will result in a 10px gap */
+  }
+  .picture-info1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 200px;
+
+  }
+  .picture-title1 {
+      display: flex;
+      justify-content: space-around;
+      margin-left: 50px;
+  }
+  .picture-one {
+      height: 300px;
+      width: 100%;
       display: flex;
       flex-direction: row;
-      align-items: center;
-      margin-left:auto;
-      margin-right: auto;
-      padding: 10px;
+      padding: 10px 0;
   }
+
+  .picture-one img {
+    width: 100%;
+  }
+  .picture-four {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 5px;
+    padding-left: 20px;
+
+  }
+  .picture-info4 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .picture-title4 {
+    display: flex;
+    justify-content: space-around;
+}
+.article-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
