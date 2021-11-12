@@ -52,11 +52,14 @@
         </div>
         <div class="profile-container">
           <div class="profile">
-            <img src="../proje/lavanta_gezikazani.jpeg" alt="naturel" />
+            <img src="./lavanta_gezikazani.jpeg" alt="naturel" />
             <div class="profile-name">HİRANUR ÖZKAN HORUZOĞLU</div>
           </div>
           <div class="my-photo">
-            <img src="../proje/hiranur.jpeg" alt="hiranur-image" />
+            <img
+              src="./hiranur.jpeg"
+              alt="hiranur-image"
+            />
           </div>
 
           <div class="profile-menu">
@@ -94,7 +97,7 @@
             </div>
             <div class="event-box">
               <div class="event-wrapper">
-                <img src="../proje/lavanta-yağı.jpeg" class="flowers-img" />
+                <img src="./lavanta-yağı.jpeg" class="flowers-img" />
                 <div class="event-date">
                   <div class="event-month">Jeb</div>
                   <div class="event-day">02</div>
@@ -109,15 +112,15 @@
                 <button class="intro-menu"></button>
               </div>
               <div class="user">
-                <img src="../proje/face-1.jpeg" alt="" class="user-img" />
+                <img src="./face-1.jpeg" alt="" class="user-img" />
                 <div class="username">Michael Jackson</div>
               </div>
               <div class="user">
-                <img src="../proje/face-2.jpeg" alt="" class="user-img" />
+                <img src="./face-2.jpeg" alt="" class="user-img" />
                 <div class="username">Johnny Depp</div>
               </div>
               <div class="user">
-                <img src="../proje/face-3.jpeg" alt="" class="user-img" />
+                <img src="./face-3.jpeg" alt="" class="user-img" />
                 <div class="username">Rihanna</div>
               </div>
             </div>
@@ -130,7 +133,10 @@
                 <a class="status-menu-item" href="#">Videos</a>
               </div>
               <div class="status-main">
-                <img src="../proje/hiranur.jpeg" class="status-img" />
+                <img
+                  src="./hiranur.jpeg"
+                  class="status-img"
+                />
                 <textarea
                   class="status-textarea"
                   placeholder="Write something to Hiranur.."
@@ -146,13 +152,139 @@
                 <a href="#" class="status-action"
                   ><i class="fas fa-laugh"></i>Mood</a
                 >
+                <button class="status-share">Share</button>
               </div>
-              <button class="status-share">Share</button>
+            </div>
+            <div class="album box">
+              <div class="status-main">
+                <img
+                  src="./hiranur.jpeg"
+                  class="status-img"
+                />
+                <div class="album-detail">
+                  <div class="album-title">
+                    <strong>Hiranur Ö. Horuzoğlu</strong>
+                    create new <span>album</span>
+                  </div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">
+                when the bass drops,so do my problems.
+                <div class="album-photos">
+                  <img src="./lavanta1.jpeg" alt class="album-photo" />
+                  <div class="album-right">
+                    <img src="./lavanta2.jpeg" alt class="album-photo" />
+                    <img src="./lavanta3.jpeg" alt class="album-photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="album-actions">
+                <a href="#" class="album-action">
+                  <i class="far fa-heart"></i>87
+                </a>
+                <a href="#" class="album-action">
+                  <i class="far fa-comment"></i>20
+                </a>
+                <a href="#" class="album-action">
+                  <i class="fas fa-retweet"></i>45
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="rightcol">CHAT</div>
+      <div class="right-side" :class="{'active': rightSide } ">
+        <div class="account">
+          <button class="account-button">
+            <i class="fas fa-envelope"></i>
+          </button>
+          <button class="account-button2">
+            <i class="far fa-bell"></i>
+          </button>
+          <span class="account-user">
+            Hiranur Ö. H.
+            
+            <img src="./hiranur.jpeg" alt class="account-profile">
+            <span>▼</span>
+          </span>
+        </div>
+        <div class="side-wrapper stories">
+          <div class="side-title">STORIES</div>
+          <div class="user">
+            <img src="./hiranur.jpeg" alt class="user-img">
+            <div class="username">Hiranur Özkan
+              <div class="album-date">12 hours ago</div>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./hiranur.jpeg" alt class="user-img">
+            <div class="username">Hiranur Özkan
+              <div class="album-date">12 hours ago</div>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./hiranur.jpeg" alt class="user-img">
+            <div class="username">Hiranur Özkan
+              <div class="album-date">12 hours ago</div>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./hiranur.jpeg" alt class="user-img">
+            <div class="username">Hiranur Özkan
+              <div class="album-date">12 hours ago</div>
+            </div>
+          </div>
+        </div>
+        <div class="side-wrappers contacts">
+          <div class="side-title2">CONTACTS</div>
+          <div class="user">
+            <img src="./hiranur.jpeg" class="user-img">
+            <div class="username">
+             Hiranur Özkan 
+             <div class="user-status idle"></div>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./hiranur.jpeg" class="user-img">
+            <div class="username">
+             Hiranur Özkan 
+             <div class="user-status"></div>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./hiranur.jpeg" class="user-img">
+            <div class="username">
+             Hiranur Özkan 
+             <div class="user-status idle"></div>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./hiranur.jpeg" class="user-img">
+            <div class="username">
+             Hiranur Özkan 
+             <div class="user-status"></div>
+            </div>
+          </div>
+          <div class="user">
+            <img src="./hiranur.jpeg" class="user-img">
+            <div class="username">
+             Hiranur Özkan 
+             <div class="user-status idle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="search-bar right-search">
+          <input type="text" placeholder="Search" />
+          <div class="search-bar-svgs">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-pencil-alt"></i>
+          </div>
+         </div> 
+        </div>
+      </div>
     </div>
   </body>
 </html>
