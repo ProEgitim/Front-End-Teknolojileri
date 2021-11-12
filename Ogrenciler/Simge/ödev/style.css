@@ -11,7 +11,7 @@
   
   position: relative;
   width:300px;
-  height: 700px;
+  height: 1200px;
   margin-left: 0px;
   
   
@@ -58,7 +58,7 @@
   margin-left: 300px;
   position: relative;
   margin: 0 auto;
-  top: -700px; 
+  top: -1200px; 
   left: 55px;
 }
 
@@ -88,7 +88,7 @@
   height: 1000px;
   margin: 0 auto;
   left: 800px;
-  top: -758px;
+  top: -1258px;
   
 }
 
@@ -127,7 +127,7 @@
   width:1230px;
   height: 400px;
   margin:0 auto;
-  top: -1720px;
+  top: -2220px;
   position: relative;
   left: 300px;
   padding: 30px;
@@ -138,7 +138,7 @@
   background-color: #151728;
   width:1230px;
   height: 70px;
-  top: -1755px;
+  top: -2260px;
   position: relative;
   left: 330px;
   border-bottom-right-radius: 6px;
@@ -154,7 +154,6 @@
   font-size: 17px;
   margin: 0 auto;
  
-
 
 }
 a:hover {
@@ -177,6 +176,15 @@ a:hover {
     color: #9c9cab;
   
 }
+
+.intro-container h3{
+    text-align:left;
+    color: #9c9cab;
+  
+}
+
+
+
 
 
 
@@ -233,3 +241,102 @@ a:hover {
   
 
 
+  .post-container{
+
+    background-color: #fff;
+    width:300px;
+    height: 700px; 
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    right: 465px;
+    top: -2250px;
+
+   }
+
+
+   /* share-bar  */ 
+
+   .share-container{
+
+    background-color: #151728;
+    width: 900px;
+    height: 200px; 
+    border-radius: 5px;
+    position: relative;
+    right: -660px;
+    top: -2950px;
+
+
+   }
+
+   .share-container img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: relative;
+    right: 230px;
+    top: 65px;
+   
+   }
+
+
+   .share-bar a {
+    float:left;
+    color: #9c9cab;
+    padding: 20px 20px ;
+    text-decoration: none;
+    font-size: 17px;
+    top: 10px;
+    
+
+  }
+
+  a:hover {
+    background-color: #1b1d2e;
+    border-radius: 10%;
+    
+    }
+
+
+    .share-container button {
+      border-radius: 10%;
+      width: 90px;
+      height: 40px;
+      color: #fff;
+      background-color: #1b86f9;
+      margin: auto;
+      box-shadow: 0 0 10px #1b86f9;
+      position: relative;
+      top: 50px;
+      right: -780px
+     }
+
+     #query{
+
+    object-fit: cover;
+    position: relative;
+    right: -90px;
+    top: 10px;
+
+     }
+    
+
+/* share-bar  */ 
+
+   .share-container{
+
+    background-color: #151728;
+    width: 900px;
+    height: 200px; 
+    border-radius: 5px;
+    position: relative;
+    right: -660px;
+    top: -2950px;
+
+
+   }
+
+
+   
