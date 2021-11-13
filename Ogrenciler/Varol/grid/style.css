@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template: 60px 40px 400px 100px / 3fr 1fr;
+  grid-template-areas:
+    "k1 k1"
+    "k2 k2"
+    "k3 k4"
+    "k5 k5";
+}
+
+.container div {
+  text-align: center;
+  font-size: 24px;
+}
+.kutu-1 {
+  background-color: purple;
+  grid-area: k1;
+}
+.kutu-2 {
+  background-color: orangered;
+  grid-area: k2;
+}
+.kutu-3 {
+  background-color: red;
+  grid-area: k3;
+}
+.kutu-4 {
+  background-color: greenyellow;
+  grid-area: k4;
+}
+.kutu-5 {
+  background-color: aqua;
+  grid-area: k5;
+}
