@@ -2,6 +2,14 @@
   margin: 0;
 }
 .container {
+  display: grid;
+  /*grid-template-rows: 200px 300px 200px;--/--row satır anlamında-- columns sutun anlamına geliyor*/
+ /* grid-template-columns: 200px 2fr 1fr; --/--fr demek 2katı anlamına geliyor*/
+ /* grid-template:200px 300px 200px / 200px 2fr 1fr; --/--birincisisatır-ikincisi sutun*/
+ /*grid-template: 200px 300px 200px /300px repeat(2,1fr) ; */
+ /*grid-template: 200px 300px 200px / 200px repeat(2, minmax(100px,1fr)) ; */
+ grid-template: repeat(4,100px) / repeat(3, minmax(100px, 200px)) ;
+
 }
 
 .container div {
@@ -10,6 +18,9 @@
 }
 .box-1 {
   background-color: forestgreen;
+  grid-column-start: 2 ;
+  grid-column-end: span 2; /*iki tane alan kaplasın demek span işareti*/
+  
 }
 .box-2 {
   background-color: orangered;
@@ -22,6 +33,7 @@
 }
 .box-5 {
   background-color: orange;
+  grid-column-start: 2;
 }
 .box-6 {
   background-color: burlywood;
