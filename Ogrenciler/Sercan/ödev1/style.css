@@ -485,3 +485,8 @@ border-radius: 50%;
     display: flex;
     flex-direction: row;
 }
+
+.dott{
+    margin-top: 15px;
+    margin-left: 20px;
+}
