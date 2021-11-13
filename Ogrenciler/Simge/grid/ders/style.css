@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+  }
+
+  .container {
+   
+  }
+
+  .container div{
+      text-align: center;
+      font-size: 24px;
+  }
+
+
+
+
+
+  .kutu-1 {
+    background-color: rgb(44, 155, 44);
+    grid-area: header;
+  }
+
+  .kutu-2 {
+    background-color: orangered;
+    grid-area: title;
+  
+  }
+
+  .kutu-3 {
+    background-color: royalblue;
+    grid-area: left;
+  
+  }
+
+  .box-4 {
+    background-color: purple;
+    grid-area: right;
+
+  }
+
+  .kutu-5 {
+    background-color: orange;
+    grid-area: bottom;
+  
+  }
