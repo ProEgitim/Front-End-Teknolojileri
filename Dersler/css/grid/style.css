@@ -81,3 +81,14 @@
   grid-area: mahmut;
   /* order: 1; */
 }
+@media (max-width: 768px) {
+  .container {
+    grid-template: repeat(5, 100px) / repeat(2, minmax(100px, 200px));
+    grid-template-areas:
+      "varol sercan"
+      "erhan hiranur"
+      "zeynep simge"
+      "gorkem bugra"
+      "mahmut mahmut";
+  }
+}
