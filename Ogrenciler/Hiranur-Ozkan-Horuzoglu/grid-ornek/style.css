@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template: 60px 40px 450px 100px / 3fr 1fr;
+    grid-template-areas: 
+    "k1 k1"
+    "k2 k2"
+    "k3 k4"
+    "k5 k5";
+    
+}
+.container div{
+    text-align: center;
+    font-size: 24px;
+}
+.header{
+background-color: blue;
+grid-area: k1;
+
+}
+.navbar{
+background-color:crimson;
+grid-area: k2;
+}
+.menu{
+background-color: blueviolet;
+grid-area: k3;
+}
+.menu-2{
+    background-color:darkmagenta;
+    grid-area: k4;
+}
+.footer{
+background-color: chocolate;
+grid-area: k5;
+}
