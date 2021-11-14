@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+  }
+  .container {
+  display: grid;
+  grid-template-rows: 150px 100px 800px 200px ;
+  grid-template-columns: 600px 250px  ;
+  grid-template-areas: 
+  "header header "
+  "nav nav "
+  "section  aside"
+  "footer  footer";
+}
+  .container div {
+    
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+    .box-1 {
+      background-color: forestgreen;
+      grid-area: header;
+    }
+    .box-2 {
+      background-color: orangered;
+      grid-area: nav;
+    }
+    .box-3 {
+      background-color: royalblue;
+      grid-area: section;
+      
+    }
+    .box-4 {
+       background-color: purple;
+       grid-area: aside;
+    }
+    .box-5 {
+      background-color: orange;
+      grid-area: footer;
+       }
