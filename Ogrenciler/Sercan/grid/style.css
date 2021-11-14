@@ -2,36 +2,101 @@
   margin: 0;
 }
 .container {
-}
+display: grid;
+text-align: center;
+/* grid-template-rows: 200px 300px 200px;
+grid-template-columns: 200px 2fr 1fr; */
 
+/* grid-template: 200px 300px 200px / 200px 2fr 1fr; */
+/* grid-template: 200px 300px 200px / 200px repeat(2, minmax(100px,1fr)); */
+/* grid-template: 200px 300px 200px / 200px repeat(2, 1fr); */
+/* grid-template: 200px repeat(3, 100px); /  repeat(3, minmax(100px, 200px) );
+} */
+ grid-template: repeat(3, 100px) / repeat(3, minmax(100px, 200px));
+ /* grid-row-gap: 10px;
+ grid-column-gap: 10px; */
+ grid-gap: 20px;
+ align-content: center;
+ justify-content: center;
+grid-template-areas: 
+"varol sercan mahmut"
+"veli ali sami"
+"ahmet görkem buğra";
+ }
 .container div {
   text-align: center;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 .box-1 {
   background-color: forestgreen;
+  /* order: 9; */
+  /* grid-column-start: 2;
+  grid-column-end: span 2; */
+  grid-area: varol;
 }
 .box-2 {
   background-color: orangered;
+  /* order: 9; */
+  grid-area: sercan;
 }
 .box-3 {
   background-color: royalblue;
+  /* order: 9; */
+  grid-area: mahmut;
 }
 .box-4 {
-  background-color: purple;
+   background-color: purple;
+   /* order: 9; */
+  /*grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 1;
+  grid-column-end: span 3; */
+
+  /* grid-row: 2 / span 2 ;
+  grid-column: 1 / span 3 ; */
+  grid-area: veli;
 }
 .box-5 {
   background-color: orange;
+  /* grid-column-start: 2; */
+  /* order: 9; */
+  grid-area: ali;
 }
 .box-6 {
   background-color: burlywood;
+  /* order: 9; */
+  grid-area: sami;
 }
 .box-7 {
   background-color: red;
+  /* order: 9; */
+  grid-area: ahmet;
 }
 .box-8 {
   background-color: greenyellow;
+   /* order: 5; */
+   grid-area: görkem;
 }
 .box-9 {
   background-color: magenta;
+   /* order: 4; */
+   grid-area: buğra;
+}
+
+@media (max-width: 768px) {
+  .container{
+grid-template:repeat(5, 100px) / repeat(2, minmax(100px, 200px));
+grid-template-areas:
+"veli ali "
+"ahmet görkem "
+"buğra sami "
+"varol sercan"
+" mahmut mahmut"
+;
+  }
 }
