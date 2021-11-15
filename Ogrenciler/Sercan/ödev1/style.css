@@ -2,13 +2,10 @@
 body{
     display: flex;
     flex-direction: row;
+    background-color: #373e57;
+    color: #ccc8db;
 }
     
-
-
-
-
-
 
 
 
@@ -74,15 +71,45 @@ margin-left: 40px;
 
 }
 
-.left-side{
-    overflow: auto;
-    width: 280px;
+.left-side {
+    display: flex;
+    flex-direction: column;
+    overflow: auto ;
+    width: 230px;
     height: 700px;
-    background-color: #0355D0;
-    color: #000;
-    
+    background-color: #151728;
+    color: #ccc8db;
+    border: 1px solid #272a3a;
+   
+}
+::-webkit-scrollbar{
+    height: 0px;
+    width: 10px;
+     
 }
 
+::-webkit-scrollbar-button {
+  
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color:grey ;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
+    
 
 .twt button{
     width: 300px;
@@ -100,52 +127,64 @@ margin-left: 40px;
 
 input{
     width: 760px;
-    background-color:#0355D0 ;
+    background-color: #151728;
+    
     
     
 }
 
 ::placeholder{
-    color: black;
+    color: #ccc8db;
 }
 
 
+label{ 
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: 15pt;
+    margin-left: 5px;
+    
+    
+}
+.pro-cont{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    
+}
 
-.main-photo{
-width: 760px;
-height: 360px;
-z-index: -1;
-
-
-
-
+.main-pht{
+background-image: url(https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+display: grid;
+grid-template-rows: ;
+}
+.main-pht .bg-pht{
+    width: 760px;
+    height: 350px;
+   
 }
 
 .profile{
-    bottom: 150px;
-    width: 150px;
-    position: absolute;
-    top: 200px;
     border-radius: 50%;
-}
-label{
-    top: 300px;
-    position: absolute;
-    left: 450px;
-    border: 2px solid;
-    color: blue;
-    background-color: burlywood;
+    width: 120px;
+    
 }
 
 .main-menu{
-    
-    position: absolute;
-    top: 373px;
-    background-color: darkblue;
+   
+    background-color: #151728;
+    color: #ccc8db;
     width: 760px;
-    height: 45px;
+    height: 30px;
     font-size: 15pt;
     
+   
+    
+       
        
 }
 .main-menu a{
@@ -167,11 +206,7 @@ label{
     margin: 10px;
     background-color: black;
     text-decoration: underline;
-    
-    
-    
-    
-    
+       
 }
 
 
@@ -243,25 +278,23 @@ label{
     height: 280px;
     margin-top: 15px;  
     margin-bottom: 15px;
-    z-index: -1;
+   
 }
 .date-box .header{
- position: absolute;
- top: 1003px;
+
+
  background-color: #0355D0;
 }
 
 .date-box .date{
-    position: absolute;
-    top: 1020px;
+  
+   
     background-color: #0355D0;
    }
    .date-box .dec{
        border: 1px solid #000;
        color: #000;
-       position: absolute;
-       top: 825px;
-       left: 350px;
+       
        border-width: 5px;
    }
   
@@ -269,9 +302,7 @@ label{
     border: 1px solid #000;
     border-width: 5px;
     color: #000;
-    top: 800px;
-    position: absolute;
-    left: 350px;
+   
 }
 
 .ypage-box{
@@ -355,11 +386,10 @@ width: 70px;
 border-radius: 50%;
 }
 .share-profile input{
-    position: absolute;
+   
     width: 300px;
     height: 40px;
-    top: 480px;
-    left: 700px;
+   
 }
 .share-profile ::placeholder{
    color: hotpink;
