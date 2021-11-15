@@ -75,7 +75,7 @@ margin-left: 40px;
     display: flex;
     flex-direction: column;
     overflow: auto ;
-    width: 230px;
+    width: 280px;
     height: 700px;
     background-color: #151728;
     color: #ccc8db;
@@ -113,16 +113,22 @@ margin-left: 40px;
 
 .twt button{
     width: 300px;
+    
 }
 /*left side- your favourite end */
 
 /* home */
 .main-cont{
     width: 760px;
-   overflow: auto;
-   margin-right: 10px;
-   display: flex;
+    height: 700px;
+    display: flex;
    flex-direction: column;
+   overflow: auto;
+   padding-left: 20px;
+   padding-right: 30px;
+   
+   
+   
 }
 
 input{
@@ -140,7 +146,6 @@ input{
 
 label{ 
     border: none;
-    background-color: transparent;
     width: fit-content;
     height: fit-content;
     font-weight: bolder;
@@ -155,18 +160,23 @@ label{
     align-items: center;
     justify-content: start;
     
+    
 }
 
-.main-pht{
-background-image: url(https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
-display: grid;
-grid-template-rows: ;
-}
-.main-pht .bg-pht{
+
+.bg-pht{
     width: 760px;
     height: 350px;
+    background-image: url(https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    
+}
+.bg-pht img{
+    width: 740px;
+    height: 500px;
    
 }
+
+
 
 .profile{
     border-radius: 50%;
@@ -178,7 +188,7 @@ grid-template-rows: ;
    
     background-color: #151728;
     color: #ccc8db;
-    width: 760px;
+    width: 740px;
     height: 30px;
     font-size: 15pt;
     
@@ -188,7 +198,7 @@ grid-template-rows: ;
        
 }
 .main-menu a{
-    color: thistle;
+    color: #ccc8db;
     margin: 8px;
     text-decoration: none;
     
@@ -234,8 +244,9 @@ grid-template-rows: ;
 .intro-box{
     width: 310px;
     height: 300px;
-    background-color: #0355D0;
-    margin-top: 40px;
+    background-color: #151728;
+    color: #ccc8db;    
+    margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -268,7 +279,8 @@ grid-template-rows: ;
 
 .date-box{
     padding: 5px;
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
     width: 300px;
     height: 300px;
 }
@@ -283,13 +295,15 @@ grid-template-rows: ;
 .date-box .header{
 
 
- background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
 }
 
 .date-box .date{
   
    
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
    }
    .date-box .dec{
        border: 1px solid #000;
@@ -308,7 +322,8 @@ grid-template-rows: ;
 .ypage-box{
     width: 310px;
     height: 330px;
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -348,7 +363,9 @@ grid-template-rows: ;
 .share-box{
 width: 430px;
 height: 200px;
-background-color: #0355D0;
+ background-color: #151728;
+    color: #ccc8db;
+    margin-top: -25px;
 
 
 }
@@ -359,7 +376,7 @@ background-color: #0355D0;
 
 }
 .share-menu a{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-decoration: none;
     font-size: 18pt;
     color: gray;
@@ -389,10 +406,12 @@ border-radius: 50%;
    
     width: 300px;
     height: 40px;
+    border-radius: 20px;
    
 }
 .share-profile ::placeholder{
-   color: hotpink;
+   color: #ccc8db;
+   
 }
 
 
@@ -422,7 +441,8 @@ border-radius: 50%;
     
 }
 .album-box{
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
     margin-top: 15px;
 }
 .album-head{
@@ -466,7 +486,8 @@ border-radius: 50%;
     width: 300px;
     height: 700px;
     overflow: auto;
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
 }
 
 .right-nav{
