@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+.container {
+  display:grid;
+  /*grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 2fr 1fr;/*fr auto size için katsayı gibi düşünebiliriz.*/
+  /*grid-template: 200px 200px 200px / 200px 2fr 1fr;/* SATIR BILGILER / SUTUN BILGILERI  */
+  grid-template: repeat(4, 100px) / repeat(3, minmax(100px, 200px));
+grid-gap: 10px;
+justify-content: center;
+align-content: center;
+  grid-template-areas: "a b c"
+  "d e f"
+  "g h i";
+}
+
+.container div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+
+
+}
+.box-1 {
+  background-color: forestgreen;
+ /* grid-column-start: 2;/*baslangic kolonu olarak ayarlamak icin*/
+ /* grid-column-end: span 2;/*kac kolon kaplasın*/
+ grid-area: a;
+}
+.box-2 {
+  background-color: orangered;
+  grid-area: b;
+}
+.box-3 {
+  background-color: royalblue;
+  grid-area: c;
+}
+.box-4 {
+  background-color: purple;
+  grid-area: d;
+}
+.box-5 {
+  background-color: orange;
+  grid-area: e;
+}
+.box-6 {
+  background-color: burlywood;
+  grid-area: f;
+}
+.box-7 {
+  background-color: red;
+  grid-area: g;
+}
+.box-8 {
+  background-color: greenyellow;
+  grid-area: h;
+}
+.box-9 {
+  background-color: magenta;
+  grid-area: i;
+  
+}
