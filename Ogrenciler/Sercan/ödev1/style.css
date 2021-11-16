@@ -23,7 +23,9 @@ height: 20px;
  max-width: 20pt;
  }
 
-
+.nav-title h2{
+    position: fixed;
+}
 .menu-elements{
     display: flex;
     flex-direction: column;
