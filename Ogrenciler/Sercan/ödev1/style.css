@@ -127,9 +127,8 @@ margin-left: 40px;
    flex-direction: column;
    overflow: auto;
    padding-left: 20px;
-   padding-right: 30px;
-   
-   
+   padding-right: 20px;
+   box-shadow: 0 0 20px #ece0c9 ;
    
 }
 
@@ -207,7 +206,7 @@ label{
     
 }
 .main-menu a:nth-child(1){
-    background-color: black;
+    background-color: #323b4c;
     
     
 }
@@ -216,9 +215,10 @@ label{
 .main-menu a:hover:not(.active){
     
     margin: 10px;
-    background-color: black;
+    background-color: #0d0f11;
     text-decoration: underline;
-       
+    text-decoration-color: #1488fa;
+    text-decoration-thickness: 5px;
 }
 
 
@@ -285,6 +285,8 @@ label{
     color: #ccc8db;
     width: 300px;
     height: 300px;
+    position: relative;
+    z-index: 1;
 }
 
 .date-box img{
@@ -292,32 +294,49 @@ label{
     height: 280px;
     margin-top: 15px;  
     margin-bottom: 15px;
+    position: absolute;
+    z-index: 2;
    
 }
+
+.ser{
+    position: absolute;
+    z-index: 3;
+}
+
 .date-box .header{
 
 
     background-color: #151728;
     color: #ccc8db;
+    
+    
 }
 
-.date-box .date{
+
   
-   
-    background-color: #151728;
-    color: #ccc8db;
-   }
    .date-box .dec{
-       border: 1px solid #000;
-       color: #000;
-       
-       border-width: 5px;
+    background-color: #1687fa;
+    padding: 7px 20px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    width: max-content;
    }
   
    .date-box .day{
-    border: 1px solid #000;
-    border-width: 5px;
-    color: #000;
+    background-color: transparent;
+    padding: 7px 20px;
+    font-weight: 800;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    box-sizing: 1px;
+    border-radius: 4px 4px 0 0;
+    
+   
+
    
 }
 
@@ -386,14 +405,15 @@ height: 200px;
 }
 
 .share-menu a:hover{
-   background-color: darkblue ;
-   border-radius: 30%;
+    margin: 10px;
+    background-color: #0d0f11;
+    text-decoration: underline;
+    text-decoration-color: #1488fa;
+    text-decoration-thickness: 5px;
 
    
 }
-.share-menu a:nth-child(1){
-    background-color: darkblue;
-}
+
 
 .share-profile{
 display: flex;
@@ -438,14 +458,18 @@ border-radius: 50%;
 .share-footer button{
     width: 90px;
     height: 50px;
-    border-radius: 30%;
-    background-color: aqua;
-    
+    border-radius: 4px;
+    background-color: #1488fa;
+    box-shadow: 0 0 30px #1488fa;
+    color: snow;
+
 }
 .album-box{
     background-color: #151728;
     color: #ccc8db;
     margin-top: 15px;
+    margin-right: 10px;
+    
 }
 .album-head{
     display: flex;
@@ -490,6 +514,7 @@ border-radius: 50%;
     overflow: auto;
     background-color: #151728;
     color: #ccc8db;
+
 }
 
 .right-nav{
@@ -508,6 +533,13 @@ border-radius: 50%;
  border-style: hidden;
 }
 
+
+.select{
+    background-color: transparent;
+    box-sizing: none; 
+    padding-top: 17px;
+    
+}
 
 
 .right-stories img{
