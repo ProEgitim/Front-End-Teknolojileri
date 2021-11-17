@@ -1,0 +1,19 @@
+.carousel-image{
+    height: 400px;
+}
+.row {
+    margin-top: 4rem;
+}
+.row img{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 1rem;
+}
+footer p{
+    padding:20px;
+}
+footer p a{
+    text-decoration: none;
+    
+
+}
