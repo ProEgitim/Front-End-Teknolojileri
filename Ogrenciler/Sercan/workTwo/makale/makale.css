@@ -1,0 +1,35 @@
+
+
+
+
+.makale img{
+    width: 600px ;
+    height:600px ;
+}
+
+
+.section{
+     
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.card-body{
+    width: 200px;
+    height: 200px;
+}
+.date span{
+ box-sizing: border-box;
+ border: 2px solid ;
+ display: flex;
+ flex-direction: column;
+ width: 100px;
+ height:fit-content;
+ color: snow;
+background: #005b8f;
+}
