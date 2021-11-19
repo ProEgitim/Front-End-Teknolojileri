@@ -1,6 +1,7 @@
 body{
 display: flex;
 flex-direction: column;
+align-items: center;
 }
 
 
@@ -9,10 +10,11 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
  .slide-cont{
-   width: 800px;
-   height: 400px;
+   width: 1200px;
+   height: 480px;
    margin-top: 20px;
    
    
@@ -30,6 +32,15 @@ flex-direction: column;
 .carousel-item{
     color: blanchedalmond;
     
+}
+
+.highligt{
+    width: 900px;
+    height: 550px;
+    left: 150px;
+   
+    
+   
 }
 
 
