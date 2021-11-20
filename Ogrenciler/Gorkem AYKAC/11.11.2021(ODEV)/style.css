@@ -20,7 +20,7 @@ a img
     width: 20px;
 }
 .container {
-  background-color: #151728;
+  background-color:wheat;
   display: flex;
   max-width: 1600px;
   height: 100vh;
@@ -262,7 +262,7 @@ a img
   z-index: -1;
   left: 0;
   top: 0;
-  background-image: url("https://cdn-icons-png.flaticon.com/512/3924/3924816.png");
+  background-image: url("https://cdn-icons-png.flaticon.com/512/190/190279.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

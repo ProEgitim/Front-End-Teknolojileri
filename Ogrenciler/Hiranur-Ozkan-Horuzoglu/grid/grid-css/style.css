@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  .container{
+    display:grid;
+    /*grid-template-rows:150px 250px;
+    grid-template-columns: 100px 200px 300px; */
+    /*satır ve sutunun ayrı yazılımı*/
+    grid-template: 150px 250px / 100px 3fr 1fr; 
+   /* grid-template: 150px 250px / repeat( 6, minmax(100px, 200px)); */
+   /* grid-row-gap: 10px; satır arası boşluk*/
+    /* grid-column-gap: 20px; sutunlar arası bosluk*/
+    grid-gap: 10px 20px;
+    grid-template-areas:
+      "A A A"
+      "B B C"
+      "D E E"
+      "F F F"
+      ;
+  }
+  
+  .box{
+    text-align: center;
+    padding:20px;
+    border:1px solid #000;
+  }
+  
+  .box1{
+    background-color:#2ecc71;
+    grid-area: A;
+  }
+  .box2{
+    background-color:#3498db;
+    grid-area: B;
+    
+  }
+  .box3{
+    background-color:#9b59b6;
+    grid-area: C;
+  }
+  .box4{
+    background-color:#e67e22;
+    grid-area: D;
+  }
+  .box5{
+    background-color:#e74c3c;
+    grid-area: E;
+  }
+  .box6{
+    background-color:#16a085;
+    /* order:-1; order classı sırasıyla oynuyor eksi deger vererek */
+    /* grid-row-start:1;
+    grid-row-end:2; */
+   /* grid-row: 1 / 2; */
+    /*grid-column-start: 1;
+    grid-column-end:2;*/
+   /* grid-column: 1/2; */
+    /*grid-area: 1 / 1 / 2 / 2;*/
+    grid-area: F;
+  }

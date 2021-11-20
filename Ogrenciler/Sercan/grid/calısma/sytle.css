@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.cont {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 70px 70px 70px;
+    grid-template-areas:
+      "red orange"
+      "blue gray"
+      "yellow purple";
+  }
+  
+  .cont div {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .kutu1 {
+    background-color: red;
+    grid-area: red;
+    transform-origin: 60px 400px;
+  
+    
+  }
+  .kutu2 {
+    background-color: blue;
+    grid-area: blue;
+    transform: rotate3d(800, 0, 360, 45deg);
+  }
+  .kutu3 {
+    background-color: yellow;
+    grid-area: yellow;
+  }
+  .kutu4 {
+    background-color: orange;
+    grid-area: orange;
+  }
+  .kutu5 {
+    background-color: gray;
+    grid-area: gray;
+  }
+  .kutu6 {
+    background-color: purple;
+    grid-area: purple;
+  }
+  

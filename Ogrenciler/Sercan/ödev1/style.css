@@ -2,13 +2,10 @@
 body{
     display: flex;
     flex-direction: row;
+    background-color: #373e57;
+    color: #ccc8db;
 }
     
-
-
-
-
-
 
 
 
@@ -26,7 +23,9 @@ height: 20px;
  max-width: 20pt;
  }
 
-
+.nav-title h2{
+    position: fixed;
+}
 .menu-elements{
     display: flex;
     flex-direction: column;
@@ -74,89 +73,140 @@ margin-left: 40px;
 
 }
 
-.left-side{
-    overflow: auto;
+.left-side {
+    display: flex;
+    flex-direction: column;
+    overflow: auto ;
     width: 280px;
     height: 700px;
-    background-color: #0355D0;
-    color: #000;
-    
+    background-color: #151728;
+    color: #ccc8db;
+    border: 1px solid #272a3a;
+   
+}
+::-webkit-scrollbar{
+    height: 0px;
+    width: 10px;
+     
+}
+
+::-webkit-scrollbar-button {
+  
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color:grey ;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 
+
+
+    
+
 .twt button{
     width: 300px;
+    
 }
 /*left side- your favourite end */
 
 /* home */
 .main-cont{
     width: 760px;
-   overflow: auto;
-   margin-right: 10px;
-   display: flex;
+    height: 700px;
+    display: flex;
    flex-direction: column;
+   overflow: auto;
+   padding-left: 20px;
+   padding-right: 20px;
+   box-shadow: 0 0 20px #ece0c9 ;
+   
 }
 
 input{
     width: 760px;
-    background-color:#0355D0 ;
+    background-color: #151728;
+    
     
     
 }
 
 ::placeholder{
-    color: black;
+    color: #ccc8db;
 }
 
 
-
-.main-photo{
-width: 760px;
-height: 360px;
-z-index: -1;
-
-
-
-
+label{ 
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+    font-size: 15pt;
+    margin-left: 5px;
+    
+    
 }
+.pro-cont{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    
+    
+}
+
+
+.bg-pht{
+    width: 760px;
+    height: 350px;
+    background-image: url(https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    
+}
+.bg-pht img{
+    width: 740px;
+    height: 500px;
+   
+}
+
+
 
 .profile{
-    bottom: 150px;
-    width: 150px;
-    position: absolute;
-    top: 200px;
     border-radius: 50%;
-}
-label{
-    top: 300px;
-    position: absolute;
-    left: 450px;
-    border: 2px solid;
-    color: blue;
-    background-color: burlywood;
+    width: 120px;
+    
 }
 
 .main-menu{
-    
-    position: absolute;
-    top: 373px;
-    background-color: darkblue;
-    width: 760px;
-    height: 45px;
+   
+    background-color: #151728;
+    color: #ccc8db;
+    width: 740px;
+    height: 30px;
     font-size: 15pt;
     
+   
+    
+       
        
 }
 .main-menu a{
-    color: thistle;
+    color: #ccc8db;
     margin: 8px;
     text-decoration: none;
     
     
 }
 .main-menu a:nth-child(1){
-    background-color: black;
+    background-color: #323b4c;
     
     
 }
@@ -165,13 +215,10 @@ label{
 .main-menu a:hover:not(.active){
     
     margin: 10px;
-    background-color: black;
+    background-color: #0d0f11;
     text-decoration: underline;
-    
-    
-    
-    
-    
+    text-decoration-color: #1488fa;
+    text-decoration-thickness: 5px;
 }
 
 
@@ -199,8 +246,9 @@ label{
 .intro-box{
     width: 310px;
     height: 300px;
-    background-color: #0355D0;
-    margin-top: 40px;
+    background-color: #151728;
+    color: #ccc8db;    
+    margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -233,9 +281,12 @@ label{
 
 .date-box{
     padding: 5px;
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
     width: 300px;
     height: 300px;
+    position: relative;
+    z-index: 1;
 }
 
 .date-box img{
@@ -243,41 +294,57 @@ label{
     height: 280px;
     margin-top: 15px;  
     margin-bottom: 15px;
-    z-index: -1;
-}
-.date-box .header{
- position: absolute;
- top: 1003px;
- background-color: #0355D0;
+    position: absolute;
+    z-index: 2;
+   
 }
 
-.date-box .date{
+.ser{
     position: absolute;
-    top: 1020px;
-    background-color: #0355D0;
-   }
+    z-index: 3;
+}
+
+.date-box .header{
+
+
+    background-color: #151728;
+    color: #ccc8db;
+    
+    
+}
+
+
+  
    .date-box .dec{
-       border: 1px solid #000;
-       color: #000;
-       position: absolute;
-       top: 825px;
-       left: 350px;
-       border-width: 5px;
+    background-color: #1687fa;
+    padding: 7px 20px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    width: max-content;
    }
   
    .date-box .day{
-    border: 1px solid #000;
-    border-width: 5px;
-    color: #000;
-    top: 800px;
-    position: absolute;
-    left: 350px;
+    background-color: transparent;
+    padding: 7px 20px;
+    font-weight: 800;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    box-sizing: 1px;
+    border-radius: 4px 4px 0 0;
+    
+   
+
+   
 }
 
 .ypage-box{
     width: 310px;
     height: 330px;
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -317,7 +384,9 @@ label{
 .share-box{
 width: 430px;
 height: 200px;
-background-color: #0355D0;
+ background-color: #151728;
+    color: #ccc8db;
+    margin-top: -25px;
 
 
 }
@@ -328,7 +397,7 @@ background-color: #0355D0;
 
 }
 .share-menu a{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-decoration: none;
     font-size: 18pt;
     color: gray;
@@ -336,14 +405,15 @@ background-color: #0355D0;
 }
 
 .share-menu a:hover{
-   background-color: darkblue ;
-   border-radius: 30%;
+    margin: 10px;
+    background-color: #0d0f11;
+    text-decoration: underline;
+    text-decoration-color: #1488fa;
+    text-decoration-thickness: 5px;
 
    
 }
-.share-menu a:nth-child(1){
-    background-color: darkblue;
-}
+
 
 .share-profile{
 display: flex;
@@ -355,14 +425,15 @@ width: 70px;
 border-radius: 50%;
 }
 .share-profile input{
-    position: absolute;
+   
     width: 300px;
     height: 40px;
-    top: 480px;
-    left: 700px;
+    border-radius: 20px;
+   
 }
 .share-profile ::placeholder{
-   color: hotpink;
+   color: #ccc8db;
+   
 }
 
 
@@ -387,13 +458,18 @@ border-radius: 50%;
 .share-footer button{
     width: 90px;
     height: 50px;
-    border-radius: 30%;
-    background-color: aqua;
-    
+    border-radius: 4px;
+    background-color: #1488fa;
+    box-shadow: 0 0 30px #1488fa;
+    color: snow;
+
 }
 .album-box{
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
     margin-top: 15px;
+    margin-right: 10px;
+    
 }
 .album-head{
     display: flex;
@@ -436,7 +512,9 @@ border-radius: 50%;
     width: 300px;
     height: 700px;
     overflow: auto;
-    background-color: #0355D0;
+    background-color: #151728;
+    color: #ccc8db;
+
 }
 
 .right-nav{
@@ -455,6 +533,13 @@ border-radius: 50%;
  border-style: hidden;
 }
 
+
+.select{
+    background-color: transparent;
+    box-sizing: none; 
+    padding-top: 17px;
+    
+}
 
 
 .right-stories img{
