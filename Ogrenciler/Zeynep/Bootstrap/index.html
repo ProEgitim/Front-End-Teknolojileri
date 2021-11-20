@@ -43,6 +43,7 @@
 <!--    </div>-->
 <!--</div>-->
 
+
 <div class="container mt-5">
 
     <form class="row g-3 needs-validation" novalidate>
@@ -53,12 +54,19 @@
             <div class="valid-feedback">
                 Looks good!
             </div>
+            <div class="invalid-feedback">
+                Bu alan gereklidir.
+            </div>
         </div>
         <div class="col-md-12">
             <label for="last_name" class="form-label">Soyisim</label>
             <input type="text" class="form-control" id="last_name" required>
             <div class="valid-feedback">
+
                 Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Bu alan gereklidir.
             </div>
         </div>
         <div class="col-md-12">
@@ -67,12 +75,18 @@
             <div class="valid-feedback">
                 Looks good!
             </div>
+            <div class="invalid-feedback">
+                Bu alan gereklidir.
+            </div>
         </div>
         <div class="col-md-12">
             <label for="phone" class="form-label">Telefon</label>
             <input type="text" class="form-control" id="phone" required>
             <div class="valid-feedback">
                 Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Bu alan gereklidir.
             </div>
         </div>
         <div class="col-md-12">
@@ -81,15 +95,253 @@
             <div class="valid-feedback">
                 Looks good!
             </div>
+            <div class="invalid-feedback">
+                Bu alan gereklidir.
+            </div>
         </div>
 
         <div class="col-12">
             <button class="btn btn-primary" type="submit">Gönder</button>
         </div>
 
+
+        <div class="col-md-12 mb-5">
+            <div class="accordion mb-5" id="test_accordion">
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="header_1">
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h3>
+                    <div id="collapseOne"
+                         class="accordion-collapse collapse show"
+                         aria-labelledby="header_1"
+                         data-bs-parent="#test_accordion">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet animi
+                                aperiam
+                                asperiores atque consectetur cum cumque cupiditate deleniti dignissimos doloribus eaque
+                                enim et
+                                eveniet excepturi explicabo facere, facilis illum in ipsa ipsam laborum maiores neque
+                                nobis
+                                nostrum odio odit optio perspiciatis porro praesentium quia repellendus sed sint velit
+                                veniam
+                                voluptas? Aperiam blanditiis consectetur deserunt, distinctio dolorum est eum ex
+                                expedita itaque
+                                labore modi nisi nobis quam quia, quos temporibus voluptatum. Debitis error magni neque
+                                nobis
+                                quidem quos voluptate. Alias asperiores dignissimos esse facere in ipsa itaque iure
+                                laboriosam
+                                laborum, quia ratione recusandae rem sapiente sit ullam velit voluptatibus?
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="header_2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Accordion Item #2
+                        </button>
+                    </h3>
+                    <div id="collapse2"
+                         class="accordion-collapse collapse"
+                         aria-labelledby="header_2"
+                         data-bs-parent="#test_accordion">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet animi
+                                aperiam
+                                asperiores atque consectetur cum cumque cupiditate deleniti dignissimos doloribus eaque
+                                enim et
+                                eveniet excepturi explicabo facere, facilis illum in ipsa ipsam laborum maiores neque
+                                nobis
+                                nostrum odio odit optio perspiciatis porro praesentium quia repellendus sed sint velit
+                                veniam
+                                voluptas? Aperiam blanditiis consectetur deserunt, distinctio dolorum est eum ex
+                                expedita itaque
+                                labore modi nisi nobis quam quia, quos temporibus voluptatum. Debitis error magni neque
+                                nobis
+                                quidem quos voluptate. Alias asperiores dignissimos esse facere in ipsa itaque iure
+                                laboriosam
+                                laborum, quia ratione recusandae rem sapiente sit ullam velit voluptatibus?
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3 class="accordion-header" id="header_2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Accordion Item #3
+                        </button>
+                    </h3>
+                    <div id="collapse2"
+                         class="accordion-collapse collapse"
+                         aria-labelledby="header_2"
+                         data-bs-parent="#test_accordion">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet animi
+                                aperiam
+                                asperiores atque consectetur cum cumque cupiditate deleniti dignissimos doloribus eaque
+                                enim et
+                                eveniet excepturi explicabo facere, facilis illum in ipsa ipsam laborum maiores neque
+                                nobis
+                                nostrum odio odit optio perspiciatis porro praesentium quia repellendus sed sint velit
+                                veniam
+                                voluptas? Aperiam blanditiis consectetur deserunt, distinctio dolorum est eum ex
+                                expedita itaque
+                                labore modi nisi nobis quam quia, quos temporibus voluptatum. Debitis error magni neque
+                                nobis
+                                quidem quos voluptate. Alias asperiores dignissimos esse facere in ipsa itaque iure
+                                laboriosam
+                                laborum, quia ratione recusandae rem sapiente sit ullam velit voluptatibus?
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="card col-md-6">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, veniam?
+                    </p>
+                    <button class="btn btn-primary" type="submit">Gönder</button>
+                </div>
+            </div>
+
+
+            <div class="card col-md-6">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, veniam?
+                    </p>
+                    <button class="btn btn-primary" type="submit">Gönder</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="card col-md-6">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, veniam?
+                    </p>
+                    <button class="btn btn-primary" type="submit">Gönder</button>
+                </div>
+            </div>
+
+
+            <div class="card col-md-6">
+                <img
+                        src="https://via.placeholder.com/150"
+                        class="card-img-top"
+                        alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, veniam?
+                    </p>
+                    <button class="btn btn-primary" type="submit">Gönder</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </form>
 
 </div>
+
 
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
