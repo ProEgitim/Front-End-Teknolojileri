@@ -73,7 +73,7 @@
       </div>
     </nav>
     <div class="container">
-      <form>
+      <form class="needs-validation" novalidate>
         <div class="form-floating mb-3">
           <input
             type="email"
@@ -83,9 +83,31 @@
             required
           />
           <label for="myEmail">Email address</label>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please choose a username.</div>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <form novalidate>
+        <label for="fname">First name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          value="John"
+          required
+        /><br />
+        <label for="lname">Last name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          value="Doe"
+          required
+        /><br /><br />
+        <input type="submit" value="Submit" />
       </form>
     </div>
     <script
@@ -93,5 +115,30 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
