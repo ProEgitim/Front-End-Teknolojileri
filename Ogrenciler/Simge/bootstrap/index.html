@@ -29,7 +29,7 @@
   </div> -->
 
 
-  <div class="input-group mb-3">
+  <!-- <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1">@</span>
     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
   </div>
@@ -60,7 +60,98 @@
   <div class="input-group">
     <span class="input-group-text">With textarea</span>
     <textarea class="form-control" aria-label="With textarea"></textarea>
-  </div>
+  </div> -->
+
+
+
+  <div class="container ml-5">
+  
+    <form class="row g-3 needs-validation" novalidate>
+
+        <div class="col-12">
+            <label for="first_name" class="form-label">İsim</label>
+            <input type="text" class="form-control" id="first_name" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="last_name" class="form-label">Soyisim</label>
+            <input type="text" class="form-control" id="last_name" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="phone" class="form-label">Telefon</label>
+            <input type="text" class="form-control" id="phone" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="message" class="form-label">Mesajınız</label>
+            <textarea class="form-control" id="message" required></textarea>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Gönder</button>
+        </div>
+
+    </form>
+
+</div>
+</div>
+
+<script>
+
+    (function () {
+        'use strict'
+
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
+
+
+
+
 
 
     <script
