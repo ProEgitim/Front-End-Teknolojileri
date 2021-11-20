@@ -1,0 +1,80 @@
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+.slide-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ .slide-cont{
+   width: 1200px;
+   height: 480px;
+   margin-top: 20px;
+   
+   
+    
+ }
+
+.carousel-item img{
+    width: 768px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 40px;
+    align-items: cent er;
+    
+}
+
+.carousel-item{
+    color: blanchedalmond;
+    display: flex;
+   
+    
+}
+
+.highligt{
+    width: 900px;
+    height: 550px;
+    left: 150px;
+   
+    
+   
+}
+
+.card-sc img{
+    width: 380px ;
+    height: 250px ;
+    border-radius: 30%;
+   
+    
+}
+
+.card-sc h5{
+    text-align: center;
+}
+
+
+
+
+
+
+
+.card-sc h5:hover{
+  align-self: center;
+  justify-self: center;
+  top: 50px;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  z-index: 1;
+  font-weight: bolder;
+  color: red;
+  font-size: 30pt ;
+}
+
+
