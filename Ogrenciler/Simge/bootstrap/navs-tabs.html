@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -13,39 +13,148 @@
     />
 
     <title>Navs-Tabs</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="#navBar">
+      <div class="container">
+        <a href="#" class="navbar-brand">deneme proje</a>
+        <button
+          class="navbar-toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        ></button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a href="#" class="navbar-brand">deneme proje</a>
-          <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-          </button>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-     
-         <div class="collapse navbar-collapse" id="navbarMenu">
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li class="nav-item"> <a href="#" class="nav-link active">anasayfa</a></li>
-             <li class="nav-item"> <a href="#" class="nav-link">hakkımızda</a></li>
-             <li class="nav-item"> <a href="#" class="nav-link">galeri</a></li>
-             <li class="nav-item"> <a href="#" class="nav-link">iletişim</a></li>
-           </ul>
-           <form class="d-flex">
-             <input class="form-control me-2" type="search" placeholder="search">
-             <button class="btn btn-outline-success" type="submit">search</button>
-           </form>
-         </div>
+        <div class="collapse navbar-collapse" id="#navbarMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#section1" class="nav-link active">anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section2" class="nav-link">hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section3" class="nav-link">galeri</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              search
+            </button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <div 
+    data-bs-target="#navBar" 
+    data-bs-spy="scroll">
+
+      <section id="section1">
+        <h2>bölüm1</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi
+          rerum fuga ipsum numquam perspiciatis itaque, facilis quaerat sunt
+          necessitatibus maxime vero amet deleniti a cumque dolorem eaque
+          laboriosam laborum aliquid exercitationem facere, magni repudiandae
+          blanditiis. Nemo ullam nesciunt optio. Consequuntur fuga tempora
+          laudantium iusto sint dignissimos in rerum, accusantium unde illum
+          magnam amet libero corporis ad rem facere! Pariatur aperiam veniam
+          impedit voluptates architecto nulla aut quos hic sint odit! Quod ab
+          molestias soluta blanditiis, dolore nesciunt, veniam ipsum nemo eius
+          excepturi nulla cumque non saepe et ducimus ea numquam commodi amet
+          hic eveniet quam reprehenderit quaerat unde. Eius modi ut tempora
+          doloribus consequatur quis perferendis obcaecati, est maiores.
+          Tenetur, natus ullam! Aut fuga nemo tempore omnis ipsa eius magnam.
+          Unde ipsa a veniam nihil exercitationem pariatur voluptatem amet
+          officia nemo obcaecati tenetur eius aspernatur dolor ab, autem
+          impedit. Molestiae labore harum aliquam neque a repellat ut sunt at
+          fugit. Minus animi quod consectetur id, totam voluptatem, rerum
+          quisquam officiis ex, illum nulla fugiat voluptas quaerat.
+          Repellendus, asperiores non? Delectus, quae non? Alias dolore
+          consectetur, at, accusamus assumenda recusandae hic nemo saepe est
+          totam nobis incidunt sapiente rerum perferendis modi? Numquam quis
+          modi culpa distinctio necessitatibus dolorum dolorem totam.
+        </p>
+      </section>
+      <section id="#section2">
+        <h2>bölüm2</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi
+          rerum fuga ipsum numquam perspiciatis itaque, facilis quaerat sunt
+          necessitatibus maxime vero amet deleniti a cumque dolorem eaque
+          laboriosam laborum aliquid exercitationem facere, magni repudiandae
+          blanditiis. Nemo ullam nesciunt optio. Consequuntur fuga tempora
+          laudantium iusto sint dignissimos in rerum, accusantium unde illum
+          magnam amet libero corporis ad rem facere! Pariatur aperiam veniam
+          impedit voluptates architecto nulla aut quos hic sint odit! Quod ab
+          molestias soluta blanditiis, dolore nesciunt, veniam ipsum nemo eius
+          excepturi nulla cumque non saepe et ducimus ea numquam commodi amet
+          hic eveniet quam reprehenderit quaerat unde. Eius modi ut tempora
+          doloribus consequatur quis perferendis obcaecati, est maiores.
+          Tenetur, natus ullam! Aut fuga nemo tempore omnis ipsa eius magnam.
+          Unde ipsa a veniam nihil exercitationem pariatur voluptatem amet
+          officia nemo obcaecati tenetur eius aspernatur dolor ab, autem
+          impedit. Molestiae labore harum aliquam neque a repellat ut sunt at
+          fugit. Minus animi quod consectetur id, totam voluptatem, rerum
+          quisquam officiis ex, illum nulla fugiat voluptas quaerat.
+          Repellendus, asperiores non? Delectus, quae non? Alias dolore
+          consectetur, at, accusamus assumenda recusandae hic nemo saepe est
+          totam nobis incidunt sapiente rerum perferendis modi? Numquam quis
+          modi culpa distinctio necessitatibus dolorum dolorem totam.
+        </p>
+      </section>
+
+      <section id="#section3">
+        <h2>bölüm3</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi
+          rerum fuga ipsum numquam perspiciatis itaque, facilis quaerat sunt
+          necessitatibus maxime vero amet deleniti a cumque dolorem eaque
+          laboriosam laborum aliquid exercitationem facere, magni repudiandae
+          blanditiis. Nemo ullam nesciunt optio. Consequuntur fuga tempora
+          laudantium iusto sint dignissimos in rerum, accusantium unde illum
+          magnam amet libero corporis ad rem facere! Pariatur aperiam veniam
+          impedit voluptates architecto nulla aut quos hic sint odit! Quod ab
+          molestias soluta blanditiis, dolore nesciunt, veniam ipsum nemo eius
+          excepturi nulla cumque non saepe et ducimus ea numquam commodi amet
+          hic eveniet quam reprehenderit quaerat unde. Eius modi ut tempora
+          doloribus consequatur quis perferendis obcaecati, est maiores.
+          Tenetur, natus ullam! Aut fuga nemo tempore omnis ipsa eius magnam.
+          Unde ipsa a veniam nihil exercitationem pariatur voluptatem amet
+          officia nemo obcaecati tenetur eius aspernatur dolor ab, autem
+          impedit. Molestiae labore harum aliquam neque a repellat ut sunt at
+          fugit. Minus animi quod consectetur id, totam voluptatem, rerum
+          quisquam officiis ex, illum nulla fugiat voluptas quaerat.
+          Repellendus, asperiores non? Delectus, quae non? Alias dolore
+          consectetur, at, accusamus assumenda recusandae hic nemo saepe est
+          totam nobis incidunt sapiente rerum perferendis modi? Numquam quis
+          modi culpa distinctio necessitatibus dolorum dolorem totam.
+        </p>
+      </section>
+    </div>
+
+
+
 
 
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
-    
-</body>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
