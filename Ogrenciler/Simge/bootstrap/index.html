@@ -16,7 +16,6 @@
     <title></title>
   </head>
   <body>
-    
     <!-- <div class="container ">
       <div class="row">
           <div class="col-12 bg-warning" style="height: 100px;">1</div>
@@ -28,8 +27,7 @@
       </div>
   </div> -->
 
-
-  <!-- <div class="input-group mb-3">
+    <!-- <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1">@</span>
     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
   </div>
@@ -62,16 +60,9 @@
     <textarea class="form-control" aria-label="With textarea"></textarea>
   </div> -->
 
+    <!-- UYGULAMA2 -->
 
-
-
-
-
-
-<!-- UYGULAMA2 -->
-
-
-<!-- <div class="col-5 mx-auto">
+    <!-- <div class="col-5 mx-auto">
   <div class="accordion" id="testAccordion">
     <div class="accordion-item">
       <h3 class="accordion-header" id="testHeadingOne">
@@ -200,6 +191,53 @@
   </div>
 </div> -->
 
+    <!-- UYGULAMA3 -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a
+            href="#textCard"
+            role="button"
+            class="btn btn-dark"
+            data-bs-toggle="collapse"
+          >
+            Link Deneme</a
+          >
+
+          <button
+            data-bs-target="#textCard2"
+            role="button"
+            class="btn btn-dark"
+            data-bs-toggle="collapse"
+          >
+            Deneme2
+          </button>
+        </div>
+      </div>
+
+      <div class="collapse" id="textCard">
+        <div class="card card-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+          pariatur nemo molestias, aperiam, rerum totam enim ducimus corrupti
+          quibusdam, quos eos numquam in voluptates aliquid. Dolorum autem
+          perferendis at ducimus consectetur voluptatibus quae adipisci sunt
+          nesciunt fugit magnam omnis vel voluptate aperiam neque fugiat,
+          eveniet fuga aliquid sit ab excepturi.
+        </div>
+      </div>
+
+      <div class="collapse" id="textCard2">
+        <div class="card card-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+          pariatur nemo molestias, aperiam, rerum totam enim ducimus corrupti
+          quibusdam, quos eos numquam in voluptates aliquid. Dolorum autem
+          perferendis at ducimus consectetur voluptatibus quae adipisci sunt
+          nesciunt fugit magnam omnis vel voluptate aperiam neque fugiat,
+          eveniet fuga aliquid sit ab excepturi.
+        </div>
+      </div>
+    </div>
 
 
 
@@ -208,33 +246,36 @@
 
 
 
- 
-
-<script>
-
-    (function () {
-        'use strict'
-
-        var forms = document.querySelectorAll('.needs-validation')
-
-        Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-    })()
-</script>
 
 
 
 
 
+
+    
+
+    <script>
+      (function () {
+        "use strict";
+
+        var forms = document.querySelectorAll(".needs-validation");
+
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
