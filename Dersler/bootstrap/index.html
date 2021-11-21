@@ -12,7 +12,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -48,7 +48,9 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -73,42 +75,202 @@
       </div>
     </nav>
     <div class="container">
-      <form class="needs-validation" novalidate>
-        <div class="form-floating mb-3">
-          <input
-            type="email"
-            class="form-control"
-            id="myEmail"
-            placeholder="name@example.com"
-            required
-          />
-          <label for="myEmail">Email address</label>
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please choose a username.</div>
+      <div class="row">
+        <div class="col-5 mx-auto">
+          <h1>
+            <span class="badge bg-secondary">Mail adresinizi Girin:</span>
+          </h1>
+          <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+          <form class="needs-validation mb-4" novalidate>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="myEmail"
+                placeholder="name@example.com"
+                required
+              />
+              <label for="myEmail">Email address</label>
+              <div class="valid-feedback alert alert-success" role="alert">
+                Looks good!
+              </div>
+              <div
+                class="invalid-feedback alert alert-danger alert-dismissible"
+                role="alert"
+              >
+                Hatalıysam mail at:
+                <a href="mailto:varolmaksutoglu@yandex.com" class="alert-link"
+                  >Mail</a
+                >
+                <button
+                  class="btn-close"
+                  type="button"
+                  aria-label="Close"
+                  data-bs-dismiss="alert"
+                ></button>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="card col-6">
+            <img
+              src="https://via.placeholder.com/200x100"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-
-      <form novalidate>
-        <label for="fname">First name:</label><br />
-        <input
-          type="text"
-          id="fname"
-          name="fname"
-          value="John"
-          required
-        /><br />
-        <label for="lname">Last name:</label><br />
-        <input
-          type="text"
-          id="lname"
-          name="lname"
-          value="Doe"
-          required
-        /><br /><br />
-        <input type="submit" value="Submit" />
-      </form>
+        <div class="col-5 mx-auto">
+          <div class="accordion" id="testAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="testHeaderOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#testCollapseOne"
+                  aria-expanded="true"
+                  aria-controls="testCollapseOne"
+                >
+                  Deneme 1
+                </button>
+              </h3>
+              <div
+                class="accordion-collapse collapse show"
+                id="testCollapseOne"
+                aria-labelledby="testHeaderOne"
+                data-bs-parent="#testAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt cupiditate possimus officia dolorum, eaque omnis
+                    neque id nostrum in aperiam consequuntur facilis architecto
+                    aliquid voluptatibus esse hic, eos fugit quae quidem,
+                    doloremque reprehenderit. Repudiandae voluptates nisi
+                    laborum fugit. Sit corrupti distinctio quam, repellendus
+                    molestias aliquid perferendis veritatis accusamus obcaecati
+                    eaque error nihil in eveniet, iure porro delectus nobis
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="testHeader2">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#testCollapse2"
+                  aria-expanded="true"
+                  aria-controls="testCollapse2"
+                >
+                  Deneme 2
+                </button>
+              </h3>
+              <div
+                class="accordion-collapse collapse"
+                id="testCollapse2"
+                aria-labelledby="testHeader2"
+                data-bs-parent="#testAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt cupiditate possimus officia dolorum, eaque omnis
+                    neque id nostrum in aperiam consequuntur facilis architecto
+                    aliquid voluptatibus esse hic, eos fugit quae quidem,
+                    doloremque reprehenderit. Repudiandae voluptates nisi
+                    laborum fugit. Sit corrupti distinctio quam, repellendus
+                    molestias aliquid perferendis veritatis accusamus obcaecati
+                    eaque error nihil in eveniet, iure porro delectus nobis
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="testHeader3">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#testCollapse3"
+                  aria-expanded="true"
+                  aria-controls="testCollapse3"
+                >
+                  Deneme 3
+                </button>
+              </h3>
+              <div
+                class="accordion-collapse collapse"
+                id="testCollapse3"
+                aria-labelledby="testHeader3"
+                data-bs-parent="#testAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt cupiditate possimus officia dolorum, eaque omnis
+                    neque id nostrum in aperiam consequuntur facilis architecto
+                    aliquid voluptatibus esse hic, eos fugit quae quidem,
+                    doloremque reprehenderit. Repudiandae voluptates nisi
+                    laborum fugit. Sit corrupti distinctio quam, repellendus
+                    molestias aliquid perferendis veritatis accusamus obcaecati
+                    eaque error nihil in eveniet, iure porro delectus nobis
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="testHeader4">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#testCollapse4"
+                  aria-expanded="true"
+                  aria-controls="testCollapse4"
+                >
+                  Deneme 4
+                </button>
+              </h3>
+              <div
+                class="accordion-collapse collapse"
+                id="testCollapse4"
+                aria-labelledby="testHeader4"
+                data-bs-parent="#testAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt cupiditate possimus officia dolorum, eaque omnis
+                    neque id nostrum in aperiam consequuntur facilis architecto
+                    aliquid voluptatibus esse hic, eos fugit quae quidem,
+                    doloremque reprehenderit. Repudiandae voluptates nisi
+                    laborum fugit. Sit corrupti distinctio quam, repellendus
+                    molestias aliquid perferendis veritatis accusamus obcaecati
+                    eaque error nihil in eveniet, iure porro delectus nobis
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -116,14 +278,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function () {
         "use strict";
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.querySelectorAll(".needs-validation");
-
-        // Loop over them and prevent submission
         Array.prototype.slice.call(forms).forEach(function (form) {
           form.addEventListener(
             "submit",
@@ -132,7 +289,6 @@
                 event.preventDefault();
                 event.stopPropagation();
               }
-
               form.classList.add("was-validated");
             },
             false
