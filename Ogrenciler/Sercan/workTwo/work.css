@@ -64,7 +64,7 @@ align-items: center;
 
 
 
-.card-sc h5:hover{
+.card-sc:hover{
   align-self: center;
   justify-self: center;
   top: 50px;
@@ -74,6 +74,7 @@ align-items: center;
   z-index: 1;
   font-weight: bolder;
   color: red;
+  background-color: aliceblue;
   font-size: 30pt ;
 }
 
