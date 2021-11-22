@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="../çalışmabootstrap/bootstrap.css">
+  <title>Çalışma Bootstrap</title>
+</head>
+
+<body>
+
+  
+    <div class="container">
+
+        <h3> LÜTFEN FORMU DOLDURUNUZ</h3>
+        <div class="col">
+          <div class="row">
+            <form class="sercan" novalidate >
+              <div class="items col">
+                <div class="row">
+                  <div class=" col-6">
+                    <div class="row form-floating">
+                      <label for="name">Adınız</label>
+                      <input class="form-control " type="text" id="name" placeholder="Adınız"required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" col-6">
+                    <div class="row form-floating ">
+                      <label for="surname">Soyadınız</label>
+                      <input class="form-control " type="text" id="surname" placeholder="Soyadınız"required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row form-floating">
+                      <label for="phone">Telefon Numaranız</label>
+                      <input class="form-control " type="text" id="phone" placeholder="Telefon Numaranız"required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row form-floating">
+                      <label for="mail">Eposta</label>
+                      <input class="form-control " type="email" id="mail" placeholder="Eposta"required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <textarea class="form-control" name="matter" id="matter" cols="71" rows="10" required ></textarea>               
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-2">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+    
+    
+    
+      </div>
+    
+    
+    
+    
+    
+    
+      <!-- ccccccccccccccccccccccccccccccccccccccccccc -->
+    
+      <div class="container">
+        <div class="row ">
+            <div class="col">
+                <form class="row g-2 sercan" novalidate>
+                    <div class="col-6 form-floating">
+                        <input type="text" class="form-control " id="name" placeholder="Adı" required>
+                        <label for="name">Adı</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-6 form-floating">
+
+
+                        <input type="text" class="form-control" id="surname" placeholder="Soyadı" required>
+                        <label for="surname">Soyadı</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback alert alert-danger" role="alert">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-12 form-floating">
+
+                        <input type="text" class="form-control" id="phone" placeholder="Phone" required>
+                        <label for="phone">Phone</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-12 form-floating">
+
+                        <input type="email" class="form-control" id="email" placeholder="Eposta" required>
+                        <label for="email">Email</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-12"><textarea class=" form-control" name="message" id="message" cols="30" rows="10"
+                            placeholder="mesaj" required></textarea>
+
+
+                    </div>
+                    <div class="col-12"><button class="btn btn-primary " type="submit">Gönder</button>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"></script>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.sercan')
+
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+              .forEach(function (form) {
+                  form.addEventListener('submit', function (event) {
+                      if (!form.checkValidity()) {
+                          event.preventDefault()
+                          event.stopPropagation()
+                      }
+
+                      form.classList.add('was-validated')
+                  }, false)
+              })
+      })()</script>
+
+</body>
+
+</html>
