@@ -1,0 +1,21 @@
+ul{
+    list-style: none;
+}
+li{
+    display: inline;
+    margin: 10px;
+    position: relative;
+}
+.col-img
+{
+    background-image: url(468409-Mark-Twain-Quote-Explore-Dream-Discover.jpg);
+
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
