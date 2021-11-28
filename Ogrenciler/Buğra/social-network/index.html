@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter Template</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">social network</a>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#navbar-collapse"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#discover" class="nav-link">discover</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Friends" class="nav-link">New Friends</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Joinus" class="nav-link">Join us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="home">
+      <div class="img-overlay">
+        <div class="container row  pb-5 pt-5">
+          <div class="col-lg-9 text-light d-none d-lg-block">
+            <div class="col p-5">
+              <p class="fs-1"><strong>Discovery</strong> The Colorful World</p>
+              <ul class="list-unstyled">
+                <li class="mb-3 bi bi-caret-right-fill">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </li>
+                <li class="mb-3 bi bi-caret-right-fill">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </li>
+                <li class="mb-3 bi bi-caret-right-fill">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima, quae.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 rounded text-center pb-5 pt-3 mt-5" id="card1"
+          >
+            <h2>Join Us</h2>
+            <p>Please fill out the form</p>
+            <div class="row form-floating mb-3">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Username"
+                />
+              </div>
+            </div>
+            <div class="row form-floating mb-3">
+              <div class="col">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="E-mail"
+                />
+              </div>
+            </div>
+            <div class="row form-floating mb-3">
+              <div class="col">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div class="row form-floating">
+              <div class="col">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingRepassword"
+                  placeholder="Repassword"
+                />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col d-grid gap-2">
+                <button type="button" class="btn btn-outline-light">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
