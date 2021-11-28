@@ -1,3 +1,8 @@
+$darkblue: #364F6BFF;
+$blue: #4bbec9;
+$white: #ffffff;
+
+
 body {
   background-color: $dark;
   color: $white;
@@ -25,5 +30,41 @@ body {
     height: 700px;
     background: rgba($color: #000000, $alpha: 0.8);
   }
+}
 
+.home-inner {
+  margin-top: 150px;
+}
+
+.section-inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#discover {
+background-color: $darkblue;
+}
+
+#explore {
+  background-color: $white;
+
+}
+
+#friends {
+  background-color: $blue;
+
+}
+
+#newFriends {
+  background-color: $darkblue;
+
+}
+
+#formEnd {
+  background-color: $blue;
+
+}
+
+#footer {
+  background-color: $darkblue;
 }

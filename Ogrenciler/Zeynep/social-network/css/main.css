@@ -10649,7 +10649,7 @@ fieldset:disabled .btn {
 
 body {
   background-color: #364f6b;
-  color: #fff;
+  color: #ffffff;
 }
 
 .navbar {
@@ -10673,4 +10673,37 @@ body {
   width: 100%;
   height: 700px;
   background: rgba(0, 0, 0, 0.8);
+}
+
+.home-inner {
+  margin-top: 150px;
+}
+
+.section-inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#discover {
+  background-color: #364F6BFF;
+}
+
+#explore {
+  background-color: #ffffff;
+}
+
+#friends {
+  background-color: #4bbec9;
+}
+
+#newFriends {
+  background-color: #364F6BFF;
+}
+
+#formEnd {
+  background-color: #4bbec9;
+}
+
+#footer {
+  background-color: #364F6BFF;
 }
