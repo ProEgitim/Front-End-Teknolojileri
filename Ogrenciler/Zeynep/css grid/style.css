@@ -17,7 +17,7 @@
     align-content: center;
     text-align: center;
     grid-template-areas:
-  /*"zeynep berkay simge "*/ /*"zeyno sıla zeynep "*/;
+  /*"zeynep  simge "*/ /*"zeyno sıla zeynep "*/;
 }
 
 .container div {
@@ -45,7 +45,7 @@
 .box-3 {
     background-color: royalblue;
     /*order: 5;*/
-    grid-area: berkay;
+    grid-area: zey;
 }
 
 .box-4 {
@@ -88,7 +88,7 @@
         grid-template: repeat(5,100px) / repeat(2. minmax (100px, 200px));
         grid-template-areas: ;
         "zeynep zeyno"
-        "berkay zeynep"
+        "zey zeynep"
         "simge sıla"
         "zeynep zeyno"
 
