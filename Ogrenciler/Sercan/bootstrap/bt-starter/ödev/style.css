@@ -1,0 +1,63 @@
+
+
+.photo{
+    background-image: url(../bt-starter/main\ resim.jpg);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.motto{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align:start;
+    font-style: oblique;
+    margin: 150px;
+    font-size: 28pt;
+    
+}
+.motto h1{
+    font-size: 40pt;
+}
+
+.find-container{
+    background-color: #8cadd4;
+    height: 300px;
+    text-align: center;
+}
+
+.explore{
+
+display: flex;
+justify-content: center;
+text-align: center;
+background-color: #8cadd4;
+}
+.explore-photo img{
+    margin-left: 150px ;
+    width: 300px ;
+    height:250px ;
+    border-radius: 50%;
+}
+
+.mesaj{
+    justify-content: center;
+}
+
+.footer{
+    background-color: #8cadd4;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30pt;
+   
+}
+
+
+
+
+
+
+
+
+

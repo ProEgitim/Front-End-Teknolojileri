@@ -8,14 +8,22 @@ li{
 }
 .col-img
 {
-    background-image: url(468409-Mark-Twain-Quote-Explore-Dream-Discover.jpg);
-
+  margin-top: 12px;
+    /* background-image: url(468409-Mark-Twain-Quote-Explore-Dream-Discover.jpg); */
+    width: 57rem;
+    height: 17rem;
+    position: absolute;
   /* Full height */
-
+    filter: blur(5px);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   
 
+}
+input
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
