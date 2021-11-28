@@ -1,5 +1,14 @@
-body { background-color: #79a1cc; }
+body {
+  background-color: #79a1cc; }
 
-h1 { font-size: 24px; color: orange; }
+h1 {
+  font-size: 24px;
+  color: orange; }
 
-button { width: 120px; height: 50px; padding: 5px; border: 1px solid orange; border-radius: 5px; color: orange; }
+button {
+  width: 120px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  color: orangered; }
