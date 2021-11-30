@@ -1,12 +1,83 @@
+$gray : #F8F9FAFF;
+
+
+
+
+.body {
+  font-family: roboto, sans-serif;
+}
+
+
+
 #home {
-  background-image: url(../img/hero-bg.jpg);
+    background-image: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: 50%;
-    min-height: 700px;
+    min-height: 600px;
+}
+
+.image-overlay {
+  width: 100%;
+  height: 700px;
+  background: rgba($color: #ffffff, $alpha: 0.5);
+}
+
+.bi {
+ width: 100%;
+}
+
+
+.bi-play-circle {
+  width: 100%;
+  max-width: 100%;
+  color: $blue;
+}
+
+.section-inner {
+  margin-top: 50px;
 }
 
 .home-inner {
-  margin-top: 100px;
+  margin-top: 200px;
+}
+#aboutUs {
+background-color: $gray;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
+
+#clients {
+  background-color: $gray;
+}
+
+.cardIcon {
+  max-width: 45%;
+  height: auto;
+}
+
+.testimonials {
+background-image: url(img/testimonials-bg.jpg);
+}
+
+.bizlandImage {
+max-width: 120px;
+}
+
+
+#image-test {
+  width: 100px;
+  height: 100px;
+}
+
+.portfolio-image {
+  width: 100%;
+}
+
+#questions {
+  background-color: $gray;
 }
