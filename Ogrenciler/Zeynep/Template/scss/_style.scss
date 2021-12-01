@@ -24,16 +24,16 @@ $gray : #F8F9FAFF;
   background: rgba($color: #ffffff, $alpha: 0.5);
 }
 
-.bi {
- width: 100%;
-}
+//.bi {
+// width: 100%;
+//}
 
 
-.bi-play-circle {
-  width: 100%;
-  max-width: 100%;
-  color: $blue;
-}
+//.bi-play-circle {
+//  width: 100%;
+//  max-width: 100%;
+//  color: $blue;
+//}
 
 .section-inner {
   margin-top: 50px;
@@ -80,4 +80,12 @@ max-width: 120px;
 
 #questions {
   background-color: $gray;
+}
+
+#footerBizland {
+  background-color: $gray;
+}
+
+a {
+  text-decoration: none;
 }
