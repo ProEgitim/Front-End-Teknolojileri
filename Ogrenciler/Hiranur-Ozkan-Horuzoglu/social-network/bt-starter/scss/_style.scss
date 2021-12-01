@@ -27,3 +27,28 @@ body{
 .home-inner{
     padding-top: 150px;
 }
+#explore-container{
+    background-color: $white;
+    color: black;
+}
+#explore{
+    background-image: url(../../img/background-1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+#find-new{
+    background-image: url(../../img/enjoy.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 50%;
+}
+#friends{
+    background-color: $primary;
+}
+#joinus{
+    background-color: $primary;
+}
