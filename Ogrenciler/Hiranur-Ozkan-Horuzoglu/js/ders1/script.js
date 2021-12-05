@@ -1,18 +1,20 @@
-//-NUMBER:sayısal ifadeler-(16)   -
-//-STRİNGLER:yazılar-(23)         -
-//-BOOLEAN: true-false-(30)       -
-//-NULL-(36)                      -
-//-OBJECT-(43)                    -
-//--ARRAY: diziler-(52)           -
-//-TİP DÖNÜŞTÜRME-(91)            -
-//-OPERATÖRLER-(120)              -
-//-STRİNG METODLARI-(143)         -
-//-ARRAY ÖZELLİKLERİ-(200)        -
-//-OBJE ÖZELLİKLERİ-(233)         -
-//-ZAMAN OBJESİ-(246)             -
-//--------------------------------
-//VARİBLES:değişkenler
+//-----------İçindekiler-----------
+//                                -
+//-NUMBER:sayısal ifadeler-(18)   -
+//-STRİNGLER:yazılar-(25)         -
+//-BOOLEAN: true-false-(32)       -
+//-NULL-(38)                      -
+//-OBJECT-(45)                    -
+//--ARRAY: diziler-(54)           -
+//-TİP DÖNÜŞTÜRME-(93)            -
+//-OPERATÖRLER-(122)              -
+//-STRİNG METODLARI-(145)         -
+//-ARRAY ÖZELLİKLERİ-(202)        -
+//-OBJE ÖZELLİKLERİ-(235)         -
+//-ZAMAN OBJESİ-(248)             -
+//---------------------------------
 
+//-----------------------VARİBLES:değişkenler----------------------------
 // NUMBER:sayısal ifadeler ( )
 
 // var firstNumber = 20; 
