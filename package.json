@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "node-sass": "^6.0.1",
-    "sass": "^1.43.4",
-    "scss": "^0.2.4"
-  }
-}
