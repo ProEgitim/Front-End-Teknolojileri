@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Canvas</title>
+        <script>
+            function DortgenCiz() {
+                var cnv = document.getElementById("myCanvas");
+                var context = cnv.getContext("2d");
+                context.rect(100, 100, 300, 300);
+                context.fillStyle = "#8ed6ff";
+                context.fill();
+                context.lineWidth = 10;
+                context.strokeStyle = "red";
+                context.stroke();
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="500" height="400"></canvas>
+        <br />
+        <button onclick="DortgenCiz()">Dörtgen Çiz</button>
+    </body>
+</html>
