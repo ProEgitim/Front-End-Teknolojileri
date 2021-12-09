@@ -1,21 +1,18 @@
-$gray : #F8F9FAFF;
-
-
-
-
+$gray: #F8F9FAFF;
+$black: #000000;
+$white: #ffffff;
 .body {
   font-family: roboto, sans-serif;
 }
 
 
-
 #home {
-    background-image: url(../img/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50%;
-    min-height: 600px;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  min-height: 600px;
 }
 
 .image-overlay {
@@ -24,16 +21,16 @@ $gray : #F8F9FAFF;
   background: rgba($color: #ffffff, $alpha: 0.5);
 }
 
-.bi {
- width: 100%;
-}
+//.bi {
+// width: 100%;
+//}
 
 
-.bi-play-circle {
-  width: 100%;
-  max-width: 100%;
-  color: $blue;
-}
+//.bi-play-circle {
+//  width: 100%;
+//  max-width: 100%;
+//  color: $blue;
+//}
 
 .section-inner {
   margin-top: 50px;
@@ -42,8 +39,9 @@ $gray : #F8F9FAFF;
 .home-inner {
   margin-top: 200px;
 }
+
 #aboutUs {
-background-color: $gray;
+  background-color: $gray;
 }
 
 .about-image {
@@ -60,12 +58,23 @@ background-color: $gray;
   height: auto;
 }
 
-.testimonials {
-background-image: url(img/testimonials-bg.jpg);
+#testiomonials {
+  background-image: url(../img/testimonials-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  color: white;
 }
 
+.image-overlay-test {
+  background: rgba($color: #000000, $alpha: 0.6);
+}
+
+
+
 .bizlandImage {
-max-width: 120px;
+  max-width: 120px;
 }
 
 
@@ -81,3 +90,25 @@ max-width: 120px;
 #questions {
   background-color: $gray;
 }
+
+#footerBizland {
+  background-color: $black;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#teamBizland {
+  background-color: $gray;
+}
+
+#pricing {
+  background-color: white;
+}
+
+.joinBizland{
+  background-color: $gray;
+}
+
