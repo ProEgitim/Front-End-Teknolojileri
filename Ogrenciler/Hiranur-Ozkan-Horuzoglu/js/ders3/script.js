@@ -39,7 +39,7 @@
 // console.log(min);
 
 //----------------------------------------
-//sepread Operatör
+//Sepread Operatör
 // let sayilar = new Array(20);
 // let sayilar2 = new Array(20);
 
