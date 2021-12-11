@@ -199,6 +199,7 @@
 //     console.log(langs [i]);
 // }
 //-----arrayler için foreach döngüsü-----
+
 // langs.forEach(function(langs,i){
 //     console.log(langs,i);
 // })
