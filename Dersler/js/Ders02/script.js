@@ -261,3 +261,31 @@
 // console.log(sayilar);
 // console.log(sayilar2);
 // console.log(sayilar3);
+
+// //Scope Kavramı
+
+// // Global Scope
+// var value1 = 10;
+// let value2 = 20;
+// const value3 = 30;
+
+// // Function Scope
+// function Funk(){
+//   var value1 = 40;
+//   let value2 = 50;
+//   const value3 = 60;
+//   console.log("Function Scope: " + value1,value2,value3);
+// }
+
+// // Block Scope (Döngüler - for, while -- Koşullar - if -- yada herhangi {} blokları)
+
+// if (true){
+//   var value1 = 70;
+//   let value2 = 80;
+//   const value3 = 90;
+//   console.log("Block Scope: " + value1,value2,value3);
+// }
+
+
+// Funk();
+// console.log("Global Scope: " + value1,value2,value3);
