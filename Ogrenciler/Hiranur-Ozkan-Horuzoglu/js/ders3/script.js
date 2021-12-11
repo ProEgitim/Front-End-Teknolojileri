@@ -1,56 +1,124 @@
-//1 le 100 arası 20 tane sayı yazdır en kücük ve en büyük sayıyı bul
+// let value;
 
-// const numbers = [] ;
+// value = document.all;
 
-// for(let i=0; i<100; i++){
-//     a=Math.floor(Math.random()*100+1);
-//     numbers.push(a);
-// }
-// var max = Math.max(...numbers);
-// var min = Math.min(...numbers);
+// // for (let i = 0; i < value.length; i++) {
+// //     console.log(value[i]);  
+// // }
 
-// console.log(numbers);
-// console.log(max);
-// console.log(min);
+// value = document.body;
+// value = document.head;
+// value = document.location;
+// value = document.location.hostname;
+// value = document.URL;
+// value = document.scripts[1];
+// value = document.scripts.length;
+// value = document.links;
+// value = document.links[0].getAttribute("class");
+// value = document.links[0].className;
+// value = document.links[document.links.length-1].classList;
+// value = document.links[document.links.length-1].id;
 
-//----------------------------------------
+//------------
+// // ID'ye göre element seçimi
+// value = document.getElementById("clear-todos").getAttribute("class");
+//-----------------
+// // Class'a göre element seçimi
+// value = document.getElementsByClassName("card-title")[0].getAttribute("id");
+//-------------------------------
+// //Tag'e göre element seçimi
+// value = document.getElementsByTagName("div");
+//-------------------------
+// //SCC Selector'leri ile seçim yapma
+// value = document.querySelector(".list-group-item");
+// value = document.querySelector("#tasks-title");
+// value = document.querySelector("div");
+// value = document.querySelectorAll("div"); //hepsini aldı ALL
 
-// const numbers = [];
+// value = document.querySelector("#tasks-title"); //scc kısmında degişiklik yaptık
+// value.style.border = "5px solid green";
+// value.className = "btn btn-primary";
+// value.textContent = "Görevler";
+//-------------------------
+// value = document.querySelector(".delete-item"); 
+// value.setAttribute("href","https://www.google.com/"); //# degiştir baska bir url gönderdik
 
-// for(let i=0; i<20; i++){
-//        a=Math.floor(Math.random()*100+1);
-//        numbers.push(a);
-// }
+// value = document.querySelector("li:nth-child(3)");
+// value = document.querySelector("li:last-child");
+// value = document.querySelector("li:nth-child(even)");
 
-// let max = numbers[0];
-// let min = numbers[0];
+// value.forEach(function(e) {
+//     e.style.background = "#ce0000";
+//     e.style.color = "#fff";
+// // });
 
-// for(let k = 0; k<numbers.length; k++){
-//     if(min > numbers[k]){
-//        min = numbers[k];
-//     }
-//     if (max < numbers[k]) {
-//         max = numbers[k];
-//     }
-// }
+// todoGroup = document.querySelector(".list-group");
+// value = todoGroup.children[todoGroup.children.length-1].textContent = "Deneme"; //bosluksuz düz hali sonuncu elemanı secme
+// value = todoGroup.children[0].nextElementSibling.nextElementSibling; 
+// value = todoGroup.children[todoGroup.children.length - 1].previousElementSibling; 
 
-// console.log(numbers);
-// console.log(max);
-// console.log(min);
+// const newButton = document.createElement("a");
+// value = document.getElementsByClassName("card-body")[1];
 
-//----------------------------------------
-//Sepread Operatör
-// let sayilar = new Array(20);
-// let sayilar2 = new Array(20);
+// newButton.id = "clear-todos";
+// newButton.className = "btn btn-danger";
+// newButton.href = "https://www.google.com/";
+// newButton.target = "_blank";
 
-// for (let i = 0; i < sayilar.length; i++) {
-//     sayilar[i] = Math.floor(Math.random()*100 + 1);
-//     sayilar2[i] = Math.floor(Math.random()*100 + 1);
-    
-// }
-// sayilar3 = [...sayilar, ...sayilar2]; //listenin içerisini dagıtıyor ... nokta konulmadıgı zaman NaN geliyor (dizinin dışına dagıtmak)
+// const text = document.createTextNode("Clear");
+// newButton.appendChild(text);
+// value.appendChild(newButton);
+//--------------------------------------
 
-// console.log(sayilar);
-// console.log(sayilar2);
-// console.log(sayilar3);
+// const buttonNew= document.querySelector(".list-group");
 
+// const buttonNewLi = document.createElement("li");
+// buttonNewLi.className = "list-group-item d-flex justify-content-between";
+// const buttonNewA = document.createElement("a");
+// buttonNewA.href = "#";
+// buttonNewA.className = "delete-item";
+// const buttonNewİ = document.createElement("i");
+// buttonNewİ.className = "fa fa-remove";
+// const text  = document.createTextNode("todo5");
+
+// buttonNewA = appendChild(buttonNewİ);
+// buttonNewLi = appendChild(buttonNewA);
+// buttonNew = appendChild(buttonNewLi);
+// buttonNew.appendChild(text);
+// buttonNew.appendChild(buttonNewLi);
+//------------------------------
+
+// value = document.querySelectorAll(".list-group-item");
+// value.remove(); //silme işlemi
+//-----------------------
+//Element Değiştirme
+
+// value = document.querySelectorAll(".card-body")[1];
+
+// const newElement = document.createElement("h3");
+// newElement.className = "card-title";
+// newElement.id = "tasks-title";
+// newElement.textContent = "Yeni Todolar";
+
+// const oldElement = document.querySelector("#tasks-title");
+// value.replaceChild(newElement, oldElement); //isim degiştirme
+
+//Atribute Değiştirme-Ekleme-Silme
+
+const todoInput = document.getElementById("todo");
+value = todoInput;
+value = todoInput.classList;
+
+todoInput.classList.add("yeniClass");
+todoInput.classList.remove("form-control");
+
+value = todoInput.getAttribute("placeholder");
+todoInput.setAttribute("placeholder","Naber")
+value = todoInput.getAttribute("placeholder");
+todoInput.removeAttribute("placeholder");
+value = todoInput.getAttribute("placeholder");
+
+
+
+console.log(value); //console.log(...value);
+console.log(typeof value);
