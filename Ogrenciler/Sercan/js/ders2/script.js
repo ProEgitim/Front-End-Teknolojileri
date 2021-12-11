@@ -247,7 +247,7 @@ console.log(cevap);*/
 
 
 
-const arr = [
+/*const arr = [
   [1, 2], [3, 4], [5, 6] 
 ];
 
@@ -257,4 +257,30 @@ for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       console.log(arr[i][j]);
     }
-  }
+  }*/
+
+ 
+ 
+//  var sayılar = [];
+  
+//  for (let i =0 ; i<20; i++){
+//     sayılar.push(Math.floor(Math.random()*100+1));
+   
+//  }
+
+//  let myMax = sayılar[0];
+//  let myMin = sayılar[0];
+ 
+//  for( let i=0 ; i<sayılar.length;i++ ){
+//      if(sayılar[i]>myMax){
+//         myMax=sayılar[i];
+//      }
+//      if(sayılar[i]<myMin){
+//          myMin=sayılar[i];
+//      }
+//  }
+
+//  console.log(sayılar);
+//  console.log(myMin);
+//  console.log(myMax);
+
