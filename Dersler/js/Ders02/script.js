@@ -246,3 +246,18 @@
 // window.scroll(0,300);
 // let yKonum = window.scrollY;
 // console.log(yKonum);
+
+// Spread Operator
+// let sayilar = new Array(20);
+// let sayilar2 = new Array(20);
+
+// for(let i=0; i<sayilar.length;i++){
+//   sayilar[i]=Math.floor(Math.random()*100+1);
+//   sayilar2[i]=Math.floor(Math.random()*100+1);
+// }
+
+// sayilar3 = [...sayilar, ...sayilar2]
+
+// console.log(sayilar);
+// console.log(sayilar2);
+// console.log(sayilar3);
