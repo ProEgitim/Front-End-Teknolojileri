@@ -90,7 +90,7 @@
 const liste = document.querySelector (".list-group")
 const listeolustur = document.createElement ("li");
 listeolusturli.className = "list-group-item d-flex justify-content-between
-";
+"
 const listeolustur = document.createElement ("a");
 listeolustur.href = "#";
 listeolustur.className = "delete-item"
@@ -151,16 +151,33 @@ console.log (typeof value);
 // console.log(value);
 
 
-value = document.querySelectorAll(".card-body")[1];
+// Element Değiştirme
+// value = document.querySelectorAll(".card-body")[1];
+// const newElement = document.createElement("h3");
+// newElement.className = "card-title";
+// newElement.id = "tasks-title";
+// newElement.textContent = "Yeni Todolar";
+// const oldElement = document.querySelector("#tasks-title");
+// value.replaceChild(newElement, oldElement);
 
-const newElement = document.createElement ("h3");
-newElement.className = "card-title";
-newElement.id = "tasks-title";
-newElement.textContent = "Yeni Todolar";
 
-const oldElement = document.querySelector("#tasks-title");
+// Atribute Değiştirme-Ekleme Silme
 
-value.replaceChild(newElement, oldElement);
+// const todoInput = document.getElementById("todo");
 
+// value = todoInput;
+// value = todoInput.classList;
+
+// todoInput.classList.add("yeniClass");
+// todoInput.classList.remove("form-control");
+
+// value = todoInput.getAttribute("placeholder");
+// todoInput.setAttribute("placeholder","Naber")
+// value = todoInput.getAttribute("placeholder");
+// todoInput.removeAttribute("placeholder");
+// value = todoInput.getAttribute("placeholder");
+
+console.log(value);
+console.log(typeof value)
 
 
