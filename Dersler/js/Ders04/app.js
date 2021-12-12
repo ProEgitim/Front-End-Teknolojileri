@@ -13,10 +13,10 @@ del.addEventListener("click",deleteItem);
 clear.addEventListener("click",clearItems);
 //Fonksiyonlar
 function addItem(e){
-  sessionStorage.setItem(addkey.value,addvalue.value)
+  sessionStorage.setItem(addkey.value,addvalue.value);
 }
 function deleteItem(e){
-  sessionStorage.removeItem(deletekey.value)
+  sessionStorage.removeItem(deletekey.value);
 }
 function clearItems(e){
   sessionStorage.clear();
