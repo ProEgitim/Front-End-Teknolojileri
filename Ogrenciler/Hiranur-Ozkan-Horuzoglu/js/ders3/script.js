@@ -24,12 +24,15 @@
 //------------
 // // ID'ye göre element seçimi
 // value = document.getElementById("clear-todos").getAttribute("class");
+
 //-----------------
 // // Class'a göre element seçimi
 // value = document.getElementsByClassName("card-title")[0].getAttribute("id");
+
 //-------------------------------
 // //Tag'e göre element seçimi
 // value = document.getElementsByTagName("div");
+
 //-------------------------
 // //SCC Selector'leri ile seçim yapma
 // value = document.querySelector(".list-group-item");
