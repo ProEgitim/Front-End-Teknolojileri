@@ -204,8 +204,41 @@
 // console.log(todoFilter,todoHeader);
 
 
-// CLİCK Event
+// LOCAL STORAGE 
+// SETITEM
 
-const cardBody = document.querySelectorAll[1]
+// localStorage.setItem("hareket1","yukarı");
+// localStorage.setItem("hareket2","aşağı");
+
+
+
+// // GET ITEM
+
+// const value = localStorage.getItem("hareket");
+// console.log(value);
+
+// // CLEAR LOCAL STORAGE
+// localStorage.clear();
+// localStorage.setItem("hareket1","yukarı");
+// console.log(localStorage.getItem("abc"));
+
+
+// localStorage.setItem("hareket1","yukarı");
+// if (localStorage.getItem("hareket1")===null){
+//     console.log("sorguladıgınız veri bulunamıyor");
+// }
+// else{
+//     console.log("sorguladıgınız veri bulundu");
+// }
+
+
+// // LOCAL STORAGE ARRAY KAYDETME
+
+// const todos = ["Todo 1","Todo 2","Todo 3"];
+// localStorage.setItem("todolar",JSON.stringify(todos));
+
+// const val = JSON.parse(localStorage.getItem("todolar"));
+// console.log(val);
+
 
 
