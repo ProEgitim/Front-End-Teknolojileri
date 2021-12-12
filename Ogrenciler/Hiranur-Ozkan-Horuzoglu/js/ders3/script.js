@@ -1,4 +1,6 @@
-// let value;
+//js dinamik olarak içine yerleştiriyoruz....
+
+let value;
 
 // value = document.all;
 
@@ -54,7 +56,7 @@
 
 // todoGroup = document.querySelector(".list-group");
 // value = todoGroup.children[todoGroup.children.length-1].textContent = "Deneme"; //bosluksuz düz hali sonuncu elemanı secme
-// value = todoGroup.children[0].nextElementSibling.nextElementSibling; 
+// value = todoGroup.children[0].nextElementSibling.nextElementSibling; //todonun kardeşini seçme
 // value = todoGroup.children[todoGroup.children.length - 1].previousElementSibling; 
 
 // const newButton = document.createElement("a");
@@ -105,18 +107,18 @@
 
 //Atribute Değiştirme-Ekleme-Silme
 
-const todoInput = document.getElementById("todo");
-value = todoInput;
-value = todoInput.classList;
+// const todoInput = document.getElementById("todo");
+// value = todoInput;
+// value = todoInput.classList;
 
-todoInput.classList.add("yeniClass");
-todoInput.classList.remove("form-control");
+// todoInput.classList.add("yeniClass");
+// todoInput.classList.remove("form-control");
 
-value = todoInput.getAttribute("placeholder");
-todoInput.setAttribute("placeholder","Naber")
-value = todoInput.getAttribute("placeholder");
-todoInput.removeAttribute("placeholder");
-value = todoInput.getAttribute("placeholder");
+// value = todoInput.getAttribute("placeholder");
+// todoInput.setAttribute("placeholder","Naber")
+// value = todoInput.getAttribute("placeholder");
+// todoInput.removeAttribute("placeholder");
+// value = todoInput.getAttribute("placeholder");
 
 
 
