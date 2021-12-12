@@ -1,4 +1,4 @@
-let value;
+// let value;
 
 // value = document.all;
 
@@ -45,7 +45,7 @@ let value;
 //   e.style.color = "#fff";
 // })
 
-todoGroup = document.querySelector(".list-group");
+// todoGroup = document.querySelector(".list-group");
 
 // value = todoGroup.children[todoGroup.children.length - 1].textContent = "Deneme";
 // value = todoGroup.children[0].nextElementSibling.nextElementSibling;
@@ -95,5 +95,105 @@ todoGroup = document.querySelector(".list-group");
 // todoInput.removeAttribute("placeholder");
 // value = todoInput.getAttribute("placeholder");
 
-console.log(value);
-console.log(typeof value)
+
+// // # DOM Eventleri
+
+// const filterInput = document.getElementById("filter");
+// const todoForm = document.getElementById("todo-form");
+
+// filterInput.onfocus = function(){
+//   console.log("Focus Oldu");
+// }
+
+// filterInput.addEventListener("focus",function(e){
+//   console.log(e);
+//   console.log(e.target.placeholder);
+//   e.target.placeholder="Deneme";
+// })
+
+// todoForm.addEventListener("submit",submitForm);
+
+// function submitForm(e){
+//   console.log("Submit Eventi");
+//   e.preventDefault();
+// }
+
+// Klavye Eventleri
+// keypress
+
+// document.addEventListener("keypress",run);
+
+// function run(e){
+//   console.log(e.which);
+//   console.log(e.key);
+// }
+
+// keydown
+// document.addEventListener("keydown",run);
+
+// function run(e){
+//   console.log(e.which);
+//   console.log(e.key);
+// }
+
+// const todoInput = document.getElementById("todo");
+// const header = document.querySelector(".card-header");
+
+// todoInput.addEventListener("keyup",changeText);
+
+// function changeText(e){
+//   header.textContent = e.target.value;
+// }
+
+
+
+const cardBody = document.querySelectorAll(".card-body")[1];
+const title = document.querySelector("#tasks-title");
+
+// Click Eventi
+// title.addEventListener("click",run);
+// Double Click Eventi
+// title.addEventListener("dblclick",run);
+// Mouse Down
+// title.addEventListener("mousedown",run);
+// Mouse Up
+// title.addEventListener("mouseup",run);
+// Mouse Over
+// title.addEventListener("mouseover",run);
+// Mouse Out
+// title.addEventListener("mouseout",run);
+
+// cardBody.addEventListener("mouseover",run);
+// cardBody.addEventListener("mouseout",run);
+// Mouse Enter & Mouse Leave
+// cardBody.addEventListener("mouseenter",run);
+// cardBody.addEventListener("mouseleave",run);
+
+// document.addEventListener("DOMContentLoaded",load);
+
+// function load(e){
+//   alert("Sayfa Yüklendi");
+// }
+
+const filter = document.getElementById("filter");
+
+// Input Eventleri
+// Focus
+// filter.addEventListener("focus",run);
+// Blur
+// filter.addEventListener("blur",run);
+
+// Paste
+// filter.addEventListener("paste",run);
+// Copy
+// filter.addEventListener("copy",run);
+// Cut
+// filter.addEventListener("cut",run);
+
+
+
+function run(e){
+  console.log(e.type);
+}
+// console.log(value);
+// console.log(typeof value)
