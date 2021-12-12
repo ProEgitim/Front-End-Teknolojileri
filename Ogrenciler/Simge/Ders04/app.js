@@ -32,3 +32,4 @@ function deleteItem(e){
 function clearItems(e){
     sessionStorage.clear();
 }
+
