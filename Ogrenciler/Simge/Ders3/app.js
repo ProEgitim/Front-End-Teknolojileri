@@ -87,25 +87,22 @@
 
 
 
-const liste = document.querySelector (".list-group")
-const listeolustur = document.createElement ("li");
-listeolusturli.className = "list-group-item d-flex justify-content-between
-"
-const listeolustur = document.createElement ("a");
-listeolustur.href = "#";
-listeolustur.className = "delete-item"
-const listeolustur = document.createElement ("i");
-listeolusturi.className ="fa fa-delete";
-const text = document.createTextNode("ToDo5");
+// const liste = document.querySelector (".list-group")
+// const listeolustur = document.createElement ("li");
+// listeolusturli.className = "list-group-item d-flex justify-content-between
+// "
+// const listeolustur = document.createElement ("a");
+// listeolustur.href = "#";
+// listeolustur.className = "delete-item"
+// const listeolustur = document.createElement ("i");
+// listeolusturi.className ="fa fa-delete";
+// const text = document.createTextNode("ToDo5");
 
 
-listeolustur.appendChild(listeolusturi);
-listeolusturli.appendChild(listeolustura);
-liste.appendChild(text);
-liste.appendChild(listeolusturli);
-
-
-
+// listeolustur.appendChild(listeolusturi);
+// listeolusturli.appendChild(listeolustura);
+// liste.appendChild(text);
+// liste.appendChild(listeolusturli);
 
 
 
@@ -114,32 +111,35 @@ liste.appendChild(listeolusturli);
 
 
 
-const liElement = document.createElement("li");
-value = document.getElementsByClassName("list-group")[0];
-
-liElement.className = "list-group-item d-flex justify-content-between";
-
-const text = document.createTextNode("Todo 5");
-liElement.appendChild(text);
-
-value.appendChild(liElement);
 
 
-const aElement = document.createElement("a");
-aElement.className = "delete-item";
-aElement.href = "#";
 
-liElement.appendChild(aElement);
+// const liElement = document.createElement("li");
+// value = document.getElementsByClassName("list-group")[0];
+
+// liElement.className = "list-group-item d-flex justify-content-between";
+
+// const text = document.createTextNode("Todo 5");
+// liElement.appendChild(text);
+
+// value.appendChild(liElement);
 
 
-const iElement = document.createElement("i");
-iElement.className = "fa fa-remove";
+// const aElement = document.createElement("a");
+// aElement.className = "delete-item";
+// aElement.href = "#";
 
-aElement.appendChild(iElement);
+// liElement.appendChild(aElement);
 
 
-console.log (value);
-console.log (typeof value);
+// const iElement = document.createElement("i");
+// iElement.className = "fa fa-remove";
+
+// aElement.appendChild(iElement);
+
+
+// console.log (value);
+// console.log (typeof value);
 
 
 
@@ -177,7 +177,35 @@ console.log (typeof value);
 // todoInput.removeAttribute("placeholder");
 // value = todoInput.getAttribute("placeholder");
 
-console.log(value);
-console.log(typeof value)
+
+
+
+
+
+
+
+// DOM EVENTLERİ
+
+
+
+// const todoHeader = document.getElementById("tasks-title");
+// const todoFilter = document.querySelector("#filter");
+
+
+// todoFilter.addEventListener("keyup",changeTextFilter);
+
+
+
+// function changeTextFilter(e){
+//     todoHeader.textContent = e.target.value;
+// }
+
+
+// console.log(todoFilter,todoHeader);
+
+
+// CLİCK Event
+
+const cardBody = document.querySelectorAll[1]
 
 

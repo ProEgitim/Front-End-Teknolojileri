@@ -147,8 +147,8 @@
 
 
 
-const cardBody = document.querySelectorAll(".card-body")[1];
-const title = document.querySelector("#tasks-title");
+// const cardBody = document.querySelectorAll(".card-body")[1];
+// const title = document.querySelector("#tasks-title");
 
 // Click Eventi
 // title.addEventListener("click",run);
@@ -175,7 +175,7 @@ const title = document.querySelector("#tasks-title");
 //   alert("Sayfa Yüklendi");
 // }
 
-const filter = document.getElementById("filter");
+// const filter = document.getElementById("filter");
 
 // Input Eventleri
 // Focus
@@ -192,8 +192,47 @@ const filter = document.getElementById("filter");
 
 
 
-function run(e){
-  console.log(e.type);
-}
+// function run(e){
+//   console.log(e.type);
+// }
 // console.log(value);
 // console.log(typeof value)
+
+
+// -------------------------------------
+// Local Storage
+// SetItem
+
+// localStorage.setItem("hareket1","yukarı");
+// localStorage.setItem("hareket2","aşağı");
+
+// GetItem
+// const value = localStorage.getItem("hareket");
+// console.log(value);
+// console.log(typeof value);
+
+// Clear Local Storage
+// localStorage.clear();
+
+// localStorage.setItem("hareket1","yukarı");
+
+// console.log(localStorage.getItem("abc"));
+
+// localStorage.setItem("hareket1","yukarı");
+
+// if (localStorage.getItem("hareket1")===null){
+//   console.log("Sorguladınız veri bulunamıyor");
+// }
+// else{
+//   console.log("Sorguladınız veri bulundu");
+// }
+
+// Local Storage Array Kaydetme
+
+// const todos = ["Todo 1","Todo 2","Todo 3"];
+
+// localStorage.setItem("todolar",JSON.stringify(todos));
+
+// const val = JSON.parse(localStorage.getItem("todolar"));
+// console.log(val);
+
