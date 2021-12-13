@@ -24,12 +24,15 @@
 //------------
 // // ID'ye göre element seçimi
 // value = document.getElementById("clear-todos").getAttribute("class");
+
 //-----------------
 // // Class'a göre element seçimi
 // value = document.getElementsByClassName("card-title")[0].getAttribute("id");
+
 //-------------------------------
 // //Tag'e göre element seçimi
 // value = document.getElementsByTagName("div");
+
 //-------------------------
 // //SCC Selector'leri ile seçim yapma
 // value = document.querySelector(".list-group-item");
@@ -239,3 +242,42 @@ const title = document.querySelector("#tasks-title");
 
 // console.log(value); //console.log(...value);
 // console.log(typeof value);
+
+
+
+//-----------------------------------------------------------------------
+
+//Local Storage
+// //SetItem
+
+// localStorage.setItem("hareket1","yukarı");
+// localStorage.setItem("hareket2","aşagı");
+
+// //GetItem
+// const value = localStorage.getItem("hareket");
+// console.log(value);
+// console.log(typeof value);
+
+//Clear Local Storage
+//ÇALIŞMADI---localStorage.removeItem("Hareket");
+// localStorage.clear();
+
+// console.log(localStorage.getItem("abc"));
+ localStorage.setItem("hareket1","yukarı");
+
+if (localStorage.getItem("hareket")===null) {
+    console.log("Sorguladıgınız veri bulunamıyor.")
+}
+else{
+    console.log("Sorguladıgınız veri bulundu.")
+
+}
+
+//Local Storage Array KAydetme
+
+// const todos = ["Todo 1","Todo 2","Todo 3"];
+// localStorage.setItem("todolar",JSON.stringify(todos));
+
+// //console.log(typeof localStorage.getItem("todolar"));
+// const val = JSON.parse(localStorage.getItem("todolar"));
+// console.log(val);

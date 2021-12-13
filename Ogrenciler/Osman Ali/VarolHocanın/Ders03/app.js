@@ -36,41 +36,20 @@
 
 // value = document.querySelector(".list-group-item");
 
-
-// console.log(value);
-// console.log(typeof value)
-
-
-
-
-// links= document.links
-// for (let i=0; i<links.length; i++;){
-//     links[1].href = "/yeni_link"
-// }
-
-// console.log (links);
-
-
-
 // value = document.querySelector("li:nth-child(3)");
 // value = document.querySelector("li:last-child");
-// value = document.querySelector("li:nth-child(even)");
+// value = document.querySelectorAll("li:nth-child(even)");
 
 // value.forEach(function(e){
-//     e.style.background = "#ce0000";
-//     e.style.color = "#fff";
+//   e.style.background = "#ce0000";
+//   e.style.color = "#fff";
 // })
 
+// todoGroup = document.querySelector(".list-group");
 
-
-// toDoGroup = document.querySelector(".list-group");
-
-// value = toDoGroup.children[toDoGroup.children.length -1].textContent ="deneme"
-// value = toDoGroup.children[0].nextElementSibling.nextElementSibling;
-
-// console.log (value);
-
-
+// value = todoGroup.children[todoGroup.children.length - 1].textContent = "Deneme";
+// value = todoGroup.children[0].nextElementSibling.nextElementSibling;
+// value = todoGroup.children[todoGroup.children.length - 1].previousElementSibling;
 
 // const newButton = document.createElement("a");
 // value = document.getElementsByClassName("card-body")[1];
@@ -83,72 +62,11 @@
 // const text = document.createTextNode("Clear");
 // newButton.appendChild(text);
 
-// console.log (value);
-
-
-
-// const liste = document.querySelector (".list-group")
-// const listeolustur = document.createElement ("li");
-// listeolusturli.className = "list-group-item d-flex justify-content-between
-// "
-// const listeolustur = document.createElement ("a");
-// listeolustur.href = "#";
-// listeolustur.className = "delete-item"
-// const listeolustur = document.createElement ("i");
-// listeolusturi.className ="fa fa-delete";
-// const text = document.createTextNode("ToDo5");
-
-
-// listeolustur.appendChild(listeolusturi);
-// listeolusturli.appendChild(listeolustura);
-// liste.appendChild(text);
-// liste.appendChild(listeolusturli);
-
-
-
-
-
-
-
-
-
-
-
-// const liElement = document.createElement("li");
-// value = document.getElementsByClassName("list-group")[0];
-
-// liElement.className = "list-group-item d-flex justify-content-between";
-
-// const text = document.createTextNode("Todo 5");
-// liElement.appendChild(text);
-
-// value.appendChild(liElement);
-
-
-// const aElement = document.createElement("a");
-// aElement.className = "delete-item";
-// aElement.href = "#";
-
-// liElement.appendChild(aElement);
-
-
-// const iElement = document.createElement("i");
-// iElement.className = "fa fa-remove";
-
-// aElement.appendChild(iElement);
-
-
-// console.log (value);
-// console.log (typeof value);
-
-
-
+// value.appendChild(newButton);
 
 // Element Silme
-
 // value = document.querySelector(".list-group-item");
 // value.remove();
-// console.log(value);
 
 
 // Element Değiştirme
@@ -178,67 +96,143 @@
 // value = todoInput.getAttribute("placeholder");
 
 
+// // # DOM Eventleri
 
+// const filterInput = document.getElementById("filter");
+// const todoForm = document.getElementById("todo-form");
 
+// filterInput.onfocus = function(){
+//   console.log("Focus Oldu");
+// }
 
+// filterInput.addEventListener("focus",function(e){
+//   console.log(e);
+//   console.log(e.target.placeholder);
+//   e.target.placeholder="Deneme";
+// })
 
+// todoForm.addEventListener("submit",submitForm);
 
+// function submitForm(e){
+//   console.log("Submit Eventi");
+//   e.preventDefault();
+// }
 
-// DOM EVENTLERİ
+// Klavye Eventleri
+// keypress
 
+// document.addEventListener("keypress",run);
 
+// function run(e){
+//   console.log(e.which);
+//   console.log(e.key);
+// }
 
-// const todoHeader = document.getElementById("tasks-title");
-// const todoFilter = document.querySelector("#filter");
+// keydown
+// document.addEventListener("keydown",run);
 
+// function run(e){
+//   console.log(e.which);
+//   console.log(e.key);
+// }
 
-// todoFilter.addEventListener("keyup",changeTextFilter);
+// const todoInput = document.getElementById("todo");
+// const header = document.querySelector(".card-header");
 
+// todoInput.addEventListener("keyup",changeText);
 
-
-// function changeTextFilter(e){
-//     todoHeader.textContent = e.target.value;
+// function changeText(e){
+//   header.textContent = e.target.value;
 // }
 
 
-// console.log(todoFilter,todoHeader);
+
+// const cardBody = document.querySelectorAll(".card-body")[1];
+// const title = document.querySelector("#tasks-title");
+
+// Click Eventi
+// title.addEventListener("click",run);
+// Double Click Eventi
+// title.addEventListener("dblclick",run);
+// Mouse Down
+// title.addEventListener("mousedown",run);
+// Mouse Up
+// title.addEventListener("mouseup",run);
+// Mouse Over
+// title.addEventListener("mouseover",run);
+// Mouse Out
+// title.addEventListener("mouseout",run);
+
+// cardBody.addEventListener("mouseover",run);
+// cardBody.addEventListener("mouseout",run);
+// Mouse Enter & Mouse Leave
+// cardBody.addEventListener("mouseenter",run);
+// cardBody.addEventListener("mouseleave",run);
+
+// document.addEventListener("DOMContentLoaded",load);
+
+// function load(e){
+//   alert("Sayfa Yüklendi");
+// }
+
+// const filter = document.getElementById("filter");
+
+// Input Eventleri
+// Focus
+// filter.addEventListener("focus",run);
+// Blur
+// filter.addEventListener("blur",run);
+
+// Paste
+// filter.addEventListener("paste",run);
+// Copy
+// filter.addEventListener("copy",run);
+// Cut
+// filter.addEventListener("cut",run);
 
 
-// LOCAL STORAGE 
-// SETITEM
+
+// function run(e){
+//   console.log(e.type);
+// }
+// console.log(value);
+// console.log(typeof value)
+
+
+// -------------------------------------
+// Local Storage
+// SetItem
 
 // localStorage.setItem("hareket1","yukarı");
 // localStorage.setItem("hareket2","aşağı");
 
-
-
-// // GET ITEM
-
+// GetItem
 // const value = localStorage.getItem("hareket");
 // console.log(value);
+// console.log(typeof value);
 
-// // CLEAR LOCAL STORAGE
+// Clear Local Storage
 // localStorage.clear();
+
 // localStorage.setItem("hareket1","yukarı");
+
 // console.log(localStorage.getItem("abc"));
 
-
 // localStorage.setItem("hareket1","yukarı");
+
 // if (localStorage.getItem("hareket1")===null){
-//     console.log("sorguladıgınız veri bulunamıyor");
+//   console.log("Sorguladınız veri bulunamıyor");
 // }
 // else{
-//     console.log("sorguladıgınız veri bulundu");
+//   console.log("Sorguladınız veri bulundu");
 // }
 
-
-// // LOCAL STORAGE ARRAY KAYDETME
+// Local Storage Array Kaydetme
 
 // const todos = ["Todo 1","Todo 2","Todo 3"];
+
 // localStorage.setItem("todolar",JSON.stringify(todos));
 
 // const val = JSON.parse(localStorage.getItem("todolar"));
 // console.log(val);
-
-
 
