@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+
+
+.video-bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    
+
+    
+}
+.upContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    position: absolute;
+    z-index: 1;
+    height: 90vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(16 18 27 / 40%);
+    
+}
+
+.logo1{
+    width: 15px;
+    height: 15px;
+    background-color: red !important;
+    border-radius: 50%;
+    border: 3px solid red !important;
+    margin-left: 10px;
+    
+    
+}
+
+.uploadButton{
+    background-color: red;
+}
