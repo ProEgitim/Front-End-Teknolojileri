@@ -16,13 +16,20 @@ const firstCartBody = document.querySelectorAll(".card-body")[0];
 const secondCartBody = document.querySelectorAll(".card-body")[1];
 const filter = document.getElementById("filter");
 const clearButton = document.getElementById("clear-todos");
+let removeOne = document.querySelectorAll(".fa-remove");
+const todoButton = document.querySelector(".todoButton")
 
-
+ 
 
 eventListeners();
 function eventListeners(){
   form.addEventListener("submit",addTodo);
   clearButton.addEventListener("click", removeTodos);
+  for (let i=0 ; i<removeOne.length;i++){
+    removeOne[i].addEventListener("click", removeOneTod);
+    
+  }
+ 
 }
 
 function addTodo(e){
@@ -33,12 +40,12 @@ function addTodo(e){
  else{ 
 
   addAlert("success", "Doğru bilgi girişi yapıldı.");
-   addTodoToUI(newTodo);
+  addTodoToUI(newTodo);
    e.preventDefault();
    
   }
  
- 
+  
 
   
 }
@@ -85,16 +92,18 @@ setTimeout(function(){
 
 
 function removeTodos(e) {
+  todoList.remove(); 
+  window.location.reload();
+ e.preventDefault(); 
  
-  todoList.remove();
-  e.preventDefault();
   
 }
 
-addLocalStorage();
-function addLocalStorage(){  
-  
-  localStorage.setItem("Yapılacaklar Listesi 1",JSON.stringify(todoList));
+function removeOneTod(e){
+  var tekSil = this.parentElement;
+  tekSil.remove();
+ 
+
   
 }
 
