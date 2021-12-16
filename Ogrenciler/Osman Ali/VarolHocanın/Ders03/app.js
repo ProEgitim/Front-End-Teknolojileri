@@ -236,13 +236,3 @@
 // const val = JSON.parse(localStorage.getItem("todolar"));
 // console.log(val);
 
-
-
-
-
-const todos = ["Todo 1","Todo 2","Todo 3"];
-
-localStorage.setItem("todolar", todos);
-
-
-localStorage.setItem("todolar",JSON.stringify(todos));

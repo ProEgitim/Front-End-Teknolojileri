@@ -20,7 +20,7 @@ eventListeners();
 
 function eventListeners(){ // Tüm Eventler
   form.addEventListener("submit",addTodo);
-
+  clearButton.addEventListener("click",removeTodos);
 }
 
 function addTodo(e){
