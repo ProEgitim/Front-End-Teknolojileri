@@ -18,7 +18,7 @@ const filter = document.getElementById("filter");
 const clearButton = document.getElementById("clear-todos");
 let removeOne = document.querySelectorAll(".fa-remove");
 const todoButton = document.querySelector(".todoButton")
-
+const getLocalButton = document.querySelector(".btn-warning");
  
 
 eventListeners();
@@ -29,7 +29,7 @@ function eventListeners(){
     removeOne[i].addEventListener("click", removeOneTod);
     
   }
- 
+ getLocalButton.addEventListener("click", getTodoFromLocal);
 }
 
 function addTodo(e){
@@ -67,10 +67,11 @@ createA.appendChild(createI);
 createLi.appendChild(text);
 createLi.appendChild(createA);
 todoList.appendChild(createLi);
-console.log(todoList);
 
+localStorage.setItem(`Yapılacaklar Listesi ${Math.floor(Math.random()*1000)}`, createLi.textContent);
 
 }
+
 
 function addAlert (type , message)
 {/* <div class="alert alert-danger" role="alert">
@@ -95,7 +96,7 @@ function removeTodos(e) {
   todoList.remove(); 
   window.location.reload();
  e.preventDefault(); 
- 
+ localStorage.clear();
   
 }
 
@@ -105,5 +106,20 @@ function removeOneTod(e){
  
 
   
+}
+
+
+
+function getTodoFromLocal(e){
+
+  
+  
+  var value = localStorage.getItem("Yapılacaklar Listesi 345");
+  
+  todoList.innerHTML = value;
+
+  e.preventDefault();
+  
+ 
 }
 

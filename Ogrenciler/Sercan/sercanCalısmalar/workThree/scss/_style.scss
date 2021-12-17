@@ -35,23 +35,141 @@ video{
 .container{
     position: absolute;
     z-index: 1;
-    height: 90vh;
-    backdrop-filter: blur(10px);
-    background-color: rgba(16 18 27 / 40%);
+    height: 60vh;
+    backdrop-filter: blur(24px);
+    margin-top: 150px !important;
+   
     
 }
 
 .logo1{
     width: 15px;
     height: 15px;
-    background-color: red !important;
+    background-color: red;
     border-radius: 50%;
-    border: 3px solid red !important;
+    border: 3px solid red ;
     margin-left: 10px;
     
     
 }
 
-.uploadButton{
-    background-color: red;
+.logo2{
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid blue;
+    margin-left: 10px;
+    
+    
 }
+.logo3{
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 3px solid yellow;
+    margin-left: 10px;
+    
+    
+}
+
+.notify{
+    width: 5px !important;
+    height: 5px !important;
+    color: #3a6df0;
+    background-color: #3a6df0;
+    border-radius: 50%;
+}
+
+.menu-item{
+    text-decoration: none;
+    
+}
+.menu-item:hover{
+    border-bottom: 2px solid #ffffff ;
+    color: #ffffff !important;
+    
+}
+
+.user-profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.cloud{
+    width: 25px;
+    height: 25px; 
+}
+.bell{
+    svg{
+    width: 25px;
+    height: 25px;
+   
+}
+}
+
+.notifyNumber{
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ border-radius: 2px solid #3a6df0;
+ background-color: #3a6df0;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+ 
+ float: left;
+ color: white;
+ float: right;
+ 
+}
+.navGroups{
+    justify-content: space-between !important;
+}
+
+.navFirstGroup{
+    align-items: center;
+}
+
+
+
+.secNavGroups{
+    justify-content: space-between;
+    
+}
+.secNavSecondGroup{
+    justify-self: flex-end;
+  
+}
+
+.leftAndRightSide {
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+
+.imgAdobe{
+    height: 200px;
+    background: 
+   linear-gradient(
+    to right top,
+    #cf4af3,
+    #e73bd7,
+    #f631bc,
+    #fd31a2,
+    #ff3a8b,
+    #ff4b78,
+    #ff5e68,
+    #ff705c,
+    #ff8c51,
+    #ffaa49,
+    #ffc848,
+    #ffe652
+   );
+  
+   
+}
+
