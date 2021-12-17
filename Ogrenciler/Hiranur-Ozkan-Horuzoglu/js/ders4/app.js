@@ -16,7 +16,7 @@ del.addEventListener("click", deleteItem);
 clear.addEventListener("click", clearItem);
 
 //Fonksiyonlar
-function addItem(e){
+function addItem(){
     sessionStorage.setItem(addkey.value,addvalue.value);
 }
 function deleteItem(e){
