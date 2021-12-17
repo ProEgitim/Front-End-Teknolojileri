@@ -152,7 +152,9 @@ video{
 }
 
 .imgAdobe{
+    max-width: 680px !important;
     height: 200px;
+    border-radius: 25px 25px 25px 25px;
     background: 
    linear-gradient(
     to right top,
@@ -170,6 +172,83 @@ video{
     #ffe652
    );
   
-   
+   img{
+       display: flex;
+       position: relative;
+       object-position: center;
+       object-fit: fill;
+}
+.adobeWrite{
+    display: flex;
+    position: fixed;
+    top: 145px;
+}
+.pragraph{
+margin-top: 25px;
+font-size: 10pt;
+
 }
 
+}
+.content-wrapper-img{
+    position: fixed;
+    top: -30px;
+    width: 200px;
+    height: 200px;
+}
+
+.st{
+    width: 25px;
+    height: 25px;
+    
+}
+.trialButton{
+    font-size: 13px !important;
+    margin-top: 25px;
+    border-radius: 40px 40px 40px 40px !important;
+}
+
+
+.sectionInstalled{
+    max-width: 680px !important;
+    
+    border-radius: 25px 25px 25px 25px !important; 
+}
+
+.circledButton{
+    border : 1px solid #ffffff !important;
+    border-radius: 24px 24px 24px 24px !important;
+
+}
+
+.dropdown-menu{
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+.green{
+    svg{
+    
+    color:green;
+   width: 34px !important;
+   height: 34px !important;
+    
+}
+}
+
+.firstSection{
+    justify-content: space-between;
+}
+
+.blue{
+    svg{
+    
+    color:blue;
+    width: 34px !important;
+    height: 34px !important;
+    }       
+}
+
+.updateThisApp{
+    font-size: 8pt !important;
+    border-radius: 28px 28px 28px 28px !important;
+}

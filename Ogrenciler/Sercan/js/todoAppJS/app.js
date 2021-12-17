@@ -16,7 +16,7 @@ const firstCartBody = document.querySelectorAll(".card-body")[0];
 const secondCartBody = document.querySelectorAll(".card-body")[1];
 const filter = document.getElementById("filter");
 const clearButton = document.getElementById("clear-todos");
-let removeOne = document.querySelectorAll(".fa-remove");
+const removeOne = document.querySelectorAll(".fa-remove");
 const todoButton = document.querySelector(".todoButton")
 const getLocalButton = document.querySelector(".btn-warning");
  
@@ -25,10 +25,7 @@ eventListeners();
 function eventListeners(){
   form.addEventListener("submit",addTodo);
   clearButton.addEventListener("click", removeTodos);
-  for (let i=0 ; i<removeOne.length;i++){
-    removeOne[i].addEventListener("click", removeOneTod);
-    
-  }
+  
  getLocalButton.addEventListener("click", getTodoFromLocal);
 }
 
@@ -100,13 +97,19 @@ function removeTodos(e) {
   
 }
 
-function removeOneTod(e){
-  var tekSil = this.parentElement;
-  tekSil.remove();
- 
+for (let i=0 ; i<removeOne.length;i++){
+  removeOne[i].addEventListener("click", () => {
 
+      var teksil = document.querySelectorAll(".list-group-item");
+      for (let j =0 ; j<teksil.length;j++){
+        teksil[j].remove();
+      }
+
+    });
   
-}
+}  
+
+
 
 
 
