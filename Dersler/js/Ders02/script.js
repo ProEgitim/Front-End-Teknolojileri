@@ -289,3 +289,6 @@
 
 // Funk();
 // console.log("Global Scope: " + value1,value2,value3);
+
+
+
