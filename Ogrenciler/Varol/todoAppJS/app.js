@@ -20,7 +20,6 @@ eventListeners();
 
 function eventListeners(){ // Tüm Eventler
   form.addEventListener("submit",addTodo);
-  // clearButton.addEventListener("click",removeTodos);
   document.addEventListener("DOMContentLoaded",loadAllTodosToUI);
   secondCardBody.addEventListener("click",deleteTodo);
   filter.addEventListener("keyup",filterTodos);
