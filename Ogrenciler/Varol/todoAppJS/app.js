@@ -22,6 +22,23 @@ function eventListeners(){ // Tüm Eventler
   form.addEventListener("submit",addTodo);
   // clearButton.addEventListener("click",removeTodos);
   document.addEventListener("DOMContentLoaded",loadAllTodosToUI);
+  secondCardBody.addEventListener("click",deleteTodo);
+  filter.addEventListener("keyup",filterTodos);
+}
+
+function filterTodos(e){
+  const filterValue = e.target.value.toLowerCase();
+  const listItems = document.querySelectorAll(".list-group-item");
+  listItems.forEach(function(listItem){
+    const text = listItem.textContent.toLowerCase();
+    if (text.indexOf(filterValue) === -1){
+      // Bulamadı
+      listItem.setAttribute("style","display:none !important");
+    }
+    else {
+      listItem.setAttribute("style","display:block");
+    }
+  })
 }
 
 function loadAllTodosToUI(){
@@ -29,6 +46,25 @@ function loadAllTodosToUI(){
   todos.forEach(function(todo){
     addTodoToUI(todo);
   })
+}
+
+function deleteTodo(e){
+  console.log(e);
+  if (e.target.className === "fa fa-remove"){
+    e.target.parentElement.parentElement.remove();
+    deleteTodoFromStorage(e.target.parentElement.parentElement.textContent);
+    showAlert("success","Todo Başarıyla silindi.");
+  }
+}
+
+function deleteTodoFromStorage(deleteTodo){
+  let todos = getTodosFromStorage();
+  todos.forEach(function(todo,index){
+    if(todo === deleteTodo){
+      todos.splice(index,1);
+    }
+  });
+  localStorage.setItem("todos",JSON.stringify(todos));
 }
 
 function addTodo(e){
