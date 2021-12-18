@@ -269,7 +269,7 @@
 // let value2 = 20;
 // const value3 = 30;
 
-// // Function Scope
+// // Functionel Scope
 // function Funk(){
 //   var value1 = 40;
 //   let value2 = 50;
@@ -289,3 +289,6 @@
 
 // Funk();
 // console.log("Global Scope: " + value1,value2,value3);
+
+
+
