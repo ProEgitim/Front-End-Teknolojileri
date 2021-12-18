@@ -59,7 +59,6 @@ function loadAllTodosToUI(){
 }
 
 function deleteTodo(e){
-  console.log(e);
   if (e.target.className === "fa fa-remove"){
     e.target.parentElement.parentElement.remove();
     deleteTodoFromStorage(e.target.parentElement.parentElement.textContent);
