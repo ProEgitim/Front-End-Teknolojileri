@@ -269,7 +269,7 @@
 // let value2 = 20;
 // const value3 = 30;
 
-// // Function Scope
+// // Functionel Scope
 // function Funk(){
 //   var value1 = 40;
 //   let value2 = 50;
