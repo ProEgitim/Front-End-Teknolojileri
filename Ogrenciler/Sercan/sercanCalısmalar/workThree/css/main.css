@@ -10678,8 +10678,11 @@ video {
   position: absolute;
   z-index: 1;
   height: 60vh;
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(40px);
   margin-top: 150px !important;
+  background: #181616;
+  opacity: 80%;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .logo1 {
@@ -10778,6 +10781,18 @@ video {
   padding: 0 !important;
 }
 
+.leftAndRightSide .left-side {
+  overflow: auto;
+  height: 50vh;
+  color: white;
+}
+
+.leftAndRightSide .right-side {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 50vh;
+}
+
 .imgAdobe {
   max-width: 680px !important;
   height: 200px;
@@ -10794,8 +10809,7 @@ video {
 
 .imgAdobe .adobeWrite {
   display: flex;
-  position: fixed;
-  top: 145px;
+  margin-top: -100px;
 }
 
 .imgAdobe .pragraph {
@@ -10804,8 +10818,7 @@ video {
 }
 
 .content-wrapper-img {
-  position: fixed;
-  top: -30px;
+  margin-top: -30px;
   width: 200px;
   height: 200px;
 }
@@ -10854,4 +10867,24 @@ video {
 .updateThisApp {
   font-size: 8pt !important;
   border-radius: 28px 28px 28px 28px !important;
+}
+
+.pr {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+#threeDot svg {
+  color: white !important;
 }
