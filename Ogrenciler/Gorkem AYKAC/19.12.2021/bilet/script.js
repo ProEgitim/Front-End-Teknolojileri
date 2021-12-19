@@ -2,7 +2,9 @@ const seats = document.querySelectorAll(".seat");
 const container = document.getElementById("container");
 
 var seatInfo = [];
+var selectedIndex = [];
 
+loadScreen();
 eventListeners();
 function eventListeners()
 { 
@@ -33,20 +35,28 @@ function setSeatsTotalPrice()
 }
 function setLocalStorage()
 {   
-    console.log(document.querySelectorAll(".seat"));
-    localStorage.setItem("seats",JSON.stringify(document.querySelectorAll(".seat")));
+    const selectedSeats = document.querySelectorAll(".seat.selected");
+    const selectedSeatsArr = [...selectedSeats];
+    const seatsArr = [...seats];
+
+    selectedIndex = selectedSeatsArr.map(function(seat){
+        return seatsArr.indexOf(seat);
+    })
+    localStorage.setItem("selected",JSON.stringify(selectedIndex));
 }
+
 function loadScreen()
 {
-    seatInfo = JSON.parse(localStorage.getItem("seats"));  
-}
-
-function myFunction(item) 
-{
-    if((item.classList.contains("selected")))
-    {       
-        selectedCount += 1;
+    seatInfo = JSON.parse(localStorage.getItem("selected"));
+    if(seatInfo != null)
+    {
+        for(let i = 0; i<seatInfo.length; i++)
+        {
+            console.log(seatInfo[i]);
+            seats[seatInfo[i]].className = "seat selected";
+        }
     }
-}
-
+    setSeatsTotalPrice();
+    setLocalStorage();
     
+}
