@@ -42,6 +42,7 @@ function setLocalStorage() {
             }
         }
     });
+
     selecteds.forEach(selected => {
         var index = [].indexOf.call(seats, selected);
         if (index > -1) {
