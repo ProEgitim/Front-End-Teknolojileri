@@ -57,6 +57,8 @@ function setLocalStorage() {
 function loadScreen() {
     seatInfo = JSON.parse(localStorage.getItem("seats"));
     seatInfo.forEach(seat => {
-        seats[seat].className = 'seat reserved';
+        if ((!seats[seat].classList.contains("reserved") && (!seats[seat].classList.contains("selected")))) {
+            seats[seat].className = 'seat reserved';
+        }
     });
 }
