@@ -1,4 +1,12 @@
-addButton = document.querySelector("#addButton")
+const addButton = document.querySelector("#addButton")
+// const addButton = document.getElementById("addButton")
+
+// const addButton = document.querySelector("addButton")
+// const addButton = document.getElementsByTagName("addButton")
+
+// const addButton = document.querySelector(".addButton")
+// const addButton = document.getElementsByClassName("addButton")
+
 addButton.addEventListener("click", addItemTrigger);
 
 function addItem(nodeText) {
@@ -24,8 +32,8 @@ function addItem(nodeText) {
 
     aElement.appendChild(iElement);
 
-    var uElement = document.querySelector(".list-group");
-    uElement.appendChild(liElement);
+    var ulElement = document.querySelector(".list-group");
+    ulElement.appendChild(liElement);
 }
 
 
@@ -37,6 +45,7 @@ function addItemTrigger(e) {
     var savedArray = JSON.parse(localStorage.getItem("todos"));
     if (savedArray) {
         savedArray.push(addInputValue);
+        
     } else {
         savedArray = [addInputValue];
     }
@@ -76,21 +85,21 @@ const removeAllButton = document.querySelector("#clear-todos")
 removeAllButton.addEventListener("click", removeItemAllTrigger);
 
 function removeItemAllTrigger(e) {
-    var a = document.querySelectorAll(".list-group-item");
+    var liElements = document.querySelectorAll(".list-group-item");
 
-    a.forEach(todo => {
+    liElements.forEach(todo => {
         console.log(todo);
         todo.remove();
-        localStorage.clear();
 
     });
+    localStorage.clear();
 
 }
 
 
 // console.log(value);
 
-// const liElement = document.createElement("li");,
+// const liElement = document.createElement("li");
 // value = document.getElementsByClassName("list-group")[0];
 //
 // liElement.className = "list-group-item d-flex justify-content-between";
