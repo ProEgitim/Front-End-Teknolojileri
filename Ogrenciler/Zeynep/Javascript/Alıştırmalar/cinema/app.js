@@ -1,15 +1,19 @@
 // PARAMETERS
 let seats = document.querySelectorAll(".seat.selectable");
 const container = document.getElementById("container");
+console.log(container);
 const count = document.querySelector("#count")
 const amount = document.querySelector("#amount")
 const button = document.getElementById("button");
+
+// console.log(movieType);
+
 
 // LISTENERS
 
 container.addEventListener("click", selectedSeats);
 button.addEventListener("click", sold);
-
+// movieType.addEventListener("change", movieChange);
 
 // FUNCTIONS
 
@@ -35,15 +39,7 @@ function sold() {
     setLocalStorage();
     totalPrice();
 
-
 }
-
-
-// function saveLocalStorage() {
-//
-//     localStorage.setItem("seat reserved", JSON.stringify(reservedArray));
-//     const reservedArray = JSON.parse(localStorage.getitem("seat reserved"));
-// }
 
 function setLocalStorage() {
     seats = [...seats];
@@ -60,7 +56,8 @@ function setLocalStorage() {
             }
         }
     });
-    localStorage.setItem("reservedSeats", JSON.stringify(reservedSeatInfo));
+    const selectMovieBox = document.querySelector("#movie");
+    localStorage.setItem("reservedSeats" + selectMovieBox.value, JSON.stringify(reservedSeatInfo));
 
     let selectedSeatInfo = [];
 
@@ -72,13 +69,12 @@ function setLocalStorage() {
             }
         }
     });
-    localStorage.setItem("selectedSeats", JSON.stringify(selectedSeatInfo));
-
+    localStorage.setItem("selectedSeats" + selectMovieBox.value, JSON.stringify(selectedSeatInfo));
 }
 
-
 function loadScreen() {
-    const reservedSeatInfo = JSON.parse(localStorage.getItem("reservedSeats"));
+    const selectMovieBox = document.querySelector("#movie");
+    const reservedSeatInfo = JSON.parse(localStorage.getItem("reservedSeats" + selectMovieBox.value));
     if (reservedSeatInfo) {
         reservedSeatInfo.forEach(seat => {
             if ((!seats[seat].classList.contains("reserved")) && (!seats[seat].classList.contains("selected"))) {
@@ -87,7 +83,7 @@ function loadScreen() {
         });
     }
 
-    const selectedSeatInfo = JSON.parse(localStorage.getItem("selectedSeats"));
+    const selectedSeatInfo = JSON.parse(localStorage.getItem("selectedSeats" + selectMovieBox.value));
     if (selectedSeatInfo) {
         selectedSeatInfo.forEach(seat => {
             if ((!seats[seat].classList.contains("reserved")) && (!seats[seat].classList.contains("selected"))) {
@@ -96,13 +92,64 @@ function loadScreen() {
         });
     }
 
-
     seats.forEach((eachSeat, seatNumber) => {
         eachSeat.textContent = seatNumber + 1;
     })
-
-
 }
 
 
 loadScreen();
+
+let movieSelection = document.querySelector("#movie");
+movieSelection.addEventListener("change",movieChange);
+
+function movieChange (e) {
+    console.log(e.target.value);
+
+    const reservedsRemove = document.querySelectorAll(".selectable.reserved");
+    reservedsRemove.forEach(reservedSeatRemove =>{
+        reservedSeatRemove.classList.remove("reserved");
+    })
+
+    const selectedRemove = document.querySelectorAll(".selectable.selected");
+    selectedRemove.forEach(selectedSeatRemove =>{
+        selectedSeatRemove.classList.remove("selected");
+    })
+
+    const reservedSeatInfo = JSON.parse(localStorage.getItem("reservedSeats"+ e.target.value));
+    if (reservedSeatInfo) {
+        reservedSeatInfo.forEach(seat => {
+            if (!seats[seat].classList.contains("reserved")) {
+                seats[seat].classList.add("reserved");
+            }
+        });
+    }
+
+    const selectedSeatInfo = JSON.parse(localStorage.getItem("selectedSeats"+ e.target.value));
+    if (selectedSeatInfo) {
+        selectedSeatInfo.forEach(seat => {
+            if (!seats[seat].classList.contains("selected")) {
+                seats[seat].classList.add("selected");
+            }
+        });
+    }
+    console.log(reservedsRemove);
+//
+// const movies = document.querySelectorAll("option");
+// console.log(movies);
+//
+//     const movieType = document.getElementById("movie").valueOf();
+//     console.log(movieType);
+
+}
+//
+// movieType.forEach(movieValue => {
+//     var value = seats.indexOf(reserved);
+//     if (index > -1) {
+//         if (!reservedSeatInfo.includes(index)) {
+//             reservedSeatInfo.push(index);
+//         }
+//     }
+// });
+//
+//
