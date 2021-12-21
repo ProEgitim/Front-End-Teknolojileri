@@ -35,7 +35,7 @@ video{
 .container{
     position: absolute;
     z-index: 1;
-    height: 60vh;
+    height: 62vh !important;
     backdrop-filter: blur(40px);
     margin-top: 150px !important;
     background: #181616 ; 

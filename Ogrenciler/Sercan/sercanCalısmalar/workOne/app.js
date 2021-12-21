@@ -8,10 +8,10 @@ v.addEventListener("mouseover", () =>{
 });
 
 
-    v.addEventListener("mouseleave", () =>{
-     const video = v.querySelector("video");
-     video.pause();
+v.addEventListener("mouseleave", () =>{
+ const video = v.querySelector("video");
+  video.pause();
     
-    });
+ });
 
 });
