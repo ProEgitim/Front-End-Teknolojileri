@@ -1,30 +1,30 @@
 const element = document.querySelector("#clear-todos");
 
-// element özallikleri
+//element özellikleri
 
-// console.log(element.id);||--}}\\
-// console.log(element.className);
-// console.log(element.classList);
-// console.log(element.classList[1]);
-// console.log(element.textContent);
-// console.log(element.innerHTML);
-// console.log(element.href);
-// console.log(element.style);
+console.log(element.id);
+console.log(element.className);
+console.log(element.classList);
+console.log(element.classList[1]);
+console.log(element.textContent);
+console.log(element.innerHTML);
+console.log(element.href);
+console.log(element.style);
 
 
 //--Style ve Element özelliklerini değiştirme
 
-// element.className = "btn btn-primary";
-// element.style.color = "#000";
-// element.style.marginLeft = "10px";
-// element.href = "https://www.google.com/";
-// element.target = "_blank";
-// element.textContent = "Silin"; //text js değiştirmiş oldum
-// element.innerHTML = "<span style = 'color:green'> SİLİN </span>"
+element.className = "btn btn-primary";
+element.style.color = "#000";
+element.style.marginLeft = "10px";
+element.href = "https://www.google.com/";
+element.target = "_blank";
+element.textContent = "Silin"; //text js değiştirmiş oldum
+element.innerHTML = "<span style = 'color:green'> SİLİN </span>"
 
 
-// const elements = document.querySelectorAll(".list-group-item"); //Node List
-// console.log(elements);
+const elements = document.querySelectorAll(".list-group-item"); //Node List
+console.log(elements);
 
 let element2 = document.querySelector("li:last-child");
 element2 = document.querySelectorAll("li:nth-child(2)");

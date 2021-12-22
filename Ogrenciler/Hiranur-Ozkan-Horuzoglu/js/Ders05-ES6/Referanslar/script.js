@@ -1,19 +1,19 @@
 // Referasnlar
 
-// let a = "Deneme";
+// let a = "Deneme"; //value bakıyor
 // let b = "Deneme";
 
-// let c = ["a","b"];
+// let c = ["a","b"]; //referans 
 // let d = ["a","b"];
 
 // let e = 1;
 // let f = 2;
 
-// console.log("String Değişken", a===b); // osman, hira = true ---- sercan = false
+// console.log("String Değişken", a===b); //TRUE osman, hira = true ---- sercan = false
 
-// console.log("Array", c===d); // herkes=true
+// console.log("Array", c===d); //FALSE herkes=true
 
-// console.log("Number", e===f);
+// console.log("Number", e===f); //FALSE
 
 // let a = "10";
 // let b = 20;

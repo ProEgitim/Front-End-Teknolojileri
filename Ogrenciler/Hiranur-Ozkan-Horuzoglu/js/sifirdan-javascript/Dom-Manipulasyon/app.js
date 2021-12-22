@@ -111,9 +111,4 @@ element = document.querySelectorAll(".list-group-item"); //Node lİST
 // element.forEach(function(el){
 //     console.log(el);
 // });
-
-
-
-
-
 //console.log(element);
