@@ -90,7 +90,7 @@ function removeItemAllTrigger(e) {
 
 // console.log(value);
 
-// const liElement = document.createElement("li");
+// const liElement = document.createElement("li");,
 // value = document.getElementsByClassName("list-group")[0];
 //
 // liElement.className = "list-group-item d-flex justify-content-between";

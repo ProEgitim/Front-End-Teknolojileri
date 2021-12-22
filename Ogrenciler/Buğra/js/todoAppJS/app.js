@@ -14,11 +14,13 @@ const firstCardBody = document.querySelectorAll(".card-body")[0];
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const filter =document.getElementById("filter");
 const clearButton = document.getElementById("clear-todos");
-
+const del = document.getElementById("delete");
+const deletekey = document.getElementById("deletekey");
 
 
 eventListeners();
 
+del.addEventListener("click",deleteItem);
 
 
 function eventListeners(){
@@ -28,9 +30,13 @@ form.addEventListener("submit",addTodo);
 function addTodo(e){
   const newTodo = todoInput.value.trim();
   addTodoToUI(newTodo);
+  
 
   e.preventDefault();
 }
+function deleteItem(e){
+  sessionStorage.removeItem(deletekey.value)
+  }
 
 function addTodoToUI(newTodo){
   const olusturli = document.createElement("li");
@@ -55,8 +61,15 @@ function showAlert(type,message){
   alert.className = 'alert alert-${type}';
   alert.textContent = message;
   firstCardBody.appendChild(alert);
+  sessionStorage.removeItem(deletekey.value)
 
   setTimeout(function(){
     alert.remove();
   })
 }
+
+
+//todolar ekle depo kısmına bellege (data-base gibi kullanıcaz)
+//x tıklayınca silecek
+//filtreleme işlemi yapıcaz
+//tüm taskları temizlemeyi yapıcaz depodan da silecek

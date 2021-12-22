@@ -8,7 +8,7 @@
 
 // merhaba();
 
-// const merhaba = (firstName,lastName) => console.log("Merhaba",firstName,lastName);
+// const merhaba = firstName => console.log("Merhaba",firstName,lastName);
 
 // merhaba("Varol","Maksutoglu");
 
@@ -17,6 +17,6 @@
 // }
 // console.log(cube(4));
 
-const cube = x => x*x*x;
+// const cube = x => x*x*x;
 
-console.log(cube(4));
+// console.log(cube(4));
