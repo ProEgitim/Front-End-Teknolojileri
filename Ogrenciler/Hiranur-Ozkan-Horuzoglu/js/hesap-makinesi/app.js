@@ -51,14 +51,14 @@ function handleOperator(nextOperator) {
     } else if (operator) {
         const result = calculate(firstValue, value, operator);
 
-        displayValue = `${parseFloat(result.toFixed(7))}`;
+        displayValue = `${parseFloat(result.toFixed(7))}`; // parseFloat string ve number cevirme--- .toFixed haassasiyet demek 7 basamakli girilmesi anlamaina geliyor
         firstValue = result;
     }
 
     waitingForSecondValue = true;
     operator = nextOperator;
 
-    console.log(displayValue, firstValue, operator, waitingForSecondValue);
+    //console.log(displayValue, firstValue, operator, waitingForSecondValue);
 }
 
 function calculate(first, second, operator) {
@@ -82,7 +82,7 @@ function inputNumber(num) {
         displayValue = displayValue === '0'? num: displayValue + num;
     }
 
-    console.log(displayValue, firstValue, operator, waitingForSecondValue);
+    //console.log(displayValue, firstValue, operator, waitingForSecondValue);
 }
 
 function inputDecimal() {
