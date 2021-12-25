@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+}
+.container {
+  display: grid;
+  /* grid-template-rows: 200px 300px 200px;
+  grid-template-columns: 200px 2fr 1fr; */
+  /* grid-template: 200px 300px 200px / 200px 2fr 1fr; */
+  /* grid-template: 200px 300px 200px / 200px repeat(2, minmax(100px, 1fr)); */
+  grid-template: repeat(3, 100px) / repeat(3, minmax(100px, 200px));
+  /* grid-row-gap: 10px;
+  grid-column-gap: 10px; */
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+    "varol sercan erhan"
+    "hiranur zeynep simge"
+    "gorkem bugra mahmut";
+}
+
+.container div {
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-1 {
+  background-color: forestgreen;
+  /* order: 5; */
+  /* grid-column-start: 2;
+  grid-column-end: span 2; */
+  grid-area: varol;
+}
+.box-2 {
+  /* order: 7; */
+  background-color: orangered;
+  grid-area: sercan;
+}
+.box-3 {
+  background-color: royalblue;
+  grid-area: erhan;
+  /* order: 6; */
+}
+.box-4 {
+  background-color: purple;
+  grid-area: hiranur;
+  /* order: 8; */
+  /* grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 1;
+  grid-column-end: span 3; */
+  /* grid-row: 2 / span 2;
+  grid-column: 1 / span 3; */
+  /* grid-area: 2 / 1 / span 2 / span 3; */
+}
+.box-5 {
+  background-color: orange;
+  grid-area: zeynep;
+  /* order: 9; */
+  /* grid-column-start: 2; */
+}
+.box-6 {
+  background-color: burlywood;
+  grid-area: simge;
+  /* order: 4; */
+}
+.box-7 {
+  background-color: red;
+  grid-area: gorkem;
+  /* order: 3; */
+}
+.box-8 {
+  background-color: greenyellow;
+  grid-area: bugra;
+  /* order: 2; */
+}
+.box-9 {
+  background-color: magenta;
+  grid-area: mahmut;
+  /* order: 1; */
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template: repeat(5, 100px) / repeat(2, minmax(100px, 200px));
+    grid-template-areas:
+      "varol sercan"
+      "erhan hiranur"
+      "zeynep simge"
+      "gorkem bugra"
+      "mahmut mahmut";
+  }
+}
