@@ -1,6 +1,7 @@
 
-var seats = document.querySelectorAll(".seat");
+
 var container = document.querySelector(".container");
+var seats = document.querySelectorAll(".seat");
 var count = document.getElementById("count");
 var amount = document.getElementById("amount");
 var movie = document.getElementById("movie");
@@ -28,12 +29,12 @@ function selectSeat(e){
 function totalPrice(){
 
     let selectedSeats = container.querySelectorAll(".seat.selected");
-        count.textContent= selectedSeats.length-1;
-        amount.textContent= movie.value * (selectedSeats.length-1);
+        count.textContent= selectedSeats.length;
+        amount.textContent= movie.value * (selectedSeats.length);
      }
 
 function addSelectedSeats(){
-    let seats =document.querySelectorAll(".seat");
+    let seats =container.querySelectorAll(".seat");
     let selectedSeats = document.querySelectorAll(".selected");
     let reservedSeats = document.querySelectorAll(".reserved");
     const seatInfo=[];
@@ -61,14 +62,14 @@ function addSelectedSeats(){
     });
 
 
-localStorage.setItem("selectedTicketIndex", JSON.stringify(seatInfo));
+localStorage.setItem("selectedTicketIndex" + movie.value , JSON.stringify(seatInfo));
 
 }
 
 
 
 function loadScreen() {
-    seatInfo = JSON.parse(localStorage.getItem("selectedTicketIndex"));
+    seatInfo = JSON.parse(localStorage.getItem("selectedTicketIndex" +movie.value));
     seatInfo.forEach(seat => {
         if ((!seats[seat].classList.contains("reserved") && (!seats[seat].classList.contains("selected")))) {
             seats[seat].className = 'seat reserved';
@@ -76,5 +77,19 @@ function loadScreen() {
     });
 }
 
+function selectMovie(e){
+   var removeReserved = document.querySelectorAll(".reserved");
+   removeReserved.forEach(function(reserved){
+       reserved.classList.remove("reserved");
+   });
+
+    let reservedInfo = JSON.parse(localStorage.getItem("selectedTicketIndex" +movie.value));
+    reservedInfo.forEach(function(seat){
+        if(!seats[seat].classList.contains("reserved")){
+            seats[seat].classList.add("reserved");
+        }
+
+    })
+}
   
    

@@ -88,7 +88,7 @@ function addTodo(e){
     addTodoToStorage(newTodo);
     showAlert("success","Todo başarılı bir şekilde eklendi.");
   }
-  e.preventDefault();
+  preventDefault();
 }
 
 function addTodoToUI(newTodo){
