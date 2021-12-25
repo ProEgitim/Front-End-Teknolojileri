@@ -14,9 +14,9 @@ const mySet = new Set([100,3.14,"Varol"]);
 // console.log(mySet);
 
 // // For Of
-// for(let val of mySet){
-//   console.log(val);
-// }
+for(let val of mySet){
+  console.log(val);
+}
 
 // For Each
 
