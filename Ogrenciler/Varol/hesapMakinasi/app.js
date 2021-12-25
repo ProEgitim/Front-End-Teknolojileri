@@ -96,7 +96,7 @@ function handleOperator(nextOperator) {   // 10 + 5 =
   }
   waitingForSecondValue = true;
   operator = nextOperator;
-  console.log(displayValue, firstValue, operator, waitingForSecondValue);
+  // console.log(displayValue, firstValue, operator, waitingForSecondValue);
 }
 
 function calculate(first,second,operator){
