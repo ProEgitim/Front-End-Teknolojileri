@@ -2,6 +2,9 @@ const form = document.getElementById("film-form");
 const titleElement = document.getElementById("title");
 const directorElement = document.getElementById("director");
 const urlElement = document.getElementById("url");
+const firstCardBody = document.querySelectorAll(".card-body")[0];
+const secondCardBody = document.querySelectorAll(".card-body")[1];
+const writeClean = document.querySelectorAll(".form-control");
 
 //UI Objesini Başlatma
 const ui = new UI();
@@ -18,17 +21,14 @@ function addFilm(e){
   const url = urlElement.value;
 
   if (title === "" || director === "" || url === ""){
-    // Hata
+    ui.showAlert(`Danger`,"Tüm Alanları Doldurun");
   }
   else{
     const newFilm = new Film(title,director,url);
     ui.addFilmToUI(newFilm);
-    // Başarılı Mesajı
+    ui.showAlert(`Success`,"Kayıt Başarıyla Tamamlandı.");
+  
   }
-
-
-
+  
   e.preventDefault();
 }
-
-// Silme işlemleri yapılacak

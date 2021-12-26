@@ -18,3 +18,14 @@ UI.prototype.addFilmToUI = function(newFilm){
      <td class="w-25"><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
    </tr>`
 }
+
+UI.prototype.showAlert = function showAlert(type, message){
+  const alert = document.createElement("div");
+  alert.className = `mt-3 alert alert-${type}`;
+  alert.textContent = message;
+  firstCardBody.appendChild(alert);
+
+  setTimeout(function(){
+    alert.remove();
+  }, 2000);
+}
