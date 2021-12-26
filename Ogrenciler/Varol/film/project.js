@@ -23,9 +23,12 @@ function addFilm(e){
   else{
     const newFilm = new Film(title,director,url);
     ui.addFilmToUI(newFilm);
+    // Başarılı Mesajı
   }
 
 
 
   e.preventDefault();
 }
+
+// Silme işlemleri yapılacak
