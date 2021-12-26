@@ -138,11 +138,12 @@ const findNumber = numbers.find(number => number > 50); //ilk elemanı alır
 // const numbers = [60,70,25,35,80,10,24];
 // numbers.push(90); //sonuna eklemek -unshift() metoduda dizilerin basına ekler
 // console.log(numbers);
-// numbers.pop(); // silmek
+// numbers.pop(); // sondan silmek
 // console.log(numbers);
 // const numbers3 = numbers.filter(n=>n!=35);
 // numbers3.shift(); //dizinin ilk elemanını siler
-// numbers.splice(1,2) //splice() metodu diziye eleman ya da elemanlar eklenebilmesini sağladığı gibi, silinebilmesini de sağlar. splice() ile diziden silinen değeri geri döndürür. Metot dizinin yapısını değiştirir.
+// numbers.splice(1,2) //splice() metodu ıldeger ındex ıkıncısı kac tane sılınecegı 
+// diziye eleman ya da elemanlar eklenebilmesini sağladığı gibi, silinebilmesini de sağlar. splice() ile diziden silinen değeri geri döndürür. Metot dizinin yapısını değiştirir.
 // console.log(numbers);
 
 // Find İndex
