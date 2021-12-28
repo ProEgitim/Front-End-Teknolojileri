@@ -1,15 +1,9 @@
 function saveToLocalStorage(newFilm) {
-    
-    // if (localStorage.getItem("filmler") === null) {
-    //     //ilk ekleme
-    //     localStorage.setItem("filmler", JSON.stringify());
-    // } else {
-    //     // daha önce eklenmiş
-    //     let film = JSON.parse(localStorage.getItem("film"));
-    //     film.push(filmler);
-    //     localStorage.setItem("filmler", JSON.stringify(filmler));
-    // }
-    
-   
-}
+    let filmler = JSON.parse(localStorage.getItem('Filmler'));
+    if (filmler === null) {
+        filmler = [];
+    }
+    filmler.push(newFilm);
+    localStorage.setItem('Filmler',JSON.stringify(filmler));
 
+}
