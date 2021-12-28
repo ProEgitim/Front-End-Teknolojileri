@@ -2,52 +2,52 @@ body{
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
+background-repeat: no-repeat;
+background-size: cover;
+} 
+
+.app{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 100px;
+    
 }
-
-
-
-.slide-sect{
+.main-cont{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center;  
+
 }
- .slide-cont{
-   width: 1200px;
+.carousel-item img{
+    height: 480px;
+    width: 100%;;
+    max-width: 600px; 
+}
+
+
+.slide-cont{
+   display: flex;
    height: 480px;
    margin-top: 20px;
-   
-   
+   align-content: center;
+   justify-content: center;
     
  }
-
-.carousel-item img{
-    width: 768px;
-    height: 400px;
-    padding: 20px;
-    border-radius: 40px;
-    align-items: cent er;
-    
-}
-
-.carousel-item{
-    color: blanchedalmond;
+ .highligt{
     display: flex;
-   
-    
-}
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;   
+ }
 
-.highligt{
-    width: 900px;
-    height: 550px;
-    left: 150px;
-   
-    
-   
-}
 
 .card-sc img{
-    width: 380px ;
+    width: 250px ;
     height: 250px ;
     border-radius: 30%;
    
@@ -57,25 +57,15 @@ align-items: center;
 .card-sc h5{
     text-align: center;
 }
-
-
-
-
-
-
-
-.card-sc:hover{
-  align-self: center;
-  justify-self: center;
-  top: 50px;
-  left: 20px;
-  right: 20px;
-  position: absolute;
-  z-index: 1;
-  font-weight: bolder;
-  color: red;
-  background-color: aliceblue;
-  font-size: 30pt ;
+.link{
+    text-decoration: none;
+    color: rgb(18, 19, 66);
 }
+
+
+
+
+
+
 
 
