@@ -5,8 +5,6 @@ const urlElement = document.getElementById("url");
 
 //UI Objesini Başlatma
 const ui = new UI();
-saveToLocalStorage();
-getToLocalStorage();
 
 // Tüm eventleri yükleme
 eventListeners();
@@ -39,7 +37,7 @@ function addFilm(e){
 // function adimiSoyle(isim) {
 //   console.log(" beni çağıran " + isim);
 // }
-// adimiSoyle("Hiranur");
+// adimiSoyle("hiranur");
 
 //filmleri object array olarak local eklicez
 //bos girildiyse hata eklenicek duzgun girildiyse basarili mesaji vericek (alert)
