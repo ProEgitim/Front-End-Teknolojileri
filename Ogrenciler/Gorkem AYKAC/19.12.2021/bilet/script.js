@@ -3,13 +3,13 @@ const container = document.getElementById("container");
 
 var seatInfo = [];
 var selectedIndex = [];
+var multipleIndex = [];
 
 loadScreen();
 eventListeners();
 function eventListeners()
 { 
     container.addEventListener("click",selected);
-    document.addEventListener("DOMContentLoaded",loadScreen);
 
 }
 
@@ -29,32 +29,45 @@ function selected(e)
 
 function setSeatsTotalPrice()
 {
-    const selectedSeats = document.querySelectorAll(".seat.selected");
-    count.textContent = selectedSeats.length - 1;
-    amount.textContent = 20 * (selectedSeats.length - 1);
+    const selectedSeats = container.querySelectorAll(".seat.selected");//parent name !=
+    count.textContent = selectedSeats.length;
+    amount.textContent = 20 * (selectedSeats.length);
 }
 function setLocalStorage()
 {   
-    const selectedSeats = document.querySelectorAll(".seat.selected");
+    const selectedSeats = container.querySelectorAll(".seat.selected");
+    const reservedSeats = container.querySelectorAll(".seat.reserved");
+
     const selectedSeatsArr = [...selectedSeats];
+    const reservedSeatsArr = [...reservedSeats];
+
     const seatsArr = [...seats];
 
     selectedIndex = selectedSeatsArr.map(function(seat){
         return seatsArr.indexOf(seat);
     })
+
+    reservedIndex = reservedSeatsArr.map(function(seat){
+        return seatsArr.indexOf(seat);
+    })
+
+    selectedIndex.push(...reservedIndex);
     localStorage.setItem("selected",JSON.stringify(selectedIndex));
 }
 
 function loadScreen()
 {
     seatInfo = JSON.parse(localStorage.getItem("selected"));
-    if(seatInfo != null)
+    if(seatInfo != null && seatInfo.length > 0)
     {
-        for(let i = 0; i<seatInfo.length; i++)
+        seats.forEach(function(item, index)
         {
-            console.log(seatInfo[i]);
-            seats[seatInfo[i]].className = "seat selected";
-        }
+            if(seatInfo.indexOf(index) > -1)
+            {
+                item.classList.add("reserved");
+
+            }
+        })
     }
     setSeatsTotalPrice();
     setLocalStorage();
