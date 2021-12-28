@@ -3,6 +3,7 @@ const titleElement = document.getElementById("title");
 const directorElement = document.getElementById("director");
 const urlElement = document.getElementById("url");
 const filmList = document.getElementById("films");
+const clearFilms = document.getElementById("clear-films");
 
 //UI Objesini Başlatma
 const ui = new UI();
@@ -15,7 +16,7 @@ eventListeners();
 function eventListeners(){
   form.addEventListener("submit",addFilm);
   filmList.addEventListener("click",removeFilm);
- 
+  clearFilms.addEventListener("click",clearFilm);
 }
 function loadData()
 {
@@ -30,6 +31,12 @@ function loadData()
     });
   }
 
+}
+function clearFilm(e)
+{
+  filmList.innerHTML = ``;
+  films = [];
+  storage.removeStorage('Films');
 }
 function removeFilm(e)
 {

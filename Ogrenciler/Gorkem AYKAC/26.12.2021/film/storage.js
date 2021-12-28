@@ -6,6 +6,10 @@ LocalStorage.prototype.addStorage = function(key, value){
 localStorage.setItem(key, JSON.stringify(value));
 
 }
+LocalStorage.prototype.removeStorage = function(key){
+    localStorage.removeItem(key);
+    
+    }
 
 // function getStorage() {
     
