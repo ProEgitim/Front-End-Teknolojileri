@@ -2,11 +2,12 @@ const form = document.getElementById("film-form");
 const titleElement = document.getElementById("title");
 const directorElement = document.getElementById("director");
 const urlElement = document.getElementById("url");
-
+const newFilm = new Film(title,director,url);
 //UI Objesini Başlatma
 const ui = new UI();
 const strg = new addStorage ();
- const gstrg = new getStorage ();
+
+
 // Tüm eventleri yükleme
 eventListeners();
 
@@ -23,14 +24,48 @@ function addFilm(e){
     ui.showAlert("danger", "hatalı giriş yapıldı");
   }
   else  {
-    const newFilm = new Film(title,director,url);
+   
     ui.addFilmToUI(newFilm);
-    ui.showAlert("success", "başarılı giriş yapıldı");  
-    strg.addStorage("Filmler",JSON.stringify(newFilm));  
+    ui.showAlert("success", "başarılı giriş yapıldı");
+    addToStorage ();
+   
+
  }
  ui.clearInputs(titleElement,directorElement,urlElement);
   e.preventDefault();
 }
+getStorage ();
+function addToStorage (){
+  let filmler;
+  if( getStorage() === null ){
+    strg.addStorage("Filmler",JSON.stringify(newFilm));
+  }
+  else{
+    
+     filmler = getStorage();
+    console.log(filmler);
+   
+ strg.addStorage("Filmler",JSON.stringify(filmler)); 
+}
+return filmler;
+}
+
+
+function getStorage (){
+  let filmArr ;
+  if(filmArr === null){
+    filmArr = [];
+  }
+  else{
+   
+  filmArr=JSON.parse(localStorage.getItem("Filmler"));
+
+  }
+return filmArr;
+}
+
+
+
 
 
 

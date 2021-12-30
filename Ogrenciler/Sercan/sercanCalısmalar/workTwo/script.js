@@ -1,16 +1,27 @@
-const photos = document.querySelectorAll(".cat");
-
-photos.addEventListener("mouseover" , littleBig);
-photos.addEventListener("mouseout", normalColor);
-
-function littleBig() {
-    photos.forEach(function(photo){
-        photo.style.transition = 0.2;
-    });
+let cards = document.querySelectorAll(".cat");
+let card = document.querySelector(".cat");
+let imgs = document.querySelectorAll(".card-img-top");
+let img = document.querySelector(".card-img-top");
+cards.forEach(function(card){
+card.addEventListener("mouseover" , function littleBig(img){
+   for(let imgs in img) {
+    img.classList.add("h-100"); 
 }
+});
+});
+cards.forEach(function(card){
+card.addEventListener("mouseout", normalSize);
+});
 
-function normalColor() {
-    photos.forEach(function(photo){
-        photo.style.transition = "none";
-    });
-}
+// function littleBig(e) {
+//  img.forEach(function(e){
+//     e.classList.add("h-100");
+// }); 
+// }
+
+function normalSize(e) {
+    img.forEach(function(e){
+       e.classList.remove("h-100");
+   }); 
+   }
+   
