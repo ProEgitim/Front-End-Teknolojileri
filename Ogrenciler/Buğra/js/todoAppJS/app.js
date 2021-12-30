@@ -58,7 +58,7 @@ function addTodoToUI(newTodo){
 
 function showAlert(type,message){
   const alert = document.createElement("div");
-  alert.className = 'alert alert-${type}';
+  alert.className = `alert alert-${type}`;
   alert.textContent = message;
   firstCardBody.appendChild(alert);
   sessionStorage.removeItem(deletekey.value)
