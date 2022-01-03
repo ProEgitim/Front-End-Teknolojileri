@@ -10648,6 +10648,8 @@ fieldset:disabled .btn {
 
 .cont-all {
   background-color: #1f1d2d;
+  width: 1080px;
+  height: 80vh;
 }
 
 .left-side .col-name, .left-side svg, .left-side span, .left-side hr {
@@ -10716,4 +10718,74 @@ fieldset:disabled .btn {
 
 .active .col-name {
   color: #ffffff;
+}
+
+.navbar {
+  background-color: #1f1d2d !important;
+}
+
+.search {
+  background-color: #fff !important;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  height: 30px;
+}
+
+.search input {
+  color: white;
+}
+
+.symbol {
+  margin-left: -20px;
+  margin-top: 5px;
+  color: #bdb0d4;
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.cursor svg {
+  color: #ffffff;
+}
+
+.notify svg {
+  color: #ffffff;
+}
+
+.notification {
+  margin-top: -32px;
+  margin-left: 5px;
+}
+
+.notification svg {
+  color: #bd0808;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-image {
+  background-color: #31aabc;
+}
+
+.left-image img {
+  width: 100%;
+  height: 200px;
+}
+
+.right-image img {
+  width: 100%;
+  height: 200px;
+}
+
+.author-img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }

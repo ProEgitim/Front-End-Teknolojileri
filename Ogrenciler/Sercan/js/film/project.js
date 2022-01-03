@@ -24,10 +24,10 @@ function addFilm(e){
     ui.showAlert("danger", "hatalı giriş yapıldı");
   }
   else  {
-    addToStorage();
+    
     ui.addFilmToUI(newFilm);
     ui.showAlert("success", "başarılı giriş yapıldı");
-  
+    addToStorage();
  }
  ui.clearInputs(titleElement,directorElement,urlElement);
   e.preventDefault();
@@ -42,6 +42,7 @@ function addToStorage(){
   else{
     
  filmler = getStorage();
+ filmler.push(newFilm);
  strg.addStorage("Filmler",JSON.stringify(filmler)); 
 }
 return filmler;
