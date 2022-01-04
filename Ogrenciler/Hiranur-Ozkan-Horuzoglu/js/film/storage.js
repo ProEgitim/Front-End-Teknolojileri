@@ -7,3 +7,4 @@ function saveToLocalStorage(newFilm) {
     localStorage.setItem('Filmler',JSON.stringify(filmler));
 
 }
+
