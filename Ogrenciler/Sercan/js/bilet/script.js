@@ -52,7 +52,7 @@ function calculateTotal(){
    let selectedSeatIndexs = selectedSeatsArr.map(function(seat){
        return SeatsArr.indexOf(seat);
    });
-
+ 
    let selectedSeatCount = selectedSeats.length;
    count.innerText = selectedSeatCount;
    amount.innerText = selectedSeatCount*movie.value;

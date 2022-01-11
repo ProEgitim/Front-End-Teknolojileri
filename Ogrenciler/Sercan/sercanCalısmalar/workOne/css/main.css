@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10657,7 +10658,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Manrope", sans-serif;
   font-size: 30pt;
   padding: 25px;
 }
@@ -10931,6 +10932,7 @@ body {
 
 .video:hover .view {
   padding: 10px;
+  color: #fff;
 }
 
 .video-time {
@@ -10960,4 +10962,23 @@ body {
   position: relative;
   z-index: 1;
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .logo,
+  .search,
+  .leftSideMenu,
+  .footer,
+  .bigPhoto {
+    display: none;
+  }
+  .thirdGroup button, .thirdGroup img, .thirdGroup svg {
+    display: none !important;
+  }
+  .vıdeoMenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
 }

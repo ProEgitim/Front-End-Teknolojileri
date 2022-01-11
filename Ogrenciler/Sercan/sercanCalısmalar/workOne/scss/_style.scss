@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap");
 
 .logo{
     width: 30px;
@@ -9,7 +9,7 @@
     margin-right: 10px;
 }
 body{
-   font-family: 'Times New Roman', Times, serif; 
+   font-family: "Manrope", sans-serif;
    font-size: 30pt;
    padding: 25px;
   
@@ -301,6 +301,7 @@ justify-content: end;
     }
     &:hover .view {
      padding: 10px;
+     color: #fff;
     }
    }
    
@@ -336,7 +337,26 @@ justify-content: end;
     font-size: 13px;
    }
 
-
+@media (max-width:768px ){
+    .logo, 
+    .search,   
+    .leftSideMenu, 
+    .footer,
+    .bigPhoto{
+      display: none ;  
+    }
+    .thirdGroup{
+        button, img, svg{
+        display: none !important;
+    }
+    } 
+    .vıdeoMenu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
 
 
 
