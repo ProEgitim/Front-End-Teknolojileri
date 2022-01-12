@@ -1,112 +1,46 @@
-const display = document.querySelector('.calculator-input');
-const key = document.querySelector('.calculator-keys');
+const input = document.querySelector(".calculator-input");
+const operator = document.querySelectorAll(".operator");
+const number = document.querySelector(".number");
+const calculatorKeys = document.querySelector(".calculator-keys");
+let firstValue = "";
+let secondValue= "";
 
-let displayValue = '0';
-let firstValue = null;
-let operator = null;
-let waitingForSecondValue = false;
 
-updateDisplay();
+calculatorKeys.addEventListener("click", function getKeys(e){  
+    let getValue= e.target.value;
+    
+    
+      
+    switch(getValue){ 
+        
+        case "+": 
+        case "-":
+        case "/": 
+        case "*" :
+        case "=":
+         calculate();
+        break;
+        case "ac" : clear();
+        break;    
+    } 
+   
+})
 
-function updateDisplay(){
-  display.value = displayValue;
+
+function clear (){
+    input.value = "";
 }
 
-key.addEventListener('click', getKeys);
-
-function getKeys(e){
-  const el = e.target;
-  const value = el.value;
-  if(!el.matches('button')) return;
-
-  switch(value){
-    case '+':
-    case '-':
-    case '*':
-    case '/':
-    case '=':
-      handleOperator(value);
-      break;
-    case '.':
-      inputDecimal(value);
-      break;
-    case 'clear':
-      clear();
-      break;
-    default: inputNumber(value);
-  }
-  updateDisplay();
-
-  // if (el.classList.contains('button')) {
-  //   // console.log('number',el.value);
-  //   inputNumber(el.value);
-  //   updateDisplay();
-  //   return;
-  // }
-  // if (el.classList.contains('operator')){
-  //   console.log('operator',el.value);
-  //   return;
-  // }
-  // if (el.classList.contains('decimal')){
-  //   // console.log('decimal',el.value);
-  //   inputDecimal(el.value);
-  //   updateDisplay();
-  //   return;
-  // }
-  // if (el.classList.contains('clear')){
-  //   console.log('clear',el.value);
-  //   return;
-  // }
-}
-
-// if(displayValue === '0'){
-//   displayValue = num;
-// }
-// else{
-//   displayValue = displayValue + num;
-// }
-function inputNumber(num){
-  if (waitingForSecondValue) {
-    displayValue = num;
-    waitingForSecondValue = false;
-  } else {
-    displayValue = displayValue === '0' ? num : displayValue + num;
-  }
-}
-
-function inputDecimal(){
-  if(!displayValue.includes('.')){
-    displayValue += '.';
-  }
-}
-
-function handleOperator(nextOperator) {   // 10 + 5 =
-  const value = parseFloat(displayValue);
-
-  if(operator && waitingForSecondValue){
-    operator = nextOperator;
-    return;
-  }
-  if(firstValue === null) {
-    firstValue = value;
-  } else if(operator) {
-    const result = calculate(firstValue, value, operator);
-    displayValue = `${parseFloat(result.toFixed(7))}`;
-    firstValue = result;
-  }
-  waitingForSecondValue = true;
-  operator = nextOperator;
-  // console.log(displayValue, firstValue, operator, waitingForSecondValue);
-}
-
-function calculate(first,second,operator){
-  if(operator === "+"){
-    return first + second;
-  } else if (operator === "-"){
-    return first - second;
-  } else if (operator === "*"){
-    return first * second;
-  } else if (operator === "/"){
-    return first / second;
-  }
+function calculate(getValue){
+    let result = input.value += getValue;
+   
+    if (!el.matches('operator')){
+        result = firstValue;    
+    }
+   
+    if (firstValue &&  el.matches("operator")){
+        getValue = secondValue;
+    
+       
+    }
 }

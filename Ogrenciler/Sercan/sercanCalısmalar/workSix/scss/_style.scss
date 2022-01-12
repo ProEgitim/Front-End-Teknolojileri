@@ -1,7 +1,7 @@
 .cont-all{
     background-color: #1f1d2d;
     width: 1080px;
-    height: 80vh;
+    height: 100vh;
 }
 
 
@@ -130,24 +130,243 @@
     background-color: #31aabc;
    img{
        width: 100%;
-       height:200px;
+       height:150px;
    }
-
+    margin-left: 10px;
+    border-radius: 10px;
 }
 .right-image{
-    img{
-        width: 100%;
-        height:200px;
-    }
- 
+background-image: url("https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg"); 
+background-position-y:  center;
+background-position-x: right ;
+margin-left: 20px;
+border-radius: 10px;
+}
+
+  .img-wrapper{
+ .author-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;  
+    position: absolute; 
+    margin-top: -40px;
+    margin-left: 5px; 
+}
+svg{
+    margin-top: -15px;
+    margin-left: 30px;
+    position: absolute;
+    z-index: 1;    
+    color: #ffffff;
+}
+}
+
+
+ .img-circle{
+     width: 45px;
+     height: 45px;
+     border: 2px solid #ffffff;
+     border-radius: 50%;
+     position: relative;
  }
 
- .author-img{
-     img{
-     width: 30px;
-    height: 30px;
-    border-radius: 50%;
+ .dot{
+   width: 3px;
+   height: 3px;
+   background-color: #ffffff;
+   border: 1px solid #ffffff;
+   margin: 0 6px;
+   vertical-align: middle;
+   display: inline-block;
+ }
+
+ .author-name {
+     font-size: 13px;
+     margin-left: 5px !important;
+ }
+ .author-info{
+    font-size: 13px;
+    margin-left: 5px; 
+    width: 150px !important; 
+ }
+
+ 
+
+ .time-circle{
+    position: relative;
+    margin: -20px 0 0 360px; 
+    border: 1px solid #1f1d2d;
+    width: 40px;
+    height: 20px;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(21, 13, 13, 0.44);
+    border-radius: 20px;
+    
+    .time{
+        position: absolute;
+        font-size: 12px;
+        color: #ffffff;
+        margin-left: 2px;
+     }
+ }
+
+ .rightPhoto{
+    position: relative;
+}
+
+.photo-ups{
+    position: absolute;
+    z-index: 1;
+}
+
+.main-write{
+    margin-top: -200px;
     
 }
 
+.imgTwo{
+    margin-top: -20px ;
+}
+.imgTwo{
+    margin-top: -20px ;
+}
+.wrapperTwo{
+    margin-top:150px  !important;
+}
+
+.name{
+margin-top: 150px !important;
+margin-left:30px!important;
+font-size: 14px;
+display: flex;
+flex-direction: row;
+width: 150px;
+}
+ .rate{
+  font-size: 14px; 
+  width: 200px ;
+  margin-left: 30px;
  }
+
+ .minute{
+   margin-left: 190px;
+   font-size: 13px; 
+ }
+
+ .video-cont{
+     position: relative;
+     object-position: center;
+     object-fit: cover;
+    
+ }
+
+ .video-time{
+     position: absolute;
+     z-index: 3;
+     font-size: 13px;
+     color: #ffffff;
+     width: 35px;
+ }
+
+ .video-time-circle{
+    position: absolute;
+    margin-top: 45px; 
+    margin-left: 110px;
+    z-index: 2;
+    border: 1px solid #1f1d2d;
+    width: 40px;
+    height: 20px;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(21, 13, 13, 0.44);
+    border-radius: 20px;
+ }
+ .video-wrapper{
+     position: absolute;
+     z-index: 1;
+    
+     video{
+         width: 155px !important;
+         height: 175px !important;
+        
+     }
+ }
+ .video-cont:hover{
+     video{
+         transform: scaleY(1.6);
+         
+     }
+     .video-time-circle{
+         display: none;
+     }
+     .video-circle {
+        width: 30px;
+        height:30px;
+        margin-top: -36px;
+     }
+     .author-img{
+         width: 20px;
+         height: 20px;
+         margin-top: 150px;
+     }
+ }
+
+ 
+.video-footer{
+    background-color: #656569;
+    width: 155px !important;
+    height: 120px !important;
+    position: absolute;
+    margin-top: 131px;
+    border-radius: 0 0  10px 10px;
+}
+
+.video-man{
+    position: absolute;
+    font-size: 13px;
+
+}
+
+.video-name{
+    position: absolute;
+    margin-top: 35px;
+    font-size: 13px;
+}
+.video-view{
+    position: absolute;
+    margin-top: 100px;
+    font-size: 13px;
+}
+ .author-img{
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+    margin-top:116px;
+    margin-left: -50px;
+     position: absolute;
+     z-index: 2;
+    
+ }
+
+.video-circle{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    position: absolute;
+    z-index: 2;
+    margin-top: -70px;
+    margin-left: 101px;
+    
+}
+.seperate{
+   color: #ffffff;
+}
+
+.green-dot{
+    color: #0fd61f;
+}
+.red-dot{
+    color:rgb(172, 20, 20);
+}

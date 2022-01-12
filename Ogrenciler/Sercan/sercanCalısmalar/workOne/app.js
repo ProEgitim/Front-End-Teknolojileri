@@ -13,5 +13,4 @@ v.addEventListener("mouseleave", () =>{
   video.pause();
     
  });
-
 });
