@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", addAlltoUI =>{
   films.forEach((film) => {
     ui.addFilmToUI(film);
   });
+  
 })
 
 clearAll.addEventListener("click", clearFilms=>{
@@ -68,14 +69,25 @@ if (e.target.id = "delete-film"){
  removedItem  = e.target.parentElement.parentElement;
  removedItem.remove();
   removeFilmStorage(removedItem);  
+ 
 }
+
 }
 
 function removeFilmStorage(removedItem){
-
-    let films = Storage.getFromStorage("Filmler");
-    const index = films.indexOf(removedItem)
+  let films = Storage.getFromStorage("Filmler");  
+  let index = films.indexOf(removedItem);
+  console.log(index);
+  console.log(removedItem);
+  //let filmss= remove(films,removedItem);
+  ///////////
+  // for (var removedItem of films) {
+  //  return films.splice(removedItem,1);s
+  // }
     films.splice(index,1);
-    strg.addStorage("Filmler", films); 
+ 
+
+  strg.addStorage("Filmler", films); 
+   
 }
 
