@@ -34,3 +34,24 @@ UI.prototype.displayMessage = function(message,type){
     div.remove();
   },2000);
 }
+UI.prototype.deleteFilmFromUI = function(e){
+  e.parentElement.parentElement.remove();
+}
+UI.prototype.clearAllFilmsFromUI = function(){
+  const filmList = document.getElementById("films");
+  while(filmList.firstElementChild !== null){
+    filmList.firstElementChild.remove();
+  }
+}
+UI.prototype.loadAllFilms = function(films){
+  const filmList = document.getElementById("films");
+  films.forEach(function(film){
+    filmList.innerHTML += `
+   <tr>
+     <td class="w-25"><img src="${film.url}" class="img-fluid img-thumbnail"></td>
+     <td class="w-25">${film.title}</td>
+     <td class="w-25">${film.director}</td>
+     <td class="w-25"><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
+   </tr>`
+  })
+}
