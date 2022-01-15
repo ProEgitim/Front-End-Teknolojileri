@@ -1,0 +1,163 @@
+$purple: #22223d;
+$light-purple: #30304d;
+$light-purple-500: #6464a8;
+$text-white: #eeeefa;
+$white: #ffffff;
+$light-gray: #e7e5e5;
+$black: #151515;
+$gray: #a2a2a2;
+
+
+//DARK THEME
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-areas:
+'header header header header header header'
+'sidebar home home home home home'
+'footer footer footer footer footer footer';
+  background-color: $purple;
+}
+
+
+//HEADER
+.header {
+  grid-area: header;
+  background-color: $light-purple;
+}
+//HEADER END
+
+//SIDEBAR
+.sidebar {
+  grid-area: sidebar;
+  background-color: $light-purple;
+  border-radius: 15px;
+  width: 280px;
+}
+
+//SIDEBAR END
+
+//HOME
+.dynamicTextColorWhite {
+  //color: $white!important;
+  color: $text-white!important;
+}
+
+.home-dash {
+  padding: 10px;
+  grid-area: home;
+  display: grid;
+  grid-gap: 30px;
+  text-align: left;
+}
+
+.home {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: $light-purple;
+  text-decoration: none;
+  box-shadow: 1px 1px 1px white;
+}
+
+.item12 a {
+  text-decoration: none;
+}
+
+//HOME END
+
+//FOOTER
+.footer {
+  grid-area: footer;
+  background-color: $light-purple;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+//FOOTER END
+
+//DARK THEME END
+
+a {
+  color: $white!important;
+  text-decoration: none;
+}
+
+.dash-light-theme a {
+  color: $black!important;
+}
+
+//LIGHT THEME
+
+.dash-light-theme .grid-container {
+  background-color: $light-gray;
+}
+
+
+//HEADER
+
+.dash-light-theme .header {
+  background-color: $white;
+}
+
+
+//HEADER END
+
+
+//SIDEBAR
+.dash-light-theme .sidebar {
+  background-color: $white;
+}
+
+.dash-light-theme .sidebar a {
+  font-size: large;
+  font-weight: normal;
+}
+
+.nav-tabs .nav-link.active {
+  color: $black!important;
+}
+.nav-tabs .nav-link {
+  color: $white!important;
+}
+.dash-light-theme .nav-tabs .nav-link {
+  color: $black!important;
+}
+
+.dash-light-theme .nav-item .nav-link.active {
+  color: $white!important;
+}
+
+//SIDEBAR END
+
+
+//HOME
+.dash-light-theme .dynamicTextColorWhite {
+  color: $black!important;
+}
+
+.dash-light-theme .home {
+  background-color: $white;
+  text-decoration-color: $black;
+  box-shadow: 2px 2px 2px $gray;
+}
+
+.dash-light-theme .home a {
+  font-size: large;
+}
+
+//HOME END
+
+//FOOTER
+.dash-light-theme .footer {
+  grid-area: footer;
+  background-color: $white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+//FOOTER END
+
+//LIGHT THEME END
+
+

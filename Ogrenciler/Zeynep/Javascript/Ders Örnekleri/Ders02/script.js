@@ -270,12 +270,12 @@
 // const value3 = 30;
 
 // // Function Scope
-// function Funk(){
-//   var value1 = 40;
-//   let value2 = 50;
-//   const value3 = 60;
-//   console.log("Function Scope: " + value1,value2,value3);
-// }
+function Funk(){
+  var value1 = 40;
+  let value2 = 50;
+  const value3 = 60;
+  console.log("Function Scope: " + value1,value2,value3);
+}
 
 // // Block Scope (Döngüler - for, while -- Koşullar - if -- yada herhangi {} blokları)
 

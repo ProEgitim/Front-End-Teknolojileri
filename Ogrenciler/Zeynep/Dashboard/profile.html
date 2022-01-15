@@ -1,0 +1,468 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+
+<div class="grid-container">
+
+    <!--    HEADER-->
+    <div class="header ">
+        <div class="container">
+            <nav class="navbar justify-content-between">
+                <a class="navbar-brand">Dashboard Template</a>
+                <form class="form-inline">
+
+                    <a id="themeChanger" class="text-decoration-none" href="#">
+                        <i class="bi bi-brightness-high fs-5 mx-3 p-2 rounded-3 "></i>
+                    </a>
+
+                    <a id="fullScreen" class="text-decoration-none" href="#">
+                        <i class="bi bi-fullscreen fs-5 mx-3 p-2 rounded-3"></i>
+                    </a>
+
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-bell  fs-5 mx-3 p-2 rounded-3"></i>
+                    </a>
+
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-chat-right fs-5 mx-3 p-2 rounded-3"></i>
+                    </a>
+
+                    <img id="profilePicture" class="rounded-3 pb-1 mx-3" style="width: 25px" src="./media/avatar2.png"
+                         alt="">
+
+                </form>
+            </nav>
+        </div>
+    </div>
+
+    <!--                    DENEME-->
+
+    <!--                    <div class="dropdown d-none d-md-flex notifications">-->
+
+    <!--                        <a class="nav-link icon show" data-bs-toggle="dropdown" aria-expanded="true" href="#">-->
+    <!--                            <i class="bi bi-bell  fs-5 mx-3 p-2 rounded-3 text-white"></i>-->
+    <!--                        </a>-->
+    <!--                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow show"-->
+    <!--                             style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-211px, 47px);"-->
+    <!--                             data-popper-placement="bottom-end">-->
+
+    <!--                            <div class="drop-heading border-bottom">-->
+    <!--                                <div class="d-flex">dfgdfgdfg</div>-->
+    <!--                                <div class="d-flex">dfgdfgdfg</div>-->
+    <!--                                <div class="d-flex">dfgdfgdfg</div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="d-none d-md-flex notifications">-->
+
+    <!--                        <a class="nav-link icon show" data-bs-toggle="dropdown" aria-expanded="true" href="#">-->
+    <!--                            <i class="bi bi-fullscreen fs-5 mx-3 p-2 rounded-3"></i>-->
+    <!--                        </a>-->
+    <!--                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow show"-->
+    <!--                             style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-211px, 47px);"-->
+    <!--                             data-popper-placement="bottom-end">-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="d-none d-md-flex notifications">-->
+
+    <!--                        <a class="nav-link icon show" data-bs-toggle="dropdown" aria-expanded="true" href="#">-->
+    <!--                            <i class="bi bi-brightness-high fs-5 mx-3 p-2 rounded-3 "></i>-->
+    <!--                        </a>-->
+    <!--                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow show"-->
+    <!--                             style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-211px, 47px);"-->
+    <!--                             data-popper-placement="bottom-end">-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="dropdown d-none d-md-flex chat">-->
+
+    <!--                        <a class="nav-link icon show" data-bs-toggle="dropdown" aria-expanded="true" href="#">-->
+    <!--                            <i class="bi bi-chat-right fs-5 mx-3 p-2 rounded-3"></i>-->
+
+    <!--                        </a>-->
+    <!--                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow show"-->
+    <!--                             style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-211px, 47px);"-->
+    <!--                             data-popper-placement="bottom-end">-->
+
+    <!--                            <div class="drop-heading border-bottom">-->
+    <!--                                <div class="d-flex">dfgdfgdfg</div>-->
+    <!--                                <div class="d-flex">dfgdfgdfg</div>-->
+    <!--                                <div class="d-flex">dfgdfgdfg</div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="d-none d-md-flex notifications">-->
+
+    <!--                        <a class="nav-link icon show" data-bs-toggle="dropdown" aria-expanded="true" href="#">-->
+    <!--                            <img id="profilePicture" class="rounded-3 pb-1 mx-3" style="width: 25px" src="./media/avatar2.png"-->
+    <!--                                 alt="">-->
+
+    <!--                        </a>-->
+    <!--                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow show"-->
+    <!--                             style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-211px, 47px);"-->
+    <!--                             data-popper-placement="bottom-end">-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+
+    <!--                                        <a class="dropdown">-->
+    <!--                                            <button class="btn dropdown-toggle" type="button" id="notificationButton"-->
+    <!--                                                    data-bs-toggle="dropdown" aria-expanded="false">-->
+    <!--                                                <i class="bi bi-bell  fs-5 mx-3 p-2 rounded-3 text-white"></i>-->
+    <!--                                            </button>-->
+
+    <!--                                            <ul class="dropdown-menu" aria-labelledby="notificationButton">-->
+    <!--                                                <li><a class="dropdown-item" href="#">Action</a></li>-->
+    <!--                                                <li><a class="dropdown-item" href="#">Another action</a></li>-->
+    <!--                                                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+    <!--                                            </ul>-->
+    <!--                                        </a>-->
+
+
+    <!--    HEADER END-->
+
+
+    <!--SIDEBAR-->
+
+    <div class="sidebar">
+
+        <div class="d-flex flex-column flex-shrink-0 p-3">
+            <a href="#"
+               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none fs-5"></a>
+
+            <ul class="nav nav-pills flex-column mb-auto">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-list mx-3 fs-5 p-2"></i> Menu
+                    </a>
+                </li>
+                <hr style="color: #ffffff">
+
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" aria-current="page">
+                        <i class="bi bi-house-door mx-3 fs-5 p-2"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a style="background-color: #6464a8" href="profile.html" class="nav-link active"
+                       aria-current="page">
+                        <i class="bi bi-columns-gap mx-3 fs-5 p-2"></i> Profile
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-folder mx-3 p-2 fs-5 p-2"></i>
+                        Folder</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-6" aria-current="page">
+                        <i class="bi bi-bar-chart mx-3 p-2 fs-5 p-2"></i>
+                        Graphics</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-6" aria-current="page">
+                        <i class="bi bi-credit-card-2-back mx-3 p-2 fs-5 p-2"></i>
+                        Cards</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-card-text mx-3 p-2 fs-5 p-2"></i>
+                        Forms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--SIDEBAR END-->
+
+    <!--    HOME-->
+    <div class="home-dash">
+        <div class="home dynamicTextColorWhite item1 ">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+
+                        <div>
+                            <img id="profilePictureEdit" style="width: 150px; cursor: pointer;" class="rounded-circle my-5"
+                                 src="./media/avatar2.png" alt="" data-bs-toggle="modal" data-bs-target="#modalProfile">
+                        </div>
+
+                        <div class="modal fade" id="modalProfile" tabindex="-1" aria-labelledby="modalProfileEdit"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-black" id="modalProfileEdit">Profile</h5>
+                                        <button id="closeButton" type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="p-2" style="margin-right: auto; margin-left: auto; ">
+                                        <label>
+                                            <input type="radio" name="profilePicturePick" value="avatar-1.png">
+                                            <img class="rounded-circle" style="width: 100px"
+                                                 src="./media/avatar-1.png"
+                                                 alt="">
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="profilePicturePick" value="avatar2.png">
+                                            <img class="rounded-circle" style="width: 100px"
+                                                 src="./media/avatar2.png"
+                                                 alt="">
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="profilePicturePick" value="avatar3.png">
+                                            <img class="rounded-circle" style="width: 100px"
+                                                 src="./media/avatar3.png"
+                                                 alt="">
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="profilePicturePick" value="avatar4.png">
+                                            <img class="rounded-circle" style="width: 100px"
+                                                 src="./media/avatar4.png"
+                                                 alt="">
+                                        </label>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                        </button>
+                                        <button id="saveChanges" type="button" class="btn btn-primary">Save changes
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-3" style="padding-top: 80px;">
+                        <h5>Email:</h5>
+                        <span id="profileMail">zbusra.unal@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-5">
+                            <h4 id="profileInfo" class="my-2">Zeynep Unal</h4>
+                            <span id="aboutProfile">About me</span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-2 text-center text-decoration-none text-white fs-3">
+                        <div class=" fs-1 text-center dynamicTextColorWhite">50</div>
+                        <div style="background-color: #6464a8" class="rounded-3">
+                            <i class="bi bi-file-earmark-post"></i>
+                            <span class="fs-5">Posts</span>
+                        </div>
+                    </div>
+
+                    <div class="col-2 text-center text-decoration-none text-white fs-3">
+                        <div class=" fs-1 text-center dynamicTextColorWhite">362</div>
+                        <div style="background-color: #6464a8" class="rounded-3">
+                            <i class="bi bi-people p-2"></i>
+                            <span class="fs-5">Followers</span>
+                        </div>
+                    </div>
+
+                    <div class="col-2 text-center text-decoration-none text-white fs-3">
+                        <div class=" fs-1 text-center dynamicTextColorWhite">376</div>
+                        <div style="background-color: #6464a8" class="rounded-3">
+                            <i class="bi bi-people p-2"></i>
+                            <span class="fs-5">Following</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="nav nav-tabs" role="tablist" id="nav-tab">
+                    <button class="nav-link active" id="nav-profile-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#nav-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="nav-profile"
+                            aria-selected="true">Profile
+                    </button>
+
+                    <button class="nav-link" id="nav-friends-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#nav-friends"
+                            type="button"
+                            role="tab"
+                            aria-controls="nav-friends"
+                            aria-selected="false">Friends
+                    </button>
+                </div>
+            </nav>
+
+            <div id="nav-tabContent" class="tab-content">
+
+                <!--PROFILE-->
+                <div id="nav-profile" class="tab-pane fade show active" role="tabpanel"
+                     aria-labelledby="nav-profile-tab">
+                    <div class="row">
+                        <div class="home dynamicTextColorWhite col-6 my-5 px-5">
+                            <form class="row g-3 mt-5">
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Name</label>
+                                    <input id="nameProfile" type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input id="lastNameProfile" type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input id="mailProfile" type="email" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Password</label>
+                                    <input id="passwordProfile" type="password" class="form-control">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="aboutMeEdit" class="form-label">About me</label>
+                                    <textarea rows="3" class="form-control" id="aboutMeEdit"></textarea>
+                                </div>
+
+                                <div class="col-10">
+
+                                </div>
+
+                                <div id="saveButton" class="col-2">
+                                    <button style="width: 60px;" class="btn btn-danger rounded-3 ">
+                                        Save
+                                    </button>
+
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="home dynamicTextColorWhite col-5 m-5 px-5">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium
+                            architecto
+                            aspernatur assumenda aut autem beatae blanditiis consequuntur debitis earum eius enim
+                            est
+                            eum excepturi fuga fugiat hic, impedit ipsa iste maxime molestias nam neque nesciunt
+                            officia, perspiciatis porro praesentium quas quasi qui, ratione repellat repudiandae sed
+                            tempora veritatis voluptates voluptatibus voluptatum? Accusamus aperiam beatae
+                            blanditiis
+                            dolorum eaque earum esse fugit ipsa iure labore libero nemo, quo quod quos recusandae,
+                            sed
+                            sint tempore voluptatem, voluptates voluptatibus. At eveniet ex illo maxime modi officia
+                            possimus? Blanditiis consectetur ea fugit iure iusto, nemo neque nobis obcaecati omnis
+                            perferendis repellendus sapiente?
+                        </div>
+                    </div>
+                </div>
+                <!--PROFILE END-->
+
+
+                <!--FRIENDS -->
+                <div id="nav-friends" class="tab-pane fade" role="tabpanel"
+                     aria-labelledby="nav-friends-tab">
+                    <div class="row">
+
+                        <div class="col-3">
+                            <div class="home dynamicTextColorWhite text-center">
+                                <img class="rounded-circle my-4" src="./media/profile-3.jpg" alt="">
+                                <h5>James Thomas</h5>
+                                <h6>Web Designer</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="home dynamicTextColorWhite text-center">
+                                <img class="rounded-circle my-4" src="./media/profile-3.jpg" alt="">
+                                <h5>James Thomas</h5>
+                                <h6>Web Designer</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="home dynamicTextColorWhite text-center">
+                                <img class="rounded-circle my-4" src="./media/profile-3.jpg" alt="">
+                                <h5>James Thomas</h5>
+                                <h6>Web Designer</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="home dynamicTextColorWhite text-center">
+                                <img class="rounded-circle my-4" src="./media/profile-3.jpg" alt="">
+                                <h5>James Thomas</h5>
+                                <h6>Web Designer</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FRIENDS-END-->
+            </div>
+        </div>
+    </div>
+    <!--    HOME END-->
+
+    <!--        FOOTER-->
+    <footer class="footer">
+
+        <div class="container">
+            <a style="float: left">Copyright 2021 Dashboard</a>
+            <a style="float: right">Designed by Zeynep Unal</a>
+        </div>
+    </footer>
+    <!--        FOOTER END-->
+
+
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"-->
+    <!--        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
+    <!--        crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"-->
+    <!--        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"-->
+    <!--        crossorigin="anonymous"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
+    <!--        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
+    <!--        crossorigin="anonymous"></script>-->
+    <!--    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/profile.js"></script>
+</div>
+</body>
+</html>

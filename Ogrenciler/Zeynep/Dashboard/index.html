@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body class="">
+
+<div class="grid-container">
+
+    <!--    HEADER-->
+    <div class="header ">
+        <div class="container">
+            <nav class="navbar justify-content-between">
+                <a id="homePage" class="navbar-brand">Dashboard Template</a>
+                <form class="form-inline">
+                    <a id="themeChanger" class="text-decoration-none" href="#">
+                        <i class="bi bi-brightness-high fs-5 mx-3 p-2 rounded-3 "></i>
+                    </a>
+
+                    <a id="fullScreen" class="text-decoration-none" href="#">
+                        <i class="bi bi-fullscreen fs-5 mx-3 p-2 rounded-3"></i>
+                    </a>
+
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-bell  fs-5 mx-3 p-2 rounded-3"></i>
+                    </a>
+
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-chat-right fs-5 mx-3 p-2 rounded-3"></i>
+                    </a>
+                    <img id="profilePicture" class="rounded-3 pb-1 mx-3" style="width: 25px" src="./media/avatar2.png"
+                         alt="">
+                </form>
+            </nav>
+
+        </div>
+    </div>
+    <!--    HEADER END-->
+
+
+    <!--SIDEBAR-->
+    <div class="sidebar">
+
+        <div class="d-flex flex-column flex-shrink-0 p-3">
+            <a href="#"
+               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none fs-5"></a>
+
+            <ul class="nav nav-pills flex-column mb-auto">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-list mx-3 fs-5 p-2"></i> Menu
+                    </a>
+                </li>
+                <hr style="color: #ffffff">
+
+
+                <li class="nav-item">
+                    <a style="background-color: #6464a8" href="#" class="nav-link active" aria-current="page">
+                        <i class="bi bi-house-door mx-3 fs-5 p-2"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link" aria-current="page">
+                        <i class="bi bi-columns-gap mx-3 fs-5 p-2"></i> Profile
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-folder mx-3 p-2 fs-5 p-2"></i>
+                        Folder</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-6" aria-current="page">
+                        <i class="bi bi-bar-chart mx-3 p-2 fs-5 p-2"></i>
+                        Graphics</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-6" aria-current="page">
+                        <i class="bi bi-credit-card-2-back mx-3 p-2 fs-5 p-2"></i>
+                        Cards</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-card-text mx-3 p-2 fs-5 p-2"></i>
+                        Forms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--SIDEBAR END-->
+
+    <!--    HOME-->
+    <div class="home-dash">
+
+        <div class="home dynamicTextColorWhite item1 ">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <h5>Total Orders</h5>
+                    <p class="fw-light">Last year expenses</p>
+                </div>
+
+                <div class="col-6">
+                    <h1 style="color: #6464a8" class="fs-1">1896</h1>
+                </div>
+
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar " style="width: 70%" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="home dynamicTextColorWhite item2 ">
+            <div class="row">
+
+                <div class="col-6 text-start">
+                    <h5>Products Sold</h5>
+                    <p class="fw-light">Revenue streams</p>
+
+                </div>
+
+                <div class="col-6">
+                    <h1 style="color: #9d3838" class="fs-1">$ 3M</h1>
+                </div>
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar bg-danger" style="width: 35%" role="progressbar" aria-valuenow="35"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home dynamicTextColorWhite item3 ">
+            <div class="row">
+                <div class="col-6 text-start">
+
+                    <h5>Followers</h5>
+                    <p class="fw-light">People Interested</p>
+                </div>
+
+                <div class="col-6">
+                    <h1 style="color: #057314" class="fs-1">45,9%</h1>
+                </div>
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar bg-success" style="width: 40%" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home dynamicTextColorWhite item4 ">
+            <div class="row">
+                <div class="col-6 text-start">
+
+                    <h5>Followers</h5>
+                    <p class="fw-normal">People Interested</p>
+                </div>
+
+                <div class="col-6">
+                    <h1 style="color: #06c5e8" class="fs-1">45,9%</h1>
+                </div>
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar bg-info" style="width: 40%" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home dynamicTextColorWhite item5 ">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore fugiat rerum voluptate
+                voluptatibus! Aperiam aspernatur dolorum eius,
+                <br>
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
+                <br>
+                <br>
+                Beatae cum dicta eligendi excepturi
+                exercitationem obcaecati unde velit voluptates.
+            </p>
+        </div>
+
+        <div class="home dynamicTextColorWhite item6 ">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore fugiat rerum voluptate
+                voluptatibus! Aperiam aspernatur dolorum eius,
+                <br>
+                <br>
+                Beatae cum dicta eligendi excepturi
+                exercitationem obcaecati unde velit voluptates.
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
+            </p>
+        </div>
+
+        <div class="home dynamicTextColorWhite item7 ">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque beatae consequuntur culpa
+                debitis dolor eveniet itaque iusto modi molestiae nesciunt nostrum porro quae quasi, qui quia quibusdam
+                quos, reiciendis rem sapiente similique soluta tempora temporibus totam unde veniam voluptates.
+                <br>
+                <br>
+                Ad
+                aspernatur atque dolore, excepturi explicabo hic impedit laborum minima, necessitatibus odio perferendis
+                quo similique vel. Animi asperiores ea, exercitationem fugiat id illum magni quam quas qui quidem
+                repellat rerum tempore voluptas. Commodi consectetur consequuntur debitis dicta distinctio ducimus
+                facilis fuga fugit hic id illum ipsa iste, laboriosam laudantium magnam molestias natus nobis obcaecati
+                <br>
+                <br>
+                quibusdam, quos recusandae. Animi, aut culpa dolor labore laboriosam necessitatibus nesciunt officiis
+                optio, placeat
+                quibusdam, quos recusandae quibusdam, quos recusandae.
+
+            </p>
+        </div>
+
+        <div class="home dynamicTextColorWhite  item8 ">
+            <table class="table dynamicTextColorWhite">
+                <thead>
+                <tr>
+                    <th scope="col">.</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Profile Progress</th>
+                    <th scope="col">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Jacob</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger " style="width: 30%" role="progressbar"
+                                 aria-valuenow="30"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+                    <td>It's complicated</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Otto</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 50%" role="progressbar" aria-valuenow="50"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Single</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Frank</td>
+                    <td>Roy</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 85%" role="progressbar" aria-valuenow="85"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Single</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Marry</td>
+                    <td>Wayas</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 15%" role="progressbar" aria-valuenow="15"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>In a relationship</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 100%" role="progressbar"
+                                 aria-valuenow="100"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Single</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 45%" role="progressbar" aria-valuenow="45"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Single</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 25%" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>In a relationship</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 80%" role="progressbar" aria-valuenow="80"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Complicated</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="home dynamicTextColorWhite item9 ">
+
+            <div class="card-body text-start">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum fuga incidunt
+                    ipsam
+                    officiis praesentium rerum. A, architecto beatae deserunt ducimus, eos exercitationem id modi
+                    optio
+                    perspiciatis, quam quia saepe.</p>
+
+                <button class="btn btn-primary text-white">Join Us</button>
+            </div>
+
+        </div>
+
+        <div class="home dynamicTextColorWhite item10 ">
+            <div class="card-body text-start">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum fuga incidunt
+                    ipsam
+                    officiis praesentium rerum. A, architecto beatae deserunt ducimus, eos exercitationem id modi
+                    optio
+                    perspiciatis, quam quia saepe.</p>
+
+                <button class="btn btn-primary text-white">Join Us</button>
+            </div>
+        </div>
+
+        <div class="home dynamicTextColorWhite item11 ">
+            <div class="card-body text-start">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deserunt, est facere harum ipsa nam
+                    neque odit omnis reprehenderit ut. Asperiores cupiditate error ipsam magni nihil soluta voluptates!
+                    Provident, reiciendis.
+                </p>
+
+                <button class="btn btn-primary text-white">Join Us</button>
+            </div>
+        </div>
+
+        <div class="home dynamicTextColorWhite item12">
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-1.png" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-start" href="#">Noah Johnson</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-2.jpg" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-start" href="#">Jennifer Miller</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-3.jpg" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-start" href="#">Noah Johnson</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-1.png" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-start" href="#">Noah Johnson</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+
+        </div>
+
+        <div class="home dynamicTextColorWhite item13 ">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore fugiat rerum voluptate
+                voluptamtibus! Aperiam aspedrnatur dolorum eius,
+                <br>
+                <br>
+                Beatae cum dicta eligendi excepturi
+                exercitationem obcaecati unde velit voluptates.
+                <br>
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
+                <br>
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
+            </p>
+        </div>
+
+    </div>
+    <!--    HOME END-->
+
+    <!--    FOOTER-->
+    <footer class="footer">
+
+        <div class="container">
+            <a style="float: left">Copyright 2021 Dashboard</a>
+            <a style="float: right">Designed by Zeynep Unal</a>
+        </div>
+    </footer>
+
+    <!--    FOOTER END-->
+
+</div>
+
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+<!--<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<script src="./js/app.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

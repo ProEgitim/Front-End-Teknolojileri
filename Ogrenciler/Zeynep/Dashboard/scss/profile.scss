@@ -1,0 +1,37 @@
+$purple: #22223d;
+$light-purple: #30304d;
+$light-purple-500: #6464a8;
+$text-white: #eeeefa;
+$white: #ffffff;
+$light-gray: #e7e5e5;
+$black: #151515;
+$gray: #a2a2a2;
+
+
+//WIDGETS
+
+.item1 {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 2;
+}
+
+//WIDGETS END
+
+//HIDE RADIO
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+// IMAGE STYLES
+[type=radio] + img {
+  cursor: pointer;
+}
+
+// CHECKED STYLES
+[type=radio]:checked + img {
+  outline: 2px solid $black;
+}
+

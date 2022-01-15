@@ -1,6 +1,6 @@
 // Varibles:Değişkenler
 
-// number = sayılsay ifadeler
+// number = sayısal ifadeler
 
 // var firstNumber = 20;
 // var secondNumber = 20;
@@ -72,11 +72,11 @@
 // let value;
 
 // // String'e dönüştürme
-// value = String(123);
-// value = String(3.14);
+// var value = String(123);
+// var value = 3.14;
 // value = String(false);
 // value = String(function () {
-//     console.log("Deneme");
+//     console.log(value);
 // });
 // value = String([1, 2, 3, 4]);
 // value = (10).toString();
@@ -84,12 +84,17 @@
 // // Number'a dönüştürme
 
 // value = Number("123");
+// console.log(value);
+// console.log(typeof value);
+
 // value = Number("Merhaba");
 // value = Number(function () {
 //     console.log("Deneme");
 // });
 // value = Number([1, 2, 3]);
 // value = parseFloat("3.14");
+// console.log(value);
+// console.log(typeof value);
 
 // // Otomatik tip dönüşümü
 // value = 34 + "5";
@@ -128,7 +133,10 @@
 // const salary = "3750";
 
 // value = firstName + lastName;
+// console.log(value);
 // value = firstName + " " + lastName;
+// console.log(value);
+
 // value = firstName;
 // value += " " + lastName; //value = value + " " + lastName;
 // value = firstName.length;
@@ -136,6 +144,8 @@
 // value = firstName[0];
 // value = firstName[firstName.length - 1];
 // value = firstName.indexOf("t");
+// console.log(value);
+
 // value = lastName.indexOf("u");
 // value = lastName.includes("e");
 // value = firstName.concat(" ", lastName, " Javasript").toLowerCase();
@@ -151,6 +161,7 @@
 // // Tempalte Literal
 
 // value = `İsim: ${firstName}\nSoyisim: ${lastName}\nDepartman: ${department}\nMaaş: ${salary}`;
+// console.log(value);
 
 // let value;
 // const userName = "Varol Maksutoglu";
@@ -196,7 +207,7 @@
 // numbers.shift();
 
 // value = numbers;
-
+// console.log(value);
 // value = numbers.sort();
 
 // value = numbers.sort(function (x, y) {
@@ -211,28 +222,28 @@
 // console.log(typeof value);
 
 // Obje Özellikleri
-// let value;
-// const user = {
-//     name: "Sercan Masar",
-//     age: 23,
-//     email: "sercan@gmail.com",
-//     langs: ["Türkçe", "İngilizce", "Çince"],
-//     address: {
-//         city: "İstanbul",
-//         street: "Dereboyu",
-//     },
-//     work: function () {
-//         console.log("Çalışıyor");
-//     },
-// };
+let value;
+const user = {
+    name: "Sercan Masar",
+    age: 23,
+    email: "sercan@gmail.com",
+    langs: ["Türkçe", "İngilizce", "Çince"],
+    address: {
+        city: "İstanbul",
+        street: "Dereboyu",
+    },
+    work: function () {
+        console.log("Çalışıyor");
+    },
+};
 
 // value = user.email;
-// value = user.address.city;
+value = user.address.city;
 
 // value = user.work();
 
-// console.log(value);
-// console.log(typeof value);
+console.log(value);
+console.log(typeof value);
 
 // Zaman Objesi
 

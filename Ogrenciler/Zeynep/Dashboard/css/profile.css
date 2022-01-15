@@ -1,0 +1,19 @@
+.item1 {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 2;
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:checked + img {
+  outline: 2px solid #151515;
+}

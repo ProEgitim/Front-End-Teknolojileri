@@ -1,7 +1,7 @@
 // PARAMETERS
 let seats = document.querySelectorAll(".seat.selectable");
 const container = document.getElementById("container");
-console.log(container);
+
 const count = document.querySelector("#count")
 const amount = document.querySelector("#amount")
 const button = document.getElementById("button");
@@ -28,24 +28,25 @@ function selectedSeats(e) {
 }
 
 function totalPrice() {
-    const selectedSeatsValue = document.querySelectorAll(".seat.selectable.selected")
+    const selectedSeatsValue = document.querySelectorAll(".seat.selectable.selected");
     count.textContent = (selectedSeatsValue.length);
     amount.textContent = 20 * (selectedSeatsValue.length);
 }
 
 function sold() {
-    const selectedSeatsValue = document.querySelectorAll(".seat.selectable.selected")
+    const selectedSeatsValue = document.querySelectorAll(".seat.selectable.selected");
     selectedSeatsValue.forEach(seatElement => seatElement.className = "seat selectable reserved")
     setLocalStorage();
     totalPrice();
-
 }
 
 function setLocalStorage() {
+
+    // FOR RESERVED SEATS
+
     seats = [...seats];
     let reservedSeatInfo = [];
     const reserveds = document.querySelectorAll(".selectable.reserved");
-    const selectedSeatsValue = document.querySelectorAll(".seat.selectable.selected")
 
     reserveds.forEach(reserved => {
         // var index = [].indexOf.call(seats, reserved);
@@ -56,11 +57,12 @@ function setLocalStorage() {
             }
         }
     });
-    const selectMovieBox = document.querySelector("#movie");
-    localStorage.setItem("reservedSeats" + selectMovieBox.value, JSON.stringify(reservedSeatInfo));
 
+
+
+    // FOR SELECTED SEATS
     let selectedSeatInfo = [];
-
+    const selectedSeatsValue = document.querySelectorAll(".seat.selectable.selected")
     selectedSeatsValue.forEach(selected => {
         var index = seats.indexOf(selected);
         if (index > -1) {
@@ -69,12 +71,22 @@ function setLocalStorage() {
             }
         }
     });
+
+
+    const selectMovieBox = document.querySelector("#movie");
+    localStorage.setItem("reservedSeats" + selectMovieBox.value, JSON.stringify(reservedSeatInfo));
+
     localStorage.setItem("selectedSeats" + selectMovieBox.value, JSON.stringify(selectedSeatInfo));
 }
 
 function loadScreen() {
     const selectMovieBox = document.querySelector("#movie");
+    console.log(selectMovieBox);
+
     const reservedSeatInfo = JSON.parse(localStorage.getItem("reservedSeats" + selectMovieBox.value));
+    const selectedSeatInfo = JSON.parse(localStorage.getItem("selectedSeats" + selectMovieBox.value));
+
+    // LOCALDAN ALMA RESERVED
     if (reservedSeatInfo) {
         reservedSeatInfo.forEach(seat => {
             if ((!seats[seat].classList.contains("reserved")) && (!seats[seat].classList.contains("selected"))) {
@@ -83,7 +95,8 @@ function loadScreen() {
         });
     }
 
-    const selectedSeatInfo = JSON.parse(localStorage.getItem("selectedSeats" + selectMovieBox.value));
+
+    // LOCALDAN ALMA SELECTED
     if (selectedSeatInfo) {
         selectedSeatInfo.forEach(seat => {
             if ((!seats[seat].classList.contains("reserved")) && (!seats[seat].classList.contains("selected"))) {
@@ -97,14 +110,14 @@ function loadScreen() {
     })
 }
 
-
 loadScreen();
 
 let movieSelection = document.querySelector("#movie");
+
 movieSelection.addEventListener("change",movieChange);
 
 function movieChange (e) {
-    console.log(e.target.value);
+    // console.log(e.target.value);
 
     const reservedsRemove = document.querySelectorAll(".selectable.reserved");
     reservedsRemove.forEach(reservedSeatRemove =>{
@@ -133,7 +146,10 @@ function movieChange (e) {
             }
         });
     }
-    console.log(reservedsRemove);
+
+
+
+    // console.log(reservedsRemove);
 //
 // const movies = document.querySelectorAll("option");
 // console.log(movies);

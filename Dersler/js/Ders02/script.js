@@ -33,9 +33,9 @@
 // if
 
 // const error = false;
-// // if (!error){
-// //   console.log("Hata Oluştu");
-// // }
+// if (!error){
+//   console.log("Hata Oluştu");
+// }
 
 // if (error){
 //   console.log("Hata Oluştu");
@@ -65,8 +65,8 @@
 
 // Switch Case
 
-// const process = 4;
-
+// const process = 3 ;
+//
 // switch (process){
 //   case 1:
 //     console.log("İşlem 1");
@@ -98,7 +98,7 @@
 
 // user("Varol",36);
 // user("Sercan",31);
-
+//
 // function user(name = "Bilgi Yok", age = "Bilgi Yok"){
 //   console.log(`İsim: ${name} \nYaş: ${age}`);
 // }
@@ -133,7 +133,7 @@
 //     console.log(`ID: ${id} silindi`)
 //   }
 // }
-
+//
 // console.log(database.host);
 // database.add();
 // database.delete(10);
@@ -144,7 +144,7 @@
 // let i=0;
 // while(i<10){
 //   console.log("Deneme")
-//   // i++; // i=i+1;
+//   i++; // i=i+1;
 //   i+=2 // i=i+2;
 // }
 
@@ -222,7 +222,7 @@
 // }
 
 // a = window.location.port;
-
+//
 // console.log(a);
 
 // if (confirm("Sayfa Yenilensin mi?")){
@@ -250,32 +250,40 @@
 // Spread Operator
 // let sayilar = new Array(20);
 // let sayilar2 = new Array(20);
-
+// let numbers = new Array(25);
+//
 // for(let i=0; i<sayilar.length;i++){
 //   sayilar[i]=Math.floor(Math.random()*100+1);
 //   sayilar2[i]=Math.floor(Math.random()*100+1);
+//   numbers[i]= Math.floor(Math.random()*100+1);
 // }
-
+//
 // sayilar3 = [...sayilar, ...sayilar2]
-
+// number4= [...numbers, ...sayilar];
 // console.log(sayilar);
 // console.log(sayilar2);
-// console.log(sayilar3);
+// console.log(numbers);
+// console.log(number4);
 
 // //Scope Kavramı
 
 // // Global Scope
-// var value1 = 10;
-// let value2 = 20;
-// const value3 = 30;
+var value1 = 10;
+let value2 = 20;
+const value3 = 30;
 
-// // Functionel Scope
-// function Funk(){
-//   var value1 = 40;
-//   let value2 = 50;
-//   const value3 = 60;
-//   console.log("Function Scope: " + value1,value2,value3);
-// }
+// // Functional Scope
+function Func(){
+  var value1 = 40;
+  let value2 = 50;
+  const value3 = 60;
+  console.log("Function Scope: " + value1,value2,value3);
+}
+
+console.log(value1);
+console.log(value2);
+console.log(value3);
+Func();
 
 // // Block Scope (Döngüler - for, while -- Koşullar - if -- yada herhangi {} blokları)
 
@@ -287,8 +295,6 @@
 // }
 
 
-// Funk();
+// Func();
 // console.log("Global Scope: " + value1,value2,value3);
-
-
 
