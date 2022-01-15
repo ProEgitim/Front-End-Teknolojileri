@@ -1,0 +1,10 @@
+* {
+    background-color:lightskyblue;
+    color: black;
+}
+
+table, tr, th, td {
+    margin-top: 50px;
+    background-color:lightskyblue;
+    color: black;
+}

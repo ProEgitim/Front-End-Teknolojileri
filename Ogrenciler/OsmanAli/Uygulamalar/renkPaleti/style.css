@@ -1,0 +1,13 @@
+h4{
+    color: white;
+}
+h2{
+    color: white;
+}
+body{
+    background-color: black;
+}
+#navCenter{
+    border: 2px solid black;
+    border-radius: 2rem;
+}
