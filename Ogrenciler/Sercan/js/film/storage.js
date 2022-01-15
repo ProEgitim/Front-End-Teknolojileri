@@ -1,18 +1,13 @@
- function addStorage (){
-   
- }
+function addStorage() {}
 
- addStorage.prototype.addStorage= function (key,myArr){
- localStorage.setItem(key, JSON.stringify(myArr));
- }
+addStorage.prototype.addStorage = function (key, myArr) {
+  localStorage.setItem(key, JSON.stringify(myArr));
+};
 
-function getStorage(){
-    
-}
+function getStorage() {}
 
-getStorage.prototype.getFromStorage = function(key){
+getStorage.prototype.getFromStorage = function (key) {
   let myArr;
-    myArr = JSON.parse(localStorage.getItem(key));
-   return myArr;
-  
-}
+  myArr = JSON.parse(localStorage.getItem(key));
+  return myArr;
+};
