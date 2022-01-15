@@ -1,14 +1,15 @@
-class UI{
-static addFilmToUI (newFilm){
- // <tr>
- // <td><img src="" class="img-fluid img-thumbnail"></td>
- // <td></td>
- // <td></td>
- // <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
- // </tr> 
+function UI(){
+
+}
+UI.prototype.addFilmToUI = function(newFilm){
+  // <tr>
+  //   <td><img src="" class="img-fluid img-thumbnail"></td>
+  //   <td></td>
+  //   <td></td>
+  //   <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
+  // </tr> 
 
   const filmList = document.getElementById("films");
-  
   filmList.innerHTML += `
    <tr>
      <td class="w-25"><img src="${newFilm.url}" class="img-fluid img-thumbnail"></td>
@@ -17,41 +18,40 @@ static addFilmToUI (newFilm){
      <td class="w-25"><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
    </tr>`
 }
-static clearInputs (element1, element2, element3) {
-    element1.value = "";
-    element2.value = "";
-    element3.value = "";
+UI.prototype.clearInputs = function (element1,element2,element3){
+  element1.value = "";
+  element2.value = "";
+  element3.value = "";
 }
-static showAlert (type, message){
-  const alert = document.createElement("div");
-  alert.className = `mt-3 alert alert-${type}`;
-  alert.textContent = message;
-  firstCardBody.appendChild(alert);
-
+UI.prototype.displayMessage = function(message,type){
+  const cardBody = document.querySelector(".card-body");
+  // Alert divini oluşturma
+  const div = document.createElement("div");
+  div.className=`alert alert-${type}`;
+  div.textContent = message;
+  cardBody.appendChild(div);
   setTimeout(function(){
-    alert.remove();
-  }, 2000);
-  
+    div.remove();
+  },2000);
 }
-static deleteFilmFromUI  (e) {
+UI.prototype.deleteFilmFromUI = function(e){
   e.parentElement.parentElement.remove();
 }
-static clearAllFilmsFromUI  (e) {
-  const filmList = document.getElementById ("films");
+UI.prototype.clearAllFilmsFromUI = function(){
+  const filmList = document.getElementById("films");
   while(filmList.firstElementChild !== null){
     filmList.firstElementChild.remove();
   }
 }
-static loadAllFilms  (films) {
+UI.prototype.loadAllFilms = function(films){
   const filmList = document.getElementById("films");
-  films.forEach(function(Film) {
+  films.forEach(function(film){
     filmList.innerHTML += `
    <tr>
-     <td class="w-25"><img src="${newFilm.url}" class="img-fluid img-thumbnail"></td>
-     <td class="w-25">${newFilm.title}</td>
-     <td class="w-25">${newFilm.director}</td>
+     <td class="w-25"><img src="${film.url}" class="img-fluid img-thumbnail"></td>
+     <td class="w-25">${film.title}</td>
+     <td class="w-25">${film.director}</td>
      <td class="w-25"><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
    </tr>`
   })
-}
 }
