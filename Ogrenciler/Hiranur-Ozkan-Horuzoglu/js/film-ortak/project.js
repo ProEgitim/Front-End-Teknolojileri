@@ -6,11 +6,11 @@ const deleteAll = document.getElementById("clear-films");
 const films = document.getElementById("films");
 const cardBody = document.getElementsByClassName("card-body")[1];
 
-//UI Objesini Başlatma
-const ui = new UI();
+// //UI Objesini Başlatma
+// const ui = new UI();
 
-// Tüm eventleri yükleme
-eventListeners();
+// // Tüm eventleri yükleme
+// eventListeners();
 
 
 function eventListeners() {
@@ -27,15 +27,15 @@ function addFilm(e) {
 
   if (title === "" || director === "" || url === "") {
     // Hata
-    ui.displayMessage("Tüm alanları doldurun...", "danger");
+    UI.displayMessage("Tüm alanları doldurun...", "danger");
   } else {
     const newFilm = new Film(title, director, url);
-    ui.addFilmToUI(newFilm);
+    UI.addFilmToUI(newFilm);
     // Başarılı Mesajı
-    ui.displayMessage("Film Başarı ile eklendi...", "success");
+    UI.displayMessage("Film Başarı ile eklendi...", "success");
     saveToLocalStorage(newFilm);
   }
-  ui.clearInputs(titleElement, urlElement, directorElement);
+  UI.clearInputs(titleElement, urlElement, directorElement);
   e.preventDefault();
 
 }
@@ -58,18 +58,11 @@ function deletefilm(e) {
 function allFilmsUpdateUI() {
   let films = getLocalStorage();
   films.forEach(function (film) {
-      ui.addFilmToUI(film);
+    UI.addFilmToUI(film);
     }
 
   )
 }
-
-
-
-// function adimiSoyle(isim) {
-//   console.log(" beni çağıran " + isim);
-// }
-// adimiSoyle("hiranur");
 
 //filmleri object array olarak local eklicez
 //bos girildiyse hata eklenicek duzgun girildiyse basarili mesaji vericek (alert)
