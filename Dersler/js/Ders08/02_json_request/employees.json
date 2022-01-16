@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Varol Maksutoğlu",
+    "department":"Bilişim",
+    "salary":4250
+  },
+  {
+    "name":"Buğra Bolat",
+    "department":"Yönetim",
+    "salary":5000
+  },
+  {
+    "name":"Simge Manav",
+    "department":"Muhasebe",
+    "salary":4500
+  },
+  {
+    "name":"Sercan Masar",
+    "department":"Mühendislik",
+    "salary":4750
+  }
+]
