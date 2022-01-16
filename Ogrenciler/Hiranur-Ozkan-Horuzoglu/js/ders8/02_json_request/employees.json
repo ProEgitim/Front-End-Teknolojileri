@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "Hiranur Ozkan Horuzoglu",
+        "department": "Bilisim",
+        "salary": 4250
+    },
+    {
+        "name" : "Varol maksutoglu",
+        "department": "Yonetim",
+        "salary": 5000
+    },
+    {
+        "name" : "Simge manav",
+        "department": "Muhasebe",
+        "salary": 4500
+    },
+    {
+        "name" : "Sercan Masar",
+        "department": "Muhendislik",
+        "salary": 4750
+    }
+]
