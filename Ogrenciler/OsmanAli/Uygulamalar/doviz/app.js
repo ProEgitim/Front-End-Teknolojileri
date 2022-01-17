@@ -1,3 +1,7 @@
+kurlar = new Array('http://www.tcmb.gov.tr/kurlar/today.xml');
+dolarAlis = kurlar;
+dolarSatis = kurlar;
+
 const TLTutar = document.getElementById("TL");
 const secim = document.getElementById("paralar");
 const sonuc = document.getElementById("toplam");
@@ -9,20 +13,16 @@ function islem(e) {
         usdCevir();
         if (secim.innerText=="EURO"){
             euroCevir();
-            if (secim.innerText=="POUND"){
-                poundCevir();
-            }
         }
     }
 
     
 }
 function usdCevir() {
-    let UsdKur =  
+    let UsdKur = dolarSatis;  
+    sonuc = UsdKur;
 }
 function euroCevir() {
-    
-}
-function poundCevir() {
-    
+    let EuroKur = euroSatis;
+    sonuc = EuroKur;
 }

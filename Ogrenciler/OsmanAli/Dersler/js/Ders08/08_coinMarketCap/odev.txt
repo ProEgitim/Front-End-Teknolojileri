@@ -1,0 +1,1 @@
+Bootstrap güzel bir tema ile coinmarketcap(https://pro.coinmarketcap.com/) api aracılığı ile bir tablo olsun ve kripto paralar o tabloda listelensin. Tablo içerisindeki paraları arayabilelim. metadata(logo,grafik), listingLastest(fiyat) bilgileri çekilebilir. Adı, fiyatı, değişim(günlük,haftalık,saatlik) başlıkları olması yeterli. Yenileme setInterval ile yapılabilir.
