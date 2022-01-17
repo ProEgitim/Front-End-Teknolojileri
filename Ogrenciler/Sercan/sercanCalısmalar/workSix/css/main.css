@@ -10649,7 +10649,11 @@ fieldset:disabled .btn {
 .cont-all {
   background-color: #1f1d2d;
   width: 1080px;
-  height: 100vh;
+  height: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .left-side .col-name, .left-side svg, .left-side span, .left-side hr {
@@ -10935,10 +10939,11 @@ fieldset:disabled .btn {
 .video-wrapper video {
   width: 155px !important;
   height: 175px !important;
+  border-radius: 15px;
 }
 
 .video-cont:hover video {
-  transform: scaleY(1.6);
+  transform: scaleY(1.4);
 }
 
 .video-cont:hover .video-time-circle {
@@ -11014,4 +11019,8 @@ fieldset:disabled .btn {
 
 .red-dot {
   color: #ac1414;
+}
+
+.video-change {
+  border-radius: 15px;
 }

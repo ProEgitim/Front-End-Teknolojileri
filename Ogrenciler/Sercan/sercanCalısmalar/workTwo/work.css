@@ -50,9 +50,9 @@ background-size: cover;
     width: 250px ;
     height: 250px ;
     border-radius: 30%;
-   
-    
+    transform: translate(1.5);   
 }
+
 
 .card-sc h5{
     text-align: center;
@@ -62,7 +62,9 @@ background-size: cover;
     color: rgb(18, 19, 66);
 }
 
-
+.cat{
+    border-radius: 55px;
+}
 
 
 
