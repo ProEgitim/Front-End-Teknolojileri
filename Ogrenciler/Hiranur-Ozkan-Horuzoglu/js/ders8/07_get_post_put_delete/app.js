@@ -5,7 +5,7 @@ class Request {
     get(url, callback) { //veri tabanindaki bilgiyi gosterme
         this.xhr.open("GET", url);
         this.xhr.onload = () => {
-            if (this.xhr.status === 200) {
+            if (this.xhr.status === 200) { //basarili dondu
                 callback(null, this.xhr.responseText);
             } else {
                 callback("Get: Bir hata olustu. ", null);
@@ -18,7 +18,7 @@ class Request {
         this.xhr.open("POST", url);
         this.xhr.setRequestHeader("Content-Type", "application/json");
         this.xhr.onload = () => {
-            if (this.xhr.status === 201) {
+            if (this.xhr.status === 201) { //yeni birsey yaratildi
                 //Basarili
                 callback(null, this.xhr.responseText);
             } else {
@@ -27,7 +27,7 @@ class Request {
         }
         this.xhr.send(JSON.stringify(data));
     }
-    put(url, data, callback) { //ekleme
+    put(url, data, callback) { //ekleme- degistirme
         this.xhr.open("PUT", url);
         this.xhr.setRequestHeader("Content-Type", "application/json");
         this.xhr.onload = () => {
@@ -69,18 +69,18 @@ const request = new Request();
 // });
 
 
-// request.post("https://jsonplaceholder.typicode.com/albums", {
-//     userId: 144,
-//     title: "Zeki Muren"
-// }, function (err, album) {
-//     if (err === null) {
-//         //basarili
-//         console.log(album);
-//     } else {
-//         //hata
-//         console.log(err);
-//     }
-// });
+request.post("https://jsonplaceholder.typicode.com/albums", {
+    userId: 144,
+    title: "Zeki Muren"
+}, function (err, album) {
+    if (err === null) {
+        //basarili
+        console.log(album);
+    } else {
+        //hata
+        console.log(err);
+    }
+});
 
 // request.put("https://jsonplaceholder.typicode.com/albums", {
 //     userId: 149,
@@ -95,12 +95,12 @@ const request = new Request();
 //     }
 // });
 
-request.delete("https://jsonplaceholder.typicode.com/albums",function(err, album) {
-    if (err === null) {
-        //basarili
-        console.log(album);
-    } else {
-        //hata
-        console.log(err);
-    }
-});
+// request.delete("https://jsonplaceholder.typicode.com/albums",function(err, album) {
+//     if (err === null) {
+//         //basarili
+//         console.log(album);
+//     } else {
+//         //hata
+//         console.log(err);
+//     }
+// });
