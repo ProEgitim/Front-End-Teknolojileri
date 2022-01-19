@@ -1,7 +1,13 @@
+
 .cont-all{
     background-color: #1f1d2d;
     width: 1080px;
-    height: 100vh;
+    height: 90vh;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+  
 }
 
 
@@ -286,15 +292,17 @@ width: 150px;
      position: absolute;
      z-index: 1;
     
+    
      video{
          width: 155px !important;
          height: 175px !important;
+         border-radius: 15px;
         
      }
  }
  .video-cont:hover{
      video{
-         transform: scaleY(1.6);
+         transform: scaleY(1.4);
          
      }
      .video-time-circle{
@@ -369,4 +377,8 @@ width: 150px;
 }
 .red-dot{
     color:rgb(172, 20, 20);
+}
+
+.video-change{
+    border-radius: 15px;
 }
