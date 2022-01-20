@@ -6,8 +6,8 @@ function change(){
     if(this.status){
       const response = JSON.parse(this.responseText);
       // console.log(response);
-      const rate = response.rates.TRY
-      const amount = Number(document.getElementById("amount").value);
+      let rate = response.rates.TRY
+      let amount = Number(document.getElementById("amount").value);
       document.getElementById("tl").value = amount * rate;
     }
   }
