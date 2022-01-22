@@ -17,8 +17,8 @@ var formatter = new Intl.NumberFormat('en-US', {
 
 function coinList() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"); //--real data
-    //xhr.open("GET", "coin.json");  //--mock(sahte) data
+    //xhr.open("GET", "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"); //--real data
+    xhr.open("GET", "coin.json");  //--mock(sahte) data
     xhr.setRequestHeader('X-CMC_PRO_API_KEY', 'b60a6587-6230-4788-8841-de05872ed177');
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = function () {
@@ -29,7 +29,7 @@ function coinList() {
 
             parsedData.data.forEach(function (e) {
                 list.innerHTML += `
-                <tr id="innerId">
+                <tr id="innerId" class="innerId">
                     <th>${e.cmc_rank}</th>
                     <th>
                     <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/${e.id}.png" class="image-money">
@@ -68,13 +68,17 @@ function filterCoin(e) {
     })
 }
 
-let i = 0;
-let refreshInterval = setInterval(function () {
-    coinList();
-    i++
-    if (i == 3) {
-        clearInterval(refreshInterval);
-
-    }
-    console.log(i);
-}, 30000);
+// let i = 0;
+// let refreshInterval = setInterval(function () {
+//     coinList();
+//     i++;
+//     let yenile = document.getElementById("innerId");
+//     yenile.forEach(function() {
+//         yenile.remove();
+//     });
+    
+//     if (i == 3) {
+//         clearInterval(refreshInterval);
+//     }
+//     console.log(i);
+// }, 10000);
