@@ -2,11 +2,39 @@ class UI {
     constructor()
     {
       this.profile = document.getElementById("profile");
-      this.repos = document.getElementById("repos");
+      this.reposs = document.getElementById("repos");
     }
     addRepos(repos)
     {
-      console.log("repos"); 
+      this.reposs.innerHTML = "";
+      repos.forEach((reposElement) => {
+        this.reposs.innerHTML += `
+          <div class="mb-2 card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                            <span></span> 
+                            <a href="#" target = "_blank" id = "repoName">${reposElement.full_name}</a>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-secondary">
+                                    Starlar  <span class="badge badge-light" id="repoStar">(${reposElement.stargazers_count})</span>
+                                </button>
+
+                                <button class="btn btn-info">
+                                    Forklar  <span class="badge badge-light" id ="repoFork">(${reposElement.forks})</span>
+                                </button>
+                        
+                            </div>
+                    </div>
+
+                    </div> 
+        `
+
+     
+
+
+      });
+
     }
 
     addUser(user)
