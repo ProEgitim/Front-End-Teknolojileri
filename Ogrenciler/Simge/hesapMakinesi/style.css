@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(5,50px);
+    grid-template-areas:
+    'item0 item0 item1 item1 item2 item3'
+    'item4 item5 item6 item7 item7 item7'
+    'item8 item9 item10 item7 item7 item7'
+    'item11 item12 item13 item7 item7 item7'
+    'item14 item15 item16 item7 item7 item7'
+
+}
+
+
+
+.grid-item {
+    background-color: rgba(167, 164, 164, 0.8);
+    text-align: center;
+    padding: 20px;
+ 
+}
+
+.item0 {
+  grid-area: item0;
+  grid-row: 1 / 2 ;
+  grid-column: 1 /2 ;
+}
+.item1 {
+    grid-area: item1;
+    grid-row: 1 / 2  ;
+    grid-column: 2 / 3;
+
+}
+.item2 {
+    grid-area: item2;
+    grid-row: 1 / 2 ;
+    grid-column: 3 / 4 ;
+}
+.item3 {
+    grid-area: item3;
+    grid-row: 1 / 2 ;
+    grid-column: 4 / 5 ;
+}
+
+.item4 {
+    grid-area: item4;
+    grid-row: 2 / 3 ;
+    grid-column: 1 / 2 ;
+}
+.item5 {
+    grid-area: item5;
+    grid-row: 2 / 3 ;
+    grid-column: 2 / 3 ;
+}
+.item6 {
+    grid-area: item6;
+    grid-row: 2 / 3 ;
+    grid-column: 3 / 4 ;
+}
+
+.item7 {
+    grid-area: item7;
+    grid-row: 2 / 6 ;
+    grid-column: 4 / 5 ;
+}
+
+.item8 {
+    grid-area: item8;
+    grid-row: 3 / 4 ;
+    grid-column: 1 / 2 ;
+}
+.item9 {
+    grid-area: item9;
+    grid-row: 3 / 4 ;
+    grid-column: 2 / 3 ;
+}
+.item10 {
+    grid-area: item10;
+    grid-row: 3 / 4 ;
+    grid-column: 3 / 4 ;
+}
+.item11 {
+    grid-area: item11;
+    grid-row: 4 / 5 ;
+    grid-column: 1 / 2 ;
+}
+
+.item12 {
+    grid-area: item12;
+    grid-row: 4 / 5 ;
+    grid-column: 2 / 3 ;
+}
+
+.item13 {
+    grid-area: item13;
+    grid-row: 4 / 5 ;
+    grid-column: 3 / 4 ;
+}
+.item14 {
+    grid-area: item14;
+    grid-row: 5 / 6 ;
+    grid-column: 1 / 2 ;
+}
+.item15 {
+    grid-area: item15;
+    grid-row: 5 / 6 ;
+    grid-column: 2 / 3 ;
+}
+.item16 {
+    grid-area: item16;
+    grid-row: 5 / 6 ;
+    grid-column: 3 / 4 ;
+}
