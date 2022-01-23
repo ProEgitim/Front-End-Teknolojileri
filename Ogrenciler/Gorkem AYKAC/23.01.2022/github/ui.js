@@ -83,8 +83,11 @@ class UI {
         </div>
       
       `
-      
-
+    }
+    falseUI()
+    {
+      this.profile.innerHTML = "";
+      this.reposs.innerHTML = "";
     }
 
 }
