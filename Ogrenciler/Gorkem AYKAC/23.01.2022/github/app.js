@@ -25,10 +25,18 @@ function getGithubUser(e)
       {
           xGithub.getGithubData(UserNameValue).then(response=>
           {
-              xUI.addRepos(response.repo);
-              xUI.addUser(response.user);
-              users.push(response)
-              xStorage.addStorage(JSON.stringify(users));             
+              if(response.user.message =="Not Found")
+              {
+                xUI.falseUI();
+              }
+              else
+              {
+                console.log(response);
+                xUI.addRepos(response.repo);
+                xUI.addUser(response.user);
+                users.push(response)
+                xStorage.addStorage(JSON.stringify(users));  
+              }           
           }); 
       }
       
