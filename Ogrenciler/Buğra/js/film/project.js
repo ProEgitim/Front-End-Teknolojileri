@@ -69,7 +69,7 @@ function allFilmsUpdateUI() {
 // function adimiSoyle(isim) {
 //   console.log(" beni çağıran " + isim);
 // }
-// adimiSoyle("hiranur");
+// adimiSoyle("Bugra");
 
 //filmleri object array olarak local eklicez
 //bos girildiyse hata eklenicek duzgun girildiyse basarili mesaji vericek (alert)
