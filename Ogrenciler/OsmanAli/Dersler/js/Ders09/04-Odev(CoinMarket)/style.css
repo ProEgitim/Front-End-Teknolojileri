@@ -1,0 +1,16 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+*{
+    background-color: rgb(250, 250, 250);
+    color: rgba(37, 35, 35, 0.856);
+}
+h5{
+   color: #be9716;
+}
+td{
+    font-size: smaller;
+}
+.coins{
+    font-size: 20px;
+}
