@@ -14,6 +14,18 @@ var formatter = new Intl.NumberFormat('en-US', {
 
 });
 
+// class Request{
+//     static async get(url){
+//         const res = await fetch(url,{
+//             method: 'GET',
+//             headers:('X-CMC_PRO_API_KEY', 'b60a6587-6230-4788-8841-de05872ed177'),
+//             headers: ("Content-Type", "application/json")
+//         });
+//         const data = await res.json();
+//         return data;
+//     }
+// }
+
 
 function coinList() {
     const xhr = new XMLHttpRequest();
