@@ -1,10 +1,11 @@
 
 const coinList = document.getElementById("coinList");
-var coefficient = 1;
+var coefficient = 0;
 const interval = setInterval(function() 
 {    
-    Request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/map").then(response => callback(response))
     coefficient++;
+    Request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/map").then(response => callback(response))
+   
 },5000);
 function callback(data)
 {
@@ -19,8 +20,8 @@ function callback(data)
 
             coinList.innerHTML +=  `
             <tr>
-                <td>${data["data"][index*coefficient].name}</td>
-                <td>${data["data"][index*coefficient].symbol}</td>
+                <td>${data["data"][index+(coefficient*20)].name}</td>
+                <td>${data["data"][index+(coefficient*20)].symbol}</td>
             </tr>          
             `  
         }
