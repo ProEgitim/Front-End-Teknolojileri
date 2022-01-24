@@ -4,10 +4,12 @@ const xStorage = new Storage();
 
 const userName = document.getElementById("githubname");
 const searchButton = document.getElementById("githubSearch");
+const clearButton = document.getElementById("clear-last-users");
 
 var users = []; 
 
 searchButton.addEventListener("click",getGithubUser);
+clearButton.addEventListener("click",xStorage.clearUser);
 
 
 function getGithubUser(e)
