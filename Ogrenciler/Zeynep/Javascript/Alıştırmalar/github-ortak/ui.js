@@ -2,16 +2,20 @@ class UI {
     constructor() {
         this.profileDiv = document.getElementById("profile");
         this.reposDiv = document.getElementById("repos");
+        this.githubForm = document.getElementById("github-form");
+        // this.lastSearch = document.getElementById("lastSearch");
+        this.lastSearch = document.getElementById("last-users");
+        // this.inputData = document.getElementById("github_name");
     }
 
-    showError(message) {
+    showError(message, alertType="danger") {
         const div = document.createElement("div");
-        div.className = `alert alert-danger`;
+        div.className = `alert alert-` + alertType + ` mt-3`;
         div.textContent = message;
-        this.profileDiv.appendChild(div);
+        this.githubForm.appendChild(div);
         setTimeout(function () {
             div.remove();
-        }, 2000);
+        }, 3000);
     }
 
     createProfile(user) {
@@ -29,13 +33,13 @@ class UI {
                 </div>
                 <div class="col-md-8">
                     <button class="btn btn-secondary">
-                        Takipçi <span class="badge badge-light"></span>
+                        Takipçi <span class="badge badge-light">${user.followers}</span>
                     </button>
                     <button class="btn btn-info">
-                        Takip Edilen <span class="badge badge-light"></span>
+                        Takip Edilen <span class="badge badge-light">${user.following}</span>
                     </button>
                     <button id="reposButton" class="btn btn-danger">
-                        Repolar <span class="badge badge-light"></span>
+                        Repolar <span class="badge badge-light">${user.public_repos}</span>
                     </button>
                     <hr>
                     <li class="list-group">
@@ -59,29 +63,35 @@ class UI {
         </div>`
     }
 
-    getRepos (repo) {
-        this.reposDiv.innerHTML = `
-        <div className="mb-2 card-body">
-            <div className="row">
-                <div className="col-md-2">
-                    <span></span>
-                    <a href="#" target="_blank" id="repoName">${repo.name}</a>
+    getRepos(repo) {
+        this.reposDiv.innerHTML = "";
+        repo.forEach((reposElement) => {
+            this.reposDiv.innerHTML += `
+        <div class="mb-2 card-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <span>${reposElement.name}</span>
+                    <a href="#" target="_blank" id="repoName"></a>
                 </div>
-                <div className="col-md-6">
-                    <button className="btn btn-secondary">
-                        Starlar <span className="badge badge-light" id="repoStar">${repo.star}</span>
+                <div class="col-md-6">
+                    <button class="btn btn-secondary">
+                        Starlar <span class="badge badge-light" id="repoStar">${reposElement.stargazers_count}</span>
                     </button>
 
-                    <button className="btn btn-info">
-                        Forklar <span className="badge badge-light" id="repoFork">${repo.fork}</span>
+                    <button class="btn btn-info">
+                        Forklar <span class="badge badge-light" id="repoFork">${reposElement.forks}</span>
                     </button>
-
                 </div>
             </div>
-
         </div>
 `
+        });
     }
+
+    addNewSearch(user) {
+        this.lastSearch.innerHTML += `<li class="list-group-item">${user}</li>`
+    }
+
 
 
 

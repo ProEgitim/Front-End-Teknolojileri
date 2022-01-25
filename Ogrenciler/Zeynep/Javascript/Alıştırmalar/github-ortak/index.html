@@ -23,7 +23,7 @@
             Bir kullanıcı adı girin ve kullanıcının bilgilerine ulaşın!
         </p>
         <form id="github-form">
-            <input type="text" name="githubname" id="githubname" class="form-control"
+            <input type="text" name="githubname" id="github_name" class="form-control"
                    placeholder="Github Kullanıcı adı">
             <br>
             <button type="submit" class="btn btn-dark" id="search">Ara</button>
@@ -33,8 +33,6 @@
 
     </div>
     <br>
-
-
 
     <div id="profile">
 
@@ -48,29 +46,22 @@
     </div>
 
     <h3 class="page-heading mb-3">Son Aramalar</h3>
+    <button id="clear-last-users" class="btn btn-dark">Son Arananları Temizle</button>
+
 
     <div id="lastSearch" style="margin-bottom: 100px;">
-        <ul class="list-group" id="last-users">
-            <!-- <li class="list-group-item">asdaskdjkasjkşdjşasjd</li> -->
-        </ul>
-        <hr>
-        <button id="clear-last-users" class="btn btn-dark">Son Arananları Temizle</button>
+         <ul style="margin-top: 20px" class="list-group" id="last-users">
+        <!--             <li class="list-group-item">asdaskdjkasjkşdjşasjd</li>-->
+                </ul>
 
     </div>
 
 </div>
 
 
-</div>
-
-
-</div>
-
-
 <script src="github.js"></script>
-<!--<script src="storage.js"></script>-->
+<script src="storage.js"></script>
 <script src="ui.js"></script>
-
 <script src="app.js"></script>
 
 
