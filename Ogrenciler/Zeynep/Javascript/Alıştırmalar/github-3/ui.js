@@ -30,7 +30,7 @@ class UI {
                     </div> 
         `
 
-     
+
 
 
       });
@@ -83,26 +83,8 @@ class UI {
         </div>
       
       `
-    }
-    falseUI()
-    {
-      this.profile.innerHTML = "";
-      this.reposs.innerHTML = "";
-      
-      const searchPart = document.getElementById("searchingPart");
-      const alert = document.createElement("div");
-      alert.className = `mt-3 alert alert-danger`;
-      alert.textContent = "Wrong Input!";
-      searchPart.appendChild(alert);
-      
-      setTimeout(function(){
-        alert.remove();
-      }, 2000);
-  
-    }
 
-   
-  
-    
+
+    }
 
 }

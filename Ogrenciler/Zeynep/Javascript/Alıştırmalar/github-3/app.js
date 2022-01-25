@@ -4,12 +4,10 @@ const xStorage = new Storage();
 
 const userName = document.getElementById("githubname");
 const searchButton = document.getElementById("githubSearch");
-const clearButton = document.getElementById("clear-last-users");
 
 var users = []; 
 
 searchButton.addEventListener("click",getGithubUser);
-clearButton.addEventListener("click",xStorage.clearUser);
 
 
 function getGithubUser(e)
@@ -27,18 +25,10 @@ function getGithubUser(e)
       {
           xGithub.getGithubData(UserNameValue).then(response=>
           {
-              if(response.user.message =="Not Found")
-              {
-                xUI.falseUI();
-              }
-              else
-              {
-                console.log(response);
-                xUI.addRepos(response.repo);
-                xUI.addUser(response.user);
-                users.push(response)
-                xStorage.addStorage(JSON.stringify(users));  
-              }           
+              xUI.addRepos(response.repo);
+              xUI.addUser(response.user);
+              users.push(response)
+              xStorage.addStorage(JSON.stringify(users));             
           }); 
       }
       
