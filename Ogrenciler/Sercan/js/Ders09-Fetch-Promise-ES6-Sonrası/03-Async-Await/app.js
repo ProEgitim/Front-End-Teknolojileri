@@ -10,6 +10,17 @@
 
 // test("Merhaba").then(res => console.log(res));
 
+// // // async function test(data){
+// // //   let promise = new Promise((resolve,reject)=>{
+// // //     setTimeout(()=>{
+// // //       resolve("bu bir testtir");
+// // //     },5000)
+// // //   })
+// // //   let response= await promise;
+// // //   return response;
+// // // }
+// // // test("merhaba").then(res => console.log(res));
+
 // async function getCurrency(url){
 //   const response = await fetch(url);
 //   const data = await response.json();
@@ -18,47 +29,55 @@
 // getCurrency("http://api.exchangeratesapi.io/v1/latest?access_key=a48afb973259b17c029cee604aa88987")
 // .then(data => console.log(data));
 
+// // // async function getCurrency (url){
+// // //   const response = await fetch(url);
+// // //   const data = await response.json();
+// // //   return data;
+// // // }
+// // // getCurrency("http://api.exchangeratesapi.io/v1/latest?access_key=a48afb973259b17c029cee604aa88987")
+// // // .then(data=> console.log(data))
+
 // GET - POST - PUT - DELETE
 
-class Request {
-  async get(url){
-    const res = await fetch(url);
-    if(!res.ok){
-      throw new Error(`Bir hata alındı: ${res.status}`);
-    }
-    const data = await res.json();
-    return data;
-  }
-  async post(url,data){
-    const res = await fetch(url,{
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {"Content-type":"application:json;"}
-      });
-    const resData = await res.json();
-    return resData;
-  }
-  async put(url,data){
-    const res = await fetch(url,{
-        method: 'PUT',
-        body: JSON.stringify(data),
-        headers: {"Content-type":"application:json;"}
-      });
-      const resData = await res.json();
-      return resData; 
-  }
-  async delete(url){
-      const res = await fetch(url,{
-        method: 'DELETE',
-      });
-      return "Veri silme işlemi başarılı";
-  }
-}
-const request = new Request();
+// class Request {
+//   async get(url){
+//     const res = await fetch(url);
+//     if(!res.ok){
+//       throw new Error(`Bir hata alındı: ${res.status}`);
+//     }
+//     const data = await res.json();
+//     return data;
+//   }
+//   async post(url,data){
+//     const res = await fetch(url,{
+//         method: 'POST',
+//         body: JSON.stringify(data),
+//         headers: {"Content-type":"application:json;"}
+//       });
+//     const resData = await res.json();
+//     return resData;
+//   }
+//   async put(url,data){
+//     const res = await fetch(url,{
+//         method: 'PUT',
+//         body: JSON.stringify(data),
+//         headers: {"Content-type":"application:json;"}
+//       });
+//       const resData = await res.json();
+//       return resData; 
+//   }
+//   async delete(url){
+//       const res = await fetch(url,{
+//         method: 'DELETE',
+//       });
+//       return "Veri silme işlemi başarılı";
+//   }
+// }
+// const request = new Request();
 
-request.get("https://jsonplaceholder.typicode.com/albs")
-.then(album => console.log(album))
-.catch(e=>console.log(`Hata: ${e.message}`));
+// request.get("https://jsonplaceholder.typicode.com/albs")
+// .then(album => console.log(album))
+// .catch(e=>console.log(`Hata: ${e.message}`));
 
 // request.post("https://jsonplaceholder.typicode.com/albums",{userId:999,title:"Merhaba"})
 // .then(newAlbum => console.log(newAlbum));
@@ -84,3 +103,24 @@ request.get("https://jsonplaceholder.typicode.com/albs")
 //     }
 //     return Promise.resolve(data);
 // }
+
+
+
+class Request {
+
+ async get(url){
+   const response = await fetch(url);
+  if(!response.ok){
+     throw Error(`Bir hata alındı ${this.status}`)
+    }
+   const data = await response.json();
+   return data;
+  }
+  }
+
+
+
+const request = new Request();
+request.get("https://jsonplaceholder.typicode.com/albums/xcvxcvxc")
+.then(data=> console.log(data))
+.catch(err=>console.log(`hata: ${err.message}`));

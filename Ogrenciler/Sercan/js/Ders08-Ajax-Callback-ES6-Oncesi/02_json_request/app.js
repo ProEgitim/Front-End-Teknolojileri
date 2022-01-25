@@ -46,12 +46,14 @@ function getAllEmployees(){
 // }
 
 // xhr.send();
+/////////////////////////////// post isteği atıldı ama json dosyasına post atılamadığından url api olması gerekiyor
 const xhr = new XMLHttpRequest();
  const data = {name:"Ali Veli", department:"Software", salary:4500};
- xhr.open("POST","http://127.0.0.1:5500/Ogrenciler/Sercan/js/Ders08-Ajax-Callback-ES6-Oncesi/02_json_request/employees.json",true );
+ xhr.open("POST","https://jsonplaceholder.typicode.com/albums",true );
+ xhr.setRequestHeader("Content-Type", "application/json");
  xhr.onload= function(){
    if(xhr.status){
-    console.log(xhr.responseText);
+    console.log(xhr.responseText);  b
    }
    else{console.log("hata oluştu")};
   

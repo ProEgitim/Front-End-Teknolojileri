@@ -16,7 +16,7 @@ class Request{
   }
   post(url,data,callback){
     this.xhr.open("POST",url);
-    this.xhr.setRequestHeader("Content-Type", "application/json");
+    this.
     this.xhr.onload = () => {
       if(this.xhr.status === 201){
         // Başarılı
