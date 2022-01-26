@@ -1,13 +1,10 @@
-
-
-
 let coinArr;
-const request= new Request();
-let data =request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest")
-.then(resData=> {
-  resData.data.forEach(el=> {
-    document.getElementById("coin-list").innerHTML+=
-`
+const request = new Request();
+let data = request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest")
+  .then(resData => {
+    resData.data.forEach(el => {
+      document.getElementById("coin-list").innerHTML +=
+        `
 <tr >
       <th scope="row">${el.cmc_rank}</th>
       <td class="findCoin"><img class="me-2" src="https://s2.coinmarketcap.com/static/img/coins/64x64/${el.id}.png" alt="" width="25" height="25">${el.name}</td>
@@ -19,31 +16,26 @@ let data =request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listi
       <td><img src="https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/${el.id}.svg" class="h7vnx2-0 bCltOL" loading="lazy" alt="" ></td>
 </tr>
 `
+    });
   });
-});
 
 document.getElementById("search").addEventListener("keyup", search);
 
-function search(e){
-  let element = document.querySelectorAll(".findCoin");
-  let val= e.target.value.trim();
-  element.forEach(el=>{
-    if (val == el.textContent.split(" ")){
-      console.log(el.textContent);
-    }
+function search(e) {
+  let elements = document.querySelectorAll(".findCoin");
+  let val = e.target.value.toLowerCase();
+
+  elements.forEach(element => {
+      let elementArr = [];
+      elementArr.push(element);
+      elementArr.find(el => {
+          if (el.textContent.toLowerCase().includes(val)) {
+            el.parentElement.style.display = "table-row";
+          }
+          else{
+            el.parentElement.style.display = "none";
+          }
+
+      })
   })
-  
- 
 }
-  
-
-
-
-
- 
-
-  
-
-
-
-
