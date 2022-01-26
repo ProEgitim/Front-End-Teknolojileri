@@ -1,46 +1,48 @@
 const filter = document.getElementById("form-search");
+const list = document.getElementById("coinList");
 
 eventListeners();
-coinList();
 
 function eventListeners() {
     filter.addEventListener("keyup", filterCoin);
 }
-
-
 var formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
 
 });
 
-// class Request{
-//     static async get(url){
-//         const res = await fetch(url,{
-//             method: 'GET',
-//             headers:('X-CMC_PRO_API_KEY', 'b60a6587-6230-4788-8841-de05872ed177'),
-//             headers: ("Content-Type", "application/json")
-//         });
-//         const data = await res.json();
-//         return data;
-//     }
-// }
+class Request {
+    static async get(url) {
+        const res = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'X-CMC_PRO_API_KEY': 'b60a6587-6230-4788-8841-de05872ed177',
+                "Content-Type": "application/json"
+            },
+
+        });
+        const data = await res.json();
+        return data;
+    }
+}
+Request.get("coin.json").then(response => callback(response));
 
 
-function coinList() {
-    const xhr = new XMLHttpRequest();
-    //xhr.open("GET", "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"); //--real data
-    xhr.open("GET", "coin.json");  //--mock(sahte) data
-    xhr.setRequestHeader('X-CMC_PRO_API_KEY', 'b60a6587-6230-4788-8841-de05872ed177');
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.onload = function () {
-        let list = document.getElementById("coinList");
-        if (xhr.status == 200) {
-            const parsedData = JSON.parse(xhr.responseText);
-            //console.log(parsedData);
+const interval = setInterval(function () {
+    Request.get("coin.json").then(response => callback(response));
+}, 5000);
 
-            parsedData.data.forEach(function (e) {
-                list.innerHTML += `
+
+
+function callback(e) {
+    console.log(e);
+    if (e !== null) {
+        while (list.firstElementChild !== null) {
+            list.firstElementChild.remove();
+        }
+        e.data.forEach(function (e) {
+            list.innerHTML += `
                 <tr id="innerId" class="innerId">
                     <th>${e.cmc_rank}</th>
                     <th>
@@ -57,18 +59,19 @@ function coinList() {
                     </th>
                 </tr>
                 `;
-            });
-        } else {
-            console.log("Hata Olustu");
-        }
+        });
+
+    } else {
+        console.log(errorKey);
     }
-    xhr.send();
+
 }
+
 
 function filterCoin(e) {
     const filterValue = e.target.value.toLowerCase();
     const listItems = document.querySelectorAll("#innerId");
-    //console.log(listItems);
+
     listItems.forEach(function (listItem) {
         const text = listItem.textContent.toLowerCase();
         if (text.indexOf(filterValue) === -1) {
@@ -79,18 +82,3 @@ function filterCoin(e) {
         }
     })
 }
-
-// let i = 0;
-// let refreshInterval = setInterval(function () {
-//     coinList();
-//     i++;
-//     let yenile = document.getElementById("innerId");
-//     yenile.forEach(function() {
-//         yenile.remove();
-//     });
-    
-//     if (i == 3) {
-//         clearInterval(refreshInterval);
-//     }
-//     console.log(i);
-// }, 10000);
