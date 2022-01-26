@@ -39,7 +39,7 @@
 
 // GET - POST - PUT - DELETE
 
-// class Request {
+//  class Request {
 //   async get(url){
 //     const res = await fetch(url);
 //     if(!res.ok){
@@ -48,15 +48,15 @@
 //     const data = await res.json();
 //     return data;
 //   }
-//   async post(url,data){
-//     const res = await fetch(url,{
-//         method: 'POST',
-//         body: JSON.stringify(data),
-//         headers: {"Content-type":"application:json;"}
-//       });
-//     const resData = await res.json();
-//     return resData;
-//   }
+  // async post(url,data){
+  //   const res = await fetch(url,{
+  //       method: 'POST',
+  //       body: JSON.stringify(data),
+  //       headers: {"Content-type":"application:json;"}
+  //     });
+  //   const resData = await res.json();
+  //   return resData;
+  // }
 //   async put(url,data){
 //     const res = await fetch(url,{
 //         method: 'PUT',
@@ -72,14 +72,14 @@
 //       });
 //       return "Veri silme işlemi başarılı";
 //   }
-// }
+//  }
 // const request = new Request();
 
 // request.get("https://jsonplaceholder.typicode.com/albs")
 // .then(album => console.log(album))
 // .catch(e=>console.log(`Hata: ${e.message}`));
 
-// request.post("https://jsonplaceholder.typicode.com/albums",{userId:999,title:"Merhaba"})
+ //request.post("https://jsonplaceholder.typicode.com/albums",{userId:999,title:"Merhaba"})
 // .then(newAlbum => console.log(newAlbum));
 
 // request.put("https://jsonplaceholder.typicode.com/albums/1",{userId:777,title:"Selam"})
@@ -116,11 +116,55 @@ class Request {
    const data = await response.json();
    return data;
   }
+
+  async post(url,data){
+    const response = await fetch(url,{
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {'Content-type': "application/json;"}
+
+    });
+   const resData = await response.json();
+    return resData;
+
+  }
+
+  async put(url,data){
+    const response = await fetch(url,{
+      method:"PUT",
+      body: JSON.stringify(data),
+      headers:{"Content-type":"application/json;"}
+    })
+    const resData= await response.json();
+    return resData;
+  }
+
+  async delete(url){
+    const response = await fetch(url,{
+      method: "DELETE"
+    });
+    
+    return "veri silme başarılı";
+
+  }
+
   }
 
 
 
 const request = new Request();
-request.get("https://jsonplaceholder.typicode.com/albums/xcvxcvxc")
-.then(data=> console.log(data))
-.catch(err=>console.log(`hata: ${err.message}`));
+
+// request.get("https://jsonplaceholder.typicode.com/albums/xcvxcvxc")
+// .then(data=> console.log(data))
+// .catch(err=>console.log(`hata: ${err.message}`));
+
+// request.post("https://jsonplaceholder.typicode.com/albums", {userId:1111, title:"Sercan Masar"})
+// .then(added=> console.log(added))
+// .catch(err=> console.log( err));
+
+// request.put("https://jsonplaceholder.typicode.com/albums/1", {userId:1111, title:"Sercan Masar"})
+// .then(res=>console.log(res))
+// .catch(err=>console.log(err));
+
+request.delete("https://jsonplaceholder.typicode.com/albums/1")
+.then(message=> console.log(message));
