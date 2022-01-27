@@ -1,5 +1,3 @@
-
-
 let coinArr;
 const request = new Request();
 request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest")
