@@ -20,3 +20,24 @@ request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
   });
 
 
+  request.getTrending("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest")
+  .then(response => callback(response.data))
+  .catch(err=> console.log(err));
+
+  function callback(response){
+   let resData= response.splice(50,3);
+    console.log(resData)
+    resData.forEach((res,index)=>{
+      
+      document.getElementById("trending-list").innerHTML+= `
+      <tr>
+                <th scope="row">${index+1}</th>
+                <td><img class="me-2" src="https://s2.coinmarketcap.com/static/img/coins/64x64/${res.id}.png" alt="" width="25" height="25">${res.name}</td>
+                <td>${res.quote.USD.volume_24h}</td>            
+       </tr>
+      
+      `
+    })
+    
+  }
+
