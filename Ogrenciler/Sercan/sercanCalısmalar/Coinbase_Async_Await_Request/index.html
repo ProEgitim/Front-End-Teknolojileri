@@ -12,7 +12,8 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark  mb-1 ">
-      <div class="container-fluid">
+      <div class="container">
+        <img src="https://pro.coinmarketcap.com/public/media/img/logo-square-inverse.png?_=69c6c93" alt="" width="45" height="45" >
         <a class="navbar-brand" href="#">CoinMarketBase</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,46 +43,79 @@
           </ul>
           <form class="d-flex">
             <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline" type="submit">Search</button>
+            <button class="btn btn-outline bg-dark text-light" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
     <div class="container">
-      <div class="row mb-1">
-        <div class="col-4"><div class="carda" >
-          <div class="carda-header">
-            Featured
+      <div class="row  mb-1" style="padding: 0 13px !important;">
+          <div class="col-4">
+            <div class="row">
+              <table  class="table table-borderless table-dark table-hover caption-top ">
+                <thead>
+                <tr>
+                  <th scope="col"><img src="https://s2.coinmarketcap.com/static/cloud/img/TrendingIcon.png?_=9336242" alt="" width="35" height="35" ></th>
+                  <th scope="col">Trending</th>
+                  <th scope="col" class="text-primary fw-3">More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg></th>
+                </tr>
+              </thead>
+              <tbody class="trending-list">
+                <!-- <tr>
+                <th scope="row">1</th>
+                <td>Name</td>
+                <td>24h Price</td>            
+                </tr> -->
+              </tbody>
+              </table>
+            </div>
           </div>
-          <ul class="list-groupa list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-        </div>
-      </div>
-        <div class="col-4"><div class="card " >
-          <div class="card-header">
-            Featured
+          <div class="col-3 ms-3 me-3 biggest-gainers " >
+            <div class="row">
+              <table  class="table table-borderless table-dark table-hover caption-top ">
+                <thead>
+                <tr>
+                  <th scope="col"><img src="https://s2.coinmarketcap.com/static/cloud/img/GainnerIcon.png?_=9336242" alt="" width="35" height="35" ></th>
+                  <th scope="col">Biggest Gainers</th>
+                  <th scope="col" class="text-primary fw-3">More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg></th>
+                </tr>
+              </thead>
+              <tbody class="trending-list-two">
+                <!-- <tr>
+                <th scope="row">1</th>
+                <td>Name</td>
+                <td>24h Price</td>            
+                </tr> -->
+              </tbody>
+              </table>
+            </div>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-        </div>
-      </div>
-        <div class="col-4"><div class="card" >
-          <div class="card-header">
-            Featured
+          <div class="col-4">
+            <div class="row">
+              <table  class="table table-borderless table-dark table-hover caption-top">
+                <thead>
+                <tr>
+                  <th scope="col"><img src="https://s2.coinmarketcap.com/static/cloud/img/AddIcon.png?_=9336242" alt="" width="35" height="35"></th>
+                  <th scope="col">Recently Added</th>
+                  <th scope="col" class="text-primary fw-3" >More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg></th>
+                </tr>
+              </thead>
+              <tbody class="trending-list-three">
+                <!-- <tr>
+                <th scope="row">1</th>
+                <td>Name</td>
+                <td>24h Price</td>            
+                </tr> -->
+              </tbody>
+              </table>
+            </div>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-        </div>
-      </div>
       </div>
       <table class="table table-dark table-hover caption-top">
        
@@ -94,7 +128,7 @@
             <th scope="col">7d</th>
             <th scope="col">Market Cap</th>
             <th scope="col">Volume(24h)</th>
-            <th scope="col">chart</th>
+            <th scope="col">7d chart</th>
           </tr>
         </thead>
         <tbody id="coin-list">
