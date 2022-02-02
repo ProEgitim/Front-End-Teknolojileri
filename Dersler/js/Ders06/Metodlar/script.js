@@ -75,7 +75,7 @@ const passedStudents2 = students2.reduce((value,student)=>{
 const findNumber = numbers.find(number => number>50);
 // console.log(numbers);
 // console.log(findNumber);
-
+  
 // pop, shift, splice ve push medotu
 // const numbers = [60,70,25,35,80,10,24];
 // numbers.push(90);

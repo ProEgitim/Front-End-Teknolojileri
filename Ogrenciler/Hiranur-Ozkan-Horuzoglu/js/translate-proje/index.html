@@ -9,6 +9,13 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Translate</title>
     <style>
+        .container{
+            margin: 20px;
+        }
+        .language{
+            display: flex;
+            justify-content: center;
+        }
         .form-group{
             color: rgb(77, 75, 235);
             margin-top: 50px;
@@ -19,14 +26,19 @@
 </head>
 
 <body>
-    <div class="container py-10">
+    <div class="container">
+        <label class="language" for="inputState">TRANSLATE</label>
         <div class="row">
             <div class="col-xs-6 col-md-6">
                 <div class="form-group">
-                    <label for="inputState">LANGUAGE</label>
                     <select id="inputState" class="form-control">
-                        <option selected>Türkçe</option>
-                        <option>İngilizce</option>
+                        <option>Bir dil seciniz.</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="en">İngilizce</option>
+                        <option value="ru">Rusya</option>
+                        <option value="de">Almanca</option>
+                        <option value="es">İspanyolca</option>
+                        
                     </select>
                 </div>
                 <div class="card">
@@ -34,16 +46,18 @@
                         <p class="card-text">
                             <textarea name="message" id="message" cols="70" rows="10" placeholder="Metin Girin..."></textarea>
                         </p>
-
                     </div>
                 </div>
             </div>
             <div class="col-xs-6 col-md-6">
                 <div class="form-group">
-                    <label for="inputState">LANGUAGE</label>
                     <select id="inputState" class="form-control">
-                        <option selected>Türkçe</option>
-                        <option>İngilizce</option>
+                        <option>Bir dil seciniz.</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="en">İngilizce</option>
+                        <option value="ru">Rusça</option>
+                        <option value="de">Almanca</option>
+                        <option value="es">İspanyolca</option>
                     </select>
                 </div>
                 <div class="card">

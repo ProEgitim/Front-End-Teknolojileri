@@ -1,10 +1,8 @@
 //local storage
-
 class storage
 {
     constructor()
     {
-
     }
     getStorage(user)
     {

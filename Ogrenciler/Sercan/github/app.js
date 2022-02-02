@@ -30,14 +30,10 @@ function getData(e) {
                         ui.addUsers(response.user);
                         ui.addRepos(response.repo);
                         for (const el of gitdata) {
-                            if(el === response.user.login){
-                                ui.showAlert("danger", "User has added before!!!");  
-                            }
-                            else{
-                            document.getElementById("last-users").innerHTML += `
-                            <li class="list-group-item">${el}</li>
-                            `
-                        }
+                           
+                                document.getElementById("last-users").innerHTML += `
+                            <li class="list-group-item">https://api.github.com/users/${el}</li>
+                            ` 
                         }
                     }
                     if (gitdata === null) {
