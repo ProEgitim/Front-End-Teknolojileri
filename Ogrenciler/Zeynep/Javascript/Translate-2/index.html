@@ -16,11 +16,12 @@
 <body>
 
 
-
 <div class="container mt-5 p-3 align-items-center" style="position: relative; ">
+
     <div class="logo">
-            <i class="fas fa-language fa-3x mb-3"></i>
+        <i class="fas fa-language fa-3x mb-3"></i>
     </div>
+
     <div class="row justify-content-center">
 
         <div id="textOriginal" class=" col-5">
@@ -29,7 +30,8 @@
             <textarea class="form-control" id="translateArea" rows="3"></textarea>
             <div class="text-end">
                 <i id="voice1" style="color: white; width: 30px; height: 30px;" class="fas fa-microphone"></i>
-                <i data-textareaid="translateArea" id="copyFirst" style="color: white; width: 30px; height: 30px;"
+                <i data-textareaid="translateArea" id="copyTextIconFirst"
+                   style="color: white; width: 30px; height: 30px;"
                    class="clone far fa-clone mt-2"></i>
             </div>
         </div>
@@ -43,11 +45,13 @@
             <textarea class="form-control" id="translateArea2" rows="3"></textarea>
             <div class="text-end">
                 <i id="voice2" style="color: white; width: 30px; height: 30px;" class="fas fa-microphone"></i>
-                <i data-textareaid="translateArea2" id="copySecond" style="color: white; width: 30px; height: 30px;"
+                <i data-textareaid="translateArea2" id="copyTextIconSecond"
+                   style="color: white; width: 30px; height: 30px;"
                    class="clone far fa-clone mt-2"></i>
             </div>
         </div>
     </div>
+
 
     <div id="languagesModal" class="languagesExceptModal d-none row align-items-center" style="padding: 20px; ">
         <div class="languagesExceptModal col-3">
@@ -55,19 +59,21 @@
                 <input class="languagesExceptModal form-check-input" type="checkbox" role="switch" id="switchButton">
                 <label class="languagesExceptModal form-check-label" for="switchButton">Otomatik Algıla</label>
             </div>
-            <div style="text-transform: capitalize" id="lastUsedLanguages" class="languagesExceptModal mt-3">Son Kullanılan Diller
-                <div style="cursor: pointer" id="usedFirstLang"></div>
-                <div style="cursor: pointer" id="usedSecondLang"></div>
+            <div style="text-transform: capitalize" class="languagesExceptModal mt-3">
+                Son Kullanılan Diller
+                <div style="cursor: pointer" id="lastUsedLanguages">
+
+                </div>
             </div>
         </div>
 
         <div id="allLanguagesArea" class="languagesExceptModal col-9">
 
-            <div id="firstLanguageList" class="languagesExceptModal row languageListTest">
+            <div id="firstLanguageList" class=" languagesExceptModal row d-none ">
 
             </div>
 
-            <div id="secondLanguageList" class="languagesExceptModal row languageListTest">
+            <div id="secondLanguageList" class=" languagesExceptModal row d-none">
 
             </div>
         </div>
