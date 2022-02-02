@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Translate</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+
+
+<div class="container mt-5 p-3 align-items-center" style="position: relative; ">
+    <div class="logo">
+            <i class="fas fa-language fa-3x mb-3"></i>
+    </div>
+    <div class="row justify-content-center">
+
+        <div id="textOriginal" class=" col-5">
+            <button id="firstLanguageSelection" class="btn btn-outline-light p-1 mb-3">Türkçe</button>
+            <label for="translateArea" class="form-label"></label>
+            <textarea class="form-control" id="translateArea" rows="3"></textarea>
+            <div class="text-end">
+                <i id="voice1" style="color: white; width: 30px; height: 30px;" class="fas fa-microphone"></i>
+                <i data-textareaid="translateArea" id="copyFirst" style="color: white; width: 30px; height: 30px;"
+                   class="clone far fa-clone mt-2"></i>
+            </div>
+        </div>
+
+        <i id="changeButton" style="color: white; width: 30px; height: 30px; margin-top: 8px; margin-right: 5px;"
+           class="fas fa-exchange-alt"></i>
+
+        <div id="textChanged" class="col-5">
+            <button id="secondLanguageSelection" class="btn btn-outline-light p-1 mb-3">İngilizce</button>
+            <label for="translateArea2" class="form-label"></label>
+            <textarea class="form-control" id="translateArea2" rows="3"></textarea>
+            <div class="text-end">
+                <i id="voice2" style="color: white; width: 30px; height: 30px;" class="fas fa-microphone"></i>
+                <i data-textareaid="translateArea2" id="copySecond" style="color: white; width: 30px; height: 30px;"
+                   class="clone far fa-clone mt-2"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="languagesModal" class="languagesExceptModal d-none row align-items-center" style="padding: 20px; ">
+        <div class="languagesExceptModal col-2">
+            <div style="color: black" class="languagesExceptModal form-check form-switch">
+                <input class="languagesExceptModal form-check-input" type="checkbox" role="switch" id="switchButton">
+                <label class="languagesExceptModal form-check-label" for="switchButton">Otomatik Algıla</label>
+            </div>
+            <div style="text-transform: capitalize" id="lastUsedLanguages" class="languagesExceptModal mt-3">Son Kullanılan Diller
+                <div style="cursor: pointer" id="usedFirstLang"></div>
+                <div style="cursor: pointer" id="usedSecondLang"></div>
+            </div>
+        </div>
+
+        <div class="languagesExceptModal col-10">
+
+            <div id="languageList" class="languagesExceptModal row languageListTest">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

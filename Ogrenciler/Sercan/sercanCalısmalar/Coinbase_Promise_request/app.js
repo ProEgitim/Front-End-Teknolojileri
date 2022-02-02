@@ -1,6 +1,8 @@
+
+
 let coinArr;
 const request = new Request();
-let data = request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest")
+request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest")
   .then(resData => {
     resData.data.forEach(el => {
       document.getElementById("coin-list").innerHTML +=
@@ -19,23 +21,4 @@ let data = request.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/list
     });
   });
 
-document.getElementById("search").addEventListener("keyup", search);
 
-function search(e) {
-  let elements = document.querySelectorAll(".findCoin");
-  let val = e.target.value.toLowerCase();
-
-  elements.forEach(element => {
-      let elementArr = [];
-      elementArr.push(element);
-      elementArr.find(el => {
-          if (el.textContent.toLowerCase().includes(val)) {
-            el.parentElement.style.display = "table-row";
-          }
-          else{
-            el.parentElement.style.display = "none";
-          }
-
-      })
-  })
-}

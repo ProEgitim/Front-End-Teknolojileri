@@ -47,12 +47,13 @@ class UI {
                             </div>
                       </div>
                 </div>`
+                
     }
-
+   
     addRepos(repo) {
         repo.forEach(function (rep) {
             let oneRepo = rep;
-            console.log(oneRepo)
+            
             repos.innerHTML += `
                 <div class="mb-2 card-body">
                     <div class="row">
@@ -74,13 +75,15 @@ class UI {
 
                 </div>
                 `
+                
         })
     }
 
+    
     showAlert(type,message) {
         const errorMessage = document.querySelector("#github-form");
         const div = document.createElement("div");
-        div.className = `alert alert-${type}`;
+        div.className = `alert alert-${type} mt-2`;
         div.textContent = message;
         errorMessage.appendChild(div);
         setTimeout(function () {

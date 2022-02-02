@@ -1,7 +1,12 @@
-Yapılan Uygulamaları Tekrar Et Tamamla (Github ve AsyncApiCoinMarket)
-Mülakat Sorularını Okunacak
-Solid Prensipleri Okunacak
-Dizayn Pattern Prensipleri Okunacak
++Yapılan Uygulamaları Tekrar Et Tamamla 
+(
+    +Github 
+    +AsyncApiCoinMarket
+    )
++Mülakat Sorularını Okunacak
++Solid Prensipleri Okunacak
++Dizayn Pattern Prensipleri Okunacak
++Eksiğini bul !
+
 Çeviri uygulaması yapılacak. https://cloud.yandex.com/en/docs/translate/quickstart adresinden api alınacak. Bir textArea alanına 
 çevirilecek kelime yazılacak ve çevirilecek dil alttan seçilecek ve çeviri tamamlanacak.
-Eksiğini bul !
