@@ -1,6 +1,6 @@
 // Value
-let copyFirstButton = document.getElementById("copyFirst");
-let copySecondButton = document.getElementById("copySecond");
+let copyFirstButton = document.getElementById("copyTextIconFirst");
+let copySecondButton = document.getElementById("copyTextIconSecond");
 let changeButton = document.getElementById("changeButton");
 let firstLanguageButton = document.getElementById("firstLanguageSelection");
 let secondLanguageButton = document.getElementById("secondLanguageSelection");
@@ -35,9 +35,36 @@ function changeSelections() {
     firstLanguageSelection.textContent = localStorage.getItem("secondLang");
 }
 
-function toggleModal() {
+function toggleModal(e) {
+    let langList = document.getElementById("firstLanguageList");
+    langList.innerHTML = "";
 
-    let firstLanguageSelection = document.getElementById("firstLanguageSelection");
+    if (e.target === firstLanguageButton) {
+
+        let langsFromApi = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
+        for (let i = 0; i < langsFromApi.length; i++) {
+
+            langList.innerHTML += `
+  <div class="languages col-3">
+  <button name="` + langsFromApi[i] + `" style="border: none; background-color: inherit;" data-text-value= " " class="languagesAllButtons btn-default">` + langsFromApi[i] + `</button>
+    </div>
+            `
+        }
+
+    } else {
+
+        let langsFromApi = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
+        for (let i = 0; i < langsFromApi.length; i++) {
+
+            langList.innerHTML += `
+  <div class="languages col-3">
+  <button name="` + langsFromApi[i] + `" style="border: none; background-color: inherit;" data-text-value= " " class="languagesAllButtons btn-default">` + langsFromApi[i] + `</button>
+    </div>
+            `
+        }
+    }
+
+    const firstLanguageSelection = document.getElementById("firstLanguageSelection");
     const secondLanguageSelection = document.getElementById("secondLanguageSelection");
 
     localStorage.setItem("firstLang", firstLanguageSelection.textContent);
@@ -53,7 +80,9 @@ function toggleModal() {
         languageModal.classList.add("d-none");
     }
     lastUsedLang();
+
 }
+
 
 function closeToggleModal(e) {
     let languagesExceptModal = [...document.querySelectorAll(".languagesExceptModal")];
@@ -65,18 +94,6 @@ function closeToggleModal(e) {
     }
 }
 
-function loadPage() {
-    let langsFromApi = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
-    for (let i = 0; i < langsFromApi.length; i++) {
-        let langList = document.getElementById("languageList");
-
-        langList.innerHTML += `
-  <div class="languages col-3">
-  <button name="` + langsFromApi[i] + `" style="border: none; background-color: inherit;" data-text-value= " " class="languagesAllButtons btn-default">` + langsFromApi[i] + `</button>
-    </div>
-            `
-    }
-}
 
 function lastUsedLang() {
     let firstLanguageSelection = document.getElementById("firstLanguageSelection");
@@ -92,12 +109,13 @@ function lastUsedLang() {
     usedSecondLang.textContent = secondLanguageSelection.textContent;
 }
 
+
 function pickLanguages(e) {
 
     //FOR BUTTON
     let languagesAllButtons = document.querySelectorAll(".languagesAllButtons");
     for (let i = 0; i < languagesAllButtons.length; i++) {
-     }
+    }
     let xx;
 
     if (e.target.tagName === "DIV") {
@@ -111,3 +129,4 @@ function pickLanguages(e) {
     firstLanguageButton.textContent = xx.name;
 
 }
+
