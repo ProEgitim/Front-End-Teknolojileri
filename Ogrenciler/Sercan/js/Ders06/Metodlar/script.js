@@ -61,8 +61,6 @@ const passedStudents = students.map(student=>{
 }).filter(student=>student.name.includes('r'));
 console.log(passedStudents);
 
-
-
 // Reduce Metodu
 // const result = numbers.reduce((value,number)=>{
 //   if(number>50){
