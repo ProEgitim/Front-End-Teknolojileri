@@ -50,7 +50,7 @@ background-size: cover;
     width: 250px ;
     height: 250px ;
     border-radius: 30%;
-    transform: translate(1.5);   
+    
 }
 
 
@@ -66,6 +66,9 @@ background-size: cover;
     border-radius: 55px;
 }
 
+.big{
+ transform: scale(1.2)!important;
+}
 
 
 
