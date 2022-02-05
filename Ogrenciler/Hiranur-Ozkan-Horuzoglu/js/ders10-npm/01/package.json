@@ -1,0 +1,15 @@
+{
+  "name": "hira-deneme",
+  "version": "1.0.0",
+  "description": "deneme",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hira",
+    "deneme"
+  ],
+  "author": "",
+  "license": "ISC"
+}
