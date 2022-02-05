@@ -1,0 +1,15 @@
+{
+  "name": "deneme-sercan",
+  "version": "1.0.0",
+  "description": "deneme verisi",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "deneme",
+    "sercan"
+  ],
+  "author": "sercan",
+  "license": "ISC"
+}
