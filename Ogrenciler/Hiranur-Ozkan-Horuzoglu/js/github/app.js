@@ -1,11 +1,13 @@
-// Elementleri Seçme
 const githubForm = document.getElementById("github-form");
 const nameInput = document.getElementById("githubname");
 const clearLastUsers = document.getElementById("clear-last-users");
 const lastUsers = document.getElementById("last-users");
+
 const github = new Github();
 const ui = new UI();
+
 eventListeners();
+
 function eventListeners() {
   githubForm.addEventListener("submit", getData);
   clearLastUsers.addEventListener("click", clearAllSearched);
@@ -30,18 +32,18 @@ function getData(e) {
       })
       .catch((err) => ui.showError(err));
   }
-  ui.clearInput(); // Input Temizleme
+  ui.clearInput(); 
   e.preventDefault();
 }
 function clearAllSearched() {
   // Tüm arananları temizle
   if (confirm("Emin misiniz ?")) {
-    Storage.clearAllSearchedUsersFromStorage(); // Storagedan Temizleme
+    Storage.clearAllSearchedUsersFromStorage();
     ui.clearAllSearchedFromUI();
   }
 }
 function getAllSearched() {
-  // Arananları Storagedan al ve Uiye ekle
+ 
   let users = Storage.getSearchedUsersFromStorage();
   let result = "";
   users.forEach((user) => {
