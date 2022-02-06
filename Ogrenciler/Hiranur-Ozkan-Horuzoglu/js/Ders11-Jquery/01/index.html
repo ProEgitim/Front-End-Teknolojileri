@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+
+<body>
+    <p id="paragraf"></p>
+    <div>
+        <div class="d1">Merhaba 1</div>
+        <div class="d1">Merhaba 2</div>
+    </div>
+    <button onclick="showText()">Goster</button>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // let paragraf = document.getElementById("paragraf");
+        // paragraf.innerHTML="JS ile Paragraf Yazdik";
+
+        // $(document).ready(function(){ 
+        //onload yerine ready fonksiyonu yazdik-sayfa yuklendiginde calisacak fonksiyon
+
+        // });
+
+        $(function () { //ready function
+            $("#paragraf").html("Jquery ile paragraf yazdik...");
+            $(".d1:nth-child(2)").hide(); //indeks numarisana gore hide gizliyor uida
+        });
+
+        function showText() {
+
+            if ($(".d1:nth-child(2)").css("display") == "none") {
+                $(".d1:nth-child(2)").show();
+            } else {
+                $(".d1:nth-child(2)").hide();
+            }
+        }
+    </script>
+</body>
+
+</html>

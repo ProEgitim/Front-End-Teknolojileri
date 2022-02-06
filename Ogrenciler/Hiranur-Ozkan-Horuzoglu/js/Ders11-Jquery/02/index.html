@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+
+<body>
+    <div>Paragraf 1</div>
+    <p class="p2">Paragraf 2</p>
+    <p id="p3">Paragraf 3</p>
+ 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        //tek tek ulasma
+        // $("p:nth-child(1)").html("Deneme 1"); 
+        // $(".p2").html("<b> Deneme 2 </b>");
+        // $("#p3").html("<i> Deneme 3 </i>");
+
+        //tek yazimda butun eleman,ara ulasma
+        $("div, .p2, #p3").html("Deneme yazisi");
+    </script>
+</body>
+
+</html>

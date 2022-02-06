@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <!-- <button onclick="kirmiziEkle()">Kirmizi Ekle</button>
+    <button onclick="kirmiziSil()">Kirmizi Sil</button>
+    <button onclick="yesilEkle()">Yesil Ekle</button>
+    <button onclick="yesilSil()">Yesil Sil</button> -->
+    <button onclick="kirmizi()">Kirmizi</button>
+    <button onclick="yesil()">Yesil</button>
+
+
+    <input type="text" value="Isim girin">
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // function kirmiziEkle(){
+        //     $("div").addClass("red");
+        // }
+        // function kirmiziSil(){
+        //     $("div").removeClass("red");
+        // }
+        // function yesilEkle(){
+        //     $("div").addClass("green");
+        // }
+        // function yesilSil(){
+        //     $("div").removeClass("green");
+        // }
+
+        function kirmizi(){
+            $("div").toggleClass("red");
+        }
+        function yesil(){
+            $("div").toggleClass("green");
+        }
+    </script>
+</body>
+</html>

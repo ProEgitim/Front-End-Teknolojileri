@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+        .kutu{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 1px solid black;
+        }
+       
+    </style>
+</head>
+<body>
+   <div class="kutu"></div>
+    <button onclick="degistir()">Degistir</button>
+    <input type="text" id="textContent">
+    <div id="yaziDivi">
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function degistir(){
+            $("div").css({
+                "background":"yellow",
+                "border": "10px solid blue"
+            });
+            $("div").parents().css("background","orange");//bir ust elemana parents ulasabiliyoruz
+
+        }
+        $("#textContent").keyup(function(){
+            $("#yaziDivi").html($("#textContent").val());
+        })
+      
+    </script>
+</body>
+</html>
