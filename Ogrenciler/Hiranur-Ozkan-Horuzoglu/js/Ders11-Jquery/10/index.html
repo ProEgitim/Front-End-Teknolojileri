@@ -28,13 +28,13 @@
     <script>
         $("div").click(function () {
             $(this).animate({
-                width: " +=50px",
-                height: " +=50px"
-            },500);
+                width: "+=50px",
+                height: "+=50px"
+            }, 500);
+            setTimeout(function () {
+                $("div").text($("div").width() + " " + $("div").height());
+            }, 1000);
         })
-        setTimeout(function(){
-            $("div").text($("div").width() + " " + $("div").height());
-        },1000);
     </script>
 
 </body>
