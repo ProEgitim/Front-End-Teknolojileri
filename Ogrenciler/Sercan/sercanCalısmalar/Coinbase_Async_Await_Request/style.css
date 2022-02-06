@@ -1,0 +1,20 @@
+.navbar-dark{
+    background-color: #17171a;
+}
+
+body{
+    background-color: #1a1b21 ;
+}
+
+.biggest-gainers{
+    width: 399px !important;
+}
+
+.graph-red{
+filter: hue-rotate(300deg) saturate(210%) brightness(0.7) contrast(170%);
+
+}
+.graph-green{
+    filter: hue-rotate(85deg) saturate(80%) brightness(0.85);
+    
+}

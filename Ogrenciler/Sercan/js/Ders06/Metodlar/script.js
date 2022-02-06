@@ -5,6 +5,9 @@
 // console.log(numbers);
 // console.log(filteredNumbers);
 
+// const numbers =[ 60,70,80,90,50,30,40];
+// const filteredNumbers = numbers.filter(n => n>50);
+
 const students = [
   {name:'varol', passed: false},
   {name:'sercan', passed: true},
@@ -13,11 +16,20 @@ const students = [
   {name:'hira', passed: false},
 ];
 
-const studentsPassed=students.filter(student=>student.passed);
-const studentsNotPassed=students.filter(student=>!student.passed);
+// const passStudents = students.filter(student=>student.passed);
+// const notpassStudents = students.filter(student=>!student.passed);
 
-console.log("Geçenler:",studentsPassed);
- console.log("Geçemeyenler:",studentsNotPassed);
+// console.log("kalanlar :", notpassStudents);
+// console.log("geçenler :", passStudents);
+// const studentsPassed=students.filter(student=>student.passed);
+// const studentsNotPassed=students.filter(student=>!student.passed);
+
+// console.log("Geçenler:",studentsPassed);
+//  console.log("Geçemeyenler:",studentsNotPassed);
+
+
+
+
 
 // studentsPassed.forEach(function(student){
 //   console.log(student.name,"Geçti");
@@ -31,9 +43,9 @@ console.log("Geçenler:",studentsPassed);
 // console.log(newNumbers);
 
 // Map Metodu
-const passedStudents = students.map(student=>{
-return {name:student.name, passed: !student.passed?student.passed=true:student.passed}
-}).filter(student=>student.name.includes("r"));
+// const passedStudents = students.map(student=>{
+// return {name:student.name, passed: !student.passed?student.passed=true:student.passed}
+// }).filter(student=>student.name.includes("r"));
 // console.log(passedStudents);
 
 // !student.passed?student.passed=true:student.passed
@@ -44,35 +56,40 @@ return {name:student.name, passed: !student.passed?student.passed=true:student.p
 //   return student.passed
 // }
 
+const passedStudents = students.map(student=>{
+  return {name:student.name,passed: !student.passed?student.passed=true:student.passed}
+}).filter(student=>student.name.includes('r'));
+console.log(passedStudents);
+
 // Reduce Metodu
-const result = numbers.reduce((value,number)=>{
-  if(number>50){
-    value++;
-  }
-  return value;
-},0);
+// const result = numbers.reduce((value,number)=>{
+//   if(number>50){
+//     value++;
+//   }
+//   return value;
+// },0);
 // console.log(numbers);
 // console.log(result);
 
-const students2 = [
-  {name:'varol', point: 60},
-  {name:'sercan', point: 30},
-  {name:'simge', point: 100},
-  {name:'osman', point: 80},
-  {name:'hira', point: 40},
-];
+// const students2 = [
+//   {name:'varol', point: 60},
+//   {name:'sercan', point: 30},
+//   {name:'simge', point: 100},
+//   {name:'osman', point: 80},
+//   {name:'hira', point: 40},
+// ];
 
-const passedStudents2 = students2.reduce((value,student)=>{
-  student.point>50?value++:value;
-  // if(student.point>50){
-  //   value++;
-  // }
-  return value;
-},0);
+// const passedStudents2 = students2.reduce((value,student)=>{
+//   student.point>50?value++:value;
+//   // if(student.point>50){
+//   //   value++;
+//   // }
+//   return value;
+// },0);
 // console.log(passedStudents2);
 
-// Find Metodu
-const findNumber = numbers.find(number => number>50);
+// // Find Metodu
+// const findNumber = numbers.find(number => number>50);
 // console.log(numbers);
 // console.log(findNumber);
 
@@ -93,7 +110,7 @@ const findNumber = numbers.find(number => number>50);
 // numbers[index]=50;
 // console.log(numbers);
 
-// Reverse ve Sort
-numbers.sort((a,b)=>b-a);
-numbers.reverse();
-console.log(numbers);
+// // Reverse ve Sort
+// numbers.sort((a,b)=>b-a);
+// numbers.reverse();
+// console.log(numbers);

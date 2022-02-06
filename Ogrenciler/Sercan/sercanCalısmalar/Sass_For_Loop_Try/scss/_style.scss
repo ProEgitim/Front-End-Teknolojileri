@@ -1,0 +1,13 @@
+@for $i from 1 through 8 {
+    .button-#{$i}{font-size: 5px * $i;}
+  @if($i<5){
+      .button-#{$i}{background-color: red;}
+  }
+  @else{
+      .button-#{$i}{background-color: aqua;}
+  } 
+}
+
+
+
+

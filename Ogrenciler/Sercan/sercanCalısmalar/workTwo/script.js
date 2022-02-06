@@ -1,25 +1,13 @@
-let cards = document.querySelectorAll(".cat");
-let card = document.querySelector(".cat");
-let imgs = document.querySelectorAll(".card-img-top");
-let img = document.querySelector(".card-img-top");
-let photos = document.querySelector(".parsePhoto")
+let card = document.querySelector(".card-sc");
 
-photos.addEventListener("mouseover" , function littleBig(e){
-  let el=  e.target ;
-   if(e.target.matches('.card-img-top')){
-    el.parentElement.style.background= "black" ;
-    el.style.transform = "translate(1.6) !important";
+document.querySelector(".parsePhoto").addEventListener("mouseover", big);
+
+function big(e){ 
+  e.target.style='color:rgba(0, 0, 0, 0.3)' ;
 }
-});
 
 
-// cards.forEach(function(card){
-// card.addEventListener("mouseout", normalSize);
-// });
 
-// function littleBig(e) {
-//  img.forEach(function(e){
-//     e.classList.add("h-100");
-// }); 
-// }
+
+
 
