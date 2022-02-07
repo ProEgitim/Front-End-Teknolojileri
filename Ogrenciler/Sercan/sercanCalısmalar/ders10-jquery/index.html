@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY</title>
+    <style>
+      .green{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+      }
+      .red{
+        
+        background-color: red;
+        width: 50px;
+        height: 50px;
+      }
+      .xdeg{
+        background-color: red;
+        width: 50px;
+        height: 50px;
+      }
+      .kutu{
+        width: 400px;
+        height: 400px;
+        
+      }
+    </style>
+</head>
+<body>
+
+    <p class="paragraf"></p>
+    <button class="d1">merhaba1</button>
+    <button class="d2" onclick="urlShow()">deneme</button>
+
+    <div>paragraf1</div>
+    <p id="p2">paragraf2</p>
+    <p class="p3">paragraf3</p>
+
+
+    <a href="https://www.youtube.com/"></a>
+    <button class="btn" onclick="urlShow()">button1</button>
+    <button class="btn" onclick="urlChange()">button2</button>
+    <button class="btn2" onclick="deleteUrl()">button2</button>
+    <button class="btn2" onclick="addUrl()">button2</button>
+    <div class="html"></div>
+    <input type="text">
+
+    <div class="one">a</div>
+    <div class="two">b</div>
+    <button  onclick="yesil()">yesil </button>
+    <button  onclick="kirmizi()"> kırmızı</button>
+
+
+    <div class="xdeg"></div>
+    <button onclick="changeColor()">change-color</button>
+
+    <input class="keyEvent" type="text" placeholder="yazi">
+    <div class="yazi"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script>
+
+    $('.keyEvent').keyup(function(){
+      $('.yazi').html($('.keyEvent').val());
+    })
+
+    function changeColor(){
+      $('.xdeg').css({
+        "background":"yellow",
+        "border":"10px solid blue"
+      })
+    }
+
+    function kirmizi(){
+      $('.one').toggleClass('red');
+    }
+    function yesil(){
+      $('.two').toggleClass('green');
+    }
+
+      function urlShow(){
+          var url = $('a').attr('href');
+          $('.html').html(url);
+      }
+      function urlChange(){
+          $('a').attr('href','https://www.google.com/');  
+          urlShow();
+      }
+
+      function deleteUrl(){
+        $('a').removeAttr(('href'));
+        $('p').html('');
+      }
+      $('input').attr('value','bu bi deneme verisidir');
+
+      $('.html').append('<b>sonuna eklendi</b>');
+      $('.html').prepend('<p> başa ekledik </p>');
+      $('.html').before('<b>last eklendi</b>');
+      $('.html').after('<p> first ekledik </p>');
+
+    //   $(function(){
+    //    // $('.d1:nth-child(1)').hide();
+    //    $('div, #p2, .p3').html('bu bir deneme yazısıdır.');
+
+    //   });
+
+    //   function show(){
+    //    // $('.d1').hide();
+    //    $('.d1').toggle();
+    //   }
+
+
+
+  </script> 
+</body>
+</html>
