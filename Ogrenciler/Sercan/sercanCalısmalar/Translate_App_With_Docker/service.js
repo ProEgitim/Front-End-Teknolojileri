@@ -1,6 +1,6 @@
 class Request{
     async post(data,sendLang,responseLang){
-    const response = await fetch('http://localhost:3000',{
+    const response = await fetch('http://localhost:5000',{
         method:'POST', 
         body: JSON.stringify({
             q:data,

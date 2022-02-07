@@ -16,13 +16,16 @@
         <input type="search" placeholder="Search" ><i class="fas fa-search"></i>
     </nav>
     <form>
-        <button type="button" id="enterLang">Giriş Dili</button>
-        <button type="button" id="translatedLang">Translated</button>
+        <button type="button" id="enterLang" onclick="toggleModal()" >Entry Language</button>
+        <button type="button" id="translatedLang" onclick="toggleModal()">Translated</button>
         <button type="button" id="action"><i class="fas fa-exchange-alt"></i></button>       
         <textarea  id="firstLang" cols="20" rows="10"></textarea>
         <textarea  id="secondLang" cols="30" rows="10"></textarea>   
     </form>
+    <div class="langListModal">aaa</div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.js"></script>
     <script src="service.js"></script>
     <script src="app.js"></script>
 </body>

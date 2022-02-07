@@ -35,3 +35,13 @@ form button{
 .fa-search{
     margin-left: -350px !important;
 }
+
+.langListModal{
+background-color: red;
+width:75rem;
+height: 20rem;
+position: absolute;
+top: 63%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
