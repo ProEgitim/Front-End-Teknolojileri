@@ -44,7 +44,8 @@ function lastSearch()
     else
     {
     storage.get(firstLang.value.trim());
-    let dataStore = JSON.parse(localStorage.getItem('lastSearch'));    
+    let dataStore = JSON.parse(localStorage.getItem('lastSearch')); 
+    dataStore = JSON.parse(sessionStorage.getItem('lastSearch'));    
     let list=document.querySelector('.listPrevious');
     let elem= dataStore[dataStore.length-1]
     list.innerHTML +=`<li class="elem">${elem}</li>`
