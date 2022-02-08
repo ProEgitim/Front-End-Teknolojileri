@@ -1,18 +1,15 @@
-class Request{
-    async post(data,sendLang,responseLang){
-    const response = await fetch('http://localhost:5000',{
-        method:'POST', 
-        body: JSON.stringify({
-            q:data,
-            source: sendLang,
-            target:responseLang
+callData();
+async function callData(){
+const res = await fetch("http://localhost:5000/translate", {
+	method: "POST",
+	body: JSON.stringify({
+		q: "english",
+		source: "en",
+		target: "tr",
+		format: "text"
+	}),
+	headers: { "Content-Type": "application/json" }
+});
 
-        }),
-        headers:{ 'Content-type':'application/json'}
-    }
-    );
-    const responseData = await response.json();
-    return responseData;
-
-    }
+console.log(await res.json());
 }

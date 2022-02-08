@@ -16,15 +16,30 @@
         <input type="search" placeholder="Search" ><i class="fas fa-search"></i>
     </nav>
     <form>
-        <button type="button" id="enterLang" onclick="toggleModal()" >Entry Language</button>
-        <button type="button" id="translatedLang" onclick="toggleModal()">Translated</button>
-        <button type="button" id="action"><i class="fas fa-exchange-alt"></i></button>       
-        <textarea  id="firstLang" cols="20" rows="10"></textarea>
+        <button type="button" id="enterLang" onclick="toggleModal()" >en</button>
+        <button type="button" id="translatedLang" onclick="toggleModal()" >tr</button>
+        <button type="button" id="action" onclick="change()" ><i class="fas fa-exchange-alt" ></i></button> 
+        <button type="button" id="searchButton" onclick="lastSearch()" ><i class="fas fa-level-down-alt"></i></button>         
+        <textarea  id="firstLang"  cols="20" rows="10" required></textarea>
         <textarea  id="secondLang" cols="30" rows="10"></textarea>   
     </form>
     <div class="langListModal">aaa</div>
+    <div class="cont">
+    <hr style="width: 75rem;">
+    <h1 class="header">Previous Search </h1>
+    <ul class='listPrevious'>       
+     <!-- data is coming from storage -->
+    </ul>
+    <div id="buttons" >
+    <button id="hide" onclick="hide()">Hide/Show Previos Search</button>
+    <button id="delete" onclick="clean()">Clear Previos Search</button>
+    
+    </div>
+    <hr style="width: 75rem;">
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="storage.js"></script>
     <script src="jquery.js"></script>
     <script src="service.js"></script>
     <script src="app.js"></script>

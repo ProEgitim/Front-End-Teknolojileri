@@ -1,3 +1,7 @@
+body{
+    font-family: sans-serif;
+}
+
 body nav{
    display: flex;
    justify-content: space-around;
@@ -32,16 +36,47 @@ form button{
 #secondLang{
     grid-column: 3/4;
 }
+#searchButton{
+ grid-column: 2/3;
+ grid-row: 2/3;
+}
 .fa-search{
     margin-left: -350px !important;
 }
+
 
 .langListModal{
 background-color: red;
 width:75rem;
 height: 20rem;
 position: absolute;
-top: 63%;
+top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
 }
+
+.fa-exchange-alt{
+    pointer-events: none;
+}
+.fa-level-down-alt{
+    pointer-events: none;
+    transform:rotate(90deg)
+}
+
+.listPrevious{
+    position: relative;
+    list-style-type: square;
+    left: 20%;
+   
+}
+.header{
+    margin-left:25rem ;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    
+}
+
+#buttons{
+    margin-left:25rem;
+}
+
