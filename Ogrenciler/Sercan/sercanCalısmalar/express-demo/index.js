@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+app.use(express.json())
 app.get("/", (req, res) => {
   res.send("helo");
 });
@@ -27,5 +27,33 @@ app.get("/api/courses/:id", (req, res) => {
 // app.get("/api/posts/:year/:month", (req, res) => {
 //   res.send(req.params);
 // });
+
+app.post('/api/courses', (req,res)=>{
+  const ob = {
+    id: obj.lenght+1,
+    name: req.body.name,
+    age:req.body.age,
+    city:req.body.city
+  }
+  obj.push(ob);
+  res.send(ob);
+});
+
+app.post('api/courses/lang', (req,res)=>{
+  const objj ={
+    q: req.body.q,
+    source:req.body.source,
+    target:req.body.target
+  }
+  const sendObj ={
+  
+    q: 'Hi',
+    source:"es",
+    target:"en"
+  }
+  
+  res.send(sendObj);
+
+})
 
 app.listen(5000, () => console.log("Listening on port 5000 now "));
