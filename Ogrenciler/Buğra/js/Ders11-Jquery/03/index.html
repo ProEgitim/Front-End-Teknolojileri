@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Giriş</title>
+  </head>
+  <body>
+    <a href="https://www.youtube.com/">YouTube</a>
+    <p></p>
+    <button onclick="urlShow()">Linki Göster</button>
+    <button onclick="urlChange()">Linki Değiştir</button>
+    <button onclick="deleteUrl()">Linki Sil</button>
+    <button onclick="addUrl()">Linki Ekle</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+     function urlShow(){
+      var url = $("a").attr("href");
+       $("p").html(url);
+     }
+     function urlChange(){
+       $("a").attr("href","https://www.google.com/");
+       urlShow();
+     }
+     function deleteUrl(){
+      $("a").removeAttr("href");
+      $("p").html("");
+     }
+     function addUrl(){
+      $("a").attr("href","https://www.youtube.com/");
+      urlShow();
+     }
+    </script>
+  </body>
+</html>

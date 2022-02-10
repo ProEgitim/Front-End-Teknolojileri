@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+      .kutu{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+</head>
+<body>
+    <button id="a1">Amnimasyon show</button>
+    <button id="a2">Amnimasyon hide</button>
+    <button id="a3">Amnimasyon toggle</button>
+
+</body>
+<div class="kutu"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<script>
+    $('#a1').click(function(){
+        $('div').fadeIn(1000);
+    })
+    $('#a2').click(function(){
+        $('div').fadeOut(1000);
+    })
+    $('#a3').click(function(){
+        $('div').fadeToggle(1000);
+    })
+</script>
+</html>
