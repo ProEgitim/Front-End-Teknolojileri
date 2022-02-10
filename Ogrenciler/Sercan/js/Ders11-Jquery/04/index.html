@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Giriş</title>
+  </head>
+  <body>
+    <div id="d1">
+      <p>Paragraf 1</p>
+      <p>Paragraf <b>2</b></p>
+    </div>
+    <input type="text" value="İsim Girin">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $("div").text("Yazılar Değişti");
+      console.log($("div").text());
+      $("input").attr("value","Lütfen bir isim giriniz");
+      console.log($("input").attr("value"));
+      $("#d1").prepend("<b>Başa Ekledik</b>");
+      $("#d1").append("<i>Sona Ekledik</i>");
+      $("#d1").before("<i>Öncesine Ekledik</i>");
+      $("#d1").after("<b>Sonrasına Ekledik</b>");
+    </script>
+  </body>
+</html>
