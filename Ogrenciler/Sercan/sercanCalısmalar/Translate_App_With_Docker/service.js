@@ -1,22 +1,41 @@
 
-const obj ={
-  
-    q: "helo!",
-    source:"es",
-    target: "en"
-}
+
+
+
 callData();
 async function callData(){
-const res = await fetch("http://localhost:5000/api/courses/lang", {
-    method:'POST',
-    body:JSON.stringify(obj),
-    headers:{"Content-type":"application/json"}
-}
-   	
-);
+    const res = await fetch("http://localhost:5000/api/lang", {
+  
+    }
+           
+    );
+    const resData = await res.json();
+    
+    console.log(resData);
+    
+    }
+    getAllLang();
+    async function getAllLang (){
+        const response = await fetch('http://localhost:5000/langs/all');
+        const resData = await response.json();
+        return resData;
 
-const resData = await res.json();
+    }
 
-console.log(resData);
+    const langs = getAllLang();
+    langs.then(response => callBack(response));
 
-}
+    function callBack(data){
+        data.forEach(element => {
+           
+            document.querySelector('.langListModal').innerHTML += `
+            <li>${element.name}<li>
+            `
+        });
+    }
+
+    const list = $('.langListModal')
+    console.log(list)
+       
+    
+
