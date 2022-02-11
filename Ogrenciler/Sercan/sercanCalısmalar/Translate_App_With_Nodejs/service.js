@@ -34,8 +34,9 @@ async function callData(){
         });
     }
 
-    const list = $('.langListModal')
-    console.log(list)
-       
-    
+    $('.langListModal').on('click', function getLang(e){
+       if(e.target.matches('li')) {
+           console.log(e.target);
+       }      
+    })
 

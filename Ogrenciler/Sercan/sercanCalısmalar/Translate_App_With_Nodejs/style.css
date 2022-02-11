@@ -60,6 +60,9 @@ grid-template-rows: max-content;
 list-style: none;
 
 }
+.langListModal li:hover{
+    background: rgba(0, 0, 0 , 0.2);
+}
 
 
 .fa-exchange-alt{
