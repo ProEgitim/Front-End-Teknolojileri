@@ -2,7 +2,7 @@
 // Calling class
 let storage = new Storage();
 let date = new Date();
-
+const service = new Service();
 document.addEventListener('DOMContentLoaded', ()=>
 {
     $('.langListModal').hide();
@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', ()=>
     
 });
 function toggleModal()
-{ 
+{   
+    $('.listPrevious').hide(1000)
     $('.langListModal').animate({
 
         height: 'toggle',
@@ -49,7 +50,11 @@ function lastSearch()
     let list=document.querySelector('.listPrevious');
     let elem= dataStore[dataStore.length-1]
     list.innerHTML +=`<li class="elem">${elem}</li>`
-    firstLang.value ="";
+    
+    
+    let translate = service.callData();
+    translate.then(response => $('#secondLang').text(response[0].translatedText));
+   
     }  
 }
 
@@ -66,9 +71,27 @@ function clean()
     
 }
 
-function deleteOneİtem(){
 
+const langs = service.getAllLang();
+langs.then(response => callBack(response));
+
+function callBack(data){
+    data.forEach(element => {
+       
+        document.querySelector('.langListModal').innerHTML += `
+        <li>${element.name}<li>
+        `
+    });
 }
+
+$('.langListModal').on('click', function getLang(e){
+   if(e.target.matches('li') && e.target.innerText !=="") {
+      $('#enterLang').text(e.target.innerText);
+      $('.langListModal').hide(500);
+   }      
+})
+
+
 
 
 

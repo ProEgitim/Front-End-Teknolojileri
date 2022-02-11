@@ -14,7 +14,7 @@ app.get('/langs/all', (req,res)=>{
   fs.readFile('langs.json' , 'utf8' , function(err,data){
    let datas = JSON.parse(data);
     res.send(JSON.stringify(datas));
-    console.log(datas['u_1'].site);
+    
   })
 })
 
