@@ -1,0 +1,40 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+#search{
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background-color: rgba(15, 121, 191, 0.4);
+    filter: blur(0.03px);
+    width: 20rem;
+    height:20rem;
+}
+#background-img{
+transform: rotate(180deg);
+}
+
+ 
+@mixin attribute(){
+    display: flex;
+    justify-content: space-around;
+}
+
+.firstPart{
+    @include attribute;
+}
+.secondPart{
+    @include attribute;
+}
+.thirdPart{
+    @include attribute;
+}
