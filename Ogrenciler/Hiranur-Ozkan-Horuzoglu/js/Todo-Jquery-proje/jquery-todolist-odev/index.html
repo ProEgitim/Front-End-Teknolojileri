@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
 	<div class="foot">
 		<div class="row">
 			<div class="col-sm-1"> </div>
@@ -56,8 +55,8 @@
 					var x = $('.container').html();
 					var y =
 						`<div class="alert alert-success alert-dismissible fade in">
-		<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-							` + $('#text').val() + `</div>`;
+						<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+						` + $('#text').val() + `</div>`;
 					$('.container').html(y + x);
 					$('#text').val("");
 				} else alert("lutfen bir todo giriniz !");
@@ -68,9 +67,18 @@
 				else
 					$(this).css('text-decoration-line', 'none');
 			});
+			
 		});
-		
-	
+
+		// $('.glyphicon-plus').click(function addStorage(newTask) {
+		// 	if (localStorage.getItem("task") === null) {
+		// 		localStorage.setItem("task", JSON.stringify([newTask]));
+		// 	} else {
+		// 		let task = JSON.parse(localStorage.getItem("task"));
+		// 		task.push(newTask);
+		// 		localStorage.setItem("task", JSON.stringify(task));
+		// 	}
+		// });
 	</script>
 </body>
 
