@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Giriş</title>
+    <style>
+      .kutu{
+        width: 400px;
+        height: 400px;
+        background-color: red;
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kutu">0</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $("div").mousemove(function(e){
+        $("div").text(e.pageX+" "+e.pageY);
+      })
+    </script>
+  </body>
+</html>
