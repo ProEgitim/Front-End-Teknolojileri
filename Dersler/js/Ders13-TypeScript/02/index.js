@@ -44,16 +44,67 @@
 // }
 // console.log(davetEt("Sercan", "Osman", "Hiranur", "Buğra"))
 // Classlar
-var Ev = /** @class */ (function () {
-    function Ev(odaSayisi, pencereSayisi, kat) {
-        this._odaSayisi = odaSayisi;
-        this._pencereSayisi = pencereSayisi;
-        this._kat = kat;
-    }
-    Ev.prototype.yemekYe = function () {
-        console.log(this._kat + " katlı evde yemek yendi");
-    };
-    return Ev;
-}());
-var ev = new Ev(3, 4, 5);
-ev.yemekYe();
+// class Ev{
+//   private _odaSayisi:number
+//   public _pencereSayisi:number // default olarak pblic kabul edilir
+//   protected _kat:number
+//   constructor(odaSayisi:number,pencereSayisi:number,kat:number){
+//     this._odaSayisi = odaSayisi
+//     this._pencereSayisi = pencereSayisi
+//     this._kat = kat
+//   }
+//   get odaSayisi():number{
+//     return this._odaSayisi
+//   }
+//   set odaSayisi(sayi:number){
+//     this._odaSayisi = sayi
+//   }
+//   yemekYe(){
+//     console.log(this._kat + " katlı evde yemek yendi")
+//   }
+// }
+// let ev = new Ev(3,4,5)
+// ev.yemekYe()
+// ev.odaSayisi = 5
+// console.log(ev.odaSayisi)
+// // inheritance
+// class Daire extends Ev{
+//   uyu(){
+//     console.log(this._kat  + " katlı evde yemek yendi" + this._pencereSayisi)
+//   }
+// }
+// //abstract
+// abstract class KrediBase {
+//   constructor(birsey:string){
+//   }
+//   kaydet():void{
+//     console.log("Kayıt edildi")
+//   }
+// }
+// class TuketiciKredisi extends KrediBase {
+//   constructor(parameters){
+//     super(parameters)
+//   }
+// }
+//interface
+// interface Product{
+//   id:number
+//   name: string
+// }
+// class Deneme implements Product {
+// }
+// let sehirler : string[] = ["Ankara", "İstanbul", "Giresun"]
+// for (let i in sehirler){
+//   console.log(sehirler[i])
+// }
+// for (let i of sehirler){
+//   console.log(i)
+// }
+// Generic => veri tipini parametrik olarak dışardan girebildik
+function deneme(x) {
+    return x;
+}
+var sayi = deneme(4);
+var sehir = deneme("İstanbul");
+console.log(sayi);
+console.log(sehir);
