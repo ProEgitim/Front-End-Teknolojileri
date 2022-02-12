@@ -1,7 +1,5 @@
-import { isMapIterator } from "util/types";
-
 function selamVer(isim:string){
-    return "Merhaba " + isim
+  return "Merhaba " + isim
 }
 
-let mesaj = selamVer('Hiranur')
+let mesaj = selamVer('varol')
