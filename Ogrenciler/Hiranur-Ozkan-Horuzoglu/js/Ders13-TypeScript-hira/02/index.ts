@@ -75,6 +75,12 @@ class Ev{
         this._pencereSayisi = pencereSayisi
         this._kat = kat
     }
+    get odaSayisi():number{
+        return this._odaSayisi
+    }
+    set odaSayisi(sayi:number){
+        this.odaSayisi = sayi
+    }
     yemekYe(){
         console.log(this._kat + "katli evde yemek yendi")
     }
@@ -82,6 +88,7 @@ class Ev{
 
 let ev = new Ev(3,4,5)
 ev.yemekYe()
+console.log(ev.odaSayisi)
 
 // //inheritance
 class Daire extends Ev{ // ev clasindan miras aldigi ozellikler
@@ -93,3 +100,46 @@ class Daire extends Ev{ // ev clasindan miras aldigi ozellikler
 //-PUBLIC- klasa heryerden eriselibilir
 //-PROTECTED- bu clasdan miras alan classlar disardan erisilemez
 // -PRIVATE- sadece class icerinde kullanilabilir
+
+// // -abstract
+
+// abstract class KrediBase {
+//     constructor(birsey:string) {
+        
+//     }
+//     kaydet():void{
+//         console.log("Kayit edildi")
+//     }
+// }
+// class TuketiciKredisi extends KrediBase{
+//     constructor (parameters){
+//         super(parameters)
+//     }
+// }
+
+// // INTERFACE
+
+// interface Product{
+//     id:number
+//     name:string
+// }
+// class Deneme implements Product {
+    
+// }
+
+// let sehirler: string[]=["Ankara", "Istanbul", "Giresun"]
+// for(let i in sehirler){ //index hatirliyor
+//     console.log(i)
+// }
+// for(let i of sehirler){ // degeri aliyor-foreach gibi
+//     console.log(i)
+// }
+
+function deneme <T> (x:T):T{
+    return x
+}
+let sayi = deneme<number>(4)
+let sehir = deneme<string>("Istanbul")
+
+console.log(sayi)
+console.log(sehir)

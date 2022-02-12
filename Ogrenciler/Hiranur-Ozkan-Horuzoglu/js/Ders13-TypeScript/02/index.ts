@@ -66,27 +66,33 @@
 
 // Classlar
 
-class Ev{
-  private _odaSayisi:number
-  public _pencereSayisi:number // default olarak pblic kabul edilir
-  protected _kat:number
-  constructor(odaSayisi:number,pencereSayisi:number,kat:number){
+class Ev {
+  private _odaSayisi: number
+  public _pencereSayisi: number // default olarak pblic kabul edilir
+  protected _kat: number
+  constructor(odaSayisi: number, pencereSayisi: number, kat: number) {
     this._odaSayisi = odaSayisi
     this._pencereSayisi = pencereSayisi
     this._kat = kat
   }
-  yemekYe(){
+  get odaSayisi(): number {
+    return this._odaSayisi
+  }
+  set odaSayisi(sayi: number) {
+    this.odaSayisi = sayi
+  }
+  yemekYe() {
     console.log(this._kat + " katlı evde yemek yendi")
   }
 }
 
-let ev = new Ev(3,4,5)
+let ev = new Ev(3, 4, 5)
 ev.yemekYe()
 
 // inheritance
-class Daire extends Ev{
-  uyu(){
-    console.log(this._kat  + " katlı evde yemek yendi" + this._pencereSayisi)
+class Daire extends Ev {
+  uyu() {
+    console.log(this._kat + " katlı evde yemek yendi" + this._pencereSayisi)
   }
 }
 
