@@ -70,6 +70,11 @@ background-size: cover;
  transform: scale(1.2)!important;
 }
 
+.card-img-top:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 
 
 
