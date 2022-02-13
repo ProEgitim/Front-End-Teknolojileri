@@ -4,3 +4,14 @@
     height: 100%;
     width: 100%;
 }
+.h-10
+{
+    background-color: 36594;
+    height: 10%;
+    text-align: center;
+}
+.w-40
+{
+    width: 40%;
+}
+
