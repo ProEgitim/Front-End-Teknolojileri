@@ -9,11 +9,20 @@
 </head>
 <body>
     <div class="container-fluid">
-       
-      </div>
+      <div class="h-50 d-flex flex-row d-flex justify-content-around">
+          <textarea id="myText" class="shadow-sm p-3 mb-5 bg-body rounded mt-5" rows="4" cols="80"> </textarea>                 
+          <div id = "translatePart" class="d-flex flex-column align-self-center">
+            <input id = "languageCode" class="align-self-center shadow-sm p-3 mb-5 bg-body rounded mt-5" type="text" placeholder="Language Code">
+            <button id = "translate" class="btn btn-success">TRANSLATE</button>
+         </div>
+        <div id = "translatedText" class="w-40 shadow-sm p-3 mb-5 bg-body rounded mt-5"></div>    
+    </div>
+    
+  
+    </div>
 
-
-
+    <script src="yandex.js"></script>
+    <script src="ui.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

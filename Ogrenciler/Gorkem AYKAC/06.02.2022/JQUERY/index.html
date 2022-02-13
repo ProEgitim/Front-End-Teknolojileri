@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="myDiv"></div>
+    <input type="text">
+    <p></p>
+    <button id="button1" onclick="Kırmızı()">FadeIn</button>
+    <button id="button2" onclick="Yesil()">FadeOut</button>
+    <button id="button3" onclick="Slide()">Slide</button>
+    <button id="button3" onclick="MyAnimate()">MyAnimate</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+        /*$(document).ready(function(){
+            console.log("hazir");
+        })
+        $("#paragraf").html("Paragraf Yazdık");
+        function showText()
+        {
+           if($(".d1:nth-child(2)").css("display")=="none")
+           {
+                $("#myButton").html("GİZLE");
+                $(".d1:nth-child(2)").show();
+           }
+           else
+           {
+            $("#myButton").html("GÖSTER");
+                 $(".d1:nth-child(2)").hide();                           
+           }
+        }*/
+        $("input").keyup(function()
+        {
+            console.log("asdasd");
+            $("p").html($("input").val());
+        })
+        function Kırmızı()
+        {
+            $("div").fadeIn(1000)
+        }
+        function Yesil()
+        {
+           // $("div").toggle(1000)
+            $("div").toggle(1000)
+        } 
+        function Slide()
+        {
+            $("div").slideToggle(1000)
+        }
+        function MyAnimate()
+        {
+            $("div").animate(
+                {
+                    width: "+=50px",
+                    height: "+=50px"
+                },1000);
+           
+        }
+       /* $("div").mouseenter(function(e)
+        {
+            var maxX = $(window).width() - $("div").width();
+            var maxY = $(window).height() - $("div").height();
+
+            $("div").css({
+            'position':'absolute',
+            'left':getRandomInt(maxX),
+            'top':getRandomInt(maxY)
+            });
+        })*/ 
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * (max+1));
+        }
+    </script>
+</body>
+</html>
