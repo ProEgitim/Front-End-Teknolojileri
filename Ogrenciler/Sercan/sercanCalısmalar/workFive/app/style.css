@@ -4,17 +4,13 @@ body{
     flex-direction: row;
     background-color: #373e57;
     color: #ccc8db;
+    align-items: center;
+    justify-content: center;
 }
     
-
-
-
 h2{
 height: 20px;
 }
-
-
-
 
 /* navbar end */
 
