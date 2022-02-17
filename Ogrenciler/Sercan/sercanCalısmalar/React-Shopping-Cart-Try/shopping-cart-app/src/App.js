@@ -6,9 +6,11 @@ import Basket from './components/Basket';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Main/>
-      <Basket/>
+      <Header></Header>
+      <div className='row'>
+      <Main></Main>
+      <Basket></Basket>
+      </div>
     </div>
   );
 }
