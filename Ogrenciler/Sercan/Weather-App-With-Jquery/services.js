@@ -1,13 +1,9 @@
 class Service {
-   async post()
+   async get(url)
    {
-    const response = await fetch(url,{
-        method:'POST',
-        body: {
-            
-        },
-        headers:{'Content-type':'application/json'}
-    })
+    const response =await fetch(url) 
+    let resData = response.json();
+     return resData;
 
-   }
+}
 }

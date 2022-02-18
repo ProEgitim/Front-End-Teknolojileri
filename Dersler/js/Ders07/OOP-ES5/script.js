@@ -1,3 +1,4 @@
+
 // const person1 = { //Object Literal
 //   name:"Varol",
 //   age:35,
@@ -17,16 +18,15 @@
 //   this.name = name;
 //   this.age = age;
 //   this.salary = salary;
-//   // this.showInfo = function(){console.log("İsim: " + this.name + ", Yaş: " + this.age);}
+//   //this.showInfo = function(){console.log("İsim: " + this.name + ", Yaş: " + this.age);}
 //   this.toString = function(){console.log("Bu Employee Objesidir.")}
 // }
 // Employee.prototype.showInfo = function(){console.log("İsim: " + this.name + ", Yaş: " + this.age);}
-
-// const emp1 = new Employee("Varol",35,4250);
-// // const emp2 = new Employee("Sercan",25,5000);
-
-// console.log(emp1);
-// emp1.showInfo();
+//const emp1 = new Employee("Varol",35,4250);
+// const emp2 = new Employee("Sercan",25,5000);
+// emp2.showInfo();
+// // console.log(emp2);
+// // emp1.showInfo();
 // emp1.toString();
 
 // const obj = {
@@ -37,8 +37,10 @@
 //     console.log("Test 2");
 //   }
 // }
-// // console.log(obj);
-// const emp = Object.create(obj);
+ //console.log(obj);
+
+
+//  const emp = Object.create(obj);
 // emp.name = "Varol";
 // emp.age = 25;
 // console.log(emp);
@@ -73,14 +75,14 @@
 //   number1:30,
 //   number2:40
 // };
-// function addNumbers(number3,number4){
-//   console.log(this);
+// function AddNumbers(number3,number4){
+//   console.log(this)
 //   console.log(this.number1+this.number2+number3+number4);
 // }
-// addNumbers(100,200);
-// addNumbers.call(obj1,100,200);
+// AddNumbers(100,200);
+//addNumbers.call(obj1,100,200);
 // addNumbers.call(obj2,100,200);
-// addNumbers.apply(obj1,[100,200]);
+//addNumbers.apply(obj1,[100,200]);
 // addNumbers.apply(obj2,[100,200]);
 
 //Bind
@@ -96,7 +98,10 @@
 // function Person(name,age){
 //   this.name=name;
 //   this.age=age;
+//   this.temp = function(){ return 'merhaba'}
 // }
+// let a= new Person('sercan',32)
+// console.log(a)
 // Person.prototype.test1 = function(){
 //   console.log("Test 1");
 // }
@@ -153,28 +158,28 @@
 // const mat = new Matematik();
 // // mat.cube(4);
 
-class Person { // Superclass, Baseclass
-  constructor(name,age){
-    this.name = name;
-    this.age = age;
-  }
-  showInfo(){
-    console.log("İsim: " + this.name + ", Yaş: " + this.age);
-  }
-}
-class Employee extends Person { //Subclass, Childclass
-  constructor(name,age,salary){
-    // this.name = name;
-    // this.age = age;
-    super(name,age);
-    this.salary = salary;
-  }
-  showInfo(){ // Override
-    console.log("İsim: " + this.name + ", Yaş: " + this.age + ", Maaş: " + this.salary);
-  }
-}
+// class Person { // Superclass, Baseclass
+//   constructor(name,age){
+//     this.name = name;
+//     this.age = age;
+//   }
+//   showInfo(){
+//     console.log("İsim: " + this.name + ", Yaş: " + this.age);
+//   }
+// }
+// class Employee extends Person { //Subclass, Childclass
+//   constructor(name,age,salary){
+//     // this.name = name;
+//     // this.age = age;
+//     super(name,age);
+//     this.salary = salary;
+//   }
+//   showInfo(){ // Override
+//     console.log("İsim: " + this.name + ", Yaş: " + this.age + ", Maaş: " + this.salary);
+//   }
+// }
 
-const emp = new Employee("Varol",35,4250);
+// const emp = new Employee("Varol",35,4250);
 
-console.log(emp);
-emp.showInfo();
+// console.log(emp);
+// emp.showInfo();
