@@ -1,0 +1,143 @@
+//JS Genel Tekrar
+
+var classElemanlari = document.getElementsByClassName('intro1');
+alert(classElemanlari[0].innerHTML);
+
+var queryElemanlari = document.querySelectorAll("h1.intro1");
+alert(queryElemanlari.length);
+
+var nameElemanlari = document.getElementsByName("musteriAdi");
+alert(nameElemanlari[0].value);
+
+var alkm = document.getElementById("alkm").addEventListener("click",rengiDegistir);
+
+function rengiDegistir(){
+  document.getElementById("h1").style.color="green";
+  }
+
+removeChild();
+replaceChild(baslik, p1);
+
+var global değişkendir function içerisinde tanımlanırsa dışarıdan erişilemez lakin var ile tanımlanan her değişkenin değeri değiştirilip yeniden tanımlanabilir.
+
+let scope değişkendir function içerisinde tanımlanırsa dışarıdan erişilebilir let ile tanımlanan her değişkenin değeri yeniden atanabilir lakin yeniden tanımlanamaz.
+
+const değeri değiştirilemez ve yeniden tanımlanamaz.
+
+var dizi = [1,2,3,4,5]
+
+const mapDizi = dizi.map(sayi=>sayi*3);
+document.write(mapDizi + "<br />");
+
+const filterDizi = dizi.filter(sayi=>sayi>2);
+document.write(filterDizi + "<br />");
+
+const toplam1 = dizi.reduce((acc,sayi)=>{
+return acc + sayi;
+});
+document.write(toplam1 + "<br />");
+
+const toplam = dizi.reduce((acc,sayi)=>{
+return acc + sayi;
+},10);
+document.write(toplam + "<br />");
+
+[]===[]
+false
+[1,2]===[1,2]
+false
+nesne1===nesne2
+false
+this === window
+true
+var nesne1 = {deger:1}
+undefined
+var nesne2 = {deger:2}
+undefined
+
+const urunServis = {
+  ekle : function(){
+    document.write(this);
+  }
+}
+urunservis.ekle();
+
+class personel {
+  constructor(ad,soyad){
+    this.ad=ad;
+    this.soyad=soyad;
+  }
+  kaydet(){
+    document.write(this.ad + "Personel Kaydedildi");
+  }
+}
+//Örnek Oluştur, classlar böyle çalışır.
+const Personel = new personel("Osman Ali","KACAR");
+Personel.kaydet();
+Personel.ad="Osman";
+document.write(personel.adi);
+
+//React Temelleri
+
+//Kurulum
+npm install -g(global kurulum) create-react-app myApp
+
+cd MyApp
+
+npx run 
+
+//Component Mimarisi
+Tek parenti componentlere ayırarak bunları haberleştirme işlemidir. Üst komponentler alta veri taşıyabiliyorken alttakiler üste veri taşıyamıyor bu da js dili ile çelişiyor. Bu problemi de redux yöntemiyle çözüyor. Component mimarisinin bize avantajı sadece değişen component render oluyor böylece algoritmik olarak virtual dom ile performansı artırıyor.
+
+Componentler Function, Class, Hooks şekillerinde oluşturulabiliyor. Functionlar da ayrıca bir tiptir. İçerikleri JSX yapısıyla oluştururuz. Component mimarisini düşünürsek tek bir parent tagı içerisinde yazılabiliyor. 
+
+ReactStrap ile çalışmak
+Bootstraop kütüphanelerini basit kullanılabilir hale getirmişler. 
+
+npm i reactstrap şeklinde kurulur. Kullanılacak sayfanın içerisine import {Container,Row,Col} from "reactstrap" şeklinde dahil edilir ve bazı özellikleri eksik kalması durumunda npm install bootstrap kurulur ve index.js altına'bootstrap/dist/css/bootstrap.min.css' import edilir. 
+
+<div>
+<Container>
+<Row>
+<Navi/>
+</Row>
+<Row>
+<Col xs="3">
+<CategoryList/>
+</Col>
+<Col xs="9">
+<ProductList/>
+</Col>
+</Row>
+</Container>
+</div>
+
+//Propslar ile çalışmak
+Componentler arası data taşıma kelime amanası ile özellik taşıma işlemidir. 
+
+<div>
+<Container>
+<Row>
+<Navi/>
+</Row>
+<Row>
+<Col xs="3">
+<CategoryList title="Category List"/>
+</Col>
+<Col xs="9">
+<ProductList title="Product List"/>
+</Col>
+</Row>
+</Container>
+</div>
+
+//Önceki sürüm
+constructor(props){
+  super(props);
+  state:{}
+}
+//Yeni nesil güncellemelerle birlikte artık constructor oluşturmadan
+<h3>{this.props.title}</h3>
+şeklinde özelliklere ulaşabiliyor ve aktarabiliyoruz. Bu çok iyi olmuş. 
+
+//Encupsilation

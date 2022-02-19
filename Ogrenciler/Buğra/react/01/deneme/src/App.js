@@ -12,7 +12,7 @@ export default function App() {
         </Row>
         <Row>
           <Col xs="3">
-            <CategoryList title="CategoryList Component" />
+            <CategoryList />
           </Col>
           <Col xs="9">
             <ProductList />
