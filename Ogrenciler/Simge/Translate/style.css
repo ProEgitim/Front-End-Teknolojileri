@@ -1,0 +1,64 @@
+.body {
+    background-color: #eeeeee;
+}
+
+.container {
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+#translateArea {
+    background-color: #eeeeee;
+}
+
+#translateArea2 {
+    background-color: #eeeeee;
+}
+
+.languages:hover {
+    background-color: #dedede;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.languages {
+    font-size: small;
+}
+
+#changeButton {
+    cursor: pointer;
+}
+
+#copyTextIconFirst {
+    cursor: pointer;
+}
+
+#copyTextIconSecond {
+    cursor: pointer;
+}
+
+#voice1 {
+    cursor: pointer;
+}
+
+#voice2 {
+    cursor: pointer;
+}
+
+#languagesModal {
+    position: absolute;
+    background-color: #ffffff;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration-color: black;
+    top: 130px;
+    z-index: 99999;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: 18px;
+}
+
+.logo {
+    color: white;
+}

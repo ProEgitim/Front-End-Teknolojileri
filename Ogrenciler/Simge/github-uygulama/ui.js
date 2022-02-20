@@ -4,6 +4,19 @@ class UI {
       this.profile = document.getElementById("profile");
       this.reposs = document.getElementById("repos");
     }
+
+    showError(message) {
+      const div = document.createElement("div");
+      div.className = `alert alert-danger`;
+      div.textContent = message;
+      this.profileDiv.appendChild(div);
+      setTimeout(function () {
+          div.remove();
+      }, 2000);
+  }
+
+    
+
     addRepos(repos)
     {
       this.reposs.innerHTML = "";
@@ -82,8 +95,6 @@ class UI {
         </div>
       
       `
-      
-
     }
 
 }

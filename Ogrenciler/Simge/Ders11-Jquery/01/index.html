@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Giriş</title>
+  </head>
+  <body>
+    <p id="paragraf"></p>
+    <div>
+      <div class="d1">Merhaba 1</div>
+      <div class="d1">Merhaba 2</div>
+    </div>
+    <button onclick="showText()">Göster</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      //let paragraf = document.getElementById("paragraf");
+      //paragraf.innerHTML= "JS ile Paragraf Yazdık";
+
+      //$(document).ready(function(){
+      //});
+
+      $(function () {
+        $("#paragraf").html("Jquery ile paragraf yazdık...");
+        $(".d1:nth-child(2)").hide();
+      });
+      function showText(){
+        if($(".d1:nth-child(2)").css("display")=="none"){
+          $(".d1:nth-child(2)").show();
+        }
+        else{
+          $(".d1:nth-child(2)").hide();
+        }
+      }
+    </script>
+  </body>
+</html>

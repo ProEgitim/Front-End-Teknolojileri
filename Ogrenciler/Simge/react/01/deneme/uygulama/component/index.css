@@ -1,0 +1,14 @@
+.header a {
+    color: #777777;
+    font-size: medium;
+}
+
+
+.header a:hover {
+    color: #818181;
+}
+
+
+.header a:focus {
+    color: #777777;
+}
