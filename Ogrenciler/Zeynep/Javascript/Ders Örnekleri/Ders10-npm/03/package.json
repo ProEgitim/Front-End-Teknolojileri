@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "varol-deneme": "^1.0.0"
+  },
+  "name": "varol-deneme2",
+  "version": "1.0.0",
+  "description": "Deneme 2",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "varol",
+    "deneme"
+  ],
+  "author": "waroi",
+  "license": "ISC"
+}

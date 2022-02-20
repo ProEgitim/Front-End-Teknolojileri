@@ -33,6 +33,7 @@ class Request {
       .catch(err => reject(err));
     })
   }
+
   post(url,data){
     return new Promise((resolve, reject)=>{
       fetch(url,{
@@ -69,18 +70,18 @@ class Request {
 }
 const request = new Request();
 
-// request.get("https://jsonplaceholder.typicode.com/albums")
-// .then(album => console.log(album))
-// .catch(err => console.log(err));
+request.get("exmp.json")
+.then(album => console.log(album))
+.catch(err => console.log(err));
 
-// request.post("https://jsonplaceholder.typicode.com/albums",{userId:999,title:"Merhaba"})
-// .then(newAlbum => console.log(newAlbum))
-// .catch(err => console.log(err));
+request.post("https://jsonplaceholder.typicode.com/albums",{userId:999,title:"Merhaba"})
+.then(newAlbum => console.log(newAlbum))
+.catch(err => console.log(err));
 
 // request.put("https://jsonplaceholder.typicode.com/albums/1",{userId:777,title:"Selam"})
 // .then(newAlbum => console.log(newAlbum))
 // .catch(err => console.log(err));
 
-request.delete("https://jsonplaceholder.typicode.com/albums/1")
-.then(message => console.log(message))
-.catch(err => console.log(err));
+// request.delete("https://jsonplaceholder.typicode.com/albums/1")
+// .then(message => console.log(message))
+// .catch(err => console.log(err));
