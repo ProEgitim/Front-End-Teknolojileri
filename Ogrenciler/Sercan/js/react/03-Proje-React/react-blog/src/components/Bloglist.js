@@ -19,11 +19,14 @@ export default function Bloglist (){
     })
     .catch(err=>err)
   },[])
+
   useEffect(()=>{
+    if(id!==null){
     fetch(`http://localhost:3000/posts/${id}`, {
       method:'DELETE'
     })
-  })
+  }
+  },[blogs])
   
   return (
     <div>
