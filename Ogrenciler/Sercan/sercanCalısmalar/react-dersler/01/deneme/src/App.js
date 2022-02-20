@@ -11,8 +11,8 @@ function App() {
         <Navi/>
         </Row>
         <Row>
-        <Col xs='3'> <Category/> </Col>
-        <Col xs="9">  <Productlist/> </Col>
+        <Col xs='3'> <Category title="Catogory list" /> </Col>
+        <Col xs="9">  <Productlist /> </Col>
         </Row>
         </Container>
     </div>

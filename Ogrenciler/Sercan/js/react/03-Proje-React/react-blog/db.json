@@ -1,0 +1,28 @@
+{
+  "posts" :[
+      {
+        "title":"C++",
+        "content":"Blog Content ",
+        "yazar":"Sercan",
+        "id":1
+      },
+      {
+        "title":"Java",
+        "content":"Blog Content ",
+        "yazar":"Görkem",
+        "id":2
+      },
+      {
+        "title":"Javascript",
+        "content":"Blog Content ",
+        "yazar":"Zeynep",
+        "id":3
+      },
+      {
+        "title":"C#",
+        "content":"Blog Content ",
+        "yazar":"aa",
+        "id":4
+      }
+    ]
+}
