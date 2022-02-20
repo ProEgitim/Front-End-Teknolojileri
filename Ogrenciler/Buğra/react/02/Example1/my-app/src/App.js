@@ -9,7 +9,7 @@ function App() {
       <Container>
         <Row>
 
-          <Col sm-9 md-3 md-3 >
+          <Col>
             <MyComponent/>
           </Col>
 

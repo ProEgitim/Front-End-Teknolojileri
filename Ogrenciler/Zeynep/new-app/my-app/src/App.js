@@ -1,11 +1,13 @@
-import Navi from './Navi';
-import CategoryList from './CategoryList';
-import ProductList from './ProductList';
-// import Search from './Search';
-import { Container, Row, Col } from 'reactstrap'
+// import Navi from './Navi';
+// import CategoryList from './CategoryList';
+// import ProductList from './ProductList';
+import Search from './Search';
+import { Container, Row, Col } from 'reactstrap';
 import './App.css';
-import Title from "./Title";
+// import Title from "./Title";
 import React from "react";
+import Brand from "./Brand";
+import Profile from "./Profile";
 
 
 function App() {
@@ -13,15 +15,14 @@ function App() {
         <div>
             <Container>
                 <Row>
-                    <Navi/>
-                    <Title/>
-                </Row>
-                <Row>
-                    <Col xs="3">
-                        <CategoryList title="Category List"/>
+                    <Col xs="2">
+                        <Brand/>
                     </Col>
-                    <Col xs="9">
-                        <ProductList title="Product List"/>
+                    <Col xs="6">
+                        <Search/>
+                    </Col>
+                    <Col xs="4">
+                        <Profile/>
                     </Col>
                 </Row>
             </Container>
