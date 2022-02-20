@@ -1,13 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "name": "1",
-      "surname": "1",
-      "age": "1",
-      "job": "1"
-    },
-    {
       "id": 2,
       "name": "2",
       "surname": "2",

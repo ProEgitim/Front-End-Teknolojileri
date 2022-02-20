@@ -32,7 +32,9 @@ const WriteAllData=(props)=> {
                
             </div>
         ))
-        }       
+        }  
+        
+   
 
         
     </div>

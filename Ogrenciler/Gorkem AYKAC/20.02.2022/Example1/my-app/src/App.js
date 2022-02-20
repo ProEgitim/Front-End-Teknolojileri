@@ -8,16 +8,13 @@ function App() {
     <div className="App">
       <Container>
         <Row>
-          
-        </Row>
-        <Row>
-          <Col xs="3">
 
-          </Col>
-          <Col xs="9">
+          <Col>
             <MyComponent/>
           </Col>
+
         </Row>
+        
       </Container>
      
     </div>
