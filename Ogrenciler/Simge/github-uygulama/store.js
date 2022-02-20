@@ -27,4 +27,8 @@ class Storage
     {
         localStorage.setItem("Users", data);
     }
+    clearUser()
+    {
+        localStorage.removeItem("Users")
+    }
 }
