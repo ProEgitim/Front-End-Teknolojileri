@@ -1,0 +1,28 @@
+{
+    "posts" : [
+    {
+      "title":"Blog Baslık1",
+      "content":"Blog Content",
+      "author" : "Sercan Writer",
+      "id":1
+    },
+    {
+      "title":"Blog Baslık2",
+      "content":"Blog Content",
+      "author" : "Görkem Writer",
+      "id":2
+    },
+    {
+      "title":"Blog Baslık3",
+      "content":"Blog Content",
+      "author" : "Zeynep Writer",
+      "id":3
+    },
+    {
+      "title":"Blog Baslık4",
+      "content":"Blog Content",
+      "author" : "Osman Writer",
+      "id":4
+    }
+  ]
+}

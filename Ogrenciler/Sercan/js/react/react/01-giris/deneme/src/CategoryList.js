@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
-export default class Category extends Component {
+export default class CategoryList extends Component {
   constructor(props){
     super(props);
+    state:{}
   }
   render() {
     return (
