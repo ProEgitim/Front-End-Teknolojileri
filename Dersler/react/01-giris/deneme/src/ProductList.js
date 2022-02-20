@@ -23,39 +23,15 @@ const ProductList = () => {
       setSayac(sayac)
       console.log(sayac);
     }
-    const [blog,setBlog] = useState([
-      {
-        title:"Blog Başlık 1",
-        content:"Blog Content Deneme 1",
-        yazar:"Sercan",
-        id:1
-      },
-      {
-        title:"Blog Başlık 2",
-        content:"Blog Content Deneme 2",
-        yazar:"Görkem",
-        id:2
-      },
-      {
-        title:"Blog Başlık 3",
-        content:"Blog Content Deneme 3",
-        yazar:"Zeynep",
-        id:3
-      },
-      {
-        title:"Blog Başlık 4",
-        content:"Blog Content Deneme 4",
-        yazar:"Sercan",
-        id:4
-      }
-    ])
+    const [blog,setBlog] = useState(null)
     const handleConsole=(id)=>{
       const newBlogs = blog.filter(b=>b.id!==id);
       setBlog(newBlogs);
     }
     useEffect(()=>{
-      console.log("useEffect Çalıştı");
-      console.log(blog);
+      fetch('http://localhost:3000/posts')
+      .then(res=>res.json())
+      .then(data=>setBlog(data))
     },[blog])
     return (
       <div>
@@ -68,8 +44,8 @@ const ProductList = () => {
         <button style={styleObject} onClick={(e)=>handleClick('React',e)}>Tıkla</button> <br /> <br />
         <p>{sayac}</p>
         <button style={styleObject} onClick={handleCounter}>Sayaç</button>
-        <BlogList blogs={blog} onConsole={handleConsole} title="Bütün Yazılar" />
-        <BlogList blogs={blog.filter((blog)=>blog.yazar==="Sercan")} onConsole={handleConsole} title="Sercan'ın Yazıları" />
+        {blog && <BlogList blogs={blog} onConsole={handleConsole} title="Bütün Yazılar" />}
+        {blog && <BlogList blogs={blog.filter((blog)=>blog.yazar==="Sercan")} onConsole={handleConsole} title="Sercan'ın Yazıları" />}
       </div>
     );
 }
