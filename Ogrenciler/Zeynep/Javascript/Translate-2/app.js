@@ -25,7 +25,7 @@ allLanguagesArea.addEventListener("click", pickLanguages);
 function copyText(e) {
     let textArea = document.getElementById(e.target.getAttribute("data-textAreaId"));
     textArea.select();
-    textArea.setSelectionRange(0, 99999); /* For mobile devices */
+    textArea.setSelectionRange(0, 99999); //For mobile devices //
     navigator.clipboard.writeText(textArea.value);
 }
 
@@ -39,16 +39,17 @@ function changeSelections() {
 
 function loadPage() {
     let langsFromApi = apiGetLanguages();
+    // let langsFromApi = ["lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem", "lorem"];
 
     for (let i = 0; i < langsFromApi.length; i++) {
         firstLanguageList.innerHTML += `
             <div class="languages col-3">
-                <button id="firstId" name="` + langsFromApi[i].name + `" style="border: none; background-color: inherit;" class="languagesAllButtons btn-default firstLangsContent">` + langsFromApi[i].name+`</button>
+                <button id="firstId" name="` + langsFromApi[i].code + `" style="border: none; background-color: inherit;" class="languagesAllButtons btn-default firstLangsContent">` + langsFromApi[i].name+`</button>
             </div>
         `
         secondLanguageList.innerHTML += `
             <div class="languages col-3">
-                <button id="secondId" name="` + langsFromApi[i].name+ `" style="border: none; background-color: inherit;" class="languagesAllButtons btn-default secondLangsContent">` + langsFromApi[i].name+  `</button>
+                <button id="secondId" name="` + langsFromApi[i].code+ `" style="border: none; background-color: inherit;" class="languagesAllButtons btn-default secondLangsContent">` + langsFromApi[i].name+  `</button>
             </div>
         `
     }
@@ -58,7 +59,8 @@ function loadPage() {
 function apiGetLanguages() {
     let response = [];
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://libretranslate.com/languages", false);
+    // xhr.open("GET", "https://libretranslate.com/languages", false);
+    xhr.open("GET", "http://localhost:5000/languages", false);
     xhr.onload = function () {
         if (this.status) {
             response = JSON.parse(this.responseText);
@@ -102,17 +104,16 @@ function pickLanguages(e) {
     let pickedLanguageButton;
 
     if (e.target.tagName === "DIV") {
-        console.log(e.target.children[0]);
         pickedLanguageButton = e.target.children[0];
     } else {
         pickedLanguageButton = e.target;
     }
 
     if (pickedLanguageButton.classList.contains("firstLangsContent")) {
-        firstLanguageButton.textContent = pickedLanguageButton.name;
+        firstLanguageButton.textContent = pickedLanguageButton.textContent;
         firstToggleModal();
     } else if (pickedLanguageButton.classList.contains("secondLangsContent")) {
-        secondLanguageButton.textContent = pickedLanguageButton.name;
+        secondLanguageButton.textContent = pickedLanguageButton.textContent;
         secondToggleModal();
     }
     let firstSelectionText = firstLanguageSelection.textContent;
