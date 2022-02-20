@@ -14,8 +14,10 @@ function App() {
           <Col xs="3">
             
           </Col>
-          <Col xs="9">
+          <Col xs="3">
             <MyComponent/>
+          </Col>
+          <Col xs="3">
           </Col>
         </Row>
       </Container>
