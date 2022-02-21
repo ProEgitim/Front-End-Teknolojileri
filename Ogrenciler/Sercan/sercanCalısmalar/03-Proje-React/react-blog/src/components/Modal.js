@@ -21,6 +21,16 @@ function Modal(props) {
       e.stopImmediatePropagation();
       post(`http://localhost:3000/posts`,sendDatat);
     }
+
+    function post (url,data){
+      let response = await fetch( url, {
+       method:'POST',
+       body: JSON.stringify(data),
+       headers :{"Content-Type":"Application/json"}
+     });
+     let resData = await response.json();
+     return resData;  
+   }
   return (
     <button onClick={() => sendData} >tıkla</button>
   )
