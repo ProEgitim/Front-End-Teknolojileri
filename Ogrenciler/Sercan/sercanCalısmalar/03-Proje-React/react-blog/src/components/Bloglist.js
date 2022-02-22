@@ -1,7 +1,7 @@
 import React from 'react'
 import List from './List'
-import Modal from "./Modal";
 import {useState , useEffect} from 'react'
+
 
 
 export default function Bloglist (){
@@ -31,14 +31,38 @@ export default function Bloglist (){
       method:'DELETE'
     })
   }
-  },[blogs])
+  },[id])
   
+//   let sendDatat = {
+//     title: "Blog" ,
+//      content: "BlogContent" ,
+//      yazar: "veli"    
+//  }
+ async function post (url,data){
+   let response = await fetch( url, {
+    method:'POST',
+    body: JSON.stringify(data),
+    headers :{"Content-Type":"Application/json"}
+  });
+  let resData = await response.json();
+  return resData;  
+}
 
+const sendData = (e)=>{
+  
+  post(`http://localhost:3000/posts`,{
+    title: "Blog" ,
+     content: "BlogContent" ,
+     yazar: "veli"    
+ });
+}
+ 
   return (
     <div>
     { blogs &&  <List onHandle={onHandle} blogs = {blogs}></List>}
     { id &&  <List onHandle={onHandle} blogs = {blogs}></List>} 
-    { blogs && <Modal  blogs = {blogs} ></Modal>}
+    <button onClick={()=> sendData.stopPropogation}>Add Blog</button>
+   
     </div>
   )
 }

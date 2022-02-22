@@ -2,4 +2,41 @@
   display: flex;
 
 }
+.modalBackGround{
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0, 0.5);
+}
+#Modal{
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+}
+#buttonAddBlog{
+padding: 0.5rem;
+position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#modalForm{
+  margin-top: 20rem;
+  margin-left: 40rem;
+}
+.fa-solid{
+  color: rgb(233, 14, 14);
+}
+
+
 

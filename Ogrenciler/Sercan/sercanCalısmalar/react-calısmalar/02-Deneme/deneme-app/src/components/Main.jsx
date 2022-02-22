@@ -49,11 +49,13 @@ const Main = (props)=> {
         <div>Issue:{blog.issue}</div>
         <div>ReadTime:{blog.readTime}</div>
         <div>Author:{blog.author}</div>
-        <button style={styleDelete}>Delete</button>
+        <button style={styleDelete} onClick={()=> props.handleDelete(blog.id)}>Delete</button>
         </div>
     ))}</div>
+
+    
     </div>
   )
 }
 
-export default  Main
+export default  Main;

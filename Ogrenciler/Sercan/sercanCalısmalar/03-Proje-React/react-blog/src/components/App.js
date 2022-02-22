@@ -1,13 +1,13 @@
 import React from "react";
 import Bloglist from "./Bloglist";
 import Headers from "./Headers";
-
+import Draggable from 'react-draggable'
 import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <div className="App container">
     <Headers>Blog Header</Headers>
-    <div className="row">
+    <div className="row">   
     <Bloglist>Bloglist</Bloglist>
     </div>
     
