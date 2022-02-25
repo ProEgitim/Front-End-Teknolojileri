@@ -17,7 +17,7 @@ function App() {
    
     )
     );
-},[])
+},[blogs])
   const onDelete = (itemId) =>{
    const deletedItem=  blogs.filter( blog=> blog.id !== itemId)
     setBlogs(deletedItem);
@@ -32,7 +32,7 @@ function App() {
   }
   },[deletedId])
 
-  
+ 
   return (
     <div className="App">
 
@@ -41,7 +41,7 @@ function App() {
           <Main blogs={blogs} handleDelete = {onDelete} id="main">
           </Main>
           <div id="Modal" className="modalBackGround">
-          <Modal blogs={blogs}></Modal> 
+          <Modal blogs={blogs} setBlogs={setBlogs} ></Modal> 
           </div>
           <Aside id="aside"/>
           </div>
