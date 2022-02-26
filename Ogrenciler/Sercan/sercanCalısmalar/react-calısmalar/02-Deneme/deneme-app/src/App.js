@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 function App() {
   const [blogs, setBlogs] = useState ([]);
   const [deletedId, setId] = useState(null);
+  const [filters, setFilters]= useState(null)
 
   useEffect(()=>{
   fetch('http://localhost:3000/posts')
@@ -17,7 +18,7 @@ function App() {
    
     )
     );
-},[blogs])
+},[])
   const onDelete = (itemId) =>{
    const deletedItem=  blogs.filter( blog=> blog.id !== itemId)
     setBlogs(deletedItem);
@@ -31,19 +32,28 @@ function App() {
     })
   }
   },[deletedId])
+  
+  const onFilter = (e)=>{
+      let val = e.target.value.toLowerCase();
+      let filtered = blogs.filter(b=>b.topic.toLowerCase() === val);
+      setFilters(filtered);
+    }
 
+    useEffect(()=>{
+      setFilters(filters)
+    },[])
  
   return (
     <div className="App">
 
-          <Headers id="headers"/>
+          <Headers onFilter={onFilter} blogs={blogs} id="headers"/>
           <div className="cont">
           <Main blogs={blogs} handleDelete = {onDelete} id="main">
           </Main>
           <div id="Modal" className="modalBackGround">
           <Modal blogs={blogs} setBlogs={setBlogs} ></Modal> 
           </div>
-          <Aside id="aside"/>
+          <Aside xfilter={filters} id="aside"/>
           </div>
 
     </div>

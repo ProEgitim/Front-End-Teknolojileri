@@ -4,22 +4,23 @@ const Main = (props)=> {
     let blogs = props.blogs;
     const styledDiv = {
         backgroundColor: '#f3f3f3',
-        display : 'flex',
+        display : 'inline-flex',
         flexDirection:'row',
-        width:'70%',
+        maxWidth:'1128px',
         margin : '5px 5px',
-        alignItems:'center',
-        justifyContent: 'space-between'
-        
+        alignItems:'flex-start',
+        justifyContent: 'flex-start',
+        boxSizing:'border-box'
 
     }
     const outerDiv = {
         backgroundColor: '#f3f3f3', 
-        display : 'block',
+        display : 'flex',
         flexDirection:'column',
-        width:'70%',
+        width:'1218px',
         margin : '5px 5px',
-        alignItems:'center'  
+        alignItems:'flex-start',
+     
     }
 
     const itemDiv ={

@@ -30,13 +30,11 @@ export default  function Modal ({blogs,setBlogs}){
         body: JSON.stringify(data),
         headers: {"Content-Type": "Application/json"}
       }).then(res =>res.json())
-      .then(responseData => setBlogs(responseData));
+      .then(responseData => setBlogs([ ...blogs, responseData]));
   
   }
 
-  useEffect(()=>{
-    
-  },[])
+ 
    
   return (
     <div id='modalUp'>

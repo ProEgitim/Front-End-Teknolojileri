@@ -1,12 +1,18 @@
 import React from 'react'
 
-export default function Headers() {
+export default function Headers(props) {
     const styledh1 = {
         backgroundColor: '#f3f3f3',
         justifyContent:'center',
         display:'flex'
     }
+
+   
   return (
-    <h1 style={styledh1}>Frontend Blog</h1>
+    <div>
+    <h1 style={styledh1}>Frontend Blog </h1>
+    <input onKeyUp={props.onFilter} style={{marginLeft:'5px'}} type="text" placeholder='Search' />
+
+   </div>
   )
 }

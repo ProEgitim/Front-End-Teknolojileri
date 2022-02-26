@@ -1,39 +1,46 @@
 {
   "posts": [
     {
-      "id": 2,
-      "topic": "React",
-      "issue": "React Dom",
-      "readTime": " 5 min",
-      "author": "Sir Alex"
+      "topic": "JavaScript",
+      "issue": "class",
+      "readTime": "21",
+      "author": "asli veli",
+      "id": 14
     },
     {
-      "id": 7,
-      "topic": "Angular",
-      "issue": "constructors",
-      "readTime": " 25 min",
-      "author": "Robert"
-    },
-    {
-      "topic": "Javascript",
-      "issue": "Headers",
-      "readTime": "15 min",
+      "topic": "Java",
+      "issue": "block",
+      "readTime": "5 min",
       "author": "sercan masar",
-      "id": 8
+      "id": 16
     },
     {
-      "topic": "xcvxvc",
-      "issue": "xcvxcv",
-      "readTime": "xcvxcv",
-      "author": "xcvxcv",
-      "id": 9
+      "topic": "Angular",
+      "issue": "atate",
+      "readTime": "50 Min",
+      "author": "asli veli",
+      "id": 17
     },
     {
-      "topic": "xcvxvxcv",
-      "issue": "xcvxcvxcvxcv",
-      "readTime": "xcvxcv",
-      "author": "xcvxcvvxc",
-      "id": 10
+      "topic": "VueJs",
+      "issue": "Hoisting",
+      "readTime": "22 min",
+      "author": "gökhan",
+      "id": 18
+    },
+    {
+      "topic": "FireBase",
+      "issue": "Auth",
+      "readTime": "5 min",
+      "author": "Simon Rafquin",
+      "id": 19
+    },
+    {
+      "topic": "Svelte",
+      "issue": "Routers",
+      "readTime": "12 min",
+      "author": "Elvin Eskin",
+      "id": 20
     }
   ]
 }
