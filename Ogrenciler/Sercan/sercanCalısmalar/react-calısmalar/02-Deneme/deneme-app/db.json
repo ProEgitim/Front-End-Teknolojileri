@@ -29,13 +29,6 @@
       "id": 18
     },
     {
-      "topic": "FireBase",
-      "issue": "Auth",
-      "readTime": "5 min",
-      "author": "Simon Rafquin",
-      "id": 19
-    },
-    {
       "topic": "Svelte",
       "issue": "Routers",
       "readTime": "12 min",

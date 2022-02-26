@@ -1,11 +1,8 @@
 import React from 'react'
 
-export default function Aside(props) {
+export default function Aside({xfilter}) {
   
-  let filters = props.xfilter;
-
-  console.log(filters);
-  
+     
     const styledDiv = {
         backgroundColor: '#f3f3f3',
         display : 'flex',
@@ -27,13 +24,13 @@ export default function Aside(props) {
    }
    
   return  <div style={styledDiv}>
-{/*          
+         
       <h2><u> Filtered</u></h2> 
-      <div style={itemDiv}>
-        <h3>{filteredVal.topic}</h3>
-        <div>Issue:{filteredVal.issue}</div>
-        <div>ReadTime:{filteredVal.readTime}</div>
-        <div>Author:{filteredVal.author}</div>
+       <div style={itemDiv}>
+        <h3>{xfilter[0].topic}</h3>
+        <div>Issue:{xfilter[0].issue}</div>
+        <div>ReadTime:{xfilter[0].readTime}</div>
+        <div>Author:{xfilter[0].author}</div>
        
         <button style={{
           margin:'5px 20px 5px',
@@ -41,9 +38,9 @@ export default function Aside(props) {
           background:'#0b62e0',
           color: '#fff'
           
-        }} >Submit now..</button>
-      </div>
-       */}
+        }} >Submit now..</button> 
+      </div> 
+      
     
     </div>
   
