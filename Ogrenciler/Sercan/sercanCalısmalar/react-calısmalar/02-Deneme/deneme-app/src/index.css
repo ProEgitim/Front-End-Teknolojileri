@@ -1,0 +1,72 @@
+.cont{
+  display: flex;
+}
+.modalBackGround{
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0, 0.5);
+}
+#Modal{
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+}
+#buttonAddBlog{
+padding: 0.5rem;
+position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 47%;
+  border-radius: 15px;
+  animation-name: animateButton;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+#modalForm{
+  margin-top: 20rem;
+  margin-left: 40rem;
+}
+.fa-solid{
+  color: rgb(233, 14, 14);
+}
+
+@keyframes animateButton {
+  0% , 20%, 40%, 60%, 80%, 100%{
+    transform: translateY(0);
+    background-color: #aaaaaa;
+   
+}
+10%{
+ transform: translateY(3px);
+ background-color: #cacaca; 
+}
+30%{
+    transform: translateY(5px);
+    background-color: #dadada;   
+   }
+50% {
+ transform: translateY(4px);
+ background-color: #eaeaea; 
+}
+70%{
+    transform: translateY(3px);
+    background-color: #fafafa;  
+   }
+90%{
+    transform: translateY(2px);
+    background-color: #aaaaaa;  
+   }
+}
+
+

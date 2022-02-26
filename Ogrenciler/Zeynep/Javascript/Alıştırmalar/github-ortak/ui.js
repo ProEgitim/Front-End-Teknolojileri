@@ -8,7 +8,7 @@ class UI {
         // this.inputData = document.getElementById("github_name");
     }
 
-    showError(message, alertType="danger") {
+    showError(message, alertType = "danger") {
         const div = document.createElement("div");
         div.className = `alert alert-` + alertType + ` mt-3`;
         div.textContent = message;
@@ -30,8 +30,8 @@ class UI {
                     <div id="fullName"><strong>${user.name}</strong></div>
                     <hr>
                     <div id="bio">${user.bio}</div>
-                </div>
-                <div class="col-md-8">
+                    </div>
+                    <div class="col-md-8">
                     <button class="btn btn-secondary">
                         Takipçi <span class="badge badge-light">${user.followers}</span>
                     </button>
@@ -55,10 +55,7 @@ class UI {
                         <img src="images/mail.png" width="30px"> <span id="company">${user.company}</span>
 
                     </li>
-
                 </div>
-
-
             </div>
         </div>`
     }
@@ -91,10 +88,6 @@ class UI {
     addNewSearch(user) {
         this.lastSearch.innerHTML += `<li class="list-group-item">${user}</li>`
     }
-
-
-
-
 
 
 }

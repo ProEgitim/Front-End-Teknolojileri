@@ -24,14 +24,26 @@ const ProductList = () => {
       console.log(sayac);
     }
     const [blog,setBlog] = useState(null)
+    const [error,setError] = useState(null)
+    const [loading,setLoading] = useState(true)
     const handleConsole=(id)=>{
       const newBlogs = blog.filter(b=>b.id!==id);
       setBlog(newBlogs);
     }
     useEffect(()=>{
       fetch('http://localhost:3000/posts')
-      .then(res=>res.json())
-      .then(data=>setBlog(data))
+      .then(res=>{
+        if(!res.ok) throw Error ('Veriler çekilmedi')
+        return res.json();
+      })
+      .then(data=>{
+        setBlog(data)
+        setLoading(false)
+      })
+      .catch(err=>{
+        setLoading(false)
+        setError(err.message)
+      })
     },[blog])
     return (
       <div>
@@ -44,6 +56,8 @@ const ProductList = () => {
         <button style={styleObject} onClick={(e)=>handleClick('React',e)}>Tıkla</button> <br /> <br />
         <p>{sayac}</p>
         <button style={styleObject} onClick={handleCounter}>Sayaç</button>
+        {error && <div>{error}</div>}
+        {loading && <div>{loading}</div>}
         {blog && <BlogList blogs={blog} onConsole={handleConsole} title="Bütün Yazılar" />}
         {blog && <BlogList blogs={blog.filter((blog)=>blog.yazar==="Sercan")} onConsole={handleConsole} title="Sercan'ın Yazıları" />}
       </div>

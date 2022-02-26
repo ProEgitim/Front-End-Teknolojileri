@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "topic": "React",
+      "issue": "React Dom",
+      "readTime": " 5 min",
+      "author": "Sir Alex"
+    },
+    {
+      "id": 7,
+      "topic": "Angular",
+      "issue": "constructors",
+      "readTime": " 25 min",
+      "author": "Robert"
+    },
+    {
+      "topic": "Javascript",
+      "issue": "Headers",
+      "readTime": "15 min",
+      "author": "sercan masar",
+      "id": 8
+    },
+    {
+      "topic": "xcvxvc",
+      "issue": "xcvxcv",
+      "readTime": "xcvxcv",
+      "author": "xcvxcv",
+      "id": 9
+    },
+    {
+      "topic": "xcvxvxcv",
+      "issue": "xcvxcvxcvxcv",
+      "readTime": "xcvxcv",
+      "author": "xcvxcvvxc",
+      "id": 10
+    }
+  ]
+}
