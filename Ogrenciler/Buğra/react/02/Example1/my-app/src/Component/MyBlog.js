@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap'
 
+
 const MyBlog=(props)=>{
 const data = props.data;
 const [modal ,setModal] = useState(false);
@@ -34,10 +35,44 @@ const saveData=()=>{
   </Button>
   <Modal isOpen={modal} toggle={toggle}>
     <ModalHeader toggle={toggle}>
-      Modal title
+      Create Post 
     </ModalHeader>
     <ModalBody>
-      
+    <div className="form-group">
+            <label htmlFor="exampleFormControlTextarea1">
+            </label>
+            <div className="form-group">
+      <label htmlFor="formGroupExampleInput">Name</label>
+      <input
+        type="text"
+        className="form-control"
+        id="formGroupExampleInput"
+      />
+      <br/>
+      <label htmlFor="formGroupExampleInput">Surname</label>
+      <input
+        type="text"
+        className="form-control"
+        id="formGroupExampleInput"
+      />
+      <br/>
+    </div>
+    <label htmlFor="formGroupExampleInput">Age</label>
+      <input
+        type="text"
+        className="form-control"
+        id="formGroupExampleInput"
+      />
+<br/>
+<label htmlFor="formGroupExampleInput">Job</label>
+      <input
+        type="text"
+        className="form-control"
+        id="formGroupExampleInput"
+      />
+
+        </div>
+          
     </ModalBody>
     <ModalFooter>
       <Button
