@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function User() {
   return (
     <div>
       <div>
-        <h2>Welcome to the User APP!</h2>
+        Users
       </div>
       <nav>
-        <Link to="/about">About</Link>
+        <Link to="/">Home</Link>
       </nav>
     </div>
   );
