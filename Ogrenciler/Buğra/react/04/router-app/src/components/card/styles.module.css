@@ -1,0 +1,8 @@
+.card {
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color:rgb(47, 165, 57);
+}

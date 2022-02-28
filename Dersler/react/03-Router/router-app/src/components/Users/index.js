@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, Routes, Route } from "react-router-dom";
+import User from "../User"
 
 export default function Users() {
   return (
@@ -21,7 +22,10 @@ export default function Users() {
       <nav>
         <Link to="/">Home</Link>
       </nav>
-
+      <Routes>
+        <Route path=":userId" element={<User />} />
+      </Routes>
+      <Outlet/>
     </div>
   );
 }
