@@ -8,6 +8,7 @@ export default function Users({users}) {
     
   return (
     <div>
+  
     <div>
     <ul>
     {users.map((user)=>(
