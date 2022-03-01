@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "id": 1,
+      "name": "Buğra",
+      "surname": "Bolat",
+      "age": "20",
+      "job": "Web Developer"
+    },
+    {
       "id": 2,
       "name": "2",
       "surname": "2",

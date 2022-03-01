@@ -1,0 +1,39 @@
+.alignCenter
+{
+    text-align: center;
+}
+.home
+{
+    background-color: rgb(239, 243, 242);
+    border-radius: 20px;
+    border: 2px;
+    border-color: rgb(207, 203, 203);
+    border-style: groove;
+    height: 600px;
+    margin: 20px;
+}
+.searchDiv
+{
+
+}
+.searchButton
+{
+    border-radius: 10px;
+    margin : 10px;
+}
+.searchInput
+{
+    width: 300px;
+}
+
+.width
+{
+    width: 750px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }

@@ -8,7 +8,6 @@ function index({ name, isLogged, students, age, adress }) {
   return (
     <div>
       <h1>
-        {" "}
         Benim adim {name} {age}
       </h1>
       <h2>

@@ -2,7 +2,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import About from "./components/About"
 import Home from "./components/Home"
 import Users from "./components/Users"
-import User from "./components/User"
 
 function App() {
   return (
@@ -20,13 +19,22 @@ function App() {
           </li>
         </ul>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/users" element={<Users />}>
-            <Route path=":userId" element={<User />} />
-        </Route>
-      </Routes>
+      
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route path="about" element={<About />} />
+            <Route path="users/*" element={<Users />} />
+            <Route
+              path="*"
+              element={
+                <main style={{ padding: "1rem" }}>
+                  <p>Wrong way!</p>
+                </main>
+              }
+            />
+          </Route>
+        </Routes>
+      
     </div>
   );
 }
