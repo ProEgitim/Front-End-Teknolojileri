@@ -1,0 +1,21 @@
+.card {
+    border-radius: 10px;
+    background-color: rgb(238, 233, 227);
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color:rgb(47, 165, 57);
+}
+.alignCenter
+{
+    display: flex;
+    justify-content: center;
+}
+
+.home
+{
+    position: absolute;
+  top: 10%;
+  left: 3.5%;
+
+}

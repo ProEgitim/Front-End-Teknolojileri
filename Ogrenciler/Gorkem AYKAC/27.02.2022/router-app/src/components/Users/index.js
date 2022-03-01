@@ -1,26 +1,47 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, Routes, Route } from "react-router-dom";
+import Card from "../card";
+import styles from "./styles.module.css";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import User from "../User"
 
-export default function Users() {
+
+const Users = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [users, setUsers] = useState();
+  useEffect(() => {
+    axios.get("http://localhost:3000/posts").then((res) => {
+      setUsers(res.data);
+      setIsLoading(false);
+    });
+  }, []);
+  if (isLoading) {
+    return <div className="App">Loading...</div>;
+  }
   return (
-    <div>
-      <div>
-        <ul>
-          <li>
-            <Link to="/users/1">User 1</Link>
-          </li>
-          <li>
-            <Link to="/users/2">User 2</Link>
-          </li>
-          <li>
-            <Link to="/users/3">User 3</Link>
-          </li>
-        </ul>
+    <div className={styles.color}>
+      <div className={styles.home}>
+        <div>
+          <h2 className={styles.alignCenter}>All User</h2>
+        </div>
+     
+        <div className={styles.card}>
+          {
+          users.map((data) => (
+            <Card id={data.id} name={data.name} surname={data.surname}></Card>      
+          ))
+          }
+        </div>
+        <br></br>
+        <nav className={styles.navv} >
+          <Link to="/">Home</Link>
+        </nav>
+        <Routes>
+          <Route path=":userId" element={<User />} />
+        </Routes>
+        <Outlet/>
       </div>
-
-      <br></br>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
     </div>
   );
-}
+};
+export default Users;
