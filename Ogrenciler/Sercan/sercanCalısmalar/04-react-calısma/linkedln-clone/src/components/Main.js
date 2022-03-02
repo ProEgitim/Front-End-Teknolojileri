@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import PostModal from "./PostModal";
 import { connect } from "react-redux";
+import { getArticlesAPI } from "../actions";
 
 const Main = (props) => {
+  
   const [showModal, setShowModal] = useState("close");
+
+  useEffect(()=>{
+     props.getArticles(); 
+  }, []);
+
+
   const handleClick = (e) => {
     e.preventDefault();
     if (e.target !== e.currentTarget) {
@@ -61,7 +69,7 @@ const Main = (props) => {
       </ShareBox>
 
       <Content>
-        {props.loading && <img src="/images/loading-spin.svg" />}
+        {props.loading && <img src="http://www.clker.com/cliparts/o/U/X/K/9/p/gear-hi.png" class="gear" witdth="60" height="60" />}
 
         <Article>
           <SharedActor>
@@ -128,7 +136,6 @@ const Main = (props) => {
       </Content>
       <PostModal showModal={showModal} handleClick={handleClick} />
     </Container>
-  
   )};
 
 const Container = styled.div`
@@ -327,12 +334,14 @@ const Content = styled.div`
 
 const mapStateToProps = (state)=>{
    return{
-       loading: state.articleState.loading,
-       user: state.userState.user,
+       loading : state.articleState.loading,
+       user: state.userState.user
    };
 };
 
-const mapDispatchToProps =(dispatch) => ({}) ;
+const mapDispatchToProps =(dispatch) => ({
+    getArticles : ()=> dispatch(getArticlesAPI()),
+}) ;
 
 
 export default connect(mapDispatchToProps, mapStateToProps)(Main);

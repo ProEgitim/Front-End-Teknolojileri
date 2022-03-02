@@ -1,13 +1,14 @@
 import { auth, provider, storage } from "../Firebase";
-import { SET_USER , SET_LOADİNG_STATUS } from "./actionType";
 import db from '../Firebase'
+import { SET_USER , SET_LOADİNG_STATUS } from "./actionType";
+
 export const setUser = (payload) =>({
     type : SET_USER,
     user:payload,
 });
 
 export const setLoading = (status)=>({
-    type :SET_LOADİNG_STATUS,
+    type : SET_LOADİNG_STATUS,
     status : status,
 })
 
@@ -43,7 +44,7 @@ export function postArticleAPI(payload){
     return(dispatch)=>{
         dispatch(setLoading(true));
 
-        if(payload.image != ''){
+        if(payload.image !== ''){
             const upload = storage
             .ref(`images/${payload.image.name}`)
             .put(payload.image);
@@ -77,7 +78,6 @@ export function postArticleAPI(payload){
         } else if(payload.video){
            db.collection('articles').add({
                actor: {
-                   description:payload.user.email,
                    description :payload.user.email,
                     title: payload.user.displayName,
                     date: payload.timestamp,
@@ -92,4 +92,15 @@ export function postArticleAPI(payload){
            dispatch(setLoading(false));
         }
     }
+}
+
+export function getArticlesAPI() {
+return (dispatch) => {
+    let payload;
+
+    db.collection('articles').orderBy('actor.date' , 'desc')
+    .onSnapshot((snapshot)=> {
+        payload = snapshot.docs.map((doc)=> doc.data())
+    } )
+}
 }
