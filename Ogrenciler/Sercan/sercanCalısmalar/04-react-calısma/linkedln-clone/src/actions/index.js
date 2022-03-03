@@ -1,6 +1,6 @@
-import { auth, provider, storage } from "../Firebase";
-import db from '../Firebase'
-import { SET_USER , SET_LOADİNG_STATUS } from "./actionType";
+import { auth, provider, storage } from "../firebase";
+import db from '../firebase'
+import { SET_USER , SET_LOADING_STATUS } from "./actionType";
 
 export const setUser = (payload) =>({
     type : SET_USER,
@@ -8,15 +8,17 @@ export const setUser = (payload) =>({
 });
 
 export const setLoading = (status)=>({
-    type : SET_LOADİNG_STATUS,
+    type : SET_LOADING_STATUS,
     status : status,
 })
 
 export function signInAPI(){
     return (dispatch)=>{
-        auth.signInWithPopup(provider).then((payload)=>{
+        auth.signInWithPopup(provider)
+        .then((payload)=>{
             dispatch(setUser(payload.user));
-        }).catch((error)=>alert(error.message));
+        })
+        .catch((error)=>alert(error.message));
     }
 }
 
@@ -44,15 +46,14 @@ export function postArticleAPI(payload){
     return(dispatch)=>{
         dispatch(setLoading(true));
 
-        if(payload.image !== ''){
-            const upload = storage
-            .ref(`images/${payload.image.name}`)
+        if(payload.image != ''){
+            const upload = storage.ref(`images/${payload.image.name}`)
             .put(payload.image);
             upload.on('state_changed' , (snapshot)=>{
                 const progress = (
                     (snapshot.bytesTransferred / snapshot.totalBytes) * 100)
                     console.log(`Progress: ${progress}%`);
-                    if(snapshot.state === 'RUNNİNG'){
+                    if(snapshot.state === 'RUNNING'){
                         console.log(`Progress: ${progress}%`);
                     }
             }, error => console.log(error.code),

@@ -40,7 +40,9 @@ const Main = (props) => {
             <img src="/images/user.svg" alt="" />
           )}
           ;
-          <button onClick={handleClick} disabled={props.loading ? true : false}>
+          <button 
+          onClick={handleClick} 
+          disabled={props.loading ? true : false}>
             Start a post
           </button>
         </div>
@@ -335,7 +337,7 @@ const Content = styled.div`
 const mapStateToProps = (state)=>{
    return{
        loading : state.articleState.loading,
-       user: state.userState.user
+       user: state.userState.user,
    };
 };
 

@@ -1,4 +1,4 @@
-import { SET_LOADİNG_STATUS } from '../actions/actionType'
+import { SET_LOADING_STATUS } from '../actions/actionType'
 
 
 export const initState = {
@@ -7,8 +7,8 @@ export const initState = {
 
 const articleReducer = (state = initState, action)=>{
     switch(action.type){
-        case SET_LOADİNG_STATUS : 
-        return {
+        case SET_LOADING_STATUS :
+            return {
             ...state,
             loading: action.status,
         };

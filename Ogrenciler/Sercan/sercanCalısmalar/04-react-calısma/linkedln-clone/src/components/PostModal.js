@@ -41,7 +41,7 @@ const PostModal = (props) => {
 
         props.postArticle(payload);
         reset(e);
-    }
+    };
 
     const reset =(e)=>{
       setEditorText("");
@@ -298,3 +298,4 @@ const mapDispatchToProps = (dispatch) => ({
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostModal);
+
