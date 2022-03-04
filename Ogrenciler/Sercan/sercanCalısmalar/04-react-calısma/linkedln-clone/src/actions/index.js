@@ -3,7 +3,7 @@ import db from '../firebase'
 import { SET_USER , SET_LOADING_STATUS } from "./actionType";
 
 export const setUser = (payload) =>({
-    type : SET_USER,
+    type: SET_USER,
     user:payload,
 });
 
@@ -38,7 +38,7 @@ export function signOutAPI(){
     return (dispatch)=>{
         auth.signOut().then(()=>{
             dispatch(setUser(null));
-        }).catch((error)=>alert(error.message));
+        }).catch((error)=> console.log(error.message));
     }
 }
 
