@@ -1,0 +1,8 @@
+body{
+    background: linear-gradient(rgb(255, 248, 228), rgb(255, 221, 127) );
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+   
+}

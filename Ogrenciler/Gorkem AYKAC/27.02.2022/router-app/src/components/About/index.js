@@ -4,9 +4,7 @@ export default function About() {
     <div>
       <div>
         <h2>Who are we?</h2>
-        <p>
-          We are a greate team :)
-        </p>
+
       </div>
       <nav>
         <Link to="/">Home</Link>
