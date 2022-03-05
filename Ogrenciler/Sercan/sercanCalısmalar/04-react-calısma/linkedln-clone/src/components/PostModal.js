@@ -97,7 +97,7 @@ const PostModal = (props) => {
                 placeholder="Please input a video link" 
                 value={videoLink} 
                 onChange={e=> setVideoLink(e.target.value) } />
-               { videoLink && <ReactPlayer width={'100%'} url={videoLink}  /> } 
+               { videoLink && <ReactPlayer width={'100%'} url={videoLink} /> } 
             </>
                 )
             )}
