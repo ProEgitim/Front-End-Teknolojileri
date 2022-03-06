@@ -30,7 +30,7 @@ export default function Home() {
     }   
   }
   return (
-    <div className={styles.color}>
+    <div>
       <div className={styles.home}>
         <div>
           <h2 className={styles.alignCenter}>Find Random User</h2>

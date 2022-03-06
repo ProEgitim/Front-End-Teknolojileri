@@ -26,3 +26,22 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+
+.black
+{
+  color: rgb(17, 1, 1);
+}
+
+.blackBody
+{
+  color: rgb(48, 45, 45);
+}
+.light
+{
+  color: white;
+}
+.lightBody
+{
+  color: rgb(207, 202, 202);
+}
+
