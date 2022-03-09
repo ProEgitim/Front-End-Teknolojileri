@@ -7,7 +7,7 @@ const TodosList = (props) => {
   return (
     <div style={{display :"flex", flexDirection:"column"}}>
         {
-            props.todos.map((todo,index)=> <Todo todo={todo} />)
+            props.todos.map((todo,index)=> <Todo key={index} todo={todo} idx={index} />)
         }
     </div>
   )

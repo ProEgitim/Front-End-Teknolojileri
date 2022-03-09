@@ -1,24 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
-import { addTodo } from '../redux/action/addTodo.action'
+import { addText, addTodo } from '../redux/action/addTodo.action'
 import TodosList from './TodosList'
 
 const Todobody = (props) => {
-  const [todo, setTodo] = useState([]); 
+
   const handleSubmit = (e) =>{
   e.preventDefault();
-  props.addTodo(todo);
+  props.addTodo(props.text); 
   e.target.reset(); 
 };
 const handleChange = e =>{
-  setTodo(e.target.value);
-  
+  props.addText(e.target.value); 
 };
   return (
    
         <div>
         <form onSubmit={handleSubmit}>
-        <input type="text" onChange={handleChange}  />
+        <input type="text" onChange={handleChange} required />
         <button type='submit' >Add Todo</button>
         </form>
          <TodosList/>
@@ -29,7 +28,14 @@ const handleChange = e =>{
 
 
 const mapDispatchToProps = (dispatch) =>({
-addTodo : todo => dispatch(addTodo(todo))
+addTodo : todo => dispatch(addTodo(todo)),
+addText : value => dispatch(addText(value)),
 })
 
-export default connect(null, mapDispatchToProps)(Todobody)
+const mapStateToProps = state => ({
+  text: state.text,
+ 
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Todobody)
