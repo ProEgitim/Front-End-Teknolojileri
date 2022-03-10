@@ -16,4 +16,9 @@ input{
   width: 220px;
 }
 
+.line{
+  text-decoration: line-through;
+  color: #fff;
+}
+
 

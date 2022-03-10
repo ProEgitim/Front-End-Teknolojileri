@@ -1,6 +1,9 @@
 
 let initState = {
-    todos:[]
+    todos:[],
+    value : "",
+    selected :"",
+    nonselected:"",
 }
 
 export const addTodo = (state = initState, action)=> {
@@ -9,7 +12,25 @@ export const addTodo = (state = initState, action)=> {
             return{
                 ...state,
                 todos: state.todos.concat(action.payload),    
-            }
+            };
+
+        case 'ADD_TEXT' :
+            return {
+                ...state,
+                value: action.payload,
+            };
+            case 'DELETE_TODO' :
+                return {
+                    ...state,
+                    todos: state.todos.filter((todo,index)=> index !== action.payload),
+                };
+
+                case 'LİNE_THROUGH' :
+                    return {
+                        ...state,
+                        selected : state.todos.filter((todo,index)=> index === action.payload),
+                        nonselected: state.todos.filter((todo,index)=> index !== action.payload),
+                    };
 
         default :
         return state;
