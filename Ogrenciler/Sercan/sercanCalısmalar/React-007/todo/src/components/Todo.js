@@ -3,20 +3,19 @@ import { connect } from 'react-redux'
 import { deleteTodo, underLine } from '../redux/action/addTodo.action'
 
 const Todo = (props) => {
-  let waitingsome = "";
-  const underLine = ()=>{
   
-    if(props.selected){
-      waitingsome = "line"
+  const underLine = ()=>{
+    if (props.completed) {
+      props.completed = true;
+    } else{
+      props.completed = false;
     }
-    if( props.nonselected){
-      waitingsome = ""
-    }
+    
     
   }
   return (
       <div style={{color:"#fff",display:"flex", justifyContent:"space-between"}} >
-    <div className={waitingsome} onClick={()=> underLine(props.idx)}>{props.todo}</div>
+    <div className={props.completed ? "line" : ""} onClick={()=> underLine(props.idx)}>{props.todo}</div>
     <div onClick={()=> props.deleteTodo(props.idx)} >X</div>
     </div>
   )
@@ -27,4 +26,8 @@ const mapDispatchToProps = dispatch => ({
     underLine : key => dispatch(underLine(key))
 })
 
-export default connect(null,mapDispatchToProps)(Todo)
+const mapStateToProps = state =>({
+  completed : state.completed,
+})
+
+export default connect(mapStateToProps,mapDispatchToProps)(Todo)
