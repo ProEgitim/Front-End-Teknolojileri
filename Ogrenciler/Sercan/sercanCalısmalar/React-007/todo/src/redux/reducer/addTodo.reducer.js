@@ -2,8 +2,7 @@
 let initState = {
     todos:[],
     value : "",
-    completed: false,
-    selected: [],
+    selected:"",
 }
 
 export const addTodo = (state = initState, action)=> {
@@ -11,8 +10,7 @@ export const addTodo = (state = initState, action)=> {
         case "ADD_TODO":
             return{
                 ...state,
-                todos: state.todos.concat(action.payload, state.completed ),
-                
+                todos: state.todos.concat(action.payload)  
             };
 
         case 'ADD_TEXT' :
