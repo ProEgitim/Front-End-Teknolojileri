@@ -13,7 +13,7 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Software Devoloper</span>
           </div>
           <button className="widgetSmButton">
-              <Visibility/>
+              <Visibility className='widgetSmIcon' />
               Display
           </button>
         </li>
@@ -24,7 +24,7 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Business Analisyt</span>
           </div>
           <button className="widgetSmButton">
-              <Visibility/>
+              <Visibility className='widgetSmIcon'/>
               Display
           </button>
         </li>
@@ -35,7 +35,7 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-              <Visibility/>
+              <Visibility className='widgetSmIcon' />
               Display
           </button>
         </li>
@@ -46,7 +46,7 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Frontend Engineer</span>
           </div>
           <button className="widgetSmButton">
-              <Visibility/>
+              <Visibility className='widgetSmIcon' />
               Display
           </button>
         </li>
@@ -57,7 +57,7 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Human Resources</span>
           </div>
           <button className="widgetSmButton">
-              <Visibility/>
+              <Visibility className='widgetSmIcon' />
               Display
           </button>
         </li>
