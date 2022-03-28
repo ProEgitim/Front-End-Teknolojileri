@@ -22,7 +22,7 @@ export default function Topbar() {
                     <Settings/>                  
                 </div>
 
-                <img className='topAvatar' src="https://lh3.googleusercontent.com/a-/AOh14GhlvoipwoD7THv6YiqsJXOPMsDYYrQQCA0dtpVd=s260-p-rw-no" alt="" />
+                <img className='topAvatar' src="https://lh3.googleusercontent.com/ogw/ADea4I6YRUQshg-Dg5w-4N1EI3c7rYYVlc2dqzYPAQRj=s32-c-mo" alt="" />
 
             </div>
         </div>

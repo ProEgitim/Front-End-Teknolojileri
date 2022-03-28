@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "productName": "Apple Green",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 12,
+      "comment": "new prroduct freshness",
+      "date": "2022-03-27T21:00:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Banana",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 20,
+      "comment": "Not a fresh one ",
+      "date": "2022-03-27T21:00:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
