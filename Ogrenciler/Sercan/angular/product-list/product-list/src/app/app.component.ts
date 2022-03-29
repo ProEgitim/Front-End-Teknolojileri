@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   // @ViewChild(MatPaginator) paginator !: MatPaginator;
   // @ViewChild(MatSort) sort !: MatSort;
-  displayedColumns: string[] = ['productName', 'category','date', 'freshness' ,'price', 'comment'];
+  displayedColumns: string[] = ['productName', 'category','date', 'freshness' ,'price', 'comment' , 'action'];
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -30,7 +30,11 @@ export class AppComponent implements OnInit {
   openDialog() {
     this.dialog.open(DialogComponent, {
      width: '30%'
-    });
+    }).afterClosed().subscribe(val=>{
+      if(val === 'save'){
+        this.getAllProducts()
+      }
+    })
   }
 
   getAllProducts(){
@@ -42,7 +46,29 @@ export class AppComponent implements OnInit {
          this.dataSource.sort = this.sort;
       },
       error : (err)=>{
-        alert("Error is about get product from jsonserver")
+        alert("Error is about get product from jsonserver");
+      }
+    })
+  }
+  ondeleteProduct(id:number){
+    this.api.deleteProduct(id).subscribe({
+      next : (res)=>{
+        alert(" product deleted succesfully");
+        this.getAllProducts();
+      },
+      error : ()=>{
+        alert('error while deleting product')
+      }
+    })
+  }
+
+  editProduct(row :any){
+    this.dialog.open(DialogComponent, {
+      width: '30%',
+      data: row
+    }).afterClosed().subscribe(val=>{
+      if(val === 'update'){
+        this.getAllProducts();
       }
     })
   }

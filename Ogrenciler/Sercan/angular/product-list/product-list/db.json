@@ -1,22 +1,31 @@
 {
   "productList": [
     {
-      "productName": "Apple Green",
-      "category": "Fruits",
-      "freshness": "Brand New",
-      "price": 12,
-      "comment": "new prroduct freshness",
-      "date": "2022-03-27T21:00:00.000Z",
+      "productName": "S8",
+      "category": "Electronics",
+      "freshness": "Second Hand",
+      "price": 100,
+      "comment": "good working",
+      "date": "2021-02-07T21:00:00.000Z",
       "id": 1
     },
     {
-      "productName": "Banana",
-      "category": "Fruits",
-      "freshness": "Brand New",
-      "price": 20,
-      "comment": "Not a fresh one ",
-      "date": "2022-03-27T21:00:00.000Z",
+      "productName": "apple 7",
+      "category": "Electronics",
+      "freshness": "Second Hand",
+      "price": 150,
+      "comment": "almost new product. all the props are working",
+      "date": "2020-07-19T21:00:00.000Z",
       "id": 2
+    },
+    {
+      "productName": "airpod",
+      "category": "Electronics",
+      "freshness": "Brand New",
+      "price": 50,
+      "comment": "new product",
+      "date": "2021-06-29T21:00:00.000Z",
+      "id": 3
     }
   ],
   "comments": [
