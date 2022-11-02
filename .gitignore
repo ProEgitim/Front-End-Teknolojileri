@@ -12,3 +12,4 @@ yarn-error.log
 *.sln
 Ogrenciler/Varol/todoAppJS/app.js
 Ogrenciler/Sercan/video-sharing-app/
+.vscode/settings.json
