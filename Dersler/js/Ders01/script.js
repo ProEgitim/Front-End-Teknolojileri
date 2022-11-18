@@ -1,4 +1,4 @@
-// Varibles:Değişkenler
+// Variables:Değişkenler
 
 // number = sayısal ifadeler
 
